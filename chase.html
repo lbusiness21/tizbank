@@ -444,7 +444,7 @@
 
 
 <!-- start project section -->
-<section id="banklogs">
+<section id="banklogs" style="padding: 0;">
     <div class="container-fluid">
         <div class="section-heading">
             <h3>Bank Log Details</h3>
@@ -1129,23 +1129,6 @@
                         </div>
                     </div>
                 </div>
-    
-                <div class="col-12">
-                    <div class="margin-10px-top footer-social-icons">
-                        <ul>
-                            <li>
-                                <a href="https://t.me/s/darknetbank">
-                                    <i class="fab fa-telegram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <i class="fas fa-envelope"></i> 
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
     
@@ -1158,17 +1141,21 @@
                     <input type="hidden" name="form-type" value="contact">
                     <div class="row">
                         <div class="col-md-6">
-                            <input type="text" name="name" placeholder="Your Name:" data-constraints="@LettersOnly @NotEmpty">
+                            <input type="text" 
+                                name="name" 
+                                placeholder="Your Username:" 
+                                data-constraints="@LettersOnly @NotEmpty">
                         </div>
                         <div class="col-md-6">
-                            <input type="text" name="email" placeholder="Email:" data-constraints="@Email @NotEmpty">
-                        </div>
-                        <div class="col-md-12">
-                            <textarea name="message" rows="3" placeholder="Message:" data-constraints="@NotEmpty"></textarea>
+                            <input type="text" 
+                                name="email" 
+                                placeholder="Your Email:" 
+                                data-constraints="@Email @NotEmpty">
                         </div>
                         <div class="mfControls col-md-12">
                             <button type="submit" id="sendeth" onclick="sendaMessage()" class="butn">
-                                Send Message
+                                <i class="fab fa-telegram margin-10px-right"></i>
+                               Join Channel
                             </button>
                             <script>
                                 function sendaMessage(){
@@ -1204,7 +1191,7 @@
 
 
 <!-- start blog section -->
-<section id="news">
+<section id="news" style="padding: 0;">
     <div class="container-fluid">
     <div class="section-heading">
         <h3>Recent News</h3>
