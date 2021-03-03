@@ -22,7 +22,7 @@
             logodefault.attr('src','img/logos/logo.png');
             logowhite.attr('src','img/logos/logo-white.png');
             logowhitedark.attr('src','img/logos/logo-white.png');
-            logo2.attr('src','img/logos/logo-2-light.png');
+            logo2.attr('src','img/logos/logo-2.png');
             logo4.attr('src','img/logos/logo-4.png');
             logo5.attr('src','img/logos/logo-5-light.png');
             logo6.attr('src','img/logos/logo-6.png');
