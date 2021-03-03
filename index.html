@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="Satoshi Nakamoto" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="Bank Logs" />
+    <meta name="description" content="Dark Net" />
+    <!-- title  -->
+    <title>Login</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logos/favicon.png">
+    <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-touch-icon-114x114.png">
+    <!-- plugins -->
+    <link rel="stylesheet" href="css/plugins.css" />
+    <!-- switcher css -->
+    <link href="css/switcher.css" rel="stylesheet">
+    <!-- custom css -->
+    <link href="css/styles-2.css" rel="stylesheet" id="colors">
+</head>
+
+<body>
+
+<!-- start page loading -->
+<div id="preloader">
+    <div class="row loader">
+        <div class="loader-icon"></div>
+    </div>
+</div>
+<!-- end page loading -->
+
+<!-- start comingsoon section -->
+<section class="full-screen cover-background no-padding bg-img" 
+    data-overlay-dark="0" 
+    data-background="img/bg/bg.jpg">
+<div class="opacity-full-dark bg-extra-dark-gray"></div>
+<div class="container position-unset">
+    <div class="absolute-middle-center width-55 sm-width-90 padding-four-all xs-padding-eight-tb coming-soon z-index-1">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="margin-40px-bottom sm-margin-30px-bottom">
+                    <img src="img/logos/logo-white.png" alt="" class="width-200px" />
+                </div>
+            </div>
+            <div class="col-12 margin-40px-bottom sm-margin-30px-bottom">
+                <div class="border-top border-color-light-white"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="alt-font font-size80 line-height-normal sm-font-size60 xs-font-size40 text-center font-weight-700 text-uppercase display-block text-theme-color margin-15px-bottom">
+                    Login
+                </div>
+                <p class="font-size24 sm-font-size20 letter-spacing-2 text-white text-center text-uppercase alt-font center-col margin-40px-bottom sm-margin-30px-bottom">
+                    With Google
+                </p>
+                <p class="font-size20 sm-font-size20 letter-spacing-2 text-white text-center text-uppercase alt-font center-col margin-40px-bottom sm-margin-30px-bottom">
+                    <a id="signInWithGoogle" class="butn text-center theme medium">
+                        <span>
+                            <i class="fab fa-google margin-10px-right"></i>
+                            Login with Google
+                            <img style="height: 25px;" src="google.svg">
+                        </span>
+                    </a>
+                </p>
+                
+                <div class="border-top border-color-light-white margin-40px-bottom sm-margin-30px-bottom"></div>
+                <div class="footer-social-icons">
+                    <ul class="text-center no-margin no-padding">
+                        <li>
+                            <a href="https://t.me/s/darknetbank">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="fas fa-envelope"></i> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- end comingsoon section -->
+
+<!-- start clients section -->
+<div class="section-clients bg-light-gray">
+    <div class="container-fluid">
+    <div class="owl-carousel owl-theme clients" id="clients">
+        <div class="item"><img alt="partner-image" src="img/partners/bbt.jpg"></div>
+        <div class="item"><img alt="partner-image" src="img/partners/bbva.jpg"></div>
+        <div class="item"><img alt="partner-image" src="img/partners/chase.jpg"></div>
+        <div class="item"><img alt="partner-image" src="img/partners/citi.jpg"></div>
+        <div class="item"><img alt="partner-image" src="img/partners/huntington.jpg"></div>
+        <div class="item"><img alt="partner-image" src="img/partners/nfcu.jpg"></div>
+        <div class="item"><img alt="partner-image" src="img/partners/pnc.jpg"></div>
+        <div class="item"><img alt="partner-image" src="img/partners/suntrust.jpg"></div>
+        <div class="item"><img alt="partner-image" src="img/partners/woodforest.jpg"></div>
+        <div class="item"><img alt="partner-image" src="img/partners/chime.jpg"></div>
+        <div class="item"><img alt="partner-image" src="img/partners/boa.jpg"></div>
+    </div>
+    </div>
+</div>
+<!-- end clients section -->
+
+<!-- start scroll to top -->
+<a href="javascript:void(0)" class="scroll-to-top">
+    <i class="fas fa-angle-up" aria-hidden="true"></i>
+</a>
+<!-- end scroll to top -->
+
+<!-- all js include start -->
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDGwhFbFiCm9IDTNQwf69atH_MmUu9eMUs",
+    authDomain: "bankloginusa.firebaseapp.com",
+    projectId: "bankloginusa",
+    storageBucket: "bankloginusa.appspot.com",
+    messagingSenderId: "442675667860",
+    appId: "1:442675667860:web:f90a1d436df5a8b93c2581",
+    measurementId: "G-SKYMPP3KX6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="js/home.js"></script>
+
+
+
+
+
+
+
+
+
+
+<!-- Java script -->
+<script src="js/core.min.js"></script>
+<script src="js/main.js"></script>
+<!-- contact form scripts -->
+<script src="js/mailform/jquery.form.min.js"></script>
+<script src="js/mailform/jquery.rd-mailform.min.c.js"></script>
+<!-- all js include end -->
+</body>
+</html>
