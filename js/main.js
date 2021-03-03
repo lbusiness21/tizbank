@@ -322,6 +322,8 @@ $('.project-single-two .owl-carousel').owlCarousel({
 $('#services-carousel').owlCarousel({
     loop:true,
     responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout:1000,
     dots:true,
     nav:true,
     navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],

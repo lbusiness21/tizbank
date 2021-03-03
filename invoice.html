@@ -124,16 +124,17 @@
         <ul>
             <li class="dropdown sm-margin-20px-right">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <i class="fas fa-user"></i>
+                    <img id="photoHolder" 
+                    src="img/testmonials/t-6.jpg" 
+                    class="cart-thumb" 
+                    style="width: 40px; border-radius: 10px;"
+                    alt="" />
                     <span class="badge bg-theme">
                         1
                     </span>
                 </a>
                 <ul class="dropdown-menu cart-list">
                     <li>
-                        <a href="#" class="photo">
-                            <img id="photoHolder" src="img/testmonials/t-6.jpg" class="cart-thumb" alt="" />
-                        </a>
                         <p>
                             <span class="price">
                                 75business@protonmail.com
@@ -146,6 +147,7 @@
                          </span>
                          <a href="lockscreen.html" class="butn small btn-cart white">
                             <span>
+                                <i class="fas fa-power-off margin-10px-right"></i>
                                 Logout 
                             </span>
                         </a>
@@ -175,27 +177,8 @@
     <!-- Start Product Section -->
     <div class="row no-margin-bottom">
         <div class="col-lg-4 col-md-6">
-            <div class="product-detail">
-                <div class="margin-20px-bottom">
-                    <span class="label-sale bg-theme text-white text-uppercase font-size14">
-                        25% discount
-                    </span>
-                    <br>
-                    <span id="log_discount" class="margin-15px-right font-size24 font-weight-600 offer-price">
-                        $499.00
-                    </span>
-                    <span id="log_price" class="font-size24 font-weight-700 text-theme-color">
-                        $299.00
-                    </span>
-                </div>
-            </div>
             <ul class="list-style-5 text-black">
-                <!-- <li id="log_price"></li> -->
-                <li id="log_balance" class="font-size18 font-weight-700 text-theme-color">
-                    <span id="log_price" class="font-size24 font-weight-700 text-theme-color">
-                        $299.00
-                    </span>
-                </li>
+                <li id="log_price" class="font-size24 font-weight-700 text-theme-color"></li>
                 <li class="font-size16 font-weight-600 text-theme-color">
                    Invoice to: <strong id="emailHolder">75business@protonmail.com</strong>
                 </li>
@@ -205,11 +188,12 @@
                 <li id="log_website" class="font-size14 font-weight-600"></li>
                 <li id="log_details" class="font-size14 font-weight-600"></li>
                 <li id="log_extra" class="font-size14 font-weight-600"></li>
+                <li id="log_balance" class="font-size24 font-weight-700 text-theme-color"></li>
                 <li class="font-size14 font-weight-600">
                     <button type="button" 
                         id="showtoast" 
                         class="butn large">     
-                        <span>
+                        <span class="font-size18 font-weight-600">
                             <i class="fa fa-print margin-10px-right"></i>
                             Print Log Details
                         </span>
@@ -444,12 +428,10 @@
             const website = params.get('item_website');
             const details = params.get('item_details');
             const extra = params.get('item_extra');
-            const discount = ( params.get('item_price') * 1.5).toFixed(0);
             const image = params.get('item_image');
 
             document.getElementById('log_price').innerHTML = "<strong>Price</strong>: $" + price;
             document.getElementById('log_toast').innerHTML = toast;
-            document.getElementById('log_discount').innerHTML = "<strong>Price</strong>: $" + discount;
             document.getElementById('log_balance').innerHTML = "<strong>Balance</strong>: $" + balance;
             document.getElementById('log_bitcoin').innerHTML = bitcoin;
             document.getElementById('log_bank').innerHTML = bank;
