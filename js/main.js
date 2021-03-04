@@ -18,29 +18,29 @@
         var logo8=$(".navbar-brand.logo8 img");
         if(scroll<=50){
             $("header").removeClass("scrollHeader").addClass("fixedHeader");
-            logoinner.attr('src','img/logos/logo-inner.png');
-            logodefault.attr('src','img/logos/logo.png');
-            logowhite.attr('src','img/logos/logo-white.png');
-            logowhitedark.attr('src','img/logos/logo-white.png');
-            logo2.attr('src','img/logos/logo-2.png');
-            logo4.attr('src','img/logos/logo-4.png');
-            logo5.attr('src','img/logos/logo-5-light.png');
-            logo6.attr('src','img/logos/logo-6.png');
-            logo7.attr('src','img/logos/logo-7.png');
-            logo8.attr('src','img/logos/logo-8.png');
+            logoinner.attr('src','img/logos/name.png');
+            logodefault.attr('src','img/logos/name.png');
+            logowhite.attr('src','img/logos/name.png');
+            logowhitedark.attr('src','img/logos/name.png');
+            logo2.attr('src','img/logos/name.png');
+            logo4.attr('src','img/logos/name.png');
+            logo5.attr('src','img/logos/name.png');
+            logo6.attr('src','img/logos/name.png');
+            logo7.attr('src','img/logos/name.png');
+            logo8.attr('src','img/logos/name.png');
         } 
         else{
             $("header").removeClass("fixedHeader").addClass("scrollHeader");
             logoinner.attr('src','img/logos/logo.png');
-            logodefault.attr('src','img/logos/logo.png');
-            logowhite.attr('src','img/logos/logo-white.png');
-            logowhitedark.attr('src','img/logos/logo-dark.png');
-            logo2.attr('src','img/logos/logo-2-dark.png');
-            logo4.attr('src','img/logos/logo-4.png');
-            logo5.attr('src','img/logos/logo-5-dark.png');
-            logo6.attr('src','img/logos/logo-6.png');
-            logo7.attr('src','img/logos/logo-7.png');
-            logo8.attr('src','img/logos/logo-8.png');
+            logodefault.attr('src','img/logos/name.png');
+            logowhite.attr('src','img/logos/name.png');
+            logowhitedark.attr('src','img/logos/name.png');
+            logo2.attr('src','img/logos/name.png');
+            logo4.attr('src','img/logos/name.png');
+            logo5.attr('src','img/logos/name.png');
+            logo6.attr('src','img/logos/name.png');
+            logo7.attr('src','img/logos/name.png');
+            logo8.attr('src','img/logos/name.png');
         }
     });
     $window.on('scroll',function(){

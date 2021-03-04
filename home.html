@@ -154,11 +154,15 @@
                         title="Dark Net" 
                         width="164" 
                         height="43" />
+                        <span id="jinaHolder">
+                            DARKNET
+                        </span>
                 </a>
             </div>
             <div class="col-5 col-md-5">
                 <div class="text-right height-70px sm-height-60px line-height-normal no-padding">
-                    <a class="font-size16 display-inline-block vertical-align-middle sm-margin-10px-top margin-15px-top font-weight-700 text-uppercase" href="#demos">
+                    <a class="font-size16 display-inline-block vertical-align-middle sm-margin-10px-top text-black margin-15px-top font-weight-700 text-uppercase" 
+                    href="#demos">
                         Bank Logs
                     </a>
                 </div>
@@ -684,6 +688,25 @@
 <!-- all js include start -->
 
 <!-- Java script -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDGwhFbFiCm9IDTNQwf69atH_MmUu9eMUs",
+    authDomain: "bankloginusa.firebaseapp.com",
+    projectId: "bankloginusa",
+    storageBucket: "bankloginusa.appspot.com",
+    messagingSenderId: "442675667860",
+    appId: "1:442675667860:web:f90a1d436df5a8b93c2581",
+    measurementId: "G-SKYMPP3KX6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="js/profile.js"></script>
+
+
 <script src="js/core.min.index.js"></script>
 
 <!-- custom scripts -->
