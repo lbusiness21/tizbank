@@ -8,6 +8,19 @@
     -o-transition:all 0.3s;
     -webkit-transition:all 0.3s
 }
+.border p {
+    padding: 0;
+    margin: 5px;
+}
+.border p:after{
+    content:'';
+    display:block;
+    width:150px;
+    max-width:100%;
+    height:1px;
+    background:#49c0d0;
+    margin:3px auto 0
+}
 .feature-box-04:hover{
     -webkit-box-shadow:0 25px 30px 0 #49c0d0;
     box-shadow:0 25px 30px 0 #49c0d0;
@@ -134,7 +147,7 @@
     background:#ffffff;
     border:1px solid #dddddd;
     border-radius:100%;
-    color:#49c0d0;
+    color: #49c0d0;
     display:inline-block;
     font-size:30px;
     height:80px;
@@ -177,19 +190,25 @@
     font-size:16px
 }
 .price-table-content{
-    padding:15px
+    padding:5px;
+    margin: 0;
 }
 .price-table-content ul{
-    padding-left:0;
-    padding-bottom:0
+    padding: 0;
+    margin: 0;
 }
 .price-table-content ul li{
     display:block;
     list-style-type:none;
     color:#232323;
-    font-size:12px;
+    font-size:15px;
     font-weight:500;
-    padding:10px 0;
+    padding:7px 0;
+}
+@media screen and (max-width: 467px){
+    .price-table-content ul li{
+        font-size: 12px;
+    }
 }
 .price-table-content ul li:before{
     content:'\f00c';
@@ -210,7 +229,7 @@
     color:#232323;
     font-size:16px;
     font-weight:500;
-    border-radius:10px;
+    border-radius:5px;
     padding:12px 0;
     width:100%;
     margin-top:0
@@ -219,9 +238,6 @@
     background:#49c0d0;
     color:#fff
 }
-
-
-
 
 
 
@@ -275,12 +291,13 @@
     color:#fff;
     padding: 5px;
 }
+
 .pricing-list h4{
     color:#232323;
     font-size:25px;
     font-weight:500;
     letter-spacing:2px;
-    margin-bottom:20px
+    margin-bottom:10px
 }
 .pricing-list h2{
     display:inline-block;
@@ -299,7 +316,8 @@
     font-weight:500
 }
 .pricing-list ul{
-    margin-top:5px
+    margin: 0;
+    padding: 0;
 }
 .pricing-list ul li{
     color:#666;
@@ -314,7 +332,7 @@
     max-width:100%;
     height:1px;
     background:#ececec;
-    margin:5px auto 0
+    margin:3px auto 0
 }
 .pricing-list-button{
     background:#49c0d0;
@@ -334,7 +352,6 @@
 .pricing-list-button:hover button{
     color:#49c0d0;
 }
-
 
 
 
@@ -387,7 +404,7 @@
 }
 
 .body-plan .price-plan{
-    padding:25px 0;
+    padding:5px 0 25px;
     position:relative;
     background:#f7f7f7;
     font-weight:bold;
@@ -413,7 +430,7 @@
     position:relative
 }
 .feat-plan{
-    margin:20px 0 5px;
+    margin:20px 0 0;
 }
 .feat-plan ul{
     list-style:none;
@@ -423,10 +440,11 @@
 .feat-plan ul li{
     margin-bottom:10px;
     border-bottom:1px solid #efefef;
-    padding-bottom:10px
+    padding-bottom:0px
 }
 .feat-plan ul li:last-child{
-    margin:0
+    margin:0;
+    padding: 0;
 }
 .price-plan i{
     color:#fff;
@@ -448,16 +466,17 @@
 }
 @media screen and (max-width: 767px){
     .body-plan .price-plan{
-        padding: 25px 0
+        padding: 5px 0 25px ;
     }
     .body-plan .price-plan h3 sup{
         font-size:16px
     }
     .feat-plan{
-        margin:20px 0 5px
+        margin:20px 0 0
     }
     .feat-plan ul li{
-        margin-bottom:12px;padding-bottom:12px
+        margin-bottom:5px;
+        padding-bottom:0px
     }
 }
 
