@@ -3,6 +3,7 @@ const jinaHolder = document.getElementById('jinaHolder');
 const photoHolder = document.getElementById('photoHolder');
 
 const emailHolder = document.getElementById('emailHolder');
+const invoiceHolder = document.getElementById('invoiceHolder');
 
 const auth = firebase.auth();
 
@@ -15,4 +16,5 @@ auth.onAuthStateChanged(user => {
         photoHolder.setAttribute('src', user.photoURL);
     if(user.email)
         emailHolder.innerText = user.email;
+        invoiceHolder.innerText = user.email;
 })
