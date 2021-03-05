@@ -149,6 +149,18 @@
     -webkit-box-shadow:0 25px 30px 0 #47588f;
     box-shadow:0 25px 30px 0 #47588f;
 }
+.invoicebutton:hover {
+    -webkit-box-shadow:0 25px 30px 0 #47588f;
+    box-shadow:0 25px 30px 0 #47588f;
+}
+.service-box:hover {
+    -webkit-box-shadow:0 25px 30px 0 #47588f;
+    box-shadow:0 25px 30px 0 #47588f;
+}
+.border:hover {
+    -webkit-box-shadow:0 25px 30px 0 #47588f;
+    box-shadow:0 25px 30px 0 #47588f;
+}
 .price-table-header{
     background: #47588f;
     text-align:center;

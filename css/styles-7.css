@@ -139,7 +139,19 @@
     -moz-box-shadow:0 10px 30px 0 rgba(50,50,50,0.16);
     position:relative
 }
+.border:hover {
+    -webkit-box-shadow:0 25px 30px 0 #49c0d0;
+    box-shadow:0 25px 30px 0 #49c0d0;
+}
+.invoicebutton:hover {
+    -webkit-box-shadow:0 25px 30px 0 #49c0d0;
+    box-shadow:0 25px 30px 0 #49c0d0;
+}
 .price-table:hover {
+    -webkit-box-shadow:0 25px 30px 0 #49c0d0;
+    box-shadow:0 25px 30px 0 #49c0d0;
+}
+.service-box:hover {
     -webkit-box-shadow:0 25px 30px 0 #49c0d0;
     box-shadow:0 25px 30px 0 #49c0d0;
 }
