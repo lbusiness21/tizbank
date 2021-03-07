@@ -213,8 +213,8 @@
     box-shadow:0 25px 30px 0 #86bc42;
 }
 .invoicebutton:hover {
-    -webkit-box-shadow:0 25px 30px 0 #86bc42;
-    box-shadow:0 25px 30px 0 #86bc42;
+    -webkit-box-shadow:0 5px 10px 0 #86bc42;
+    box-shadow:0 5px 10px 0 #86bc42;
 }
 .price-table:hover {
     -webkit-box-shadow:0 25px 30px 0 #86bc42;
@@ -463,8 +463,8 @@
     box-shadow:0 25px 30px 0 #86bc42;
 }
 .portfolio-item:hover{
-    -webkit-box-shadow:0 25px 30px 0 #86bc42;
-    box-shadow:0 25px 30px 0 #86bc42;
+    -webkit-box-shadow:0 5px 10px 0 #86bc42;
+    box-shadow:0 5px 10px 0 #86bc42;
 }
 .single-plan .head-plan h4{
     padding:10px;

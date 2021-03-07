@@ -150,8 +150,8 @@
     box-shadow:0 25px 30px 0 #0073ad;
 }
 .invoicebutton:hover {
-    -webkit-box-shadow:0 25px 30px 0 #0073ad;
-    box-shadow:0 25px 30px 0 #0073ad;
+    -webkit-box-shadow:0 5px 10px 0 #0073ad;
+    box-shadow:0 5px 10px 0 #0073ad;
 }
 .service-box:hover {
     -webkit-box-shadow:0 25px 30px 0 #0073ad;
@@ -444,8 +444,8 @@
     box-shadow:0 25px 30px 0 #0073ad;
 }
 .portfolio-item:hover{
-    -webkit-box-shadow:0 25px 30px 0 #0073ad;
-    box-shadow:0 25px 30px 0 #0073ad;
+    -webkit-box-shadow:0 5px 10px 0 #0073ad;
+    box-shadow:0 5px 10px 0 #0073ad;
 }
 .single-plan .head-plan h4{
     padding:10px;
