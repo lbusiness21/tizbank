@@ -103,21 +103,58 @@
     
 <!-- Menu Area -->
 <ul class="navbar-nav ml-auto" id="nav" style="display: none;">
-    <li><a href="#">USA Banks</a>
+    <li>
+        <a href="#home">
+            <i class="fas fa-home" style="margin-right: 3px;"></i>
+            Home
+        </a>
+    </li>
+    <li><a href="#contact">
+        <i class="fas fa-phone" style="margin-right: 3px;"></i>
+            Contact
+        </a>
+    </li>
+    <li><a href="#">
+        <i class="fas fa-landmark" style="margin-right: 3px;"></i>
+        USA Banks</a>
         <ul>
-            <li><a href="huntington">Huntington</a></li>
-            <li><a href="woodforest">Woodforest</a></li>
-            <li><a href="pnc">PNC</a></li>
-            <li><a href="chase">Chase</a></li>
-            <li><a href="nfcu">NFCU</a></li>
-            <li><a href="chime">Chime</a></li>                                                                                      
-            <li><a href="citi">Citi</a></li>
-            <li><a href="bbva">BBVA</a></li>
-            <li><a href="boa">Bank of America</a></li>
-            <li><a href="bb&t">BB&T</a></li>
-            <li><a href="suntrust">Suntrust</a></li>
+            <li><a href="huntington">
+                <img src="img/partners/huntington.jpg" style="width: 25px; margin-right: 10px; border-radius: 4px;">
+                Huntington</a>
+            </li>
+            <li><a href="woodforest">
+                <img src="img/partners/woodforest.jpg" style="width: 25px; margin-right: 10px; border-radius: 4px;">
+                Woodforest</a></li>
+            <li><a href="pnc">
+                <img src="img/partners/pnc.jpg" style="width: 25px; margin-right: 10px; border-radius: 4px;">
+                PNC Bank</a></li>
+            <li><a href="chase">
+                <img src="img/partners/chase.jpg" style="width: 25px; margin-right: 10px; border-radius: 4px;">
+                Chase Bank</a></li>
+            <li><a href="nfcu">
+                <img src="img/partners/nfcu.jpg" style="width: 25px; margin-right: 10px; border-radius: 4px;">
+                NFCU Bank</a></li>
+            <li><a href="chime">
+                <img src="img/partners/chime.jpg" style="width: 25px; margin-right: 10px; border-radius: 4px;">
+                Chime Bank</a>
+            <li>                                                                                      
+            <li><a href="citi">
+                <img src="img/partners/citi.jpg" style="width: 25px; margin-right: 10px; border-radius: 4px;">
+                Citi Bank</a></li>
+            <li><a href="bbva">
+                <img src="img/partners/bbva.jpg" style="width: 25px; margin-right: 10px; border-radius: 4px;">
+                BBVA Bank</a></li>
+            <li><a href="boa">
+                <img src="img/partners/boa.jpg" style="width: 25px; margin-right: 10px; border-radius: 4px;">
+                Bank of America</a></li>
+            <li><a href="bb&t">
+                <img src="img/partners/bbt.jpg" style="width: 25px; margin-right: 10px; border-radius: 4px;">
+                BB&T Bank</a></li>
+            <li><a href="suntrust">
+                <img src="img/partners/suntrust.jpg" style="width: 25px; margin-right: 10px; border-radius: 4px;">
+                Suntrust</a></li>
         </ul>
-    </li>                                                                       
+    </li>                                                                           
 </ul>
 <!-- End Men Area -->
     
@@ -172,23 +209,24 @@
         <div class="col-lg-4 col-md-6">
             <ul class="list-style-5 text-black">
                 <li id="log_price" class="font-size28 font-weight-700 text-theme-color"></li>
+                <li id="log_type" class="font-size16 font-weight-600"></li>
+                <li id="log_website" class="font-size16 font-weight-600"></li>
+                <li id="log_details" class="font-size16 font-weight-600"></li>
+                <li id="log_extra" class="font-size16 font-weight-600"></li>
+                <li id="log_balance" class="font-size26 font-weight-700 text-theme-color"></li>
                 <li class="font-size16 font-weight-600 text-theme-color">
-                  <strong id="invoiceHolder"></strong>
-                </li>
-                <!-- <li id="log_bitcoin"></li> -->
-                <!-- <li id="log_bank"></li> -->
-                <li id="log_type" class="font-size14 font-weight-600"></li>
-                <li id="log_website" class="font-size14 font-weight-600"></li>
-                <li id="log_details" class="font-size14 font-weight-600"></li>
-                <li id="log_extra" class="font-size14 font-weight-600"></li>
-                <li id="log_balance" class="font-size24 font-weight-700 text-theme-color"></li>
+                    <strong id="invoiceHolder"></strong>
+                  </li>
                 <li class="font-size14 font-weight-600">
                     <button type="button" 
                         id="showtoast" 
                         class="butn large invoicebutton" style="border: 2px solid lime;">     
                         <span class="font-size18 font-weight-600">
-                            <i class="fa fa-print margin-10px-right"></i>
-                            Print Log Details
+                            <i class="fa fa-download margin-10px-right"></i>
+                            Download 
+                            <span id="log_balance_2"></span>
+                            Bank Log
+                           
                         </span>
                     </button>
                 </li>
@@ -421,6 +459,7 @@
             document.getElementById('log_balance').innerHTML = "<strong>Balance</strong>: $" + balance;
             document.getElementById('log_bitcoin').innerHTML = bitcoin;
             document.getElementById('log_bank').innerHTML = bank;
+            document.getElementById('log_balance_2').innerHTML = "$" + balance;
             document.getElementById('log_type').innerHTML = type;
             document.getElementById('log_website').innerHTML = website;
             document.getElementById('log_details').innerHTML = details;
