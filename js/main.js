@@ -325,21 +325,43 @@ $('#services-carousel').owlCarousel({
     autoplay:true,
     autoplayTimeout:1000,
     dots:true,
-    nav:false,
+    nav:true,
     navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
     responsive:{
+        // 0:{
+        //     items:1,
+        //     margin:10,
+        // },
+        // 768:{
+        //     items:2,
+        //     margin:10,
+        // },
+        // 992:{
+        //     items:4,
+        //     margin:20,
+        // }
+
         0:{
-            items:1,
-            margin:10,
-        },
-        768:{
             items:2,
             margin:10,
+        },
+        481:{
+            items:2,
+            margin:5,
+        },
+        500:{
+            items:3,
+            margin:20,
         },
         992:{
             items:4,
             margin:20,
+        },
+        1200:{
+            items:4,
+            margin:20,
         }
+
     }
 }); 
 
@@ -452,8 +474,8 @@ $('.carousel-style4 .owl-carousel').owlCarousel({
             margin:30,
         },
         1200:{
-            items:5,
-            margin:30,
+            items:6,
+            margin:15,
         }
     }
 }); 
