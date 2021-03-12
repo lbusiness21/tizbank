@@ -121,10 +121,7 @@
         BBVA</a></li>
     <li><a href="bb&t">
         <img src="img/partners/bbt.jpg" style="width: 20px; margin-right: 1px; border-radius: 4px;">
-        BB&T</a></li>
-    <li><a href="suntrust">
-        <img src="img/partners/suntrust.jpg" style="width: 20px; margin-right: 1px; border-radius: 4px;">
-        Suntrust</a></li>                                                                          
+        BB&T</a></li>                                                                     
 </ul>
 <!-- End Men Area -->
     
@@ -186,7 +183,7 @@
                 <li id="log_balance" class="font-size26 font-weight-700 text-theme-color"></li>
                 <li class="font-size16 font-weight-600 text-theme-color">
                     <strong id="invoiceHolder"></strong>
-                  </li>
+                </li>
                 <li class="font-size14 font-weight-600">
                     <button type="button" 
                         id="showtoast" 
@@ -276,7 +273,6 @@
         window.addEventListener('load', () => {
             const params = (new URL(document.location)).searchParams;
             const price = params.get('item_price');
-            const toast = params.get('item_price');
             const balance = params.get('item_balance');
             const bitcoin = ( params.get('item_price') / 50140).toFixed(4);
             const bank = params.get('item_bank');
@@ -287,7 +283,6 @@
             const image = params.get('item_image');
 
             document.getElementById('log_price').innerHTML = "<strong>Price</strong>: $" + price;
-            document.getElementById('log_toast').innerHTML = toast;
             document.getElementById('log_balance').innerHTML = "<strong>Balance</strong>: $" + balance;
             document.getElementById('log_bitcoin').innerHTML = bitcoin;
             document.getElementById('log_bank').innerHTML = bank;
