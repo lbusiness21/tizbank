@@ -1,47 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
-    <!-- metas -->
     <meta charset="utf-8">
     <meta name="author" content="Satoshi Nakamoto" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="keywords" content="Bank Logs" />
     <meta name="description" content="Dark Net" />
-    <!-- title  -->
     <title>Login</title>
-    <!-- favicon -->
     <link rel="shortcut icon" href="img/logos/favicon.png">
     <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-touch-icon-114x114.png">
-    <!-- plugins -->
     <link rel="stylesheet" href="css/plugins/bootstrap.min.css" />
     <link rel="stylesheet" href="css/plugins/default.css" />
-    <link rel="stylesheet" href="css/plugins/et-line.css" />
     <link rel="stylesheet" href="css/plugins/fontawesome-all.min.css" />
-    <link rel="stylesheet" href="css/plugins/icomoon.css" />
     <link rel="stylesheet" href="css/plugins/nav-menu.css" />
     <link rel="stylesheet" href="css/plugins/owl.carousel.min.css" />
-
-    
     <link href="css/switcher.css" rel="stylesheet">
-    <!-- custom css -->
     <link href="css/styles-2.css" rel="stylesheet" id="colors">
 </head>
 
 <body>
 
-<!-- start page loading -->
 <div id="preloader">
     <div class="row loader">
         <div class="loader-icon"></div>
     </div>
 </div>
-<!-- end page loading -->
 
-<!-- start comingsoon section -->
 <section class="full-screen cover-background no-padding bg-img" 
     data-overlay-dark="0" 
     data-background="img/bg/bg.jpg">
@@ -91,9 +78,7 @@
     </div>
 </div>
 </section>
-<!-- end comingsoon section -->
 
-<!-- start clients section -->
 <div class="section-clients bg-light-gray">
     <div class="container-fluid">
     <div class="owl-carousel owl-theme clients" id="clients">
@@ -111,24 +96,12 @@
     </div>
     </div>
 </div>
-<!-- end clients section -->
-
-<!-- start scroll to top -->
-<a href="javascript:void(0)" class="scroll-to-top">
-    <i class="fas fa-angle-up" aria-hidden="true"></i>
-</a>
-<!-- end scroll to top -->
-
-<!-- all js include start -->
 
 
-
-
-
-
+<script src="js/core.min.js"></script>
+<script src="js/main.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
-
 <script>
   var firebaseConfig = {
     apiKey: "AIzaSyDGwhFbFiCm9IDTNQwf69atH_MmUu9eMUs",
@@ -139,23 +112,8 @@
     appId: "1:442675667860:web:f90a1d436df5a8b93c2581",
     measurementId: "G-SKYMPP3KX6"
   };
-  // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 </script>
 <script src="js/home.js"></script>
-
-
-
-
-
-
-
-
-
-
-<!-- Java script -->
-<script src="js/core.min.js"></script>
-<script src="js/main.js"></script>
-
 </body>
 </html>
