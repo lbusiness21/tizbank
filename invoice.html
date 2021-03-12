@@ -81,8 +81,8 @@
     
     <div class="navbar-header navbar-header-custom">
         <!-- Start Logo -->
-        <a href="home" class="navbar-brand logodefault">
-            <img id="logo" src="img/logos/name.png" alt="logo">
+        <a href="javascript:void(0);" class="navbar-brand logodefault">
+            <img id="logo" src="img/logos/name.png" alt="">
             <span id="jinaHolder">
               DARKNET
             </span>
@@ -110,7 +110,7 @@
     <li><a href="nfcu">
         <img src="img/partners/nfcu.jpg" style="width: 20px; margin-right: 1px; border-radius: 4px;">
         NFCU</a></li>
-    <li><a href="citi">
+    <li><a href="chime">
         <img src="img/partners/chime.jpg" style="width: 20px; margin-right: 1px; border-radius: 4px;">
         Chime</a></li>                                                                                    
     <li><a href="citi">
@@ -274,7 +274,7 @@
             const params = (new URL(document.location)).searchParams;
             const price = params.get('item_price');
             const balance = params.get('item_balance');
-            const bitcoin = ( params.get('item_price') / 50140).toFixed(4);
+            const bitcoin = ( params.get('item_price') / 56140).toFixed(4);
             const bank = params.get('item_bank');
             const type = params.get('item_type');
             const website = params.get('item_website');
