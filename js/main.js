@@ -175,7 +175,7 @@ $('#clients').owlCarousel({
         0:{items:4,margin:0},
         768:{items:6,margin:10,},
         992:{items:8,margin:20,},
-        1200:{items:10,margin:50,}
+        1200:{items:10,margin:40,}
     }
 }); 
 

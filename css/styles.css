@@ -105,10 +105,10 @@
 .border p:after{
     content:'';
     display:block;
-    width:100px;
+    width:150px;
     max-width:100%;
     height:1px;
-    background:#86bc42;
+    background: rgba(0, 0, 0, 0.1);
     margin:3px auto 0
 }
 .feature-box-04:hover{
@@ -510,6 +510,7 @@
     position:relative;
     z-index:99;
     margin-bottom: 15px;
+    border-radius: 5px;
     border:1px solid #efefef;
     background:#fff;
     -webkit-box-shadow:0 5px 10px rgba(0,9,128,0.035),0 7px 18px rgba(0,9,128,0.05);
@@ -533,7 +534,9 @@
     font-weight:600;
     font-size:20px
 }
-
+.head-plan{
+    border-radius: 5px;
+}
 .body-plan .price-plan{
     padding:5px 0 25px;
     position:relative;
