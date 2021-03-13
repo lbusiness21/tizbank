@@ -215,6 +215,7 @@ Modules - reusable parts of our design
   }
   .cd-timeline-content p {
     margin: 1em 0;
+    color: #000;
   }
   .cd-timeline-content .cd-read-more {
     float: right;
