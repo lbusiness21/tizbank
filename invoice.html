@@ -11,7 +11,7 @@
     <meta name="description" content="Dark Net" />
 
     <!-- title  -->
-    <title>Shop Cart</title>
+    <title>Invoice</title>
 
     <link rel="shortcut icon" href="img/logos/favicon.png">
     <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png">
@@ -269,30 +269,7 @@
 
     </div>
     <!-- end main-wrapper section -->
-    <script>
-        window.addEventListener('load', () => {
-            const params = (new URL(document.location)).searchParams;
-            const price = params.get('item_price');
-            const balance = params.get('item_balance');
-            const bitcoin = ( params.get('item_price') / 56140).toFixed(4);
-            const bank = params.get('item_bank');
-            const type = params.get('item_type');
-            const website = params.get('item_website');
-            const details = params.get('item_details');
-            const extra = params.get('item_extra');
-            const image = params.get('item_image');
 
-            document.getElementById('log_price').innerHTML = "<strong>Price</strong>: $" + price;
-            document.getElementById('log_balance').innerHTML = "<strong>Balance</strong>: $" + balance;
-            document.getElementById('log_bitcoin').innerHTML = bitcoin;
-            document.getElementById('log_bank').innerHTML = bank;
-            document.getElementById('log_type').innerHTML = type;
-            document.getElementById('log_website').innerHTML = website;
-            document.getElementById('log_details').innerHTML = details;
-            document.getElementById('log_extra').innerHTML = extra;
-            document.getElementById('log_image').src = image;
-        })
-    </script>
 
     <!-- start switcher section -->
     <div id="style-switcher">
@@ -331,16 +308,35 @@
     </div>
     <!-- end switcher section -->
     
-    <!-- start scroll to top -->
-    <a href="javascript:void(0)" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
-    <!-- end scroll to top -->
+<script>
+    window.addEventListener('load', () => {
+        const params = (new URL(document.location)).searchParams;
+        const price = params.get('item_price');
+        const balance = params.get('item_balance');
+        const bitcoin = ( params.get('item_price') / 56140).toFixed(4);
+        const bank = params.get('item_bank');
+        const type = params.get('item_type');
+        const website = params.get('item_website');
+        const details = params.get('item_details');
+        const extra = params.get('item_extra');
+        const image = params.get('item_image');
 
-    <!-- all js include start -->
-    <script src="js/core.min.js"></script>
+        document.getElementById('log_price').innerHTML = "<strong>Price</strong>: $" + price;
+        document.getElementById('log_balance').innerHTML = "<strong>Balance</strong>: $" + balance;
+        document.getElementById('log_bitcoin').innerHTML = bitcoin;
+        document.getElementById('log_bank').innerHTML = bank;
+        document.getElementById('log_type').innerHTML = type;
+        document.getElementById('log_website').innerHTML = website;
+        document.getElementById('log_details').innerHTML = details;
+        document.getElementById('log_extra').innerHTML = extra;
+        document.getElementById('log_image').src = image;
+    })
+</script>
+<script src="js/core.min.js"></script>
 <script src="js/main.js"></script>
 
 
-    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
 
 <script>
@@ -357,10 +353,8 @@
   firebase.initializeApp(firebaseConfig);
 </script>
 <script src="js/profile.js"></script>
-
-    <script src="js/toastr.js"></script>
-
-    <script src="js/notifications.js"></script>
+<script src="js/toastr.js"></script>
+<script src="js/notifications.js"></script>
 
 
 </body>
