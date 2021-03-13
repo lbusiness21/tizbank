@@ -116,7 +116,7 @@ $('.carousel-style4 .owl-carousel').owlCarousel({
     dots:true,
     nav:true,
     navText:["<i class='fas fa-angle-left'></i>","<i class='fas fa-angle-right'></i>"],
-    autoplay:true,
+    autoplay:false,
     autoplayTimeout:5000,
     responsiveClass:true,
     autoplayHoverPause:false,
