@@ -198,6 +198,19 @@
     margin: 0 0 0 20px; 
     padding: 0;
 }
+@media screen and (max-width: 467px) {
+    .cart-thumb {
+        width: 45px;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 769px) {
+    .cart-thumb {
+        margin-right: 80px;
+    }
+    span.badge {
+        margin-right: 80px;
+    }
+}
 .cart-thumb:hover{
     -webkit-box-shadow:0 25px 30px 0 #000;
     box-shadow:0 25px 30px 0 #000;

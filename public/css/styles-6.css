@@ -66,6 +66,8 @@
     background: rgba(0, 0, 0, 0.1);
     margin:3px auto 0
 }
+
+
 .feature-box-04:hover{
     -webkit-box-shadow:0 25px 30px 0 #d0ad55;
     box-shadow:0 25px 30px 0 #d0ad55;
@@ -196,6 +198,19 @@
     border-radius: 4px; 
     margin: 0 0 0 20px; 
     padding: 0;
+}
+@media screen and (max-width: 467px) {
+    .cart-thumb {
+        width: 45px;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 769px) {
+    .cart-thumb {
+        margin-right: 80px;
+    }
+    span.badge {
+        margin-right: 80px;
+    }
 }
 .cart-thumb:hover{
     -webkit-box-shadow:0 25px 30px 0 #000;
