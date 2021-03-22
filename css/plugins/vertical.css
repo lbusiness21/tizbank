@@ -208,7 +208,9 @@ Modules - reusable parts of our design
     margin-top: 5px;
   }
   .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-    font-size: 13px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family:"Montserrat",sans-serif;
   }
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     display: inline-block;
