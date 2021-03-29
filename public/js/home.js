@@ -5,7 +5,7 @@ const signInWithGoogle = () => {
   const googleProvider = new firebase.auth.GoogleAuthProvider();
   auth.signInWithPopup(googleProvider)
   .then(() => {
-    window.location.assign('home');
+    window.location.assign('profile.html');
   })
   .catch(error => {
     console.error(error);
@@ -13,8 +13,7 @@ const signInWithGoogle = () => {
 }
 signInWithGoogleButton.addEventListener('click', signInWithGoogle);
 
-
 auth.onAuthStateChanged(user => {
   if(user)
-    window.location.assign('home');
+    window.location.assign('profile');
 })
