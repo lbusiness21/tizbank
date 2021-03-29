@@ -7,6 +7,11 @@
     font-weight: 600;
     font-size: 1.1rem;
 }
+@media screen and (max-width: 502px) {
+    .toast-message{
+        font-weight: 0.5rem;
+    }
+}
 .toast-message a,
 .toast-message label{
     color:#FFF
