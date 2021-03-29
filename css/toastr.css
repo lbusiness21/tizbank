@@ -109,9 +109,10 @@ button.toast-close-button{
     border-radius:0px;
     background-position:15px center;background-repeat:no-repeat;
     color:#FFF;
-    opacity:.8;
-    -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-    filter:alpha(opacity=80)
+    opacity:.9;
+    -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+    filter:alpha(opacity=90);
+    border-radius: 5px;
 }
 #toast-container>div.rtl{
     direction:rtl;padding:15px 50px 15px 15px;background-position:right 15px center
