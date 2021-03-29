@@ -11,9 +11,9 @@ auth.onAuthStateChanged(user => {
     console.log(user);
     if(user.displayName) {
         displayNameHolder.innerText = user.displayName + " 💸✅";
-        invoiceHolder2.innerText = "Invoice to: " + user.displayName;
+        invoiceHolder2.innerText = "Invoice to: " + user.email;
         logoutHolder.innerText = "Logout: " + user.displayName;
-        invoiceHolder.innerText = "Invoice to: " + user.displayName;
+        invoiceHolder.innerText = "Invoice to: " + user.email;
     }
     if(user.photoURL) {
         photoHolder.setAttribute('src', user.photoURL);
