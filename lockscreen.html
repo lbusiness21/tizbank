@@ -1,132 +1,137 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Dark Net</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<!-- favicon -->
-		<link rel="shortcut icon" href="logos/favicon.png">
-		<link rel="apple-touch-icon" href="logos/apple-touch-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="logos/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="logos/apple-touch-icon-114x114.png">
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- Wrapper -->
-<div id="wrapper">
 
-<!-- Header -->
-<header id="header">
-	<div class="logo">
-		<span class="icon fa-gem"></span>
-	</div>
-	<div class="content">
-		<div class="inner">
-			<p style="font-size: 2.1rem;  font-weight: 700; text-transform: none;">
-				Bank Logs  💸✅
-			</p>
-		</div>
-	</div>
-	<nav>
-		<ul>
-			<li><a style="font-size: 1.4rem; color: lime; font-weight: 700;" href="#login"
-				>LOGIN AGAIN</a></li>
-		</ul>
-		
-		
-	</nav>
-</header>
+    <head>
 
-<!-- Main -->
-<div id="main">
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="bitcoin" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="Bank Logs" />
+    <meta name="description" content="Login" />
 
-	<!-- Login -->
-	<article id="login">
-		<h2 class="major">Login in Again</h2>
-		<div class="keeps2">
-			<div>
-				<span class="image main">
-					<img id="photoHolder" src="images/07.gif" alt="" style="width: 100%;" />
-				</span>
-			</div>
-			<div>
-				<ul class="actions">
-					<li><a id="displayNameHolder" href="home" class="button primary">
-						Login in Again
-					</a></li>
-				</ul>
-				<hr >
-				<ul class="icons">
-					<li><img src="images/huntington.jpg" width="35px" style="border-radius: 4px;" ></li>
-					<li><img src="images/chase.jpg" width="35px" style="border-radius: 4px;" ></li>
-					<li><img src="images/citi.jpg" width="35px" style="border-radius: 4px;" ></li>
-					<li><img src="images/pnc.jpg" width="35px" style="border-radius: 4px;" ></li>
-					<li><img src="images/woodforest.jpg" width="35px" style="border-radius: 4px;" ></li>
-					<li><img src="images/bbva.jpg" width="35px" style="border-radius: 4px;" ></li>
-					<li><img src="images/bbt.jpg" width="35px" style="border-radius: 4px;" ></li>
-					<li><img src="images/suntrust.jpg" width="35px" style="border-radius: 4px;" ></li>
-					<li><img src="images/scotia.jpg" width="35px" style="border-radius: 4px;" ></li>
-					<li><img src="images/rbc.jpg" width="35px" style="border-radius: 4px;" ></li>
-					<li><img src="images/barclays.jpg" width="35px" style="border-radius: 4px;" ></li>
-				</ul>
-			</div>
-		</div>
-	</article>
+    <!-- title  -->
+    <title>Bank Logs</title>
 
-</div>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logos/favicon.png">
+    <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-touch-icon-114x114.png">
 
-<!-- Footer -->
-<footer id="footer">
-	<p class="copyright">&copy; Dark Net v7.5.1</a>.</p>
-</footer>
+    <!-- common plugins -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="plugins/icomoon/style.css" />
+    <link rel="stylesheet" href="plugins/uniform/css/default.css" />
+    <link rel="stylesheet" href="plugins/switchery/switchery.min.css" />
 
-</div>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css" />
 
-<!-- BG -->
-<div id="bg"></div>
+</head>
 
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-<script>
-window.addEventListener('load', () => {
-	const params = (new URL(document.location)).searchParams;
-	const name = params.get('log_price');
-	const surname = ( params.get('log_price') / 35140).toFixed(4);
-	const bank = params.get('log_bank');
-	const logtype = params.get('log_type');
-	const bankbalance = params.get('log_balance');
+<body style="overflow-y: hidden;">
 
-	document.getElementById('the-bitcoin-amount').innerHTML = "Price: $" + name ;
-	document.getElementById('the-bitcoin-bank').innerHTML = bank;
-	document.getElementById('the-bitcoin-balance').innerHTML = bankbalance;
-	document.getElementById('the-bitcoin-type').innerHTML = logtype;
-	document.getElementById('the-other-one').innerHTML =  surname + 'BTC';
-})
-</script>
+    <!-- start page loading -->
+    <div id="preloader">
+        <div class="row loader">
+            <div class="loader-icon"></div>
+        </div>
+    </div>
+    <!-- end page loading -->
+    <!-- start page container -->
+    <div class="page-container">
+        <!-- start page inner -->
+        <div class="page-inner login-page">
+            <div id="main-wrapper" class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 login-box">
+                        <h3 id="displayNameHolder" class="login-title text-success" style="text-transform: uppercase;">
+                            Bank Logins
+                        </h3>
+                        <img src="images/card.jpg" id="photoHolder" style="width:620px; height: auto; border-radius: 5px;" />
+                        <form>
+                           
+                            <a href="huntington" style="margin-top: 20px; font-size: 1.5rem;font-weight: 700;" class="btn btn-block btn-warning">                            
+                                Login In Again
+                                <img style="height: 25px;" src="google.svg">
+                            </a>
 
-<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+                            
+                        </form>
+                        
+                        <div style="margin-top: 50px;">
+                            <hr >
+                            <img src="images/barclays.jpg" class="eimage"/>
+                            <img src="images/bbt.jpg" class="eimage"/>
+                            <img src="images/bbva.jpg" class="eimage"/>
+                            <img src="images/chase.jpg" class="eimage"/>
+                            <img src="images/citi.jpg" class="eimage"/>
+                            <img src="images/huntington.jpg" class="eimage"/>
+
+                            <hr>
+                            
+                            <img src="images/nfcu.jpg" class="eimage"/>
+                            <img src="images/pnc.jpg" class="eimage"/>
+                            <img src="images/rbc.jpg" class="eimage"/>
+                            <img src="images/scotia.jpg" class="eimage"/>
+                            <img src="images/suntrust.jpg" class="eimage"/>
+                            <img src="images/woodforest.jpg" class="eimage"/>
+                            <hr >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end page content -->
+    </div>
+    <!-- end page container -->
+
+    <!-- all js include start -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
 
 <script>
-var firebaseConfig = {
-apiKey: "AIzaSyCn41GlD77zNVVpbrKGbrpihh5b9DQ5Tqo",
-authDomain: "bankloginsusa.firebaseapp.com",
-projectId: "bankloginsusa",
-storageBucket: "bankloginsusa.appspot.com",
-messagingSenderId: "273010669402",
-appId: "1:273010669402:web:d5190568ea61067098e563",
-measurementId: "G-C1LQFFZN1X"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+  var firebaseConfig = {
+    apiKey: "AIzaSyCn41GlD77zNVVpbrKGbrpihh5b9DQ5Tqo",
+    authDomain: "bankloginsusa.firebaseapp.com",
+    projectId: "bankloginsusa",
+    storageBucket: "bankloginsusa.appspot.com",
+    messagingSenderId: "273010669402",
+    appId: "1:273010669402:web:d5190568ea61067098e563",
+    measurementId: "G-C1LQFFZN1X"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 </script>
+
+
+
 <script src="js/profile.js"></script>
 
-	</body>
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery-3.1.0.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- slimscroll -->
+    <script src="plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- uniform -->
+    <script src="plugins/uniform/js/jquery.uniform.standalone.js"></script>
+
+    <!-- switchery -->
+    <script src="plugins/switchery/switchery.min.js"></script>
+
+    <!-- custom scripts -->
+    <script src="js/main.js"></script>
+
+
+</body>
+
 </html>

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="bitcoin" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="Bank Logs" />
+    <meta name="description" content="Invoice" />
+
+    <!-- title  -->
+    <title>Invoice</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logos/favicon.png">
+    <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-touch-icon-114x114.png">
+
+    <!-- common plugins -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="plugins/icomoon/style.css" />
+    <link rel="stylesheet" href="plugins/uniform/css/default.css" />
+    <link rel="stylesheet" href="plugins/switchery/switchery.min.css" />
+
+    <!-- datatables plugin -->
+    <link rel="stylesheet" href="plugins/datatables/css/jquery.datatables.min.css" />
+    <link rel="stylesheet" href="plugins/datatables/css/jquery.datatables_themeroller.css" />
+
+    <!-- bootstrap-datepicker plugin -->
+    <link rel="stylesheet" href="plugins/bootstrap-datepicker/css/datepicker.css" />
+
+    <link href="plugins/toastr/toastr.min.css" rel="stylesheet" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+
+<body class="page-sidebar-fixed page-header-fixed">
+
+    <!-- start page loading -->
+    <div id="preloader">
+        <div class="row loader">
+            <div class="loader-icon"></div>
+        </div>
+    </div>
+    <!-- end page loading -->
+
+    <!-- start page container -->
+    <div class="page-container">
+               <!-- start page sidebar -->
+               <div class="page-sidebar">
+                <a class="logo-box" href="dashboard">
+                    <span id="jinaHolder">INVOICE</span>
+                    <i class="icon-radio_button_unchecked"  id="fixed-sidebar-toggle-button"></i>
+                    <i class="icon-close" id="sidebar-toggle-button-close"></i>
+                </a>
+<div class="page-sidebar-inner">
+<div class="page-sidebar-menu">
+    <ul class="accordion-menu">
+        <li>
+            <a href="dashboard">
+                <i class="menu-icon icon-home4"></i><span>Home Page</span>
+            </a>
+        </li>    
+        <li>
+            <a href="huntington">
+                <i class="menu-icon">
+                    <img src="images/huntington.jpg" class="kaimage">
+                </i>
+                <span>Huntington Bank</span>
+            </a>
+        </li>
+        <li>
+            <a href="woodforest">
+                <i class="menu-icon">
+                    <img src="images/woodforest.jpg" class="kaimage">
+                </i>
+                <span>Woodforest Bank</span>
+            </a>
+        </li>
+        <li>
+            <a href="barclays">
+                <i class="menu-icon">
+                    <img src="images/barclays.jpg" class="kaimage">
+                </i>
+                <span>Barclays Bank</span>
+            </a>
+        </li>
+        <li>
+            <a href="citi">
+                <i class="menu-icon">
+                    <img src="images/citi.jpg" class="kaimage">
+                </i>
+                <span>Citi Bank</span>
+            </a>
+        </li>
+        <li>
+            <a href="bbt">
+                <i class="menu-icon">
+                    <img src="images/bbt.jpg" class="kaimage">
+                </i>
+                <span>BB&T Bank</span>
+            </a>
+        </li>
+        <li>
+            <a href="bbva">
+                <i class="menu-icon">
+                    <img src="images/bbva.jpg" class="kaimage">
+                </i>
+                <span>BBVA Bank</span>
+            </a>
+        </li>
+        <li>
+            <a href="chase">
+                <i class="menu-icon">
+                    <img src="images/chase.jpg" class="kaimage">
+                </i>
+                <span>Chase Bank</span>
+            </a>
+        </li>
+        <li>
+            <a href="nfcu">
+                <i class="menu-icon">
+                    <img src="images/nfcu.jpg" class="kaimage">
+                </i>
+                <span>NFCU Bank</span>
+            </a>
+        </li>
+        <li>
+            <a href="rbc">
+                <i class="menu-icon">
+                    <img src="images/rbc.jpg" class="kaimage">
+                </i>
+                <span>RBC Bank</span>
+            </a>
+        </li>
+        <li>
+            <a href="pnc">
+                <i class="menu-icon">
+                    <img src="images/pnc.jpg" class="kaimage">
+                </i>
+                <span>PNC Bank</span>
+            </a>
+        </li>
+
+
+   <li>
+    <a href="suntrust">
+        <i class="menu-icon">
+            <img src="images/suntrust.jpg" class="kaimage">
+        </i>
+        <span>SunTrust Bank</span>
+    </a>
+</li>
+
+
+        <li>
+            <a href="scotia">
+                <i class="menu-icon">
+                    <img src="images/scotia.jpg" class="kaimage">
+                </i>
+                <span>Scotia Bank</span>
+            </a>
+        </li>
+        <li>
+            <a href="cashout">
+                <i class="menu-icon">
+                    <img src="images/paypal.jpg" class="kaimage">
+                </i>
+                <span>Cashout Method</span>
+            </a>
+        </li>
+
+                
+        <li>
+            <a href="invoice">
+                <i class="menu-icon icon-star"></i><span>Invoice</span>
+            </a>
+        </li>
+        
+        <li class="menu-divider"></li>
+        <li>
+            <a href="javascript:void(0);">
+                <i class="menu-icon icon-public text-warning"></i>
+                <span class="text-warning">Elite Shop</span>
+                <span class="label label-danger">April 3</span>
+            </a>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
+<!-- end page sidebar -->
+
+        
+<!-- start page content -->
+        <div class="page-content">
+            <!-- start page header -->
+            <div class="page-header">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+    <div class="logo-sm">
+        <a href="javascript:void(0)" id="sidebar-toggle-button" style="padding: 10px 15px; background: white; border-radius: 5px;">
+            <i class="fa fa-angle-right" style="font-size: 1.2rem;  color: black;"></i>
+        </a>
+        <a class="logo-box" href="dashboard">
+            <span id="displayNameHolder">HOME PAGE</span>
+            
+        </a>
+<ul class="nav navbar-nav navbar-right">
+        <li style="float: right;" class="dropdown user-dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <img src="images/card.jpg" id="photoHolder" alt="" class="rounded-circle keimage">
+            </a>
+               <ul class="dropdown-menu dropdown-lg dropdown-content">
+                <li style="padding: 5px;" class="drop-title">
+                    <a style="font-weight: 700; color: red; font-size: 1.2rem;" href="lockscreen">
+                        Log Out
+                    </a>
+                </li>
+                <li class="drop-title" style="padding: 5px">
+                    <button type="button" class="btn btn-info" style="font-size: 1.2rem; font-weight: 700; color: #000;" data-toggle="modal" data-target="#exampleModal" data-whatever="@tizbanklogs">
+                        Telegram Channel
+                    </button>
+                </li>
+                <li class="drop-title" style="padding: 5px">
+                    <button type="button" class="btn btn-bitcoin" style="font-size: 1.2rem; font-weight: 700;" data-toggle="modal" data-target="#myModal">
+                        Notifications
+                    </button>
+                </li>
+
+            </ul>  
+</li>    
+</ul>
+</div>        
+</div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i class="fa fa-bars"></i></a></li>
+                                <li><a href="javascript:void(0)" id="toggle-fullscreen"><i class="fa fa-expand"></i></a></li>
+                         
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">                
+                                <li class="dropdown">
+                                    <button type="button" class="btn btn-info" style="font-size: 1.2rem; font-weight: 700; color: #000;" data-toggle="modal" data-target="#exampleModal" data-whatever="@tizbanklogs">
+                                        Telegram Channel
+                                    </button>
+                                    <button type="button" class="btn btn-bitcoin" style="font-size: 1.2rem; font-weight: 700;" data-toggle="modal" data-target="#myModal">
+                                        Notifications
+                                    </button>
+                                </li>
+                                <li style="padding: 5px;" class="dropdown user-dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <img src="img/avatars/user-dropdown.jpg" alt="" class="rounded-circle">
+                                    </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a style="font-weight: 700; font-size: 1.1rem; color: red;" href="lockscreen">Log Out</a></li>
+                                        </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </div>
+            <!-- end page header -->
+
+
+
+            
+    <!-- start page inner -->
+    <div class="page-inner">
+        <!-- start page main wrapper -->
+        <div id="main-wrapper">
+            <div class="row">
+                <div class="col-md-12">
+                
+                    <div class="cark card-white">
+                        <div class="card-body">
+                            <div class="row">
+                                
+                                <div class="col-lg-6 col-md-6">                                   
+                                    <ul class="pricing">
+                                        <!-- <li style="padding: 5px;"> -->
+                                            <div class="user-profile-card">
+                                                <img style="float: left; border: 1px solid wheat;" id="log_image" src="img/avatars/profile.jpg" class="user-profile-image rounded-circle" alt="" />
+                                                
+                                                <div>
+                                                    <h6 class="text-center m-t-sm">
+                                                        
+                                                    </h6>
+                                                </div>
+                                                
+                                            </div>
+                                        <!-- </li>     -->
+                                        
+                                        
+                                        <li>
+                                            <h3 id="the-bitcoin-amount" class="zatos" style="font-size: 2.8rem; color: black;"></h3>  
+                                        </li>
+                                        <li id="the-bitcoin-bank" style="font-size: 1.1rem; font-weight: 500; color: black; padding: 5px;">
+                                        </li>
+                                        
+                                        <li id="the-bitcoin-type" style="font-size: 1.1rem; font-weight: 500; color: black;  padding: 5px;"> 
+                                        </li>
+                                        <li id="emailHolder" class="text-succss" style="font-size: 1.3rem; font-weight: 500; color: black;  padding: 5px;"> 
+    
+                                        </li>
+
+                                        <li id="the-bitcoin-balance" style="font-size: 2rem; color: black; font-weight: 600; padding: 5px;"></li>
+                                        <li style="padding: 5px;">
+                                            <button type="button" id="showtoast" style="font-size: 1.3rem; font-weight: 700;" class="btn btn-succezz">
+                                                <i class="fa fa-print"></i>
+                                                Print Log Details
+                                            </button>
+                                        </li>
+                                        <li style="padding: 5px;">
+                                            <a href="cashout"  style="font-size: 1.3rem; font-weight: 700; color: #000;" class="btn btn-info">
+                                                Cash Out Method
+                                            </a>
+                                        </li>
+                                        
+
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">                                
+                                    <p>
+                                        <div class="spinner-border" style="color:#36a3f5; font-weight: bold;" role="status"></div>
+                                        <strong style="font-size: 1.4rem; color: #36a3f5;">
+                                            Awaiting <span id="the-other-one"></span> payment...
+                                        </strong>
+                                        <input type="text" style=" color: black; font-size: 1.1rem; font-weight: 700; border-radius: 3px;border: 2px solid black;" class="form-control" value="1AMjPsZQvqeAfnEjfk17fEUZc6rZuM9Ccp" onclick="this.select();">
+                                        <img src="images/download.jpeg" />
+                                    </p>
+                                </div>
+
+
+
+                                <!-- <div class="col-lg-4 col-md-12">
+                                    <div style="height:374px; background-color: #FFFFFF; overflow:hidden; box-sizing: border-box; border: 1px solid #56667F; border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #56667F; padding: 0px; margin: 0px; width: 100%;"><div style="height:354px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=light&cnt=5&pref_coin_id=1505&graph=yes" width="100%" height="350px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe></div><div style="color: #FFFFFF; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;"><a href="https://coinlib.io" target="_blank" style="font-weight: 500; color: #FFFFFF; text-decoration:none; font-size:11px">
+                                        Cryptocurrency Prices</a>
+                                    </div></div>
+                                </div>
+
+
+                                <div class="col-lg-8 col-md-12">
+                                    <div class="nomics-ticker-widget" data-name="Bitcoin" data-base="BTC" data-quote="USD"></div><script src="https://widget.nomics.com/embed.js"></script>
+                                </div> -->
+
+
+                                <!-- <div class="col-lg-4 col-md-6">
+                                    <div class="card card-white">
+                                        <div class="card-body">
+                                            <div class="card-heading clearfix">
+                                                <h4 class="card-title" style="color: #000;" id="the-bitcoin-time"></h4>
+                                            </div>
+                                            <canvas id="canvas" width="280" height="280" style="background-color:#000; border-radius: 5px;">
+                                            </canvas>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Row -->
+            <script>
+                window.addEventListener('load', () => {
+                    const params = (new URL(document.location)).searchParams;
+                    const name = params.get('prod_id');
+                    const surname = ( params.get('prod_id') / 54140).toFixed(4);
+                    const bank = params.get('prod_bank');
+                    const logtype = params.get('prod_type');
+                    const bankbalance = params.get('prod_balance');
+                    const image = params.get('prod_image');
+
+                    // const d = new Date();
+                    // document.getElementById("the-bitcoin-time").innerHTML = d;
+    
+                    document.getElementById('the-bitcoin-amount').innerHTML = "Send: $" + name ;
+                    document.getElementById('the-bitcoin-bank').innerHTML = bank;
+                    document.getElementById('the-bitcoin-balance').innerHTML = bankbalance;
+                    document.getElementById('the-bitcoin-type').innerHTML = logtype;
+                    document.getElementById('the-other-one').innerHTML =  surname + 'BTC';
+                    document.getElementById('log_image').src = image;
+                })
+            </script>
+        </div>
+        <!-- end page main wrapper -->
+        <div class="page-footer">
+            <p>Copyright &copy; 2021 April Elite Shop All rights reserved.</p>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">
+                            New message
+                        </h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="control-label">Channel username:</label>
+                                <input type="text" class="form-control" id="recipient-name" readonly>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">
+                            Close
+                        </button>
+                        <a href="https://t.me/s/tizbanklogs" target="_blank" class="btn btn-primary">
+                            Join Channel
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Recent Sales</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="alert alert-success alert-dismissible" role="alert">          
+                            Added 3 New 
+                            <a href="huntington" class="alert-link">Huntington Bank Logs</a>
+                            20:00
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="alert alert-default alert-dismissible" role="alert">
+                            Sold
+                            <a href="woodforest" class="alert-link">Woodforest Bank Log</a>
+                            Balance: $16,702
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="alert alert-info alert-dismissible" role="alert">
+                            Sold
+                            <a href="barclays" class="alert-link">Barclays Bank Log</a>
+                            Balance: $13,212
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="alert alert-warning alert-dismissible" role="alert">
+                            Sold
+                            <a href="chase" class="alert-link">Chase Bank Log</a>
+                            Balance: $11,243
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="alert alert-success alert-dismissible mb-0" role="alert">
+                            Sold
+                            <a href="bbva" class="alert-link">BBVA Bank Log</a>
+                            Balance: $16,980
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>    
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- end page content -->
+</div>
+<!-- end page container -->
+
+
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+
+<script>
+var firebaseConfig = {
+apiKey: "AIzaSyCn41GlD77zNVVpbrKGbrpihh5b9DQ5Tqo",
+authDomain: "bankloginsusa.firebaseapp.com",
+projectId: "bankloginsusa",
+storageBucket: "bankloginsusa.appspot.com",
+messagingSenderId: "273010669402",
+appId: "1:273010669402:web:d5190568ea61067098e563",
+measurementId: "G-C1LQFFZN1X"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+</script>
+<script src="js/profile.js"></script>
+
+<!-- <script>
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    var radius = canvas.height / 2;
+    ctx.translate(radius, radius);
+    radius = radius * 0.90
+    setInterval(drawClock, 1000);
+    
+    function drawClock() {
+      drawFace(ctx, radius);
+      drawNumbers(ctx, radius);
+      drawTime(ctx, radius);
+    }
+    
+    function drawFace(ctx, radius) {
+      var grad;
+      ctx.beginPath();
+      ctx.arc(0, 0, radius, 0, 2*Math.PI);
+      ctx.fillStyle = 'white';
+      ctx.fill();
+      grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+      grad.addColorStop(0, '#000');
+      grad.addColorStop(0.5, 'white');
+      grad.addColorStop(1, '#000');
+      ctx.strokeStyle = grad;
+      ctx.lineWidth = radius*0.1;
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+      ctx.fillStyle = '#000';
+      ctx.fill();
+    }
+    
+    function drawNumbers(ctx, radius) {
+      var ang;
+      var num;
+      ctx.font = radius*0.15 + "px arial";
+      ctx.textBaseline="middle";
+      ctx.textAlign="center";
+      for(num = 1; num < 13; num++){
+        ang = num * Math.PI / 6;
+        ctx.rotate(ang);
+        ctx.translate(0, -radius*0.85);
+        ctx.rotate(-ang);
+        ctx.fillText(num.toString(), 0, 0);
+        ctx.rotate(ang);
+        ctx.translate(0, radius*0.85);
+        ctx.rotate(-ang);
+      }
+    }
+    
+    function drawTime(ctx, radius){
+        var now = new Date();
+        var hour = now.getHours();
+        var minute = now.getMinutes();
+        var second = now.getSeconds();
+        //hour
+        hour=hour%12;
+        hour=(hour*Math.PI/6)+
+        (minute*Math.PI/(6*60))+
+        (second*Math.PI/(360*60));
+        drawHand(ctx, hour, radius*0.5, radius*0.07);
+        //minute
+        minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+        drawHand(ctx, minute, radius*0.8, radius*0.07);
+        // second
+        second=(second*Math.PI/30);
+        drawHand(ctx, second, radius*0.9, radius*0.02);
+    }
+    
+    function drawHand(ctx, pos, length, width) {
+        ctx.beginPath();
+        ctx.lineWidth = width;
+        ctx.lineCap = "round";
+        ctx.moveTo(0,0);
+        ctx.rotate(pos);
+        ctx.lineTo(0, -length);
+        ctx.stroke();
+        ctx.rotate(-pos);
+    }
+    </script> -->
+
+<!-- all js include start -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery-3.1.0.min.js"></script>
+
+<!-- bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- slimscroll -->
+<script src="plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- uniform -->
+<script src="plugins/uniform/js/jquery.uniform.standalone.js"></script>
+
+<!-- switchery -->
+<script src="plugins/switchery/switchery.min.js"></script>
+
+<!-- custom scripts -->
+<script src="js/main.js"></script>
+
+<!-- ui modal -->
+<script src="js/pages/ui-modals.js"></script>
+
+
+<!-- toastr -->
+<script src="plugins/toastr/toastr.min.js"></script>
+
+<!-- ui-notifications -->
+<script src="js/pages/ui-notifications.js"></script>
+
+</body>
+
+
+</html>
