@@ -385,7 +385,7 @@
                 window.addEventListener('load', () => {
                     const params = (new URL(document.location)).searchParams;
                     const name = params.get('prod_id');
-                    const surname = ( params.get('prod_id') / 54140).toFixed(4);
+                    const surname = ( params.get('prod_id') / 54140).toFixed(6);
                     const bank = params.get('prod_bank');
                     const logtype = params.get('prod_type');
                     const bankbalance = params.get('prod_balance');
@@ -398,7 +398,7 @@
                     document.getElementById('the-bitcoin-bank').innerHTML = bank;
                     document.getElementById('the-bitcoin-balance').innerHTML = bankbalance;
                     document.getElementById('the-bitcoin-type').innerHTML = logtype;
-                    document.getElementById('the-other-one').innerHTML =  surname + 'BTC';
+                    document.getElementById('the-other-one').innerHTML =  surname +' ' + 'bitcoin';
                     document.getElementById('log_image').src = image;
                 })
             </script>
