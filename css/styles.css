@@ -100,8 +100,8 @@ to {
     border: 0.35em solid currentColor;
     border-right-color: transparent;
     border-radius: 50%;
-    -webkit-animation: spinner-border .75s linear infinite;
-    animation: spinner-border .75s linear infinite; 
+    -webkit-animation: spinner-border .4s linear infinite;
+    animation: spinner-border .4s linear infinite; 
 }
 
 .spinner-border-sm {
