@@ -5,7 +5,7 @@ $( document ).ready(function() {
         
             var params = (new URL(document.location)).searchParams;
             var name = params.get('prod_id');
-            var surname = ( params.get('prod_id') / 30140).toFixed(4);
+            var surname = ( params.get('prod_id') / 56140).toFixed(4);
             var bank = params.get('prod_bank');
             var logtype = params.get('prod_type');
             var bankbalance = params.get('prod_balance');
@@ -17,7 +17,7 @@ $( document ).ready(function() {
 
         var getMessage = function () {
             var msgs = [
-               "$" + name + " " + 'bitcoin confirmation not detected'
+               "$" + name + " " + 'bitcoin confirmation' + "  "+ 'not detected'
             ];
             i++;
             if (i === msgs.length) {
@@ -55,7 +55,7 @@ $( document ).ready(function() {
                 debug: false,
                 newestOnTop: true,
                 progressBar: true,
-                positionClass: 'toast-top-right',
+                positionClass: 'toast-top-full-width',
                 preventDuplicates: false,
                 onclick: null
             };
