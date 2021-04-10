@@ -983,7 +983,8 @@ blockquote small:before{
     color:#212529 !important
 }
 .text-succss{
-    color:#63CB90 !important
+    color:#63CB90 !important;
+    font-size: 2rem;
 }
 .text-info{
     color:#01c0d6 !important
