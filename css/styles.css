@@ -72,9 +72,9 @@ a:hover{
 }
 @media screen and (max-width: 420px) {
     .eimage{
-        height: 43px;
+        height: 40px;
     }
-    }
+}
 
     @media screen and (max-width: 420px) {
         .text-white .snail{
