@@ -889,9 +889,9 @@ blockquote small:before{
 .bg-primary{
     background-color:#36a3f5 !important
 }
-/* .bg-success{
+.bg-succss{
     background-color:#63CB90 !important
-} */
+}
 .bg-success{
     background-color:#ffb820 !important
 }
@@ -3422,6 +3422,7 @@ _:future{
         margin-left:0px
     }
 }
+
 
 .page-inner{
     position:relative;
