@@ -66,13 +66,13 @@ a:hover{
     margin-right: 5px;
 }
 .eimage{
-    height: 35px;
+    height: 30px;
     border-radius: 5px;
-    margin-right: 3px;
+    margin-right: 1px;
 }
 @media screen and (max-width: 420px) {
     .eimage{
-        height: 40px;
+        height: 36px;
     }
 }
 
@@ -983,7 +983,7 @@ blockquote small:before{
     color:#212529 !important
 }
 .text-succss{
-    color:#63CB90 !important;
+    color:goldenrod !important;
     font-size: 2rem;
 }
 .text-info{
