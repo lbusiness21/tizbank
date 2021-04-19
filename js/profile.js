@@ -5,6 +5,7 @@ const jinaHolder = document.getElementById('jinaHolder');
 const imgHolder = document.getElementById('imgHolder')
 
 const emailHolder = document.getElementById('emailHolder');
+const addressHolder = document.getElementById('addressHolder');
 
 const auth = firebase.auth();
 
@@ -20,5 +21,6 @@ auth.onAuthStateChanged(user => {
     }
     if(user.email) {
         emailHolder.innerText = "Invoice to: " + user.email;
+        addressHolder.innerText = user.email;
     }
 })
