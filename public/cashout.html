@@ -214,70 +214,73 @@
 <a class="logo-box" href="dashboard">
     <span id="displayNameHolder">
         CASHOUT METHOD
-    </span>
-    
-</a>
-<ul class="nav navbar-nav navbar-right">
-<li style="float: right;" class="dropdown user-dropdown">
-    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        <img src="images/card.jpg" id="photoHolder" alt="" class="rounded-circle keimage">
+        </span>
     </a>
-       <ul class="dropdown-menu dropdown-lg dropdown-content">
-        <li style="padding: 5px;" class="drop-title">
-            <a style="font-weight: 700; color: red; font-size: 1.2rem;" href="lockscreen">
-                Log Out
-            </a>
-        </li>
-        <li class="drop-title" style="padding: 5px">
-            <button type="button" class="btn btn-info" style="font-size: 1.2rem; font-weight: 700; color: #000;" data-toggle="modal" data-target="#exampleModal" data-whatever="@tizbanklogs">
-                Telegram Channel
-            </button>
-        </li>
-        <li class="drop-title" style="padding: 5px">
-            <button type="button" class="btn btn-bitcoin" style="font-size: 1.2rem; font-weight: 700;" data-toggle="modal" data-target="#myModal">
-                Notifications
-            </button>
-        </li>
-
-    </ul>  
-</li>    
-</ul>
-</div>        
-</div>
-
-<!-- Collect the nav links, forms, and other content for toggling -->
-
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<ul class="nav navbar-nav">
-    <li><a href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i class="fa fa-bars"></i></a></li>
-    <li><a href="javascript:void(0)" id="toggle-fullscreen"><i class="fa fa-expand"></i></a></li>
-
-</ul>
-<ul class="nav navbar-nav navbar-right">                
-    <li class="dropdown">
-        <button type="button" class="btn btn-info" style="font-size: 1.2rem; font-weight: 700; color: #000;" data-toggle="modal" data-target="#exampleModal" data-whatever="@tizbanklogs">
-            Telegram Channel
-        </button>
-        <button type="button" class="btn btn-bitcoin" style="font-size: 1.2rem; font-weight: 700;" data-toggle="modal" data-target="#myModal">
-            Notifications
-        </button>
-    </li>
-    <li style="padding: 5px;" class="dropdown user-dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-            <img src="img/card.jpg" id="imgHolder" alt="" class="rounded-circle">
+    <ul class="nav navbar-nav navbar-right">
+    <li style="float: right;" class="dropdown user-dropdown">
+        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <img src="images/card.jpg" id="photoHolder" alt="" class="rounded-circle keimage">
         </a>
-            <ul class="dropdown-menu">
-                <li><a style="font-weight: 700; font-size: 1.1rem; color: red;" href="lockscreen">Log Out</a></li>
-            </ul>
-    </li>
-</ul>
-</div>
-<!-- navbar-collapse -->
-</div>
-<!-- /.container-fluid -->
-</nav>
-</div>
-<!-- end page header -->
+           <ul class="dropdown-menu dropdown-lg dropdown-content">
+            <li style="padding: 5px;" class="drop-title">
+                <a style="font-weight: 700; color: red; font-size: 1.2rem;" id="logoutBtn">
+                    Log Out
+                </a>
+            </li>
+            <li class="drop-title" style="padding: 5px">
+                <button type="button" class="btn btn-info" style="font-size: 1.2rem; font-weight: 700; color: #000;" data-toggle="modal" data-target="#exampleModal" data-whatever="@tizbanklogs">
+                    Telegram Channel
+                </button>
+            </li>
+            <li class="drop-title" style="padding: 5px">
+                <button type="button" class="btn btn-bitcoin" style="font-size: 1.2rem; font-weight: 700;" data-toggle="modal" data-target="#myModal">
+                    Notifications
+                </button>
+            </li>
+    
+        </ul>  
+    </li>    
+    </ul>
+    </div>        
+    </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li><a href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i class="fa fa-bars"></i></a></li>
+            <li><a href="javascript:void(0)" id="toggle-fullscreen"><i class="fa fa-expand"></i></a></li>
+        
+        </ul>
+        <ul class="nav navbar-nav navbar-right">                
+            <li class="dropdown">
+                <button type="button" class="btn btn-info" style="font-size: 1.2rem; font-weight: 700; color: #000;" data-toggle="modal" data-target="#exampleModal" data-whatever="@tizbanklogs">
+                    Telegram Channel
+                </button>
+                <button type="button" class="btn btn-bitcoin" style="font-size: 1.2rem; font-weight: 700;" data-toggle="modal" data-target="#myModal">
+                    Notifications
+                </button>
+            </li>
+            <li style="padding: 5px;" class="dropdown user-dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img src="img/card.jpg" id="imgHolder" alt="" class="rounded-circle">
+                </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a style="font-weight: 700; font-size: 1.1rem; color: red;" id="logoutButton">
+                            Log Out
+                            </a>
+                        </li>
+                    </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+    </nav>
+    </div>
+    <!-- end page header -->
 
 
 
@@ -594,11 +597,36 @@
           month[9] = "October";
           month[10] = "November";
           month[11] = "December";
-        
           var d = new Date();
           var n = month[d.getMonth()];
           var m = d.getDate();
           document.getElementById("demo").innerHTML = n +' '  + m;
+          const auth = firebase.auth();
+          const logoutBtn = document.getElementById('logoutButton');
+          const logoutBtn2 = document.getElementById('logoutBtn');
+    
+          auth.onAuthStateChanged(user => {
+            if(!user){
+                window.location.assign('index');
+            }
+            })
+    logoutBtn.addEventListener('click', e => {
+      e.preventDefault();
+      auth.signOut().then(() => {
+          window.location.assign('index');
+      }).catch(error => {
+          console.error(error)
+      })
+    });
+    
+    logoutBtn2.addEventListener('click', e => {
+      e.preventDefault();
+      auth.signOut().then(() => {
+          window.location.assign('index');
+      }).catch(error => {
+          console.error(error)
+      })
+    });
         }
     </script>
 

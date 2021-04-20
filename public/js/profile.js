@@ -9,6 +9,9 @@ const addressHolder = document.getElementById('addressHolder');
 
 const auth = firebase.auth();
 
+const logoutBtn = document.getElementById('logoutButton');
+const logoutBtn2 = document.getElementById('logoutBtn');
+
 auth.onAuthStateChanged(user => {
     console.log(user);
     if(user.displayName) {
@@ -23,4 +26,26 @@ auth.onAuthStateChanged(user => {
         emailHolder.innerText = "Invoice to: " + user.email;
         addressHolder.innerText = user.email;
     }
+    if(!user) {
+        window.location.assign('index');
+    }
 })
+
+
+logoutBtn.addEventListener('click', e => {
+  e.preventDefault();
+  auth.signOut().then(() => {
+      window.location.assign('index');
+  }).catch(error => {
+      console.error(error)
+  })
+});
+
+logoutBtn2.addEventListener('click', e => {
+    e.preventDefault();
+    auth.signOut().then(() => {
+        window.location.assign('index');
+    }).catch(error => {
+        console.error(error)
+    })
+  });
