@@ -210,7 +210,6 @@
 </a>
 <a class="logo-box" href="dashboard">
     <span id="displayNameHolder">RBC BANK</span>
-    
 </a>
 <ul class="nav navbar-nav navbar-right">
 <li style="float: right;" class="dropdown user-dropdown">
@@ -219,7 +218,7 @@
     </a>
        <ul class="dropdown-menu dropdown-lg dropdown-content">
         <li style="padding: 5px;" class="drop-title">
-            <a style="font-weight: 700; color: red; font-size: 1.2rem;" href="lockscreen">
+            <a style="font-weight: 700; color: red; font-size: 1.2rem;" id="logoutBtn">
                 Log Out
             </a>
         </li>
@@ -262,7 +261,11 @@
                 <img src="img/card.jpg" id="imgHolder" alt="" class="rounded-circle">
             </a>
                 <ul class="dropdown-menu">
-                    <li><a style="font-weight: 700; font-size: 1.1rem; color: red;" href="lockscreen">Log Out</a></li>
+                    <li>
+                        <a style="font-weight: 700; font-size: 1.1rem; color: red;" id="logoutButton">
+                        Log Out
+                        </a>
+                    </li>
                 </ul>
         </li>
     </ul>
@@ -1012,11 +1015,36 @@
       month[9] = "October";
       month[10] = "November";
       month[11] = "December";
-    
       var d = new Date();
       var n = month[d.getMonth()];
       var m = d.getDate();
       document.getElementById("demo").innerHTML = n +' '  + m;
+      const auth = firebase.auth();
+      const logoutBtn = document.getElementById('logoutButton');
+      const logoutBtn2 = document.getElementById('logoutBtn');
+
+      auth.onAuthStateChanged(user => {
+        if(!user){
+            window.location.assign('index');
+        }
+        })
+logoutBtn.addEventListener('click', e => {
+  e.preventDefault();
+  auth.signOut().then(() => {
+      window.location.assign('index');
+  }).catch(error => {
+      console.error(error)
+  })
+});
+
+logoutBtn2.addEventListener('click', e => {
+  e.preventDefault();
+  auth.signOut().then(() => {
+      window.location.assign('index');
+  }).catch(error => {
+      console.error(error)
+  })
+});
     }
 </script>
 
