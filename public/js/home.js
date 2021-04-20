@@ -10,12 +10,16 @@ const signInWithGoogle = () => {
   })
   .catch(error => {
     console.error(error);
+    window.location.assign('index')
   })
 }
 signInWithGoogleButton.addEventListener('click', signInWithGoogle);
 
 
 auth.onAuthStateChanged(user => {
-  if(user)
+  if(user){
     window.location.assign('huntington');
+  } else {
+    window.location.assign('index')
+  }
 })
