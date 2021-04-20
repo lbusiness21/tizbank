@@ -3609,9 +3609,9 @@ body.error-page{
     text-align:center
 }
 .user-profile-image{
-    width:116px;
-    height:116px;
-    margin-bottom:10px
+    width:115px;
+    height:115px;
+    margin-bottom:0
 }
 .team .team-member{
     display:block;
