@@ -1020,7 +1020,7 @@ blockquote small:before{
 
 
 .btn-info{
-    background-color:#01c0d6;
+    background-color:aqua;
     border-color:#01c0d6
 }
 .btn-danger{
@@ -1029,7 +1029,7 @@ blockquote small:before{
 }
 
 .btn-bitcoin{
-    background-color: #63CB90; 
+    background-color: lime; 
     border-color: #63CB90;
 }
 
