@@ -152,7 +152,7 @@ a:hover,a:active,a:focus{
     text-decoration:none !important
 }
 hr{
-    border-color:#D0D4D9
+    border-color:lime
 }
 .cross-page-line{
     display:block;
@@ -566,10 +566,10 @@ hr{
     border-color:#DE4D4D
 }
 .b-2{
-    border-size:2px
+    border:2px
 }
 .b-3{
-    border-size:3px
+    border:3px
 }
 .b-4{
     border-size:4px
@@ -1025,7 +1025,8 @@ blockquote small:before{
 }
 .btn-danger{
     background-color:#ec5e70;
-    border-color:#ec5e70
+    border-color:#ec5e70;
+    color: #000;
 }
 
 .btn-bitcoin{
@@ -3795,8 +3796,13 @@ body.error-page{
 .login-title{
     font-size:22px;
     font-weight:600;
-    margin-bottom:45px;
+    margin-bottom:30px;
     /* font-family:"Montserrat",sans-serif; */
+}
+@media screen and (max-width: 508px){
+    .login-title{
+        margin-bottom: 80px;
+    }
 }
 .btn-addon {
     font-weight: 600;
@@ -4089,7 +4095,7 @@ body.error-page{
     display:block
 }
 .email .email-reply .btn-default{
-    color:#121D33
+    color:#121D33;
     border-color:#121D33
 }
 .email .email-reply .btn-default:hover,
