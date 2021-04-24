@@ -14,6 +14,16 @@
     text-align:center
 }
 
+.iframebro {
+    height: 820px;
+    border: 2px solid #36a3f5;
+    border-radius: 5px;
+}
+@media screen and (min-width: 120px) and (max-width: 504px) {
+    .iframebro {
+        height: 800px;
+    }
+}
 .broimage{
     width: 30px;
     height: auto;
@@ -571,9 +581,7 @@ hr{
 .b-3{
     border:3px
 }
-.b-4{
-    border-size:4px
-}
+
 .b-n-t{
     border-top:0
 }

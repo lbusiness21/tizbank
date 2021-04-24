@@ -118,8 +118,8 @@ button.toast-close-button{
     background-position:15px center;background-repeat:no-repeat;
     color:#FFF;
     opacity:.9;
-    -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-    filter:alpha(opacity=90);
+    -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
+    filter:alpha(opacity=95);
     border-radius: 5px;
 }
 #toast-container>div.rtl{
