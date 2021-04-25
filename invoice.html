@@ -245,11 +245,6 @@
                     </button>
                 </li> 
                 <li class="drop-title" style="padding: 5px">
-                    <button type="button" class="btn btn-info" style="font-size: 1.2rem; font-weight: 700; color: #000;" data-toggle="modal" data-target="#exampleModal" data-whatever="@tizbanklogs">
-                        Telegram Channel
-                    </button>
-                </li>
-                <li class="drop-title" style="padding: 5px">
                     <button type="button" class="btn btn-bitcoin" style="font-size: 1.2rem; font-weight: 700;" data-toggle="modal" data-target="#myModal">
                         Notifications
                     </button>
@@ -278,9 +273,6 @@
                 <li class="dropdown">
                     <button type="button" class="btn btn-warning" onclick="window.location.assign('cashout.html')" style="font-size: 1.2rem; font-weight: 700;">
                         Cashout Method
-                    </button>
-                    <button type="button" class="btn btn-info" style="font-size: 1.2rem; font-weight: 700; color: #000;" data-toggle="modal" data-target="#exampleModal" data-whatever="@tizbanklogs">
-                        Telegram Channel
                     </button>
                     <button type="button" class="btn btn-bitcoin" style="font-size: 1.2rem; font-weight: 700;" data-toggle="modal" data-target="#myModal">
                         Notifications
@@ -334,8 +326,6 @@
                         </li>
                         <li id="the-bitcoin-type6" style="font-size: 1.4rem; font-weight: 500; color: black;  padding: 1px;"> 
                         </li>
-                        <!-- <li id="the-bitcoin-type7" style="font-size: 1.4rem; font-weight: 500; color: black;  padding: 1px;"> 
-                        </li> -->
                         <li id="the-bitcoin-bank" style="font-size: 1.3rem; font-weight: 500; color: black; padding: 1px;">
                         </li>
                         <li id="emailHolder" class="text-succss" style="font-size: 1.5rem; font-weight: 500; color: black;  padding: 1px;"> 
@@ -383,7 +373,6 @@
                     const logtype4 = params.get('prod_type4');
                     const logtype5 = params.get('prod_type5');
                     const logtype6 = params.get('prod_type6');
-                    // const logtype7 = params.get('prod_type7');
 
                     const bankbalance = params.get('prod_balance');
                     const image = params.get('prod_image');
@@ -401,7 +390,6 @@
                     document.getElementById('the-bitcoin-type4').innerHTML = logtype4;
                     document.getElementById('the-bitcoin-type5').innerHTML = logtype5;
                     document.getElementById('the-bitcoin-type6').innerHTML = logtype6;
-                    // document.getElementById('the-bitcoin-type7').innerHTML = logtype7;
 
                     document.getElementById('the-other-one').innerHTML =  surname + " " + 'bitcoin';
                     document.getElementById('log_image').src = image;
@@ -414,36 +402,6 @@
         </div>
         <!-- end page main wrapper -->
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="exampleModalLabel">
-                            New message
-                        </h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="recipient-name" class="control-label">Channel username:</label>
-                                <input type="text" class="form-control" id="recipient-name" readonly>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">
-                            Close
-                        </button>
-                        <a href="https://t.me/s/tizbanklogs" target="_blank" class="btn btn-primary">
-                            Join Channel
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
