@@ -37,10 +37,11 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/plugins/owl.carousel.min.css" />
 
 </head>
 
-<body class="page-sidebar-fixed page-header-fixed" onload="myFunction()">
+<body class="page-sidebar-fixed  page-header-fixed" onload="myFunction()">
 
     <!-- start page loadin -->
     <div id="preloader">
@@ -283,7 +284,7 @@
                 <h1 class="text-white">Checking</h1>
             </li>
             <li>
-                <h3>$15,640</h3>
+                <h3>$16,214</h3>
             </li>
             <li>
                 <img src="images/huntington.jpg" class="broimage" />
@@ -297,9 +298,9 @@
             <li>Date of Birth</li>
             <li>
                 <form action="invoice.html" method="GET">
-                    <input type="hidden" name="prod_id" value="312">
+                    <input type="hidden" name="prod_id" value="320">
                     <input type="hidden" name="prod_bank" value="Huntington Bank [CHECKING ACCOUNT]">
-                    <input type="hidden" name="prod_balance" value="Balance: $15,640">
+                    <input type="hidden" name="prod_balance" value="Balance: $16,214">
                     <input type="hidden" name="prod_image" value="img/partners/huntington.jpg">
                     <input type="hidden" name="prod_type" value=" Huntington.com">
                     <input type="hidden" name="prod_type1" value="Username + Password">
@@ -312,7 +313,7 @@
 
                     <button type="submit" class="btn btn-success btn-addon">
                         <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-                        $312
+                        $320
                     </button>
                 </form>
             </li>
@@ -1291,13 +1292,26 @@
             </li>
         </ul>
     </div>
-    
-   
-    
-    
+</div>
+<div class="section-clients bg-light-gray">
+    <div class="container-fluid">
+    <div class="owl-carousel clients" id="clients">
+        <div class="item"><img alt="" src="img/partners/bbt.jpg"></div>
+        <div class="item"><img alt="" src="img/partners/bbva.jpg"></div>
+        <div class="item"><img alt="" src="img/partners/chase.jpg"></div>
+        <div class="item"><img alt="" src="img/partners/citi.jpg"></div>
+        <div class="item"><img alt="" src="img/partners/huntington.jpg"></div>
+        <div class="item"><img alt="" src="img/partners/nfcu.jpg"></div>
+        <div class="item"><img alt="" src="img/partners/pnc.jpg"></div>
+        <div class="item"><img alt="" src="img/partners/suntrust.jpg"></div>
+        <div class="item"><img alt="" src="img/partners/woodforest.jpg"></div>
+        <div class="item"><img alt="" src="img/partners/chime.jpg"></div>
+        <div class="item"><img alt="" src="img/partners/boa.jpg"></div>
     </div>
     </div>
-    <!-- end page main wrapper -->
+</div>
+</div>
+<!-- end page main wrappe -->
 
 </div>
 
@@ -1431,7 +1445,8 @@ logoutBtn2.addEventListener('click', e => {
 </script>
 <script src="js/profile.js"></script>
 
-    <!-- all js include start -->
+<script src="js/core.min.js"></script>
+<script src="js/main3.js"></script>
 
     <!-- jQuery -->
     <script src="plugins/jquery/jquery-3.1.0.min.js"></script>

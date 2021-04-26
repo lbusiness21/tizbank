@@ -13,9 +13,7 @@ const signInWithGoogle = () => {
   })
 }
 
-
 signInWithGoogleButton.addEventListener('click', signInWithGoogle);
-
 
 auth.onAuthStateChanged(user => {
   if(user){
