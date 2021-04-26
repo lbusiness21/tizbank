@@ -4371,6 +4371,7 @@ body.error-page{
 .clients img{
     opacity:1;
     -webkit-transition-duration:.3s;
+    border-radius: 5px;
     transition-duration:.3s
 }
 .clients img:hover{
