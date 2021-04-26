@@ -3645,8 +3645,8 @@ body.error-page{
     text-align:center
 }
 .user-profile-image{
-    width:110px;
-    height:110px;
+    width:105px;
+    height:105px;
     margin-bottom:0px
 }
 .team .team-member{
@@ -3888,7 +3888,8 @@ body.error-page{
 }
 .prizing li{
     list-style:none;
-    padding:12px 8px
+    padding:12px 8px;
+    font-family: 'Montserrat', sans-serif;
 }
 .prizing li:first-child,
 .prizing li:last-child{
