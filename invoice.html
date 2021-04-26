@@ -22,11 +22,6 @@
     <link rel="apple-touch-icon" sizes="114x114" id="log_image4">
 
 
-    <!-- <link rel="shortcut icon" id="log_image1" href="img/logos/favicon.png">
-    <link rel="apple-touch-icon" id="log_image2" href="img/logos/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" id="log_image3" href="img/logos/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" id="log_image4" href="img/logos/apple-touch-icon-114x114.png"> -->
-
     <!-- common plugins -->
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css" />
@@ -45,6 +40,7 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/plugins/owl.carousel.min.css" />
 
 </head>
 
@@ -329,7 +325,7 @@
                         <li id="the-bitcoin-bank" style="font-size: 1.3rem; font-weight: 500; color: black; padding: 1px;">
                         </li>
                         <li id="emailHolder" class="text-succss" style="font-size: 1.5rem; font-weight: 500; color: black;  padding: 1px;"> 
-                                Invoice to: 75business@protonmail.com
+            
                         </li>
 
 
@@ -399,8 +395,25 @@
                     document.getElementById('log_image4').href = image;
                 })
             </script>
+        <div class="section-clients bg-light-gray">
+            <div class="container-fluid">
+            <div class="owl-carousel clients" id="clients">
+                <div class="item"><img alt="" src="img/partners/bbt.jpg"></div>
+                <div class="item"><img alt="" src="img/partners/bbva.jpg"></div>
+                <div class="item"><img alt="" src="img/partners/chase.jpg"></div>
+                <div class="item"><img alt="" src="img/partners/citi.jpg"></div>
+                <div class="item"><img alt="" src="img/partners/huntington.jpg"></div>
+                <div class="item"><img alt="" src="img/partners/nfcu.jpg"></div>
+                <div class="item"><img alt="" src="img/partners/pnc.jpg"></div>
+                <div class="item"><img alt="" src="img/partners/suntrust.jpg"></div>
+                <div class="item"><img alt="" src="img/partners/woodforest.jpg"></div>
+                <div class="item"><img alt="" src="img/partners/chime.jpg"></div>
+                <div class="item"><img alt="" src="img/partners/boa.jpg"></div>
+            </div>
+            </div>
         </div>
-        <!-- end page main wrapper -->
+        </div>
+        <!-- end page main wrappe -->
 
 
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -532,6 +545,9 @@ firebase.initializeApp(firebaseConfig);
 </script>
 <script src="js/profile.js"></script>
 
+
+<script src="js/core.min.js"></script>
+<script src="js/main3.js"></script>
 
 
 <!-- jQuery -->

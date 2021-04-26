@@ -1,4 +1,7 @@
-﻿@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700");
+﻿@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700"); 
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700");
+
 #preloader{
     position:fixed;
     left:0;
@@ -12,6 +15,12 @@
     overflow-x: hidden;
     display:table;
     text-align:center
+}
+
+.text-theme-color{
+    color:#03a9f5;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Montserrat',  sans-serif;
 }
 
 .iframebro {
@@ -3115,7 +3124,11 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv
     color:lime
 }
 .page-sidebar-fixed .page-sidebar .accordion-menu{
-    margin-top:10px
+    margin-top:10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+   /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Ubuntu', sans-serif; */
 }
 .page-sidebar-menu ul{
     padding:0;
@@ -3227,7 +3240,8 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv
     border-top:0;
     padding:8px 20px;
     font-size:13px;
-    color:rgba(255,255,255,0.8)
+    color:rgba(255,255,255,0.8);
+    
 }
 .accordion-menu .sub-menu li.active a{
     color:lime
@@ -3937,21 +3951,32 @@ body.error-page{
     list-style:none;
     padding:2px;
     border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
 
+}
+
+.pricing li>h1.text-white {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+   /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Ubuntu', sans-serif; */
 }
 
 @media screen and (max-width: 508px){
     .pricing li>h1.snail {
-        font-size: 17px;
+        font-size: 16px;
         padding: 4px 0;
     }
     .pricing {
-        font-size: 11px;
+        font-size: 10px;
+        font-weight: 500;
     }
 }
 .pricing li:first-child,
 .pricing li:last-child{
-    padding:0
+    padding:0;
+    font-weight: 700;
 }
 .pricing li+li{
     border-top:1px solid #E5E9EC
@@ -4253,3 +4278,114 @@ body.error-page{
     margin-right:0px
 }
 /*# sourceMappingURL=styles.css.map */
+
+
+.butn{
+    background:#000;
+    color:#fff;
+    text-align:center;
+    border-radius:4px;
+    padding:12px 30px;
+    line-height:normal;
+    font-weight:500;
+    text-transform:none !important;
+    position:relative;
+    border: 1px solid aqua;
+    z-index:9999;
+    display:inline-block;
+    white-space:nowrap;
+    border:none;cursor:pointer
+}
+.butn span{
+    z-index:9;
+    position:relative; 
+    padding: 2px;
+    font-family:"Montserrat",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+.butn:hover{
+    color:#fff;
+    border-radius:3px
+}
+.butn:after{
+    content:'';
+    position:absolute;
+    border-radius:4px;
+    bottom:6px;
+    left:0;
+    height:2px;
+    -webkit-transition:width .4s;
+    -o-transition:width .4s;
+    transition:width .4s;
+    width:0;
+    background:#03a9f5;
+    height:100%;
+    top:0;
+    z-index:1
+}
+.butn:hover:after{
+    width:100%;
+    border-radius:3px
+}
+.butn.theme{
+    background: #03a9f5;
+    color:#fff
+}
+.butn.theme span{
+    color:#fff
+}
+.butn.theme:hover{
+    color:#fff;
+    border-radius:3px
+}
+.butn.theme:after{
+    background:#000;
+    border-radius:3px
+}
+.butn.theme.white-hover:hover{
+    color:#000
+}
+.butn.theme.white-hover:hover span{
+    color:#000
+}
+.butn.theme.white-hover:after{
+    background:#fff;
+    border-radius:3px
+}
+.butn.small{
+    padding:8px 20px
+}
+.butn.medium{
+    padding:10px 20px
+}
+@media screen and (max-width: 991px){
+    .butn{padding:10px 28px}
+}
+@media screen and (max-width: 767px){
+    .butn{padding:8px 26px}
+}
+.section-clients{
+    padding:0;
+}
+.clients img{
+    opacity:1;
+    -webkit-transition-duration:.3s;
+    transition-duration:.3s
+}
+.clients img:hover{
+    opacity:1
+}
+@media screen and (max-width: 992px){
+    .section-clients{
+        padding: 0
+    }
+    .section-clients .item{
+        text-align:center;
+        width:100%
+    }
+    .section-clients .owl-carousel .owl-item img{
+        max-width:75%;
+        display:inline-block
+    }
+}
