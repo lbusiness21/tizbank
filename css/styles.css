@@ -901,6 +901,9 @@ blockquote small:before{
     background:#f6f9fc;
     border-color:#E6E8EB
 }
+.alert-link{
+    font-family: 'Montserrat',  sans-serif;
+}
 .alert-success .alert-link{
     color:#218892
 }
@@ -1089,7 +1092,8 @@ blockquote small:before{
 .btn{
     border-radius:4px;
     padding:5px 16px;
-    box-shadow:none !important
+    box-shadow:none !important;
+    font-family: 'Montserrat',  sans-serif;
 }
 .btn:focus,
 .btn:active:focus,
@@ -2325,7 +2329,8 @@ th{
 }
 .page-header .nav>li{
     position:relative;
-    display:inline-block
+    display:inline-block;
+    
 }
 .page-header .nav>li>a:hover,
 .page-header .nav>li>a:focus{
@@ -3056,7 +3061,7 @@ span.chat-title{
 }
 .page-sidebar-fixed .page-sidebar .page-sidebar-inner{
     height:100% !important;
-    overflow:hidden
+    overflow:hidden;
 }
 body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv
 {height:auto !important
@@ -3111,7 +3116,7 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv
     color:#fff
 }
 .page-sidebar-menu{
-    padding:10px
+    padding:10px;
 }
 .page-sidebar-menu .has-sub.active-page>a.active,
 .page-sidebar-menu .has-sub.active-page a.active i,
@@ -3138,7 +3143,8 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv
 }
 .page-sidebar-menu ul li{
     list-style-type:none;
-    position:relative
+    position:relative;
+    
 }
 .page-sidebar-menu ul li a{
     display:block;
@@ -3199,8 +3205,16 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv
     vertical-align:middle;
     line-height:22px
 }
+#jinaHolder{
+    font-family: 'Montserrat',  sans-serif;
+}
+#displayNameHolder{
+    font-family: 'Montserrat',  sans-serif;
+}
 .page-sidebar-menu ul li a span{
-    vertical-align:middle
+    vertical-align:middle;
+    font-family: 'Montserrat',  sans-serif;
+    font-weight: 600; 
 }
 .page-sidebar-menu ul li.menu-divider{
     display:block;
@@ -3359,7 +3373,7 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv
 .page-sidebar-collapsed .page-sidebar .page-sidebar-inner{
     height:100%;
     overflow-y:hidden !important;
-    overflow-x:visible !important
+    overflow-x:visible !important;
 }
 .page-sidebar .slimScrollBar{
     display:none !important
@@ -4003,7 +4017,8 @@ body.error-page{
 .pricing h3{
     margin-bottom:0;
     font-size:32px;
-    font-weight: 600;
+    font-weight: 700;
+    font-family: 'Montserrat',  sans-serif;
 }
 
 .pricing span{
