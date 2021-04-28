@@ -1094,6 +1094,7 @@ blockquote small:before{
     padding:5px 16px;
     box-shadow:none !important;
     font-family: 'Montserrat',  sans-serif;
+
 }
 .btn:focus,
 .btn:active:focus,
@@ -3867,7 +3868,7 @@ body.error-page{
     }
 }
 .btn-addon {
-    font-weight: 600;
+    font-weight: 700;
 }
 .login-title span{
     margin-left:5px;
@@ -3997,7 +3998,7 @@ body.error-page{
         padding: 4px 0;
     }
     .pricing {
-        font-size: 10px;
+        font-size: 11px;
         font-weight: 500;
     }
 }
@@ -4032,7 +4033,7 @@ body.error-page{
 }
 @media (max-width: 500px){
     .pricing h3{
-        font-size: 28px;
+        font-size: 26px;
     }
     .broimage{
         width: 25px;
