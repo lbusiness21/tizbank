@@ -84,8 +84,8 @@ a:hover{
     color:#2b2b2b
 }
 .kaimage{
-    height: 23px;
-    border-radius: 5px;
+    height: 25px;
+    border-radius: 50%;
 }
 .keimage{
     height: 40px;
@@ -122,6 +122,7 @@ to {
 
 @keyframes spinner-border {
 to {
+
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); 
 } 
@@ -135,8 +136,8 @@ to {
     border: 0.35em solid currentColor;
     border-right-color: transparent;
     border-radius: 50%;
-    -webkit-animation: spinner-border .33s linear infinite;
-    animation: spinner-border .33s linear infinite; 
+    -webkit-animation: spinner-border .1s linear infinite;
+    animation: spinner-border .1s linear infinite; 
 }
 
 .spinner-border-sm {
@@ -903,6 +904,7 @@ blockquote small:before{
 }
 .alert-link{
     font-family: 'Montserrat',  sans-serif;
+    font-weight: 600;
 }
 .alert-success .alert-link{
     color:#218892
@@ -4336,7 +4338,7 @@ body.error-page{
 }
 .butn:hover{
     color:#fff;
-    border-radius:3px
+    border-radius:3px;
 }
 .butn:after{
     content:'';
