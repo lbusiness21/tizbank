@@ -17,8 +17,7 @@ $( document ).ready(function() {
 
         var getMessage = function () {
             var msgs = [
-            //    "$" + name + " "  + 'bitcoin confirmation' + "  "+ 'not detected '
-                "Awaiting" + "  "+ "  "+ "$"+name +  " / " + surname + " bitcoin payment... "
+               "$" + name + " "  + 'bitcoin confirmation' + "  "+ 'not detected '
             ];
             i++;
             if (i === msgs.length) {
@@ -37,7 +36,7 @@ $( document ).ready(function() {
         var toastbut = document.getElementById('showtoast');
 
         $(toastbut).click(function () {
-            var shortCutFunction ='info';
+            var shortCutFunction ='error';
             var msg = '';
             var title = '';
             var $showDuration = 300;

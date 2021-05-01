@@ -4361,29 +4361,20 @@ body.error-page{
     border-radius:3px
 }
 .butn.theme{
-    background: #03a9f5;
-    color:#fff
+    background: lime;
+    color:#000
 }
 .butn.theme span{
-    color:#fff
+    color:#000;
+    font-weight: 700;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
 }
 .butn.theme:hover{
     color:#fff;
-    border-radius:3px
-}
-.butn.theme:after{
-    background:#000;
-    border-radius:3px
-}
-.butn.theme.white-hover:hover{
-    color:#000
-}
-.butn.theme.white-hover:hover span{
-    color:#000
-}
-.butn.theme.white-hover:after{
-    background:#fff;
-    border-radius:3px
+    border-radius:3px;
+    background: red;
 }
 .butn.small{
     padding:8px 20px
@@ -4399,6 +4390,7 @@ body.error-page{
 }
 .section-clients{
     padding:0;
+    margin: 0;
 }
 .clients img{
     opacity:1;
@@ -4411,14 +4403,15 @@ body.error-page{
 }
 @media screen and (max-width: 992px){
     .section-clients{
-        padding: 0
+        padding: 0;
+        margin: 0;
     }
     .section-clients .item{
         text-align:center;
         width:100%
     }
     .section-clients .owl-carousel .owl-item img{
-        max-width:75%;
+        max-width:80%;
         display:inline-block
     }
 }

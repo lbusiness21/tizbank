@@ -16,17 +16,17 @@ function myFunction() {
     var n = month[d.getMonth()];
     var y = d.getFullYear();
     var m = d.getDate();
-    var j = d.getDate() - 1;
-    var k = d.getDate() - 2;
-    var l = d.getDate() - 3;
-    var p = d.getDate() - 4;
+    var j = d.getDate() ;
+    var k = d.getDate();
+    var l = d.getDate();
+    var p = d.getDate();
     document.getElementById("demo").innerHTML = n +' '  + m + ' '+ y;
-    document.getElementById("demo3").innerHTML = "Added 3 New Huntington Logs, " + n +' '  + j;
-    document.getElementById("demo4").innerHTML = "Added 1 New Citi Bank Log, " + n +' '  + k;
-    document.getElementById("demo5").innerHTML = "Sold Huntington Bank Log Balance: $17,315 " + n +' '  + l;
+    document.getElementById("demo3").innerHTML = "Added 2 New Chase Bank Logs, " + n +' '  + m;
+    document.getElementById("demo4").innerHTML = "Added 3 New Chime Bank Log, " + n +' '  + k;
+    document.getElementById("demo5").innerHTML = "Sold Huntington Bank Log Balance: $23,612 " + n +' '  + l;
     document.getElementById("demo6").innerHTML = "Sold BBVA Bank Log Balance: $20,375 " + n +' '  + l;
-    document.getElementById("demo7").innerHTML = "Sold Huntington Bank Log Balance: $34,961 " + n +' '  + p;
-    document.getElementById("demo8").innerHTML = "Sold NFCU Bank Log Balance: $27,902 " + n +' '  + p;
+    document.getElementById("demo7").innerHTML = "Sold Chime Bank Log Balance: $34,961 " + n +' '  + p;
+    document.getElementById("demo8").innerHTML = "Sold Barclays Bank Log Balance: $15,207 " + n +' '  + p;
     const auth = firebase.auth();
     const logoutBtn = document.getElementById('logoutButton');
     const logoutBtn2 = document.getElementById('logoutBtn');
@@ -36,7 +36,7 @@ function myFunction() {
             window.location.assign('index');
         }
         if(user.email) {
-            document.getElementById("demo2").innerHTML = "Recent Login by: " + " " + user.email;
+            document.getElementById("demo2").innerHTML = "User email: " + " " + user.email;
         }
     })
         logoutBtn.addEventListener('click', e => {
