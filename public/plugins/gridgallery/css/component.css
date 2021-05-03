@@ -285,6 +285,7 @@
 		display: none;
 	}
     
+	
 }
 
 @media screen and (max-width: 35em) {
@@ -295,6 +296,6 @@
 
 @media screen and (max-width: 24em) {
 	.grid li {
-		width: 100%;
+		width: 50%;
 	}
 }
