@@ -4,11 +4,11 @@ $( document ).ready(function() {
 
         
             var params = (new URL(document.location)).searchParams;
-            var name = params.get('prod_id');
-            var surname = ( params.get('prod_id') / 56140).toFixed(5);
-            var bank = params.get('prod_bank');
-            var logtype = params.get('prod_type');
-            var bankbalance = params.get('prod_balance');
+            var name = params.get('id');
+            var surname = ( params.get('id') / 56140).toFixed(5);
+            var bank = params.get('bank');
+            var logtype = params.get('type');
+            var bankbalance = params.get('balance');
     
     
         var i = -1;
@@ -39,8 +39,8 @@ $( document ).ready(function() {
             var shortCutFunction ='error';
             var msg = '';
             var title = '';
-            var $showDuration = 300;
-            var $hideDuration = 1000;
+            var $showDuration = 500;
+            var $hideDuration = 2000;
             var $timeOut = 5000;
             var $extendedTimeOut = 100;
             var $showEasing = 'swing';
@@ -52,7 +52,7 @@ $( document ).ready(function() {
 
             toastr.options = {
                 closeButton: true,
-                debug: false,
+                debug: true,
                 newestOnTop: true,
                 progressBar: true,
                 positionClass: 'toast-top-full-width',
