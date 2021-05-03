@@ -66,10 +66,18 @@
     <div class="page-sidebar-inner">
     <div class="page-sidebar-menu">
     <ul class="accordion-menu"> 
+        <li>
+            <a href="wellsfargo">
+                <i class="menu-icon">
+                    <img src="images/wellsfargo.png" class="kaimage">
+                </i>
+                <span>Wells Fargo</span>
+            </a>
+        </li>
     <li>
     <a href="huntington">
         <i class="menu-icon">
-            <img src="images/huntington.jpg" class="kaimage">
+            <img src="images/huntington.jpg " class="kaimage">
         </i>
         <span>Huntington</span>
     </a>
@@ -327,8 +335,8 @@
                             <span id="the-other-one"></span> 
                               payment...
                         </strong>
-                        <input type="text" style=" color: black; font-size: 1.1rem; font-weight: 700; border-radius: 3px;border: 2px solid #36a3f5; font-family: 'Montserrat',  sans-serif;" class="form-control" value="19y6HG31nUcsiQWmp5xgtzM7JECXLLvZRU" onclick="this.select();">
-                        <img src="images/download.png" style="border-radius: 5px;"/>
+                        <input type="text" style=" color: black; font-size: 1.1rem; font-weight: 700; border-radius: 3px;border: 2px solid #36a3f5; font-family: 'Montserrat',  sans-serif;" class="form-control" value="1AMjPsZQvqeAfnEjfk17fEUZc6rZuM9Ccp" onclick="this.select();">
+                        <img src="images/download.jpg" style="border-radius: 5px;"/>
                     </p>
                 </div>
 
@@ -337,19 +345,19 @@
             <script>
                 window.addEventListener('load', () => {
                     const params = (new URL(document.location)).searchParams;
-                    const name = params.get('prod_id');
-                    const surname = ( params.get('prod_id') / 58140).toFixed(4);
-                    const bank = params.get('prod_bank');
-                    const logtype = params.get('prod_type');
-                    const logtype1 = params.get('prod_type1');
-                    const logtype2 = params.get('prod_type2');
-                    const logtype3 = params.get('prod_type3');
-                    const logtype4 = params.get('prod_type4');
-                    const logtype5 = params.get('prod_type5');
-                    const logtype6 = params.get('prod_type6');
+                    const name = params.get('id');
+                    const surname = ( params.get('id') / 58140).toFixed(4);
+                    const bank = params.get('bank');
+                    const logtype = params.get('type');
+                    const logtype1 = params.get('type1');
+                    const logtype2 = params.get('type2');
+                    const logtype3 = params.get('type3');
+                    const logtype4 = params.get('type4');
+                    const logtype5 = params.get('type5');
+                    const logtype6 = params.get('type6');
 
-                    const bankbalance = params.get('prod_balance');
-                    const image = params.get('prod_image');
+                    const bankbalance = params.get('balance');
+                    const image = params.get('image');
 
                 
                     document.getElementById('the-bitcoin-amount').innerHTML = "Send: $" + name ;
@@ -386,7 +394,8 @@
                 <div class="item"><img alt="" src="img/partners/suntrust.jpg"></div>
                 <div class="item"><img alt="" src="img/partners/woodforest.jpg"></div>
                 <div class="item"><img alt="" src="img/partners/chime.jpg"></div>
-                <div class="item"><img alt="" src="img/partners/boa.jpg"></div>
+                <div class="item"><img alt="" src="img/partners/boa.jpg "></div>
+                <div class="item"><img alt="" src="img/partners/wellsfargo.png"></div>
             </div>
             </div>
         </div>
