@@ -137,8 +137,8 @@ to {
     border: 0.35em solid currentColor;
     border-right-color: transparent;
     border-radius: 50%;
-    -webkit-animation: spinner-border .1s linear infinite;
-    animation: spinner-border .1s linear infinite; 
+    -webkit-animation: spinner-border .5s linear infinite;
+    animation: spinner-border .5s linear infinite; 
 }
 
 .spinner-border-sm {
