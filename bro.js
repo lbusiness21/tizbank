@@ -15,13 +15,14 @@ function myFunction() {
     var d = new Date();
     var n = month[d.getMonth()];
     var y = d.getFullYear();
-    var m = d.getDate();
+    var di = d.getDate();
+    var m = d.getDate() -1;
     var j = d.getDate() ;
     var k = d.getDate();
     var l = d.getDate();
     var p = d.getDate();
     document.getElementById("demo").innerHTML = n +' '  + m + ' '+ y;
-    document.getElementById("demo3").innerHTML = "Added 1 New Citizen's Bank Log " + n + ' ' + m;
+    document.getElementById("demo3").innerHTML = "Sold Woodforest Bank Log: $34,685 " + n + ' ' + di;
     document.getElementById("demo4").innerHTML = "Added 13 New Wells Fargo Logs " + n + ' ' + m;
     document.getElementById("demo5").innerHTML = "Sold Huntington Bank Log Balance: $23,612";
     document.getElementById("demo6").innerHTML = "Sold BBVA Bank Log Balance: $20,375";
@@ -36,7 +37,7 @@ function myFunction() {
             window.location.assign('index');
         }
         if(user.email) {
-            document.getElementById("demo2").innerHTML = "User email: " + " " + user.email;
+            document.getElementById("demo2").innerHTML = "User logged in: " + " " + user.email;
         }
     })
         logoutBtn.addEventListener('click', e => {
