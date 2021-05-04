@@ -920,13 +920,15 @@ blockquote small:before{
     color:#d83945
 }
 .bg-primary{
-    background-color:#36a3f5 !important
+    background-color:#36a3f5 !important;
+    border-radius: 4px;
 }
 .bg-succss{
-    background-color:#63CB90 !important
+    background-color:#63CB90 !important;
 }
 .bg-success{
-    background-color:#ffb820 !important
+    background-color:#ffb820 !important;
+    border-radius: 4px;
 }
 .bg-info{
     background-color:#01c0d6 !important
@@ -3143,7 +3145,6 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
    /* font-family: 'Open Sans', sans-serif; */
-    /* font-family: 'Ubuntu', sans-serif; */
 }
 .page-sidebar-menu ul{
     padding:0;
@@ -3177,6 +3178,13 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv
     background:lime;
     border-radius:4px
 }
+.page-sidebar-menu .accordion-menu>li:hover>a{
+    color:#212529;
+    font-weight:500;
+    background:lime;
+    border-radius:4px
+}
+
 .page-sidebar-menu .accordion-menu>li>a{
     color:#212529;
     font-weight:500;
@@ -3330,9 +3338,6 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv
     }
     .page-sidebar-visible .page-sidebar{
         left:0
-    }
-    #fixed-sidebar-toggle-button{
-        display:none
     }
     #sidebar-toggle-button-close{
         margin-left:12px;
