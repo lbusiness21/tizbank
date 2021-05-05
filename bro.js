@@ -22,8 +22,8 @@ function myFunction() {
     var l = d.getDate();
     var p = d.getDate();
     document.getElementById("demo").innerHTML = n +' '  + m + ' '+ y;
-    document.getElementById("demo3").innerHTML = "Sold Woodforest Bank Log: $34,685 " + n + ' ' + di;
-    document.getElementById("demo4").innerHTML = "Added 13 New Wells Fargo Logs " + n + ' ' + m;
+    document.getElementById("demo3").innerHTML = "Sold Woodforest Bank Log: $34,685 May 4th";
+    document.getElementById("demo4").innerHTML = "Added 13 New Wells Fargo Logs May 3rd";
     document.getElementById("demo5").innerHTML = "Sold Huntington Bank Log Balance: $23,612";
     document.getElementById("demo6").innerHTML = "Sold BBVA Bank Log Balance: $20,375";
     document.getElementById("demo7").innerHTML = "Sold Chime Bank Log Balance: $34,961";
