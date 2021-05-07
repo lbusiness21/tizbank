@@ -4,7 +4,7 @@ function myFunction() {
 
     auth.onAuthStateChanged(user => {
         if(!user){
-            window.location.assign('index');
+            // window.location.assign('index');
         }
     })
         logoutBtn.addEventListener('click', e => {

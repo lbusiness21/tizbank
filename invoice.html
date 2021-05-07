@@ -212,11 +212,23 @@
                 </strong>
             </p>
             <div class="xzoom-container">
-                <input type="text" 
+                <div style="display: flex">
+                    <input type="text" 
                     style=" color: black; font-size: 15px; font-weight: 700; border-radius: 3px;border: 2px solid black;" 
                     class="form-control" 
                     value="12tXWPuY97a2ih7PvxBVGDRP1XYVugXWnr"
+                    id="text-to-copy"
                     onclick="this.select();">
+                    <button type="button" 
+                        class="butn medium"
+                        id="copy-text" 
+                        style="color: #000; background: aqua; padding: 0; margin-left: 4px;">     
+                    <span style="font-weight: 600; font-size: 20px; margin: 0; padding: 0;"
+                        id="copy-text-span">
+                       Copy
+                    </span>
+                </button>
+                </div>
                 <img class="margin-30px-bottom"
                     src="img/download.jpeg" 
                  />
@@ -312,7 +324,21 @@
         document.getElementById('log_image2').href = image;
         document.getElementById('log_image3').href = image;
         document.getElementById('log_image4').href = image;
-    })
+    });
+    document.getElementById('copy-text').addEventListener('click', function(e){
+        e.preventDefault();
+        document.getElementById('text-to-copy').select();
+        var copied;
+        try{
+            copied = document.execCommand('copy');
+        } 
+        catch (ex){
+            copied = false;  
+        }
+        if(copied){
+            document.getElementById('copy-text-span').innerHTML = 'Copied';    
+        }
+  });
 </script>
 <script src="bro.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
