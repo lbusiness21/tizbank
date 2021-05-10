@@ -16,5 +16,5 @@ auth.onAuthStateChanged(user => {
         photoHolder.setAttribute('src', user.photoURL);
     if(user.email)
         emailHolder.innerText = user.email;
-        invoiceHolder.innerText = "Invoice to: " + " " + user.email ;
+        invoiceHolder.innerText = "Invoice will be sent to: " + " " + user.email ;
 })

@@ -66,6 +66,11 @@
     font-weight: 700;
     font-family:"Montserrat",sans-serif;
 }
+.satoshinakamoto{
+    font-size: 20px;
+    font-weight: 700;
+    font-family:"Montserrat",sans-serif;
+}
 
 .list-style-5 li::before{
     content: '';
