@@ -6,6 +6,7 @@ $( document ).ready(function() {
             var params = (new URL(document.location)).searchParams;
             var toast = params.get('item_price');
             var bank = params.get('item_bank');
+            var toastbitcoin =( params.get('item_price') / 58140).toFixed(5);
     
         var i = -1;
         var toastCount = 0;
@@ -13,7 +14,7 @@ $( document ).ready(function() {
 
         var getMessage = function () {
             var msgs = [
-                "$" + toast + " " + 'bitcoin confirmation' + " "+ 'not detected'
+                toastbitcoin + " " + 'bitcoin confirmation' + " "+ 'not detected, scan the bitcoin address and pay $' + toast 
              ];
             i++;
             if (i === msgs.length) {
