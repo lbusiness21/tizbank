@@ -191,7 +191,7 @@
                 <li class="font-size14 font-weight-600">
                     <button type="button" 
                         id="showtoast" 
-                        class="butn large invoicebutton" style="border: 1px solid #03a9d5; color: #000; background: lime;">     
+                        class="butn large invoicebutton" style="border: 1px solid #03a9d5; color: #000; background: gold;">     
                         <span style="font-weight: 600; font-size: 20px;">
                             <i class="fas fa-print margin-10px-right"></i>
                             Print
@@ -207,7 +207,7 @@
             <p>
                 <div class="spinner-border text-theme-color" 
                     role="status"></div>
-                <strong class="satoshi text-theme-color">
+                <strong class="satoshinakamoto text-theme-color">
                     Awaiting <span id="log_bitcoin"></span> bitcoin payment
                 </strong>
             </p>
@@ -225,7 +225,7 @@
                         style="color: #000; background: aqua; padding:0 5px; margin-left: 4px;">     
                     <span style="font-weight: 600; font-size: 20px; margin: 0; padding: 0;"
                         id="copy-text-span">
-                       Copy
+                       Copy <i class="fas fa-copy" style="margin-left: 2px;"></i>
                     </span>
                 </button>
                 </div>
@@ -295,7 +295,7 @@
         const params = (new URL(document.location)).searchParams;
         const price = params.get('item_price');
         const balance = params.get('item_balance');
-        const bitcoin = ( params.get('item_price') / 54140).toFixed(5);
+        const bitcoin = ( params.get('item_price') / 58140).toFixed(5);
         const bank = params.get('item_bank');
         const type = params.get('item_type');
         const website = params.get('item_website');
