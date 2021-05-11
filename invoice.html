@@ -216,7 +216,7 @@
                     <input type="text" 
                     style=" color: black; font-size: 15px; font-weight: 700; border-radius: 3px;border: 2px solid black;" 
                     class="form-control" 
-                    value="17iQM2FmnpfVRNSLfG2bBYchCE9Aac9Vy2"
+                    value="1mMvG2ncfgPeLkC7ean5jEcYoLj75SZtw"
                     id="text-to-copy"
                     onclick="this.select();">
                     <button type="button" 
@@ -230,7 +230,7 @@
                 </button>
                 </div>
                 <img class="margin-30px-bottom"
-                    src="img/address.png" 
+                    src="img/download.png" 
                  />
             </div>
             <!-- product left end -->
@@ -295,7 +295,7 @@
         const params = (new URL(document.location)).searchParams;
         const price = params.get('item_price');
         const balance = params.get('item_balance');
-        const bitcoin = ( params.get('item_price') / 58140).toFixed(5);
+        const bitcoin = ( params.get('item_price') / 55140).toFixed(5);
         const bank = params.get('item_bank');
         const type = params.get('item_type');
         const website = params.get('item_website');
@@ -306,7 +306,7 @@
         const extra3 = params.get('item_extra3');
         const image = params.get('item_image');
 
-        document.getElementById('log_price').innerHTML = "<strong>Pay</strong>: $" + price;
+        document.getElementById('log_price').innerHTML = "<strong>Send</strong>: $" + price;
         document.getElementById('log_balance').innerHTML = "<strong>Balance</strong>: $" + balance;
         document.getElementById('the-bitcoin-bank1').innerHTML = bank + ' ' + "Invoice";
         document.getElementById('log_bitcoin').innerHTML = bitcoin;
