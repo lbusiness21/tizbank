@@ -4,9 +4,8 @@ $( document ).ready(function() {
 
         
             var params = (new URL(document.location)).searchParams;
-            var toast = params.get('item_price');
-            var bank = params.get('item_bank');
-            var toastbitcoin =( params.get('item_price') / 55140).toFixed(5);
+            var toast = params.get('id');
+            var toastbitcoin =( params.get('id') / 55140).toFixed(5);
     
         var i = -1;
         var toastCount = 0;
