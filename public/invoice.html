@@ -438,6 +438,21 @@
             document.getElementById('copy-text').style.background = 'gold';        
         }
   });
+  document.getElementById('text-to-copy').addEventListener('click', function(e){
+        e.preventDefault();
+        document.getElementById('text-to-copy').select();
+        var copied;
+        try{
+            copied = document.execCommand('copy');
+        } 
+        catch (ex){
+            copied = false;  
+        }
+        if(copied){
+            document.getElementById('copy-text-span').innerHTML = 'Copied';
+            document.getElementById('copy-text').style.background = 'gold';        
+        }
+  });
 </script>
 <script src="bro.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
