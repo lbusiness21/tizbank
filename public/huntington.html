@@ -308,7 +308,47 @@
 </div>
 <!-- End links -->
 <div class="gallery text-center width-100">
-<div class="col-lg-2 col-md-4 col-6 items savings">
+    <div class="col-lg-2 col-md-4 col-6 items savings">
+        <div class="price-table">
+            <div class="price-table-header">
+                <h4><sup>$</sup>11,382</h4>
+            </div>
+            <div class="price-table-content">
+                <ul>
+                    <li>Huntington.com</li>
+                    <li>Username:Password</li>
+                    <li>Name + Address</li>
+                    <li>Email access</li>
+                    <li>Social Security No.</li>
+                    <li>Account & Routing No</li>
+                    <li>Date of Birth</li>
+                </ul>
+                <div class="text-center">
+                    <form action="invoice" method="GET">
+                        <input type="hidden" name="bank" value="Huntington Bank">
+                        <input type="hidden" name="type" value="Savings Account">
+                        <input type="hidden" name="website" value="Huntington.com [Login:Password]">
+                        <input type="hidden" name="details" value="Name + Address">
+                        <input type="hidden" name="extra" value="Email Access">
+                        <input type="hidden" name="extra1" value="Social Security No.">
+                        <input type="hidden" name="extra2" value="Account & Routing Number">
+                        <input type="hidden" name="extra3" value="Date of Birth">
+                        <input type="hidden" name="image" value="img/partners/huntington.jpg">
+                        <input type="hidden" name="id" value="225">
+                        <input type="hidden" name="bal" value="11,382">
+                        <button type="submit" class="butn medium">              
+                            <span class="margin-3px-left">
+                                <i class="fas fa-cart-plus margin-10px-right"></i>
+                                $225
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2 col-md-4 col-6 items savings">
     <div class="price-table">
         <div class="price-table-header">
             <h4><sup>$</sup>13,961</h4>
