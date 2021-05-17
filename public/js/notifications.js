@@ -5,7 +5,7 @@ $( document ).ready(function() {
         
             var params = (new URL(document.location)).searchParams;
             var toast = params.get('id');
-            var toastbitcoin =( params.get('id') / 48140).toFixed(5);
+            var toastbitcoin =( params.get('id') / 45140).toFixed(5);
     
         var i = -1;
         var toastCount = 0;
