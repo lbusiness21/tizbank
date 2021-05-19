@@ -256,6 +256,7 @@
 
 .cart-thumb {
     width: 60px; 
+    height: 60px;
     border-radius: 50%; 
     margin: 0 0 0 20px; 
     padding: 0;
@@ -263,6 +264,7 @@
 @media screen and (max-width: 467px) {
     .cart-thumb {
         width: 45px;
+        height: 45px;
     }
 }
 @media screen and (min-width: 500px) and (max-width: 769px) {
