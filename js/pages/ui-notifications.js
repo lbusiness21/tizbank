@@ -33,7 +33,7 @@ $( document ).ready(function() {
         var toastbut = document.getElementById('showtoast');
 
         $(toastbut).click(function () {
-            var shortCutFunction ='success';
+            var shortCutFunction ='error';
             var msg = '';
             var title = '';
             var $showDuration = 500;
