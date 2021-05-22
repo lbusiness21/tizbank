@@ -25,7 +25,14 @@
     /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Montserrat',  sans-serif;
 }
-
+.moneycoming{
+    font-size: 1.2rem;
+}
+.balance input {
+    font-size:32px;
+    font-weight: 700;
+    font-family: 'Montserrat',  sans-serif;
+}
 .iframebro {
     height: 820px;
     border: 2px solid #36a3f5;
@@ -1055,6 +1062,13 @@ blockquote small:before{
 
 .btn-danger{
     color:#000;background-color: orangered;border-color:orangered
+}
+.keimage40{
+    border-radius: 50%;
+    width: 67px;
+    height: 67px;
+    margin-right: 5px;
+    border: 1px solid aqua;
 }
 
 .btn-bitcoin{
@@ -3683,7 +3697,7 @@ body.error-page{
     height:105px;
     margin-bottom:0px;
     float: left; 
-    border: 2px solid goldenrod;
+    border: 1px solid aqua;
     border-radius: 50%;
 }
 .team .team-member{
@@ -3919,7 +3933,7 @@ body.error-page{
 
 .prizing{
     text-align:center;
-    border:2px solid wheat;
+    border:2px solid gold;
     border-radius: 5px;
     font-size:14px;
     padding-left:0
