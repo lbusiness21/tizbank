@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="bitcoin" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="bank logs dark net" />
+    <meta name="description" content="Cashout Method" />
+
+    <!-- title  -->
+    <title>Cashout Method</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/paypal.jpg">
+    <link rel="apple-touch-icon" href="images/paypal.jpg">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/paypal.jpg">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/paypal.jpg">
+
+    <!-- common plugins -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="plugins/icomoon/style.css" />
+    <link rel="stylesheet" href="plugins/uniform/css/default.css" />
+    <link rel="stylesheet" href="plugins/switchery/switchery.min.css" />
+
+    <!-- datatables plugin -->
+    <link rel="stylesheet" href="plugins/datatables/css/jquery.datatables.min.css" />
+    <link rel="stylesheet" href="plugins/datatables/css/jquery.datatables_themeroller.css" />
+
+    <link rel="stylesheet" href="plugins/vertical-timeline/css/style.css" />
+
+    <!-- bootstrap-datepicker plugin -->
+    <link rel="stylesheet" href="plugins/bootstrap-datepicker/css/datepicker.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/plugins/owl.carousel.min.css" />
+
+</head>
+
+<body class="page-sidebar-fixed  page-header-fixed" onload="myFunction()" oncontextmenu="return false">
+
+    <!-- start page loadin -->
+    <div id="preloader">
+        <div class="row loader">
+            <div class="loader-icon"></div>
+        </div>
+    </div>
+    <!-- end page loading -->
+
+    <!-- start page container -->
+    <div class="page-container">
+        <!-- start page sidebar -->
+        <div class="page-sidebar">
+            <a class="logo-box" href="huntington">
+                <span id="jinaHolder"></span>
+                <i class="icon-close" id="sidebar-toggle-button-close"></i>
+            </a>
+<div class="page-sidebar-inner">
+<div class="page-sidebar-menu">
+<ul class="accordion-menu"> 
+    <li>
+        <a href="wellsfargo">
+            <i class="menu-icon">
+                <img src="images/wellsfargo.png " class="kaimage">
+            </i>
+            <span>Wells Fargo</span>
+        </a>
+    </li>
+<li>
+<a href="huntington">
+    <i class="menu-icon">
+        <img src="images/huntington.jpg " class="kaimage">
+    </i>
+    <span>Huntington</span>
+</a>
+</li>
+<li>
+<a href="woodforest">
+    <i class="menu-icon">
+        <img src="images/woodforest.jpg" class="kaimage" style="border-radius: 50%;">
+    </i>
+    <span>Woodforest</span>
+</a>
+</li>
+<li>
+<a href="boa">
+    <i class="menu-icon">
+        <img src="images/boa.jpg" class="kaimage" style="border-radius: 50%;">
+    </i>
+    <span>Bank of America</span>
+</a>
+</li>
+<li>
+<a href="chime">
+    <i class="menu-icon">
+        <img src="images/chime.jpg" class="kaimage" style="border-radius: 50%;">
+    </i>
+    <span>Chime Bank</span>
+</a>
+</li>
+<li>
+<a href="barclays">
+    <i class="menu-icon">
+        <img src="images/barclays.jpg" class="kaimage">
+    </i>
+    <span>Barclays Bank</span>
+</a>
+</li>
+<li>
+<a href="citi">
+    <i class="menu-icon">
+        <img src="images/citi.jpg" class="kaimage">
+    </i>
+    <span>Citi Bank</span>
+</a>
+</li>
+<li>
+<a href="bbt">
+    <i class="menu-icon">
+        <img src="images/bbt.jpg" class="kaimage">
+    </i>
+    <span>BB&T Bank</span>
+</a>
+</li>
+<li>
+<a href="bbva">
+    <i class="menu-icon">
+        <img src="images/bbva.jpg" class="kaimage">
+    </i>
+    <span>BBVA Bank</span>
+</a>
+</li>
+<li>
+<a href="chase">
+    <i class="menu-icon">
+        <img src="images/chase.jpg" class="kaimage">
+    </i>
+    <span>Chase Bank</span>
+</a>
+</li>
+<li>
+<a href="nfcu">
+    <i class="menu-icon">
+        <img src="images/nfcu.jpg" class="kaimage">
+    </i>
+    <span>NFCU Bank</span>
+</a>
+</li>
+<li>
+<a href="rbc">
+    <i class="menu-icon">
+        <img src="images/rbc.jpg" class="kaimage">
+    </i>
+    <span>RBC Bank</span>
+</a>
+</li>
+<li>
+<a href="pnc">
+    <i class="menu-icon">
+        <img src="images/pnc.jpg" class="kaimage">
+    </i>
+    <span>PNC Bank</span>
+</a>
+</li>
+<li>
+<a href="suntrust">
+    <i class="menu-icon">
+        <img src="images/suntrust.jpg" class="kaimage">
+    </i>
+    <span>SunTrust Bank</span>
+</a>
+</li>
+
+<li>
+<a href="scotia">
+    <i class="menu-icon">
+        <img src="images/scotia.jpg" class="kaimage">
+    </i>
+    <span>Scotia Bank</span>
+</a>
+</li>
+
+
+<li class="menu-divider"></li>
+<li>
+    <a href="javascript:void(0);">
+        <i class="menu-icon icon-public"></i>
+        <span class="label label-danger" id="demo" ></span>
+    </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<!-- start page content -->
+<div class="page-content">
+    <!-- start page header -->
+    <div class="page-header">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<div class="logo-sm">
+    <a href="javascript:void(0)" id="sidebar-toggle-button" style="padding: 10px 15px; background: aliceblue; border-radius: 3px;">
+        <i class="fas fa-bars" style="font-size: 1.2rem;  color: black;"></i>
+    </a>
+<a class="logo-box" href="huntington">
+    <span id="displayNameHolder"></span>
+</a>
+<ul class="nav navbar-nav navbar-right">
+<li style="float: right;" class="dropdown user-dropdown">
+    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        <img id="photoHolder" alt="" class="rounded-circle keimage">
+    </a>
+       <ul class="dropdown-menu dropdown-lg dropdown-content">
+        <li class="drop-title" style="padding: 5px">
+            <button type="button" class="btn btn-danger" id="logoutBtn" style="font-size: 1.2rem; font-weight: 700; color: #000;">
+                Log Out
+            </button>
+        </li>
+        <li class="drop-title" style="padding: 5px;">
+            <button type="button" class="btn btn-profile" onclick="window.location.assign('profile')" style="font-size: 1.2rem; font-weight: 700;">
+                Profile
+            </button>
+        </li> 
+        <li class="drop-title" style="padding: 5px">
+            <button type="button" class="btn btn-bitcoin" style="font-size: 1.2rem; font-weight: 700;" data-toggle="modal" data-target="#myModal">
+                Notifications
+            </button>
+        </li>
+        <li class="drop-title" style="padding: 5px;">
+            <button type="button" class="btn btn-warning" onclick="window.location.assign('cashout')" style="font-size: 1.2rem; font-weight: 700;">
+                Cashout Method
+            </button>
+        </li>
+        <li class="drop-title" style="padding: 5px;">
+            <button type="button" class="btn btn-success" onclick="window.location.assign('paypal.pdf')" style="font-size: 1.2rem; font-weight: 700; background: aqua;">
+                <i class="fas fa-file-pdf"></i>
+                PayPal PDF
+            </button>
+        </li>
+
+    </ul>  
+</li>    
+</ul>
+</div>        
+</div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">    
+        <li><a href="javascript:void(0)" id="toggle-fullscreen"><i class="fa fa-expand"></i></a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">                
+        <li class="dropdown">
+            <button type="button" class="btn btn-bitcoin" onclick="window.location.assign('paypal.pdf')" style="font-size: 1.2rem; font-weight: 700; background: aqua;">
+                <i class="fas fa-file-pdf"></i>
+                PayPal PDF
+            </button>
+            <button type="button" class="btn btn-warning" onclick="window.location.assign('cashout')" style="font-size: 1.2rem; font-weight: 700;">
+                Cashout Method
+            </button>
+            <button type="button" class="btn btn-bitcoin" style="font-size: 1.2rem; font-weight: 700;" data-toggle="modal" data-target="#myModal">
+                Notifications
+            </button>
+            <button type="button" class="btn btn-profile" onclick="window.location.assign('profile')" style="font-size: 1.2rem; font-weight: 700;" >
+                Profile
+            </button>
+            <button type="button" class="btn btn-danger" style="font-size: 1.2rem; font-weight: 700;" id="logoutButton">
+                Log Out
+            </button>
+        </li>
+        <li style="margin: auto;" class="dropdown user-dropdown">
+            <a>
+                <img id="imgHolder" alt="" class="rounded-circle">
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- navbar-collapse -->
+</div>
+<!-- /.container-fluid -->
+</nav>
+</div>
+<!-- end page he -->
+
+
+
+
+
+            <!-- start page inner -->
+            <div class="page-inner">
+
+
+                <!-- start page main wrapper -->
+                <div id="main-wrapper">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <section id="cd-timeline" class="cd-container">
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-img cd-success">
+                                        <i class="fas fa-tags"></i>
+                                    </div>
+                                    <!-- cd-timeline-img -->
+                                    <div class="cd-timeline-content">
+                                        <h4>Step 1</h4>
+                                        <img src="cashout/1.jpg" />
+                                        <p>Login to an Old PayPal account</p>
+                                    </div>
+                                    <!-- cd-timeline-content -->
+                                </div>
+                                <!-- cd-timeline-block -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-img cd-danger">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <!-- cd-timeline-img -->
+                                    <div class="cd-timeline-content">
+                                        <h4>Step 2</h4>
+                                        <img src="cashout/2.jpg" />
+                                        <p>Click on WALLET on the top menu</p>
+                                    </div>
+                                    <!-- cd-timeline-content -->
+                                </div>
+                                <!-- cd-timeline-block -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-img cd-info">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <!-- cd-timeline-img -->
+                                    <div class="cd-timeline-content">
+                                        <h4>Step 3</h4>
+                                        <img src="cashout/3.jpg" />
+                                        <p>Now click on LINK A CARD OR BANK</p>
+                                    </div>
+                                    <!-- cd-timeline-content -->
+                                </div>
+                                <!-- cd-timeline-block -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-img cd-info">
+                                        <i class="fas fa-comments"></i>
+                                    </div>
+                                    <!-- cd-timeline-img -->
+                                    <div class="cd-timeline-content">
+                                        <h4>Step 4</h4>
+                                        <img src="cashout/4.jpg" alt="" />
+                                        <p>Click on LINK A BANK ACCOUNT (u can add cc if it cc u want to work with)</p>
+                                    </div>
+                                    <!-- cd-timeline-content -->
+                                </div>
+                                <!-- cd-timeline-block -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-img cd-warning">
+                                        <i class="fas fa-pen-square"></i>
+                                    </div>
+                                    <!-- cd-timeline-img -->
+                                    <div class="cd-timeline-content">
+                                        <h4>Step 5</h4>
+                                        <img src="cashout/5.jpg" alt="" />
+                                        <p>Now you can choose your bank account from this list, 
+                                            I bought a suntrust bank login 
+                                            so will choose SUNTRUST/HUNTINGTON/CHASE
+                                        </p>
+                                    </div>
+                                    <!-- cd-timeline-content -->
+                                </div>
+                                <!-- cd-timeline-block -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-img cd-primary">
+                                        <i class="fas fa-paperclip"></i>
+                                    </div>
+                                    <!-- cd-timeline-img -->
+                                    <div class="cd-timeline-content">
+                                        <h4>Step 6</h4>
+                                        <img src="cashout/6.jpg" alt="" />
+                                        <p>You will input the account and routine number of bank info u bought from the shop or spammer</p>
+                                    </div>
+                                    <!-- cd-timeline-content -->
+                                </div>
+                                <!-- cd-timeline-block -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-img cd-primary">
+                                        <i class="fas fa-paperclip"></i>
+                                    </div>
+                                    <!-- cd-timeline-img -->
+                                    <div class="cd-timeline-content">
+                                        <h4>Step 7</h4>
+                                        <img src="cashout/7.jpg" alt="" />
+                                        <p>After that, click on AGREE AND LINK</p>
+                                    </div>
+                                    <!-- cd-timeline-content -->
+                                </div>
+                                <!-- cd-timeline-block -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-img cd-primary">
+                                        <i class="fas fa-paperclip"></i>
+                                    </div>
+                                    <!-- cd-timeline-img -->
+                                    <div class="cd-timeline-content">
+                                        <h4>Step 8</h4>
+                                        <img src="cashout/8.jpg" alt="" />
+                                        <p>Now this the next Page, to make this transfer Faster, click on CONFIRM INSTANTLY INSTEAD</p>
+		                                <p>Enter the username and password of the bank login info u bought and click CONFIRM INSTANTLY</p>
+                                    </div>
+                                    <!-- cd-timeline-content -->
+                                </div>
+                                <!-- cd-timeline-block -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-img cd-primary">
+                                        <i class="fas fa-paperclip"></i>
+                                    </div>
+                                    <!-- cd-timeline-img -->
+                                    <div class="cd-timeline-content">
+                                        <h4>Step 9</h4>
+                                        <img src="cashout/9.jpg" alt="" />
+                                        <p>A code will be sent to the EMAIL ATTACHED TO THE BANK INFO u bought , 
+                                            always make sure u are using a bank log with email attached , 
+                                            it makes the job more professional
+                                        </p>
+                                    </div>
+                                    <!-- cd-timeline-content -->
+                                </div>
+                                <!-- cd-timeline-block -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-img cd-primary">
+                                        <i class="fas fa-paperclip"></i>
+                                    </div>
+                                    <!-- cd-timeline-img -->
+                                    <div class="cd-timeline-content">
+                                        <h4>Step 10</h4>
+                                        <img src="cashout/10.jpg" alt="" />
+                                        <p>Finally done ✅ ✅ ✅</p>
+                                    </div>
+                                    <!-- cd-timeline-content -->
+                                </div>
+                                <!-- cd-timeline-block -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-img cd-primary">
+                                        <i class="fas fa-paperclip"></i>
+                                    </div>
+                                    <!-- cd-timeline-img -->
+                                    <div class="cd-timeline-content">
+                                        <h4>Step 11</h4>
+                                        <img src="cashout/11.jpg" alt="" />
+                                        <p>Click on ADD MONEY TO YOUR BALANCE</p>
+                                    </div>
+                                    <!-- cd-timeline-content -->
+                                </div>
+                                <!-- cd-timeline-block -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-img cd-primary">
+                                        <i class="fas fa-paperclip"></i>
+                                    </div>
+                                    <!-- cd-timeline-img -->
+                                    <div class="cd-timeline-content">
+                                        <h4>Step 12</h4>
+                                        <img src="cashout/12.jpg" alt="" />
+                                        <p>You will choose the bank added and then input AMOUNT</p>
+                                        <p>PayPal takes 2days to reflect for almost all banks 
+                                            but it will reflect INSTANTLY if you use the following banks 
+                                            -USAA
+                                            -NFCU
+                                            or any Bank with FEDERAL next to it
+                                            Apart from that, just continue with the 2days reflection, 
+                                            all the ones I do are  24hours reflection so no need to rush\
+                                        </p>
+                                    </div>
+                                    <!-- cd-timeline-content -->
+                                </div>
+                                <!-- cd-timeline-block -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-img cd-primary">
+                                        <i class="fas fa-paperclip"></i>
+                                    </div>
+                                    <!-- cd-timeline-img -->
+                                    <div class="cd-timeline-content">
+                                        <h4>Step 13</h4>
+                                        <img src="cashout/13.jpg" alt="" />
+                                        <p>Money added 💰 💰 ✅ ✅</p>
+                                    </div>
+                                    <!-- cd-timeline-content -->
+                                </div>
+                                <!-- cd-timeline-block -->
+                            </section>
+                            <!-- cd-timeline -->
+                        </div>
+                    </div>
+                    <!-- Row -->
+                
+                    </div>
+<!-- end page main wrappe -->
+</div>
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Notifications</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-warning alert-dismissible" role="alert">          
+                    <a id="demo2" class="alert-link"></a>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="alert alert-info alert-dismissible" role="alert">          
+                    <a id="demo3" class="alert-link"></a>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="alert alert-info alert-dismissible" role="alert">          
+                    <a id="demo4" class="alert-link"></a>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <a id="demo5" class="alert-link"></a>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <a id="demo6" class="alert-link"></a>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <a id="demo7" class="alert-link"></a>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="alert alert-success alert-dismissible mb-0" role="alert">
+                    <a id="demo8" class="alert-link"></a>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>    
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" style="font-weight: 600;">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!-- end page cont -->
+
+
+</div>
+<script src="bro.js"></script>
+
+    
+
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyCn41GlD77zNVVpbrKGbrpihh5b9DQ5Tqo",
+    authDomain: "bankloginsusa.firebaseapp.com",
+    projectId: "bankloginsusa",
+    storageBucket: "bankloginsusa.appspot.com",
+    messagingSenderId: "273010669402",
+    appId: "1:273010669402:web:d5190568ea61067098e563",
+    measurementId: "G-C1LQFFZN1X"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="js/profile.js"></script>
+<script src="plugins/jquery/jquery-3.1.0.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="plugins/uniform/js/jquery.uniform.standalone.js"></script>
+<script src="plugins/switchery/switchery.min.js"></script>
+<script src="plugins/vertical-timeline/js/main.js"></script>
+<script src="js/pages/timeline.js"></script>
+<script src="plugins/vertical-timeline/js/modernizr.js"></script>
+<script src="js/main.js"></script>
+<script src="js/pages/ui-modals.js"></script>
+
+</body>
+</html>
