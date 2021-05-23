@@ -210,7 +210,7 @@
     <a href="javascript:void(0)" id="sidebar-toggle-button" style="padding: 10px 15px; background: aliceblue; border-radius: 3px;">
         <i class="fas fa-bars" style="font-size: 1.2rem;  color: black;"></i>
     </a>
-<a class="logo-box" href="huntington">
+<a class="logo-box" href="chime">
     <span id="displayNameHolder"></span>
 </a>
 <ul class="nav navbar-nav navbar-right">
@@ -225,7 +225,7 @@
             </button>
         </li>
         <li class="drop-title" style="padding: 5px;">
-            <button type="button" class="btn btn-profile" onclick="window.location.assign('profile')" style="font-size: 1.2rem; font-weight: 700;">
+            <button type="button" class="btn btn-profile" data-toggle="modal" data-target="#profileModal" style="font-size: 1.2rem; font-weight: 700;">
                 Profile
             </button>
         </li> 
@@ -270,7 +270,7 @@
             <button type="button" class="btn btn-bitcoin" style="font-size: 1.2rem; font-weight: 700;" data-toggle="modal" data-target="#myModal">
                 Notifications
             </button>
-            <button type="button" class="btn btn-profile" onclick="window.location.assign('profile')" style="font-size: 1.2rem; font-weight: 700;" >
+            <button type="button" class="btn btn-profile" style="font-size: 1.2rem; font-weight: 700;" data-toggle="modal" data-target="#profileModal">
                 Profile
             </button>
             <button type="button" class="btn btn-danger" style="font-size: 1.2rem; font-weight: 700;" id="logoutButton">
@@ -289,8 +289,7 @@
 <!-- /.container-fluid -->
 </nav>
 </div>
-<!-- end page he -->
-
+<!-- end page -->
 
 <!-- start page inner -->
 <div class="page-inner">
@@ -1150,6 +1149,133 @@
 
 
 
+<div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Profile</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12">
+                    <div class="card card-white">
+                        <div class="card-body user-profile-card">
+                            <img id="imagineHolder" 
+                            class="user-profile-image rounded-circle" alt="" />
+                            <br>
+                            <h4 class="text-center m-t-lg" id="janeHolder">
+                            </h4>
+                            <hr>
+                            <ul class="list-unstyled text-center">
+                                <li>
+                                    <p>
+                                        <i class="fas fa-user m-r-xs"></i>
+                                        <a id="uidHolder"></a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fas fa-landmark m-r-xs"></i>
+                                        <a>Purchased Bank Logs: 0</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="card card-white">
+                        <div class="card-heading clearfix">
+                            <h4 class="card-title">
+                                Edit Account Details
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <form class="needs-validation" novalidate>
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-3">
+                                        <label>Photo URL</label>
+                                        <input class="form-control" id="photo" placeholder="Enter new Photo URL...">
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="col-md-12 mb-3">
+                                        <label>Name</label>
+                                        <input type="text" class="form-control" id="displayName" placeholder="Enter new Name..."  maxlength="13">
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-bitcoin" style="font-weight: 600;" type="submit" id="edit">
+                                    Confirm
+                                </button>
+                            </form>
+                
+                            <script>
+                                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                                (function() {
+                                    'use strict';
+                                    window.addEventListener('load', function() {
+                                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                        var forms = document.getElementsByClassName('needs-validation');
+                                        // Loop over them and prevent submission
+                                        var validation = Array.prototype.filter.call(forms, function(form) {
+                                            form.addEventListener('submit', function(event) {
+                                                if (form.checkValidity() === false) {
+                                                    event.preventDefault();
+                                                    event.stopPropagation();
+                                                }
+                                                form.classList.add('was-validated');
+                                            }, false);
+                                        });
+                                    }, false);
+                                })();
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            
+            
+            <div class="col-md-12">
+                <div class="card card-white">
+                    <div class="card-heading clearfix">
+                        <h4 class="card-title">
+                           <i class="fas fa-landmark"></i> PURCHASED BANK LOGS</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="example" class="display table" style="width: 100%;">
+                                <thead>
+                                    <tr>
+                                        <th>Bank</th>
+                                        <th>Date</th>
+                                        <th>Balance</th>
+                                        <th>Price</th>
+                                        <th>View</th>
+                                        <th>Refund</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" style="font-weight: 600;">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -1239,6 +1365,7 @@
     firebase.initializeApp(firebaseConfig);
     </script>
     <script src="js/profile.js"></script>
+
     <script src="js/core.min.js"></script>
     <script src="js/main3.js"></script>
     <script src="plugins/jquery/jquery-3.1.0.min.js"></script>

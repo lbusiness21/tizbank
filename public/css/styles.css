@@ -800,7 +800,7 @@ blockquote small:before{
     border-color:#E6E8EB
 }
 .card-body{
-    padding: 0 15px;
+    padding: 0 0px;
     background: aliceblue;
 }
 .card-heading{
@@ -1059,6 +1059,10 @@ blockquote small:before{
     border-color:#ec5e70;
     color: #000;
 } */
+#janeHolder{
+    font-weight: 600;
+}
+
 
 .btn-danger{
     color:#000;background-color: orangered;border-color:orangered
