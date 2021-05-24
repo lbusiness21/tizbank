@@ -20,7 +20,7 @@ modal.find('.modal-title').text(type)
 modal.find('.price input').val( price)
 modal.find('.moneycoming').html(`
   Buy
-  <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+  <i class="fab fa-bitcoin" style="margin-right: 5px;"></i>
   $${price}`)
 modal.find('.bank input').val(bank)
 modal.find('.image input').val(image)

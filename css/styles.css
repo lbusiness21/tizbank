@@ -118,7 +118,10 @@ a:hover{
         height: 23px;
     }
 }
-
+.close {
+    color: red;
+    opacity: 1;
+}
 
 @-webkit-keyframes spinner-border {
 to {
@@ -134,21 +137,10 @@ to {
 }
 
 .spinner-border {
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    vertical-align: text-bottom;
-    border: 0.35em solid currentColor;
-    border-right-color: transparent;
+    border-color: transparent;
     border-radius: 50%;
-    -webkit-animation: spinner-border .5s linear infinite;
-    animation: spinner-border .5s linear infinite; 
-}
-
-.spinner-border-sm {
-    width: 1rem;
-    height: 1rem;
-    border-width: 0.2em; 
+    -webkit-animation: spinner-border .67s linear infinite;
+    animation: spinner-border .67s linear infinite; 
 }
 
 p{
