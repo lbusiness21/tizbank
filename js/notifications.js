@@ -3,17 +3,23 @@ $( document ).ready(function() {
     "use strict";
 
         
-            var params = (new URL(document.location)).searchParams;
-            var toast = params.get('id');
-            var toastbitcoin =( params.get('id') / 34140).toFixed(5);
-    
+        var params = (new URL(document.location)).searchParams;
+        var toast = params.get('id');
+        let ws = new WebSocket('wss://stream.binance.com:9443/ws/btcusdt@kline_1h');
+        var toastbitcoin = '';
+        ws.onmessage = (event) => {
+            console.log(event.data);
+            let stockObject = JSON.parse(event.data);
+            toastbitcoin = (toast / (parseFloat(stockObject.k.c))).toFixed(5);
+        }
+
         var i = -1;
         var toastCount = 0;
         var $toastlast;
 
         var getMessage = function () {
             var msgs = [
-                toastbitcoin + " " + 'bitcoin confirmation' + " "+ 'not detected, scan the bitcoin address and send $' + toast 
+                toastbitcoin + " " + 'Bitcoin confirmation' + " "+ 'not detected , scan the bitcoin address and send $' + toast 
              ];
             i++;
             if (i === msgs.length) {
