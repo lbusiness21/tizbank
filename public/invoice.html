@@ -397,13 +397,14 @@
 </div>
 </div>
 <!-- end switcher section -->
+
+<!-- <script src="js/bitcoin.js"></script> -->
     
 <script>
     window.addEventListener('load', () => {
         const params = (new URL(document.location)).searchParams;
         const price = params.get('id');
         const balance = params.get('bal');
-        const bitcoin = ( params.get('id') / 34140).toFixed(5);
         const bank = params.get('bank');
         const type = params.get('type');
         const website = params.get('website');
@@ -417,7 +418,6 @@
         document.getElementById('log_price').innerHTML = "<strong>Send</strong>: $" + price;
         document.getElementById('log_balance').innerHTML = "<strong>Balance</strong>: $" + balance;
         document.getElementById('the-bitcoin-bank1').innerHTML = bank + ' ' + "Invoice";
-        document.getElementById('log_bitcoin').innerHTML = bitcoin;
         document.getElementById('log_bank').innerHTML = bank;
         document.getElementById('log_type').innerHTML = type;
         document.getElementById('log_website').innerHTML = website;
@@ -432,6 +432,15 @@
         document.getElementById('log_image2').href = image;
         document.getElementById('log_image3').href = image;
         document.getElementById('log_image4').href = image;
+
+        let ws = new WebSocket('wss://stream.binance.com:9443/ws/btcusdt@kline_1h');
+        let stockPriceElement = document.getElementById('log_bitcoin');
+
+        ws.onmessage = (event) => {
+            // console.log(event.data);
+            let stockObject = JSON.parse(event.data);
+            stockPriceElement.innerText = (price / (parseFloat(stockObject.k.c))).toFixed(5);
+        }
     });
     document.getElementById('copy-text').addEventListener('click', function(e){
         e.preventDefault();
