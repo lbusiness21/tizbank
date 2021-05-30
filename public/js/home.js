@@ -1,4 +1,5 @@
 const signInWithGoogleButton = document.getElementById('signInWithGoogle');
+
 const auth = firebase.auth();
 
 const signInWithGoogle = () => {
@@ -11,9 +12,11 @@ const signInWithGoogle = () => {
     console.error(error);
   })
 }
+
 signInWithGoogleButton.addEventListener('click', signInWithGoogle);
 
 auth.onAuthStateChanged(user => {
-  if(user)
+  if(user){
     window.location.assign('chase');
+  }
 })
