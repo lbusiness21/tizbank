@@ -46,7 +46,7 @@
 .broimage{
     width: 30px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 4px;
     border: 1px solid goldenrod;
     float: left;
 }
@@ -1060,7 +1060,7 @@ blockquote small:before{
     color:#000;background-color: orangered;border-color:orangered
 }
 .keimage40{
-    border-radius: 50%;
+    border-radius: 4px;
     width: 67px;
     height: 67px;
     margin-right: 5px;
@@ -3694,7 +3694,7 @@ body.error-page{
     margin-bottom:0px;
     float: left; 
     border: 1px solid aqua;
-    border-radius: 50%;
+    border-radius: 4px;
 }
 .team .team-member{
     display:block;
