@@ -8,7 +8,7 @@ function myFunction() {
     var y = d.getFullYear();
     var m = d.getDate();
     document.getElementById("demo").innerHTML = n +' '  + m + ' '+ y;
-    document.getElementById("demo3").innerHTML = "Added 2 Barclays Bank Log, June 1";
+    document.getElementById("demo3").innerHTML = "Added 2 Barclays Bank Logs, June 1";
     document.getElementById("demo4").innerHTML = "Added 3 Scotia Bank Logs, June 1";
     document.getElementById("demo5").innerHTML = "Sold Chase Bank Log Balance: $23,741, June 1";
     document.getElementById("demo6").innerHTML = "Sold Huntington Bank Log Balance: $36,194, June 1";
@@ -23,7 +23,7 @@ function myFunction() {
             window.location.assign('index');
         }
         if(user.email) {
-            document.getElementById("demo2").innerHTML = "Check" + user.email + " spam folder, after purchasing a bank log";
+            document.getElementById("demo2").innerHTML = "Check" + " "  + user.email + " spam folder, after purchasing a bank log";
         }
     })
         logoutBtn.addEventListener('click', e => {
