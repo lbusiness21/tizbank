@@ -149,7 +149,7 @@ $(document).ready(function() {
         elems.forEach(function(html) {
             var switchery = new Switchery(html,{
                 size: 'small',
-                color: '#526069'
+                color: 'aqua'
             });
         });
     };

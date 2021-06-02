@@ -1410,7 +1410,9 @@ div.checker span{
 }
 input[type=checkbox],
 input[type=radio]{
-    margin-right:4px
+    margin-right:4px;
+    color: red;
+    background: red;
 }
 input.form-control.input-rounded{
     border-radius:60px
@@ -3351,6 +3353,8 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv
         float:right;
         height:14px;
         font-size:18px;
+        color: red;
+        font-weight: 700;
         margin-top:6px;
         display:block
     }
