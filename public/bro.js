@@ -10,6 +10,7 @@ function myFunction() {
     document.getElementById("demo").innerHTML = n +' '  + m + ' '+ y;
     document.getElementById("demo3").innerHTML = "Added 2 Chime Bank Logs, June 2";
     document.getElementById("demo4").innerHTML = "Added 5 Citi Bank Logs, June 2";
+    
     document.getElementById("demo5").innerHTML = "Sold Chime Bank Log Balance: $26,193, June 2";
     document.getElementById("demo6").innerHTML = "Sold Barclays Bank Log Balance: $47,382, June 2";
     document.getElementById("demo7").innerHTML = "Sold Chase Bank Log Balance: $23,741, June 1";
