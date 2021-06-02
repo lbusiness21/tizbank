@@ -260,7 +260,11 @@
 
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">    
-        <li><a href="javascript:void(0)" id="toggle-fullscreen"><i class="fa fa-expand"></i></a></li>
+        <li>
+            <a href="javascript:void(0)" id="toggle-fullscreen">
+                <input type="checkbox" class="js-switch" checked />
+            </a>
+        </li>
     </ul>
     <ul class="nav navbar-nav navbar-right">                
         <li class="dropdown">
@@ -302,6 +306,36 @@
         <!-- start page main wrapper -->
         <div id="main-wrapper">
             <div class="row">
+
+                <div class="col-lg-5 col-md-6">                                
+                    <p>
+                        <strong style="font-size: 1.4rem; color: #36a3f5; font-family: 'Montserrat',  sans-serif;">
+                            <i class="fas fa-spin fa-sync-alt spinner-border"></i> Awaiting  
+                            <span id="the-other-one"></span> 
+                            bitcoin  payment
+                        </strong>
+                        
+                        <div style="display: flex">
+                            <input 
+                                id="text-to-copy"
+                                type="text" 
+                                style=" color: black; font-size: 1.1rem; font-weight: 700; border-radius: 3px;border: 2px solid black; font-family: 'Montserrat',  sans-serif;" 
+                                class="form-control" 
+                                value="1MYaovUWmBBq4cFMncRUnanH47jGMWy3tC" 
+                                onclick="this.select();">
+                            <button type="button" 
+                                class="btn" 
+                                id="copy-text"
+                                style="font-size: 1.3rem; font-weight: 700; display: flex; align-items: center;background-color: aqua; margin-left: 4px;">
+                                Copy
+                                <i class="fas fa-copy" style="margin-left: 3px"></i>
+                            </button>
+                        </div>
+                        <img src="images/pokea.png" style="border-radius: 0px; margin-top: 4px;"/>
+                    </p>
+                </div>
+
+
                 <div class="col-lg-7 col-md-6">                                   
                     <ul class="prizing">
                         <li style="padding: 0;">
@@ -342,34 +376,6 @@
                         </li>
                         
                     </ul>
-                </div>
-
-                <div class="col-lg-5 col-md-6">                                
-                    <p>
-                        <strong style="font-size: 1.4rem; color: #36a3f5; font-family: 'Montserrat',  sans-serif;">
-                            <i class="fas fa-spin fa-sync-alt spinner-border"></i> Awaiting  
-                            <span id="the-other-one"></span> 
-                            bitcoin  payment
-                        </strong>
-                        <div style="display: flex">
-                            <input 
-                                id="text-to-copy"
-                                type="text" 
-                                style=" color: black; font-size: 1.1rem; font-weight: 700; border-radius: 3px;border: 2px solid black; font-family: 'Montserrat',  sans-serif;" 
-                                class="form-control" 
-                                value="1MYaovUWmBBq4cFMncRUnanH47jGMWy3tC" 
-                                onclick="this.select();">
-                            <button type="button" 
-                                class="btn" 
-                                id="copy-text"
-                                style="font-size: 1.3rem; font-weight: 700; display: flex; align-items: center;background-color: aqua; margin-left: 4px;">
-                                Copy
-                                <i class="fas fa-copy" style="margin-left: 3px"></i>
-                            </button>
-                        </div>
-                        
-                        <img src="images/pokea.png" style="border-radius: 0px; margin-top: 4px;"/>
-                    </p>
                 </div>
 
             </div>
