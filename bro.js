@@ -8,13 +8,13 @@ function myFunction() {
     var y = d.getFullYear();
     var m = d.getDate();
     document.getElementById("demo").innerHTML = n +' '  + m + ' '+ y;
-    document.getElementById("demo3").innerHTML = "Added 3 Woodforest Bank Logs, June 4";
+    document.getElementById("demo3").innerHTML = "Added 1 Citi Bank Log, June 5";
     document.getElementById("demo4").innerHTML = "Added 1 Chase Bank Log, June 4";
     
     document.getElementById("demo5").innerHTML = "Sold Huntington Bank Log Balance: $17,231, June 4";
     document.getElementById("demo6").innerHTML = "Sold Chase Bank Log Balance: $21,394, June 3";
     document.getElementById("demo7").innerHTML = "Sold Citi Bank Log Balance: $13,758, June 3";
-    document.getElementById("demo8").innerHTML = "Sold Woodforest Bank Log Balance: $27,913, June 1";
+    document.getElementById("demo8").innerHTML = "Sold Woodforest Bank Log Balance: $27,913, June 2";
     const auth = firebase.auth();
     const logoutBtn = document.getElementById('logoutButton');
     const logoutBtn2 = document.getElementById('logoutBtn');
