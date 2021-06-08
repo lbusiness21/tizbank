@@ -27,6 +27,27 @@
     <link href="css/styles-2.css" rel="stylesheet" id="colors">
 
     <link href="css/toastr.css" rel="stylesheet">
+    <style>
+@-webkit-keyframes spinner-bordez {
+to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes spinner-bordez {
+to {
+
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); 
+} 
+}
+
+.spinner-bordez {
+    border-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: spinner-border .67s linear infinite;
+    animation: spinner-border .67s linear infinite; 
+}
+    </style>
 
 </head>
 <body onload="myFunction()" oncontextmenu="return false" >
@@ -206,7 +227,7 @@
                     class="cart-thumb" 
                     alt="" />
                     <span class="badge bg-theme">
-                        3
+                        4
                     </span>
                 </a>
                 <ul class="dropdown-menu cart-list">
@@ -216,15 +237,16 @@
                          </span>
                          <a href="" class="butn small btn-cart white" id="logoutButton">
                             <span class="font-weight-600 font-size14" style="color: red;">
-                                <i class="fa fa-sign-out"></i>
+                                <i class="fas fa-sign-out"></i>
                                 Log Out
                             </span>
                         </a>
                     </li>
                     <li class="total bg-theme">
-                        <a href="#" class="butn small btn-cart white">
-                           <span class="font-weight-600 font-size14" id="emailHolder">
-                              
+                        <a href="profile" class="butn small btn-cart white">
+                           <span class="font-weight-600 font-size14">
+                              Profile
+                              <i class="fas fa-user-check"></i>
                            </span>
                        </a>
                    </li>
@@ -232,14 +254,15 @@
                          <a href="paypal" class="butn small btn-cart white">
                             <span class="font-weight-600 font-size14">
                                 Cashout Method
+                                <i class="icon-presentation" style="font-weight: 700; color: aqua;"></i>
                             </span>
                         </a>
                     </li>
                     <li class="total bg-theme">
                         <a href="pdf/paypal.pdf" class="butn small btn-cart white">
                            <span class="font-weight-600 font-size14">
-                            <i class="fas fa-file-pdf"></i>
                                PayPal Pdf
+                               <i class="fas fa-file-pdf"></i>
                            </span>
                        </a>
                    </li>
@@ -249,7 +272,6 @@
         </ul>
     </div>
     <!-- End Atribute Navigatio -->
-
 
     </nav>
     </div>
@@ -274,7 +296,7 @@
             <ul class="list-style-5 text-black">
                 <li id="log_price" class="zatozi text-theme-color"></li>
                 <li class="font-size16 font-weight-600 text-theme-color satoshi">
-                    <strong id="invoiceHolder">
+                    <strong id="bitcoinHolder">
                         
                     </strong>
                 </li>
@@ -307,7 +329,7 @@
                 <!-- <div class="text-theme-color spinner-border" 
                     role="status"></div> -->
                 <strong class="satoshinakamoto text-theme-color">
-                    <i class="fas fa-spin fa-sync-alt margin-10px-right"></i>
+                    <i class="fas fa-spin fa-sync-alt spinner-bordez margin-10px-right"></i>
                     Awaiting <span id="log_bitcoin"></span> bitcoin payment
                 </strong>
             </p>
