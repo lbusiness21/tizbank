@@ -473,7 +473,7 @@ to {
     .then(data => {
         console.log(data.ip);
         document.getElementById('clentIp').innerHTML = `
-            Your IP address is: <strong style="font-weight: 600; color: red">${data.ip}</strong>, consider using a VPN service
+            Your IP address is: <strong style="font-weight: 600; color: red">${data.ip}</strong>
         `
     });
     document.getElementById('copy-text').addEventListener('click', function(e){
