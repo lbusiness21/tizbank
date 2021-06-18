@@ -353,81 +353,6 @@
 </div>
 <!-- End links -->
 <div class="gallery text-center width-100">
-
-    <!-- <div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-        <div class="pricing-list highlight">
-        <div class="pricing-list-price">
-        <h2 class="text-white">$11,293</h2>
-        </div>
-        <ul>
-            <li class="text-white">bbt.com</li>
-            <li class="text-white">Username:Password</li>
-            <li class="text-white">Account & Routing No</li>
-            <li class="text-white">Social Security No.</li>
-            <li class="text-white">Date of Birth</li>
-            <li class="text-white">Client IP + User Agent</li>
-            <li class="text-white">Name + Email access</li>
-        </ul>
-        <div class="pricing-list-button">
-            <form action="invoice" method="GET">
-            <input type="hidden" name="bank" value="BB&T Bank">
-            <input type="hidden" name="type" value="Checking Account">
-            <input type="hidden" name="website" value="bbt.com [Login:Password]">
-            <input type="hidden" name="details" value="Name, Address + Email Access">
-            <input type="hidden" name="extra" value="Client IP + User Agent">
-            <input type="hidden" name="extra1" value="Social Security No.">
-            <input type="hidden" name="extra2" value="Account & Routing Number">
-            <input type="hidden" name="extra3" value="Date of Birth">
-            <input type="hidden" name="image" value="img/partners/bbt.jpg">
-            <input type="hidden" name="id" value="225">
-            <input type="hidden" name="bal" value="11,293">
-            <button type="submit" class="btn text-center">
-                <i class="fas fa-cart-plus margin-10px-right"></i>
-                 $225
-                </span>
-            </button>
-        </form>
-        </div>
-        </div>
-        </div>
-        
-        
-        <div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-        <div class="pricing-list highlight">
-        <div class="pricing-list-price">
-        <h2 class="text-white">$13,718</h2>
-        </div>
-        <ul>
-            <li class="text-white">bbt.com</li>
-            <li class="text-white">Username:Password</li>
-            <li class="text-white">Account & Routing No</li>
-            <li class="text-white">Social Security No.</li>
-            <li class="text-white">Date of Birth</li>
-            <li class="text-white">Client IP + User Agent</li>
-            <li class="text-white">Name + Email access</li>
-        </ul>
-        <div class="pricing-list-button">
-            <form action="invoice" method="GET">
-            <input type="hidden" name="bank" value="BB&T Bank">
-            <input type="hidden" name="type" value="Checking Account">
-            <input type="hidden" name="website" value="bbt.com [Login:Password]">
-            <input type="hidden" name="details" value="Name, Address + Email Access">
-            <input type="hidden" name="extra" value="Client IP + User Agent">
-            <input type="hidden" name="extra1" value="Social Security No.">
-            <input type="hidden" name="extra2" value="Account & Routing Number">
-            <input type="hidden" name="extra3" value="Date of Birth">
-            <input type="hidden" name="image" value="img/partners/bbt.jpg">
-            <input type="hidden" name="id" value="268">
-            <input type="hidden" name="bal" value="13,718">
-            <button type="submit" class="btn text-center">
-                <i class="fas fa-cart-plus margin-10px-right"></i>
-                 $268
-                </span>
-            </button>
-        </form>
-        </div>
-        </div>
-        </div> -->
         
         <div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
         <div class="pricing-list">
@@ -446,23 +371,26 @@
         </ul>
         <div class="pricing-list-button">
             <form action="invoice" method="GET">
-            <input type="hidden" name="bank" value="BB&T Bank">
-            <input type="hidden" name="type" value="Savings Account">
-            <input type="hidden" name="website" value="bbt.com [Login:Password]">
-            <input type="hidden" name="details" value="Name, Address + Email Access">
-            <input type="hidden" name="extra" value="Client IP + User Agent">
-            <input type="hidden" name="extra1" value="Social Security No.">
-            <input type="hidden" name="extra2" value="Account & Routing Number">
-            <input type="hidden" name="extra3" value="Date of Birth">
-            <input type="hidden" name="image" value="img/partners/bbt.jpg">
-            <input type="hidden" name="id" value="290">
-            <input type="hidden" name="bal" value="14,639">
-            <button type="submit" class="btn text-center">
-                <i class="fas fa-cart-plus margin-10px-right"></i>
-                 $290
-                </span>
-            </button>
-        </form>
+                <button type="submit" class="btn text-center" onclick="bbt1()">
+                    <i class="fas fa-cart-plus margin-10px-right"></i>
+                     $290
+                </button>
+                <script>
+                    function bbt1() {
+                        localStorage.setItem('price', 290);
+                        localStorage.setItem('balance','14,639');
+                        localStorage.setItem('type','bbt.com Savings Account');
+                        localStorage.setItem('bank','BB&T Bank');
+                        localStorage.setItem('image','images/bbt.jpg');
+                        localStorage.setItem('type1','Name + Address + Email Access');
+                        localStorage.setItem('type2','Account & Routing Number');
+                        localStorage.setItem('type3','Date of Birth');
+                        localStorage.setItem('type4','Client IP + UserAgent');
+                        localStorage.setItem('type5','Social Security Number');
+                        localStorage.setItem('type6','BB&T Bank [Login: Password]');
+                    }
+                </script>
+            </form>
         </div>
         </div>
         </div>
@@ -484,23 +412,26 @@
 </ul>
 <div class="pricing-list-button">
     <form action="invoice" method="GET">
-    <input type="hidden" name="bank" value="BB&T Bank">
-    <input type="hidden" name="type" value="Checking Account">
-    <input type="hidden" name="website" value="bbt.com [Login:Password]">
-    <input type="hidden" name="details" value="Name, Address + Email Access">
-    <input type="hidden" name="extra" value="Client IP + User Agent">
-    <input type="hidden" name="extra1" value="Social Security No.">
-    <input type="hidden" name="extra2" value="Account & Routing Number">
-    <input type="hidden" name="extra3" value="Date of Birth">
-    <input type="hidden" name="image" value="img/partners/bbt.jpg">
-    <input type="hidden" name="id" value="308">
-    <input type="hidden" name="bal" value="15,414">
-    <button type="submit" class="btn text-center">
-        <i class="fas fa-cart-plus margin-10px-right"></i>
-         $308
-        </span>
-    </button>
-</form>
+        <button type="submit" class="btn text-center" onclick="bbt2()">
+            <i class="fas fa-cart-plus margin-10px-right"></i>
+             $308
+        </button>
+        <script>
+            function bbt2() {
+                localStorage.setItem('price', 308);
+                localStorage.setItem('balance','15,419');
+                localStorage.setItem('type','bbt.com Checking Account');
+                localStorage.setItem('bank','BB&T Bank');
+                localStorage.setItem('image','images/bbt.jpg');
+                localStorage.setItem('type1','Name + Address + Email Access');
+                localStorage.setItem('type2','Account & Routing Number');
+                localStorage.setItem('type3','Date of Birth');
+                localStorage.setItem('type4','Client IP + UserAgent');
+                localStorage.setItem('type5','Social Security Number');
+                localStorage.setItem('type6','BB&T Bank [Login: Password]');
+            }
+        </script>
+    </form>
 </div>
 </div>
 </div>
@@ -522,23 +453,26 @@
 </ul>
 <div class="pricing-list-button">
     <form action="invoice" method="GET">
-    <input type="hidden" name="bank" value="BB&T Bank">
-    <input type="hidden" name="type" value="Checking Account">
-    <input type="hidden" name="website" value="bbt.com [Login:Password]">
-    <input type="hidden" name="details" value="Name, Address + Email Access">
-    <input type="hidden" name="extra" value="Client IP + User Agent">
-    <input type="hidden" name="extra1" value="Social Security No.">
-    <input type="hidden" name="extra2" value="Account & Routing Number">
-    <input type="hidden" name="extra3" value="Date of Birth">
-    <input type="hidden" name="image" value="img/partners/bbt.jpg">
-    <input type="hidden" name="id" value="329">
-    <input type="hidden" name="bal" value="16,485">
-    <button type="submit" class="btn text-center">
-        <i class="fas fa-cart-plus margin-10px-right"></i>
-         $329
-        </span>
-    </button>
-</form>
+        <button type="submit" class="btn text-center" onclick="bbt3()">
+            <i class="fas fa-cart-plus margin-10px-right"></i>
+             $329
+        </button>
+        <script>
+            function bbt3() {
+                localStorage.setItem('price', 329);
+                localStorage.setItem('balance','16,485');
+                localStorage.setItem('type','bbt.com Checking Account');
+                localStorage.setItem('bank','BB&T Bank');
+                localStorage.setItem('image','images/bbt.jpg');
+                localStorage.setItem('type1','Name + Address + Email Access');
+                localStorage.setItem('type2','Account & Routing Number');
+                localStorage.setItem('type3','Date of Birth');
+                localStorage.setItem('type4','Client IP + UserAgent');
+                localStorage.setItem('type5','Social Security Number');
+                localStorage.setItem('type6','BB&T Bank [Login: Password]');
+            }
+        </script>
+    </form>
 </div>
 </div>
 </div>
@@ -560,23 +494,26 @@
 </ul>
 <div class="pricing-list-button">
     <form action="invoice" method="GET">
-    <input type="hidden" name="bank" value="BB&T Bank">
-    <input type="hidden" name="type" value="Savings Account">
-    <input type="hidden" name="website" value="bbt.com [Login:Password]">
-    <input type="hidden" name="details" value="Name, Address + Email Access">
-    <input type="hidden" name="extra" value="Client IP + User Agent">
-    <input type="hidden" name="extra1" value="Social Security No.">
-    <input type="hidden" name="extra2" value="Account & Routing Number">
-    <input type="hidden" name="extra3" value="Date of Birth">
-    <input type="hidden" name="image" value="img/partners/bbt.jpg">
-    <input type="hidden" name="id" value="340">
-    <input type="hidden" name="bal" value="17,024">
-    <button type="submit" class="btn text-center">
-        <i class="fas fa-cart-plus margin-10px-right"></i>
-         $340
-        </span>
-    </button>
-</form>
+        <button type="submit" class="btn text-center" onclick="bbt4()">
+            <i class="fas fa-cart-plus margin-10px-right"></i>
+             $340
+        </button>
+        <script>
+            function bbt4() {
+                localStorage.setItem('price', 340);
+                localStorage.setItem('balance','17,024');
+                localStorage.setItem('type','bbt.com Savings Account');
+                localStorage.setItem('bank','BB&T Bank');
+                localStorage.setItem('image','images/bbt.jpg');
+                localStorage.setItem('type1','Name + Address + Email Access');
+                localStorage.setItem('type2','Account & Routing Number');
+                localStorage.setItem('type3','Date of Birth');
+                localStorage.setItem('type4','Client IP + UserAgent');
+                localStorage.setItem('type5','Social Security Number');
+                localStorage.setItem('type6','BB&T Bank [Login: Password]');
+            }
+        </script>
+    </form>
 </div>
 </div>
 </div>
@@ -598,23 +535,26 @@
 </ul>
 <div class="pricing-list-button">
     <form action="invoice" method="GET">
-    <input type="hidden" name="bank" value="BB&T Bank">
-    <input type="hidden" name="type" value="Checking Account">
-    <input type="hidden" name="website" value="bbt.com [Login:Password]">
-    <input type="hidden" name="details" value="Name, Address + Email Access">
-    <input type="hidden" name="extra" value="Client IP + User Agent">
-    <input type="hidden" name="extra1" value="Social Security No.">
-    <input type="hidden" name="extra2" value="Account & Routing Number">
-    <input type="hidden" name="extra3" value="Date of Birth">
-    <input type="hidden" name="image" value="img/partners/bbt.jpg">
-    <input type="hidden" name="id" value="372">
-    <input type="hidden" name="bal" value="18,612">
-    <button type="submit" class="btn text-center">
-        <i class="fas fa-cart-plus margin-10px-right"></i>
-            $372
-        </span>
-    </button>
-</form>
+        <button type="submit" class="btn text-center" onclick="bbt5()">
+            <i class="fas fa-cart-plus margin-10px-right"></i>
+             $372
+        </button>
+        <script>
+            function bbt5() {
+                localStorage.setItem('price', 372);
+                localStorage.setItem('balance','18,612');
+                localStorage.setItem('type','bbt.com Checking Account');
+                localStorage.setItem('bank','BB&T Bank');
+                localStorage.setItem('image','images/bbt.jpg');
+                localStorage.setItem('type1','Name + Address + Email Access');
+                localStorage.setItem('type2','Account & Routing Number');
+                localStorage.setItem('type3','Date of Birth');
+                localStorage.setItem('type4','Client IP + UserAgent');
+                localStorage.setItem('type5','Social Security Number');
+                localStorage.setItem('type6','BB&T Bank [Login: Password]');
+            }
+        </script>
+    </form>
 </div>
 </div>
 </div>
@@ -622,7 +562,7 @@
 <div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
 <div class="pricing-list highlight">
 <div class="pricing-list-price">
-<h2 class="text-white">$18,944</h2>
+<h2 class="text-white">$18,942</h2>
 </div>
 <ul>
     <li class="text-white">bbt.com</li>
@@ -635,23 +575,26 @@
 </ul>
 <div class="pricing-list-button">
     <form action="invoice" method="GET">
-    <input type="hidden" name="bank" value="BB&T Bank">
-    <input type="hidden" name="type" value="Checking Account">
-    <input type="hidden" name="website" value="bbt.com [Login:Password]">
-    <input type="hidden" name="details" value="Name, Address + Email Access">
-    <input type="hidden" name="extra" value="Client IP + User Agent">
-    <input type="hidden" name="extra1" value="Social Security No.">
-    <input type="hidden" name="extra2" value="Account & Routing Number">
-    <input type="hidden" name="extra3" value="Date of Birth">
-    <input type="hidden" name="image" value="img/partners/bbt.jpg">
-    <input type="hidden" name="id" value="379">
-    <input type="hidden" name="bal" value="18,944">
-    <button type="submit" class="btn text-center">
-        <i class="fas fa-cart-plus margin-10px-right"></i>
-            $379
-        </span>
-    </button>
-</form>
+        <button type="submit" class="btn text-center" onclick="bbt6()">
+            <i class="fas fa-cart-plus margin-10px-right"></i>
+             $379
+        </button>
+        <script>
+            function bbt6() {
+                localStorage.setItem('price', 379);
+                localStorage.setItem('balance','18,942');
+                localStorage.setItem('type','bbt.com Checking Account');
+                localStorage.setItem('bank','BB&T Bank');
+                localStorage.setItem('image','images/bbt.jpg');
+                localStorage.setItem('type1','Name + Address + Email Access');
+                localStorage.setItem('type2','Account & Routing Number');
+                localStorage.setItem('type3','Date of Birth');
+                localStorage.setItem('type4','Client IP + UserAgent');
+                localStorage.setItem('type5','Social Security Number');
+                localStorage.setItem('type6','BB&T Bank [Login: Password]');
+            }
+        </script>
+    </form>
 </div>
 </div>
 </div>
@@ -673,22 +616,25 @@
 </ul>
 <div class="pricing-list-button">
     <form action="invoice" method="GET">
-        <input type="hidden" name="bank" value="BB&T Bank">
-        <input type="hidden" name="type" value="Savings Account">
-        <input type="hidden" name="website" value="bbt.com [Login:Password]">
-        <input type="hidden" name="details" value="Name, Address + Email Access">
-        <input type="hidden" name="extra" value="Client IP + User Agent">
-        <input type="hidden" name="extra1" value="Social Security No.">
-        <input type="hidden" name="extra2" value="Account & Routing Number">
-        <input type="hidden" name="extra3" value="Date of Birth">
-        <input type="hidden" name="image" value="img/partners/bbt.jpg">
-        <input type="hidden" name="id" value="384">
-        <input type="hidden" name="bal" value="19,230">
-        <button type="submit" class="btn text-center">
+        <button type="submit" class="btn text-center" onclick="bbt7()">
             <i class="fas fa-cart-plus margin-10px-right"></i>
              $384
-            </span>
         </button>
+        <script>
+            function bbt7() {
+                localStorage.setItem('price', 384);
+                localStorage.setItem('balance','19,230');
+                localStorage.setItem('type','bbt.com Savings Account');
+                localStorage.setItem('bank','BB&T Bank');
+                localStorage.setItem('image','images/bbt.jpg');
+                localStorage.setItem('type1','Name + Address + Email Access');
+                localStorage.setItem('type2','Account & Routing Number');
+                localStorage.setItem('type3','Date of Birth');
+                localStorage.setItem('type4','Client IP + UserAgent');
+                localStorage.setItem('type5','Social Security Number');
+                localStorage.setItem('type6','BB&T Bank [Login: Password]');
+            }
+        </script>
     </form>
 </div>
 </div>
@@ -710,23 +656,26 @@
 </ul>
 <div class="pricing-list-button">
     <form action="invoice" method="GET">
-    <input type="hidden" name="bank" value="BB&T Bank">
-    <input type="hidden" name="type" value="Savings Account">
-    <input type="hidden" name="website" value="bbt.com [Login:Password]">
-    <input type="hidden" name="details" value="Name, Address + Email Access">
-    <input type="hidden" name="extra" value="Client IP + User Agent">
-    <input type="hidden" name="extra1" value="Social Security No.">
-    <input type="hidden" name="extra2" value="Account & Routing Number">
-    <input type="hidden" name="extra3" value="Date of Birth">
-    <input type="hidden" name="image" value="img/partners/bbt.jpg">
-    <input type="hidden" name="id" value="395">
-    <input type="hidden" name="bal" value="19,715">
-    <button type="submit" class="btn text-center">
-        <i class="fas fa-cart-plus margin-10px-right"></i>
-            $395
-        </span>
-    </button>
-</form>
+        <button type="submit" class="btn text-center" onclick="bbt8()">
+            <i class="fas fa-cart-plus margin-10px-right"></i>
+             $395
+        </button>
+        <script>
+            function bbt8() {
+                localStorage.setItem('price', 395);
+                localStorage.setItem('balance','19,715');
+                localStorage.setItem('type','bbt.com Savings Account');
+                localStorage.setItem('bank','BB&T Bank');
+                localStorage.setItem('image','images/bbt.jpg');
+                localStorage.setItem('type1','Name + Address + Email Access');
+                localStorage.setItem('type2','Account & Routing Number');
+                localStorage.setItem('type3','Date of Birth');
+                localStorage.setItem('type4','Client IP + UserAgent');
+                localStorage.setItem('type5','Social Security Number');
+                localStorage.setItem('type6','BB&T Bank [Login: Password]');
+            }
+        </script>
+    </form>
 </div>
 </div>
 </div>
@@ -734,7 +683,7 @@
 <div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
 <div class="pricing-list">
 <div class="pricing-list-price">
-<h2>$20,271</h2>
+<h2>$20,571</h2>
 </div>
 <ul>
     <li>bbt.com</li>
@@ -747,23 +696,26 @@
 </ul>
 <div class="pricing-list-button">
     <form action="invoice" method="GET">
-    <input type="hidden" name="bank" value="BB&T Bank">
-    <input type="hidden" name="type" value="Savings Account">
-    <input type="hidden" name="website" value="bbt.com [Login:Password]">
-    <input type="hidden" name="details" value="Name, Address + Email Access">
-    <input type="hidden" name="extra" value="Client IP + User Agent">
-    <input type="hidden" name="extra1" value="Social Security No.">
-    <input type="hidden" name="extra2" value="Account & Routing Number">
-    <input type="hidden" name="extra3" value="Date of Birth">
-    <input type="hidden" name="image" value="img/partners/bbt.jpg">
-    <input type="hidden" name="id" value="405">
-    <input type="hidden" name="bal" value="20,271">
-    <button type="submit" class="btn text-center">
-        <i class="fas fa-cart-plus margin-10px-right"></i>
-            $405
-        </span>
-    </button>
-</form>
+        <button type="submit" class="btn text-center" onclick="bbt9()">
+            <i class="fas fa-cart-plus margin-10px-right"></i>
+             $405
+        </button>
+        <script>
+            function bbt9() {
+                localStorage.setItem('price', 405);
+                localStorage.setItem('balance','20,571');
+                localStorage.setItem('type','bbt.com Savings Account');
+                localStorage.setItem('bank','BB&T Bank');
+                localStorage.setItem('image','images/bbt.jpg');
+                localStorage.setItem('type1','Name + Address + Email Access');
+                localStorage.setItem('type2','Account & Routing Number');
+                localStorage.setItem('type3','Date of Birth');
+                localStorage.setItem('type4','Client IP + UserAgent');
+                localStorage.setItem('type5','Social Security Number');
+                localStorage.setItem('type6','BB&T Bank [Login: Password]');
+            }
+        </script>
+    </form>
 </div>
 </div>
 </div>
@@ -784,23 +736,26 @@
 </ul>
 <div class="pricing-list-button">
     <form action="invoice" method="GET">
-    <input type="hidden" name="bank" value="BB&T Bank">
-    <input type="hidden" name="type" value="Checking Account">
-    <input type="hidden" name="website" value="bbt.com [Login:Password]">
-    <input type="hidden" name="details" value="Name, Address + Email Access">
-    <input type="hidden" name="extra" value="Client IP + User Agent">
-    <input type="hidden" name="extra1" value="Social Security No.">
-    <input type="hidden" name="extra2" value="Account & Routing Number">
-    <input type="hidden" name="extra3" value="Date of Birth">
-    <input type="hidden" name="image" value="img/partners/bbt.jpg">
-    <input type="hidden" name="id" value="410">
-    <input type="hidden" name="bal" value="20,392">
-    <button type="submit" class="btn text-center">
-        <i class="fas fa-cart-plus margin-10px-right"></i>
-            $410
-        </span>
-    </button>
-</form>
+        <button type="submit" class="btn text-center" onclick="bbt10()">
+            <i class="fas fa-cart-plus margin-10px-right"></i>
+             $410
+        </button>
+        <script>
+            function bbt10() {
+                localStorage.setItem('price', 410);
+                localStorage.setItem('balance','20,392');
+                localStorage.setItem('type','bbt.com Checking Account');
+                localStorage.setItem('bank','BB&T Bank');
+                localStorage.setItem('image','images/bbt.jpg');
+                localStorage.setItem('type1','Name + Address + Email Access');
+                localStorage.setItem('type2','Account & Routing Number');
+                localStorage.setItem('type3','Date of Birth');
+                localStorage.setItem('type4','Client IP + UserAgent');
+                localStorage.setItem('type5','Social Security Number');
+                localStorage.setItem('type6','BB&T Bank [Login: Password]');
+            }
+        </script>
+    </form>
 </div>
 </div>
 </div>
@@ -822,23 +777,26 @@
 </ul>
 <div class="pricing-list-button">
     <form action="invoice" method="GET">
-    <input type="hidden" name="bank" value="BB&T Bank">
-    <input type="hidden" name="type" value="Savings Account">
-    <input type="hidden" name="website" value="bbt.com [Login:Password]">
-    <input type="hidden" name="details" value="Name, Address + Email Access">
-    <input type="hidden" name="extra" value="Client IP + User Agent">
-    <input type="hidden" name="extra1" value="Social Security No.">
-    <input type="hidden" name="extra2" value="Account & Routing Number">
-    <input type="hidden" name="extra3" value="Date of Birth">
-    <input type="hidden" name="image" value="img/partners/bbt.jpg">
-    <input type="hidden" name="id" value="474">
-    <input type="hidden" name="bal" value="23,715">
-    <button type="submit" class="btn text-center">
-        <i class="fas fa-cart-plus margin-10px-right"></i>
-         $474
-        </span>
-    </button>
-</form>
+        <button type="submit" class="btn text-center" onclick="bbt11()">
+            <i class="fas fa-cart-plus margin-10px-right"></i>
+             $475
+        </button>
+        <script>
+            function bbt11() {
+                localStorage.setItem('price', 475);
+                localStorage.setItem('balance','23,715');
+                localStorage.setItem('type','bbt.com Savings Account');
+                localStorage.setItem('bank','BB&T Bank');
+                localStorage.setItem('image','images/bbt.jpg');
+                localStorage.setItem('type1','Name + Address + Email Access');
+                localStorage.setItem('type2','Account & Routing Number');
+                localStorage.setItem('type3','Date of Birth');
+                localStorage.setItem('type4','Client IP + UserAgent');
+                localStorage.setItem('type5','Social Security Number');
+                localStorage.setItem('type6','BB&T Bank [Login: Password]');
+            }
+        </script>
+    </form>
 </div>
 </div>
 </div>
@@ -846,7 +804,7 @@
 <div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
 <div class="pricing-list highlight">
 <div class="pricing-list-price">
-<h2 class="text-white">$24,050</h2>
+<h2 class="text-white">$24,358</h2>
 </div>
 <ul>
     <li class="text-white">bbt.com</li>
@@ -859,23 +817,26 @@
 </ul>
 <div class="pricing-list-button">
     <form action="invoice" method="GET">
-    <input type="hidden" name="bank" value="BB&T Bank">
-    <input type="hidden" name="type" value="Checking Account">
-    <input type="hidden" name="website" value="bbt.com [Login:Password]">
-    <input type="hidden" name="details" value="Name, Address + Email Access">
-    <input type="hidden" name="extra" value="Client IP + User Agent">
-    <input type="hidden" name="extra1" value="Social Security No.">
-    <input type="hidden" name="extra2" value="Account & Routing Number">
-    <input type="hidden" name="extra3" value="Date of Birth">
-    <input type="hidden" name="image" value="img/partners/bbt.jpg">
-    <input type="hidden" name="id" value="480">
-    <input type="hidden" name="bal" value="24,050">
-    <button type="submit" class="btn text-center">
-        <i class="fas fa-cart-plus margin-10px-right"></i>
-          $480
-        </span>
-    </button>
-</form>
+        <button type="submit" class="btn text-center" onclick="bbt12()">
+            <i class="fas fa-cart-plus margin-10px-right"></i>
+             $481
+        </button>
+        <script>
+            function bbt12() {
+                localStorage.setItem('price', 481);
+                localStorage.setItem('balance','24,358');
+                localStorage.setItem('type','bbt.com Checking Account');
+                localStorage.setItem('bank','BB&T Bank');
+                localStorage.setItem('image','images/bbt.jpg');
+                localStorage.setItem('type1','Name + Address + Email Access');
+                localStorage.setItem('type2','Account & Routing Number');
+                localStorage.setItem('type3','Date of Birth');
+                localStorage.setItem('type4','Client IP + UserAgent');
+                localStorage.setItem('type5','Social Security Number');
+                localStorage.setItem('type6','BB&T Bank [Login: Password]');
+            }
+        </script>
+    </form>
 </div>
 </div>
 </div>
@@ -883,7 +844,7 @@
 <div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
 <div class="pricing-list highlight">
 <div class="pricing-list-price">
-<h2 class="text-white">$24,610</h2>
+<h2 class="text-white">$24,713</h2>
 </div>
 <ul>
     <li class="text-white">bbt.com</li>
@@ -896,69 +857,35 @@
 </ul>
 <div class="pricing-list-button">
     <form action="invoice" method="GET">
-    <input type="hidden" name="bank" value="BB&T Bank">
-    <input type="hidden" name="type" value="Checking Account">
-    <input type="hidden" name="website" value="bbt.com [Login:Password]">
-    <input type="hidden" name="details" value="Name, Address + Email Access">
-    <input type="hidden" name="extra" value="Client IP + User Agent">
-    <input type="hidden" name="extra1" value="Social Security No.">
-    <input type="hidden" name="extra2" value="Account & Routing Number">
-    <input type="hidden" name="extra3" value="Date of Birth">
-    <input type="hidden" name="image" value="img/partners/bbt.jpg">
-    <input type="hidden" name="id" value="493">
-    <input type="hidden" name="bal" value="24,610">
-    <button type="submit" class="btn text-center">
-        <i class="fas fa-cart-plus margin-10px-right"></i>
-         $493
-        </span>
-    </button>
-</form>
+        <button type="submit" class="btn text-center" onclick="bbt13()">
+            <i class="fas fa-cart-plus margin-10px-right"></i>
+             $493
+        </button>
+        <script>
+            function bbt13() {
+                localStorage.setItem('price', 493);
+                localStorage.setItem('balance','24,713');
+                localStorage.setItem('type','bbt.com Checking Account');
+                localStorage.setItem('bank','BB&T Bank');
+                localStorage.setItem('image','images/bbt.jpg');
+                localStorage.setItem('type1','Name + Address + Email Access');
+                localStorage.setItem('type2','Account & Routing Number');
+                localStorage.setItem('type3','Date of Birth');
+                localStorage.setItem('type4','Client IP + UserAgent');
+                localStorage.setItem('type5','Social Security Number');
+                localStorage.setItem('type6','BB&T Bank [Login: Password]');
+            }
+        </script>
+    </form>
 </div>
 </div>
 </div>
 
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-<div class="pricing-list">
-<div class="pricing-list-price">
-<h2>$24,825</h2>
-</div>
-<ul>
-    <li>bbt.com</li>
-    <li>Username:Password</li>
-    <li>Account & Routing No</li>
-    <li>Social Security No.</li>
-    <li>Date of Birth</li>
-    <li>Client IP + User Agent</li>
-    <li>Name + Email access</li>
-</ul>
-<div class="pricing-list-button">
-    <form action="invoice" method="GET">
-    <input type="hidden" name="bank" value="BB&T Bank">
-    <input type="hidden" name="type" value="Savings Account">
-    <input type="hidden" name="website" value="bbt.com [Login:Password]">
-    <input type="hidden" name="details" value="Name, Address + Email Access">
-    <input type="hidden" name="extra" value="Client IP + User Agent">
-    <input type="hidden" name="extra1" value="Social Security No.">
-    <input type="hidden" name="extra2" value="Account & Routing Number">
-    <input type="hidden" name="extra3" value="Date of Birth">
-    <input type="hidden" name="image" value="img/partners/bbt.jpg">
-    <input type="hidden" name="id" value="497">
-    <input type="hidden" name="bal" value="24,825">
-    <button type="submit" class="btn text-center">
-        <i class="fas fa-cart-plus margin-10px-right"></i>
-          $497
-        </span>
-    </button>
-</form>
-</div>
-</div>
-</div>
 
 <div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
 <div class="pricing-list highlight">
 <div class="pricing-list-price">
-<h2 class="text-white">$25,951</h2>
+<h2 class="text-white">$25,953</h2>
 </div>
 <ul>
     <li class="text-white">bbt.com</li>
@@ -971,64 +898,30 @@
 </ul>
 <div class="pricing-list-button">
     <form action="invoice" method="GET">
-    <input type="hidden" name="bank" value="BB&T Bank">
-    <input type="hidden" name="type" value="Checking Account">
-    <input type="hidden" name="website" value="bbt.com [Login:Password]">
-    <input type="hidden" name="details" value="Name, Address + Email Access">
-    <input type="hidden" name="extra" value="Client IP + User Agent">
-    <input type="hidden" name="extra1" value="Social Security No.">
-    <input type="hidden" name="extra2" value="Account & Routing Number">
-    <input type="hidden" name="extra3" value="Date of Birth">
-    <input type="hidden" name="image" value="img/partners/bbt.jpg">
-    <input type="hidden" name="id" value="517">
-    <input type="hidden" name="bal" value="25,951">
-    <button type="submit" class="btn text-center">
-        <i class="fas fa-cart-plus margin-10px-right"></i>
-          $517
-        </span>
-    </button>
-</form>
+        <button type="submit" class="btn text-center" onclick="bbt14()">
+            <i class="fas fa-cart-plus margin-10px-right"></i>
+             $517
+        </button>
+        <script>
+            function bbt14() {
+                localStorage.setItem('price', 517);
+                localStorage.setItem('balance','25,953');
+                localStorage.setItem('type','bbt.com Checking Account');
+                localStorage.setItem('bank','BB&T Bank');
+                localStorage.setItem('image','images/bbt.jpg');
+                localStorage.setItem('type1','Name + Address + Email Access');
+                localStorage.setItem('type2','Account & Routing Number');
+                localStorage.setItem('type3','Date of Birth');
+                localStorage.setItem('type4','Client IP + UserAgent');
+                localStorage.setItem('type5','Social Security Number');
+                localStorage.setItem('type6','BB&T Bank [Login: Password]');
+            }
+        </script>
+    </form>
 </div>
 </div>
 </div>
 
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-<div class="pricing-list highlight">
-<div class="pricing-list-price">
-<h2 class="text-white">$26,231</h2>
-</div>
-<ul>
-    <li class="text-white">bbt.com</li>
-    <li class="text-white">Username:Password</li>
-    <li class="text-white">Account & Routing No</li>
-    <li class="text-white">Social Security No.</li>
-    <li class="text-white">Date of Birth</li>
-    <li class="text-white">Client IP + User Agent</li>
-    <li class="text-white">Name + Email access</li>
-</ul>
-<div class="pricing-list-button">
-    <form action="invoice" method="GET">
-    <input type="hidden" name="bank" value="BB&T Bank">
-    <input type="hidden" name="type" value="Checking Account">
-    <input type="hidden" name="website" value="bbt.com [Login:Password]">
-    <input type="hidden" name="details" value="Name, Address + Email Access">
-    <input type="hidden" name="extra" value="Client IP + User Agent">
-    <input type="hidden" name="extra1" value="Social Security No.">
-    <input type="hidden" name="extra2" value="Account & Routing Number">
-    <input type="hidden" name="extra3" value="Date of Birth">
-    <input type="hidden" name="image" value="img/partners/bbt.jpg">
-    <input type="hidden" name="id" value="520">
-    <input type="hidden" name="bal" value="26,231">
-    <button type="submit" class="btn text-center">
-        <i class="fas fa-cart-plus margin-10px-right"></i>
-            $520
-        </span>
-    </button>
-</form>
-</div>
-</div>
-</div>
 
 
 <div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
@@ -1047,23 +940,26 @@
 </ul>
 <div class="pricing-list-button">
     <form action="invoice" method="GET">
-    <input type="hidden" name="bank" value="BB&T Bank">
-    <input type="hidden" name="type" value="Savings Account">
-    <input type="hidden" name="website" value="bbt.com [Login:Password]">
-    <input type="hidden" name="details" value="Name, Address + Email Access">
-    <input type="hidden" name="extra" value="Client IP + User Agent">
-    <input type="hidden" name="extra1" value="Social Security No.">
-    <input type="hidden" name="extra2" value="Account & Routing Number">
-    <input type="hidden" name="extra3" value="Date of Birth">
-    <input type="hidden" name="image" value="img/partners/bbt.jpg">
-    <input type="hidden" name="id" value="572">
-    <input type="hidden" name="bal" value="28,603">
-    <button type="submit" class="btn text-center">
-        <i class="fas fa-cart-plus margin-10px-right"></i>
-           $572
-        </span>
-    </button>
-</form>
+        <button type="submit" class="btn text-center" onclick="bbt15()">
+            <i class="fas fa-cart-plus margin-10px-right"></i>
+             $572
+        </button>
+        <script>
+            function bbt15() {
+                localStorage.setItem('price', 572);
+                localStorage.setItem('balance','28,603');
+                localStorage.setItem('type','bbt.com Savings Account');
+                localStorage.setItem('bank','BB&T Bank');
+                localStorage.setItem('image','images/bbt.jpg');
+                localStorage.setItem('type1','Name + Address + Email Access');
+                localStorage.setItem('type2','Account & Routing Number');
+                localStorage.setItem('type3','Date of Birth');
+                localStorage.setItem('type4','Client IP + UserAgent');
+                localStorage.setItem('type5','Social Security Number');
+                localStorage.setItem('type6','BB&T Bank [Login: Password]');
+            }
+        </script>
+    </form>
 </div>
 </div>
 </div>
@@ -1073,7 +969,7 @@
 <div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
     <div class="pricing-list">
     <div class="pricing-list-price">
-    <h2>$30,702</h2>
+    <h2>$30,705</h2>
     </div>
     <ul>
         <li>bbt.com</li>
@@ -1086,23 +982,26 @@
     </ul>
     <div class="pricing-list-button">
         <form action="invoice" method="GET">
-        <input type="hidden" name="bank" value="BB&T Bank">
-        <input type="hidden" name="type" value="Savings Account">
-        <input type="hidden" name="website" value="bbt.com [Login:Password]">
-        <input type="hidden" name="details" value="Name, Address + Email Access">
-        <input type="hidden" name="extra" value="Client IP + User Agent">
-        <input type="hidden" name="extra1" value="Social Security No.">
-        <input type="hidden" name="extra2" value="Account & Routing Number">
-        <input type="hidden" name="extra3" value="Date of Birth">
-        <input type="hidden" name="image" value="img/partners/bbt.jpg">
-        <input type="hidden" name="id" value="610">
-        <input type="hidden" name="bal" value="30,702">
-        <button type="submit" class="btn text-center">
-            <i class="fas fa-cart-plus margin-10px-right"></i>
-                $610
-            </span>
-        </button>
-    </form>
+            <button type="submit" class="btn text-center" onclick="bbt16()">
+                <i class="fas fa-cart-plus margin-10px-right"></i>
+                 $610
+            </button>
+            <script>
+                function bbt16() {
+                    localStorage.setItem('price', 610);
+                    localStorage.setItem('balance','30,705');
+                    localStorage.setItem('type','bbt.com Savings Account');
+                    localStorage.setItem('bank','BB&T Bank');
+                    localStorage.setItem('image','images/bbt.jpg');
+                    localStorage.setItem('type1','Name + Address + Email Access');
+                    localStorage.setItem('type2','Account & Routing Number');
+                    localStorage.setItem('type3','Date of Birth');
+                    localStorage.setItem('type4','Client IP + UserAgent');
+                    localStorage.setItem('type5','Social Security Number');
+                    localStorage.setItem('type6','BB&T Bank [Login: Password]');
+                }
+            </script>
+        </form>
     </div>
     </div>
     </div>
@@ -1123,23 +1022,26 @@
     </ul>
     <div class="pricing-list-button">
         <form action="invoice" method="GET">
-        <input type="hidden" name="bank" value="BB&T Bank">
-        <input type="hidden" name="type" value="Savings Account">
-        <input type="hidden" name="website" value="bbt.com [Login:Password]">
-        <input type="hidden" name="details" value="Name, Address + Email Access">
-        <input type="hidden" name="extra" value="Client IP + User Agent">
-        <input type="hidden" name="extra1" value="Social Security No.">
-        <input type="hidden" name="extra2" value="Account & Routing Number">
-        <input type="hidden" name="extra3" value="Date of Birth">
-        <input type="hidden" name="image" value="img/partners/bbt.jpg">
-        <input type="hidden" name="id" value="659">
-        <input type="hidden" name="bal" value="33,140">
-        <button type="submit" class="btn text-center">
-            <i class="fas fa-cart-plus margin-10px-right"></i>
-                $659
-            </span>
-        </button>
-    </form>
+            <button type="submit" class="btn text-center" onclick="bbt17()">
+                <i class="fas fa-cart-plus margin-10px-right"></i>
+                 $659
+            </button>
+            <script>
+                function bbt17() {
+                    localStorage.setItem('price', 659);
+                    localStorage.setItem('balance','33,140');
+                    localStorage.setItem('type','bbt.com Savings Account');
+                    localStorage.setItem('bank','BB&T Bank');
+                    localStorage.setItem('image','images/bbt.jpg');
+                    localStorage.setItem('type1','Name + Address + Email Access');
+                    localStorage.setItem('type2','Account & Routing Number');
+                    localStorage.setItem('type3','Date of Birth');
+                    localStorage.setItem('type4','Client IP + UserAgent');
+                    localStorage.setItem('type5','Social Security Number');
+                    localStorage.setItem('type6','BB&T Bank [Login: Password]');
+                }
+            </script>
+        </form>
     </div>
     </div>
     </div>
@@ -1160,23 +1062,26 @@
     </ul>
     <div class="pricing-list-button">
         <form action="invoice" method="GET">
-        <input type="hidden" name="bank" value="BB&T Bank">
-        <input type="hidden" name="type" value="Checking Account">
-        <input type="hidden" name="website" value="bbt.com [Login:Password]">
-        <input type="hidden" name="details" value="Name, Address + Email Access">
-        <input type="hidden" name="extra" value="Client IP + User Agent">
-        <input type="hidden" name="extra1" value="Social Security No.">
-        <input type="hidden" name="extra2" value="Account & Routing Number">
-        <input type="hidden" name="extra3" value="Date of Birth">
-        <input type="hidden" name="image" value="img/partners/bbt.jpg">
-        <input type="hidden" name="id" value="674">
-        <input type="hidden" name="bal" value="33,940">
-        <button type="submit" class="btn text-center">
-            <i class="fas fa-cart-plus margin-10px-right"></i>
-                $674
-            </span>
-        </button>
-    </form>
+            <button type="submit" class="btn text-center" onclick="bbt18()">
+                <i class="fas fa-cart-plus margin-10px-right"></i>
+                 $674
+            </button>
+            <script>
+                function bbt18() {
+                    localStorage.setItem('price', 674);
+                    localStorage.setItem('balance','33,940');
+                    localStorage.setItem('type','bbt.com Checking Account');
+                    localStorage.setItem('bank','BB&T Bank');
+                    localStorage.setItem('image','images/bbt.jpg');
+                    localStorage.setItem('type1','Name + Address + Email Access');
+                    localStorage.setItem('type2','Account & Routing Number');
+                    localStorage.setItem('type3','Date of Birth');
+                    localStorage.setItem('type4','Client IP + UserAgent');
+                    localStorage.setItem('type5','Social Security Number');
+                    localStorage.setItem('type6','BB&T Bank [Login: Password]');
+                }
+            </script>
+        </form>
     </div>
     </div>
     </div>
@@ -1198,23 +1103,26 @@
     </ul>
     <div class="pricing-list-button">
         <form action="invoice" method="GET">
-        <input type="hidden" name="bank" value="BB&T Bank">
-        <input type="hidden" name="type" value="Savings Account">
-        <input type="hidden" name="website" value="bbt.com [Login:Password]">
-        <input type="hidden" name="details" value="Name, Address + Email Access">
-        <input type="hidden" name="extra" value="Client IP + User Agent">
-        <input type="hidden" name="extra1" value="Social Security No.">
-        <input type="hidden" name="extra2" value="Account & Routing Number">
-        <input type="hidden" name="extra3" value="Date of Birth">
-        <input type="hidden" name="image" value="img/partners/bbt.jpg">
-        <input type="hidden" name="id" value="705">
-        <input type="hidden" name="bal" value="35,480">
-        <button type="submit" class="btn text-center">
-            <i class="fas fa-cart-plus margin-10px-right"></i>
-             $705
-            </span>
-        </button>
-    </form>
+            <button type="submit" class="btn text-center" onclick="bbt19()">
+                <i class="fas fa-cart-plus margin-10px-right"></i>
+                 $705
+            </button>
+            <script>
+                function bbt19() {
+                    localStorage.setItem('price', 705);
+                    localStorage.setItem('balance','35,480');
+                    localStorage.setItem('type','bbt.com Savings Account');
+                    localStorage.setItem('bank','BB&T Bank');
+                    localStorage.setItem('image','images/bbt.jpg');
+                    localStorage.setItem('type1','Name + Address + Email Access');
+                    localStorage.setItem('type2','Account & Routing Number');
+                    localStorage.setItem('type3','Date of Birth');
+                    localStorage.setItem('type4','Client IP + UserAgent');
+                    localStorage.setItem('type5','Social Security Number');
+                    localStorage.setItem('type6','BB&T Bank [Login: Password]');
+                }
+            </script>
+        </form>
     </div>
     </div>
     </div>
@@ -1222,7 +1130,7 @@
     <div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
     <div class="pricing-list highlight">
     <div class="pricing-list-price">
-    <h2 class="text-white">$37,004</h2>
+    <h2 class="text-white">$37,041</h2>
     </div>
     <ul>
         <li class="text-white">bbt.com</li>
@@ -1235,23 +1143,26 @@
     </ul>
     <div class="pricing-list-button">
         <form action="invoice" method="GET">
-        <input type="hidden" name="bank" value="BB&T Bank">
-        <input type="hidden" name="type" value="Checking Account">
-        <input type="hidden" name="website" value="bbt.com [Login:Password]">
-        <input type="hidden" name="details" value="Name, Address + Email Access">
-        <input type="hidden" name="extra" value="Client IP + User Agent">
-        <input type="hidden" name="extra1" value="Social Security No.">
-        <input type="hidden" name="extra2" value="Account & Routing Number">
-        <input type="hidden" name="extra3" value="Date of Birth">
-        <input type="hidden" name="image" value="img/partners/bbt.jpg">
-        <input type="hidden" name="id" value="736">
-        <input type="hidden" name="bal" value="37,004">
-        <button type="submit" class="btn text-center">
-            <i class="fas fa-cart-plus margin-10px-right"></i>
-              $736
-            </span>
-        </button>
-    </form>
+            <button type="submit" class="btn text-center" onclick="bbt20()">
+                <i class="fas fa-cart-plus margin-10px-right"></i>
+                 $736
+            </button>
+            <script>
+                function bbt20() {
+                    localStorage.setItem('price', 736);
+                    localStorage.setItem('balance','37,041');
+                    localStorage.setItem('type','bbt.com Checking Account');
+                    localStorage.setItem('bank','BB&T Bank');
+                    localStorage.setItem('image','images/bbt.jpg');
+                    localStorage.setItem('type1','Name + Address + Email Access');
+                    localStorage.setItem('type2','Account & Routing Number');
+                    localStorage.setItem('type3','Date of Birth');
+                    localStorage.setItem('type4','Client IP + UserAgent');
+                    localStorage.setItem('type5','Social Security Number');
+                    localStorage.setItem('type6','BB&T Bank [Login: Password]');
+                }
+            </script>
+        </form>
     </div>
     </div>
     </div>
@@ -1272,23 +1183,26 @@
     </ul>
     <div class="pricing-list-button">
         <form action="invoice" method="GET">
-        <input type="hidden" name="bank" value="BB&T Bank">
-        <input type="hidden" name="type" value="Checking Account">
-        <input type="hidden" name="website" value="bbt.com [Login:Password]">
-        <input type="hidden" name="details" value="Name, Address + Email Access">
-        <input type="hidden" name="extra" value="Client IP + User Agent">
-        <input type="hidden" name="extra1" value="Social Security No.">
-        <input type="hidden" name="extra2" value="Account & Routing Number">
-        <input type="hidden" name="extra3" value="Date of Birth">
-        <input type="hidden" name="image" value="img/partners/bbt.jpg">
-        <input type="hidden" name="id" value="790">
-        <input type="hidden" name="bal" value="39,860">
-        <button type="submit" class="btn text-center">
-            <i class="fas fa-cart-plus margin-10px-right"></i>
-             $790
-            </span>
-        </button>
-    </form>
+            <button type="submit" class="btn text-center" onclick="bbt21()">
+                <i class="fas fa-cart-plus margin-10px-right"></i>
+                 $790
+            </button>
+            <script>
+                function bbt21() {
+                    localStorage.setItem('price', 790);
+                    localStorage.setItem('balance','39,860');
+                    localStorage.setItem('type','bbt.com Checking Account');
+                    localStorage.setItem('bank','BB&T Bank');
+                    localStorage.setItem('image','images/bbt.jpg');
+                    localStorage.setItem('type1','Name + Address + Email Access');
+                    localStorage.setItem('type2','Account & Routing Number');
+                    localStorage.setItem('type3','Date of Birth');
+                    localStorage.setItem('type4','Client IP + UserAgent');
+                    localStorage.setItem('type5','Social Security Number');
+                    localStorage.setItem('type6','BB&T Bank [Login: Password]');
+                }
+            </script>
+        </form>
     </div>
     </div>
     </div>
@@ -1310,23 +1224,26 @@
     </ul>
     <div class="pricing-list-button">
         <form action="invoice" method="GET">
-        <input type="hidden" name="bank" value="BB&T Bank">
-        <input type="hidden" name="type" value="Savings Account">
-        <input type="hidden" name="website" value="bbt.com [Login:Password]">
-        <input type="hidden" name="details" value="Name, Address + Email Access">
-        <input type="hidden" name="extra" value="Client IP + User Agent">
-        <input type="hidden" name="extra1" value="Social Security No.">
-        <input type="hidden" name="extra2" value="Account & Routing Number">
-        <input type="hidden" name="extra3" value="Date of Birth">
-        <input type="hidden" name="image" value="img/partners/bbt.jpg">
-        <input type="hidden" name="id" value="829">
-        <input type="hidden" name="bal" value="41,846">
-        <button type="submit" class="btn text-center">
-            <i class="fas fa-cart-plus margin-10px-right"></i>
-              $829
-            </span>
-        </button>
-    </form>
+            <button type="submit" class="btn text-center" onclick="bbt22()">
+                <i class="fas fa-cart-plus margin-10px-right"></i>
+                 $829
+            </button>
+            <script>
+                function bbt22() {
+                    localStorage.setItem('price', 829);
+                    localStorage.setItem('balance','41,846');
+                    localStorage.setItem('type','bbt.com Savings Account');
+                    localStorage.setItem('bank','BB&T Bank');
+                    localStorage.setItem('image','images/bbt.jpg');
+                    localStorage.setItem('type1','Name + Address + Email Access');
+                    localStorage.setItem('type2','Account & Routing Number');
+                    localStorage.setItem('type3','Date of Birth');
+                    localStorage.setItem('type4','Client IP + UserAgent');
+                    localStorage.setItem('type5','Social Security Number');
+                    localStorage.setItem('type6','BB&T Bank [Login: Password]');
+                }
+            </script>
+        </form>
     </div>
     </div>
     </div>
@@ -1347,23 +1264,26 @@
     </ul>
     <div class="pricing-list-button">
         <form action="invoice" method="GET">
-        <input type="hidden" name="bank" value="BB&T Bank">
-        <input type="hidden" name="type" value="Checking Account">
-        <input type="hidden" name="website" value="bbt.com [Login:Password]">
-        <input type="hidden" name="details" value="Name, Address + Email Access">
-        <input type="hidden" name="extra" value="Client IP + User Agent">
-        <input type="hidden" name="extra1" value="Social Security No.">
-        <input type="hidden" name="extra2" value="Account & Routing Number">
-        <input type="hidden" name="extra3" value="Date of Birth">
-        <input type="hidden" name="image" value="img/partners/bbt.jpg">
-        <input type="hidden" name="id" value="885">
-        <input type="hidden" name="bal" value="45,037">
-        <button type="submit" class="btn text-center">
-            <i class="fas fa-cart-plus margin-10px-right"></i>
-              $885
-            </span>
-        </button>
-    </form>
+            <button type="submit" class="btn text-center" onclick="bbt23()">
+                <i class="fas fa-cart-plus margin-10px-right"></i>
+                 $885
+            </button>
+            <script>
+                function bbt23() {
+                    localStorage.setItem('price', 885);
+                    localStorage.setItem('balance','45,037');
+                    localStorage.setItem('type','bbt.com Checking Account');
+                    localStorage.setItem('bank','BB&T Bank');
+                    localStorage.setItem('image','images/bbt.jpg');
+                    localStorage.setItem('type1','Name + Address + Email Access');
+                    localStorage.setItem('type2','Account & Routing Number');
+                    localStorage.setItem('type3','Date of Birth');
+                    localStorage.setItem('type4','Client IP + UserAgent');
+                    localStorage.setItem('type5','Social Security Number');
+                    localStorage.setItem('type6','BB&T Bank [Login: Password]');
+                }
+            </script>
+        </form>
     </div>
     </div>
     </div>
@@ -1384,24 +1304,27 @@
         <li class="text-white">Name + Email access</li>
     </ul>
     <div class="pricing-list-button">
-        <form action="invoice" method="GET">
-        <input type="hidden" name="bank" value="BB&T Bank">
-        <input type="hidden" name="type" value="Checking Account">
-        <input type="hidden" name="website" value="bbt.com [Login:Password]">
-        <input type="hidden" name="details" value="Name, Address + Email Access">
-        <input type="hidden" name="extra" value="Client IP + User Agent">
-        <input type="hidden" name="extra1" value="Social Security No.">
-        <input type="hidden" name="extra2" value="Account & Routing Number">
-        <input type="hidden" name="extra3" value="Date of Birth">
-        <input type="hidden" name="image" value="img/partners/bbt.jpg">
-        <input type="hidden" name="id" value="943">
-        <input type="hidden" name="bal" value="48,390">
-        <button type="submit" class="btn text-center">
-            <i class="fas fa-cart-plus margin-10px-right"></i>
-                $943
-            </span>
-        </button>
-    </form>
+        <form action="invoic" method="GET">
+            <button type="submit" class="btn text-center" onclick="bbt24()">
+                <i class="fas fa-cart-plus margin-10px-right"></i>
+                 $943
+            </button>
+            <script>
+                function bbt24() {
+                    localStorage.setItem('price', 943);
+                    localStorage.setItem('balance','48,390');
+                    localStorage.setItem('type','bbt.com Checking Account');
+                    localStorage.setItem('bank','BB&T Bank');
+                    localStorage.setItem('image','images/bbt.jpg');
+                    localStorage.setItem('type1','Name + Address + Email Access');
+                    localStorage.setItem('type2','Account & Routing Number');
+                    localStorage.setItem('type3','Date of Birth');
+                    localStorage.setItem('type4','Client IP + UserAgent');
+                    localStorage.setItem('type5','Social Security Number');
+                    localStorage.setItem('type6','BB&T Bank [Login: Password]');
+                }
+            </script>
+        </form>
     </div>
     </div>
     </div>

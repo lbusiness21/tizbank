@@ -334,14 +334,12 @@ to {
                
             </ul>
         </div>
-        <div class="col-lg-4 col-md-6 sm-text-center" style="margin-top: 5px;">
+        <div class="col-lg-4 col-md-6" style="margin-top: 5px;">
             <!-- product left start -->
             <p>
-                <!-- <div class="text-theme-color spinner-border" 
-                    role="status"></div> -->
-                <strong class="satoshinakamoto text-theme-color">
-                    <i class="fas fa-spin fa-sync-alt spinner-bordez margin-10px-right"></i>
-                    Awaiting <span id="log_bitcoin"></span> bitcoin payment
+                <strong class="satoshinakamoto text-theme-color" style="font-size: 18px;">
+                    <i class="fas fa-spin fa-sync-alt spinner-bordez margin-5px-right"></i>
+                    awaiting <span id="log_bitcoin"></span> bitcoin payment
                 </strong>
             </p>
             <div class="xzoom-container">
@@ -383,24 +381,9 @@ to {
 
 
 
-
+<div>
 <!-- start clients section -->
-<div class="section-clients bg-light-gray">
-    <div class="container-fluid">
-    <div class="owl-carousel owl-theme clients" id="clients">
-        <div class="item"><img alt="partner-image" src="img/partners/bbt.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/bbva.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/chase.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/citi.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/huntington.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/nfcu.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/pnc.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/suntrust.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/woodforest.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/chime.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/boa.jpg"></div>
-    </div>
-    </div>
+
 </div>
 <!-- end clients section -->
 
@@ -428,30 +411,29 @@ to {
     
 <script>
     window.addEventListener('load', () => {
-        const params = (new URL(document.location)).searchParams;
-        const price = params.get('id');
-        const balance = params.get('bal');
-        const bank = params.get('bank');
-        const type = params.get('type');
-        const website = params.get('website');
-        const details = params.get('details');
-        const extra = params.get('extra');
-        const extra1 = params.get('extra1');
-        const extra2 = params.get('extra2');
-        const extra3 = params.get('extra3');
-        const image = params.get('image');
+        const price = localStorage.getItem('price');
+        const balance = localStorage.getItem('balance').toLocaleString();
+        const bank = localStorage.getItem('bank');
+        const image = localStorage.getItem('image');
+        const type = localStorage.getItem('type');
+        const type1 = localStorage.getItem('type1');
+        const type2 = localStorage.getItem('type2');
+        const type3 = localStorage.getItem('type3');
+        const type4 = localStorage.getItem('type4');
+        const type5 = localStorage.getItem('type5');
+        const type6 = localStorage.getItem('type6');
 
         document.getElementById('log_price').innerHTML = "<strong>Send</strong>: $" + price;
         document.getElementById('log_balance').innerHTML = "<strong>Balance</strong>: $" + balance;
         document.getElementById('the-bitcoin-bank1').innerHTML = bank + ' ' + "Invoice";
         document.getElementById('log_bank').innerHTML = bank;
         document.getElementById('log_type').innerHTML = type;
-        document.getElementById('log_website').innerHTML = website;
-        document.getElementById('log_details').innerHTML = details;
-        document.getElementById('log_extra').innerHTML = extra;
-        document.getElementById('log_extra1').innerHTML = extra1;
-        document.getElementById('log_extra2').innerHTML = extra2;
-        document.getElementById('log_extra3').innerHTML = extra3;
+        document.getElementById('log_website').innerHTML = type1;
+        document.getElementById('log_details').innerHTML = type2;
+        document.getElementById('log_extra').innerHTML = type3;
+        document.getElementById('log_extra1').innerHTML = type4;
+        document.getElementById('log_extra2').innerHTML = type5;
+        document.getElementById('log_extra3').innerHTML = type6;
         document.getElementById('log_image').src = image;
 
         document.getElementById('log_image1').href = image;

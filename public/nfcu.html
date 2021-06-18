@@ -298,74 +298,6 @@
     </div>
     <!-- End links -->
     <div class="gallery text-center width-100 product-grid">
-        <!-- <div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-            <div class="feature-box-04">
-                <div class="no-padding border">
-                    <p>$11,637</p>
-                    <p>navyfederal.org</p>
-                    <p>Username:Password</p>
-                    <p>Account & Routing No</p>
-                    <p>Social Security No.</p>
-                    <p>Date of Birth</p>
-                    <p>Client IP + User Agent</p>
-                    <p>Name + Email access</p>
-                    <form action="invoice" method="GET">
-                        <input type="hidden" name="bank" value="Navy Federation Credit Union">
-                        <input type="hidden" name="type" value="Checking Account">
-                        <input type="hidden" name="website" value="Navyfederal.org [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Account & Routing No.">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Client IP + UserAgent">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/nfcu.jpg">
-                        <input type="hidden" name="id" value="253">
-                        <input type="hidden" name="bal" value="11,637">
-                        <button type="submit" class="butn medium">     
-                            <span class="margin-10px-left">
-                                <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $253
-                            </span>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-            <div class="feature-box-04">
-                <div class="no-padding border">
-                    <p>$14,388</p>
-                    <p>navyfederal.org</p>
-                    <p>Username:Password</p>
-                    <p>Account & Routing No</p>
-                    <p>Social Security No.</p>
-                    <p>Date of Birth</p>
-                    <p>Client IP + User Agent</p>
-                    <p>Name + Email access</p>
-                    <form action="invoice" method="GET">
-                        <input type="hidden" name="bank" value="Navy Federation Credit Union">
-                        <input type="hidden" name="type" value="Savings Account">
-                        <input type="hidden" name="website" value="Navyfederal.org [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Account & Routing No.">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Client IP + UserAgent">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/nfcu.jpg">
-                        <input type="hidden" name="id" value="287">
-                        <input type="hidden" name="bal" value="14,388">
-                        <button type="submit" class="butn medium">     
-                            <span class="margin-10px-left">
-                                <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $287
-                            </span>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-     -->
-    
     
         <div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
             <div class="feature-box-04">
@@ -379,23 +311,27 @@
                     <p>Client IP + User Agent</p>
                     <p>Name + Email access</p>
                     <form action="invoice" method="GET">
-                        <input type="hidden" name="bank" value="Navy Federation Credit Union">
-                        <input type="hidden" name="type" value="Savings Account">
-                        <input type="hidden" name="website" value="Navyfederal.org [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Account & Routing No.">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Client IP + UserAgent">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/nfcu.jpg">
-                        <input type="hidden" name="id" value="327">
-                        <input type="hidden" name="bal" value="16,289">
-                        <button type="submit" class="butn medium">     
+                        <button type="submit" class="butn medium" onclick="nfcu1()">     
                             <span class="margin-10px-left">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $327
+                             $327
                             </span>
                         </button>
+                        <script>
+                            function nfcu1() {
+                                localStorage.setItem('price', 327);
+                                localStorage.setItem('balance','16,289');
+                                localStorage.setItem('type','Navyfederal.com Savings Account');
+                                localStorage.setItem('bank','Navy Federation Credit Union');
+                                localStorage.setItem('image','images/nfcu.jpg');
+                                localStorage.setItem('type1','Name + Address + Email Access');
+                                localStorage.setItem('type2','Account & Routing Number');
+                                localStorage.setItem('type3','Date of Birth');
+                                localStorage.setItem('type4','Client IP + UserAgent');
+                                localStorage.setItem('type5','Social Security Number');
+                                localStorage.setItem('type6','N.F.C.U Bank [Login: Password]');
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
@@ -415,23 +351,27 @@
                     <p>Client IP + User Agent</p>
                     <p>Name + Email access</p>
                     <form action="invoice" method="GET">
-                        <input type="hidden" name="bank" value="Navy Federation Credit Union">
-                        <input type="hidden" name="type" value="Savings Account">
-                        <input type="hidden" name="website" value="Navyfederal.org [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Account & Routing No.">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Client IP + UserAgent">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/nfcu.jpg">
-                        <input type="hidden" name="id" value="340">
-                        <input type="hidden" name="bal" value="17,051">
-                        <button type="submit" class="butn medium">     
+                        <button type="submit" class="butn medium" onclick="nfcu2()">     
                             <span class="margin-10px-left">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                                $340
+                             $340
                             </span>
                         </button>
+                        <script>
+                            function nfcu2() {
+                                localStorage.setItem('price', 340);
+                                localStorage.setItem('balance','17,051');
+                                localStorage.setItem('type','Navyfederal.com Savings Account');
+                                localStorage.setItem('bank','Navy Federation Credit Union');
+                                localStorage.setItem('image','images/nfcu.jpg');
+                                localStorage.setItem('type1','Name + Address + Email Access');
+                                localStorage.setItem('type2','Account & Routing Number');
+                                localStorage.setItem('type3','Date of Birth');
+                                localStorage.setItem('type4','Client IP + UserAgent');
+                                localStorage.setItem('type5','Social Security Number');
+                                localStorage.setItem('type6','N.F.C.U Bank [Login: Password]');
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
@@ -452,23 +392,27 @@
                     <p>Client IP + User Agent</p>
                     <p>Name + Email access</p>
                     <form action="invoice" method="GET">
-                        <input type="hidden" name="bank" value="Navy Federation Credit Union">
-                        <input type="hidden" name="type" value="Checking Account">
-                        <input type="hidden" name="website" value="Navyfederal.org [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Account & Routing No.">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Client IP + UserAgent">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/nfcu.jpg">
-                        <input type="hidden" name="id" value="379">
-                        <input type="hidden" name="bal" value="18,941">
-                        <button type="submit" class="butn medium">     
+                        <button type="submit" class="butn medium" onclick="nfcu3()">     
                             <span class="margin-10px-left">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                                $379
+                             $379
                             </span>
                         </button>
+                        <script>
+                            function nfcu3() {
+                                localStorage.setItem('price', 379);
+                                localStorage.setItem('balance','18,941');
+                                localStorage.setItem('type','Navyfederal.com Checking Account');
+                                localStorage.setItem('bank','Navy Federation Credit Union');
+                                localStorage.setItem('image','images/nfcu.jpg');
+                                localStorage.setItem('type1','Name + Address + Email Access');
+                                localStorage.setItem('type2','Account & Routing Number');
+                                localStorage.setItem('type3','Date of Birth');
+                                localStorage.setItem('type4','Client IP + UserAgent');
+                                localStorage.setItem('type5','Social Security Number');
+                                localStorage.setItem('type6','N.F.C.U Bank [Login: Password]');
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
@@ -487,23 +431,27 @@
                     <p>Client IP + User Agent</p>
                     <p>Name + Email access</p>
                     <form action="invoice" method="GET">
-                        <input type="hidden" name="bank" value="Navy Federation Credit Union">
-                        <input type="hidden" name="type" value="Savings Account">
-                        <input type="hidden" name="website" value="Navyfederal.org [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Account & Routing No.">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Client IP + UserAgent">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/nfcu.jpg">
-                        <input type="hidden" name="id" value="390">
-                        <input type="hidden" name="bal" value="19,705">
-                        <button type="submit" class="butn medium">     
+                        <button type="submit" class="butn medium" onclick="nfcu4()">     
                             <span class="margin-10px-left">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                                $390
+                             $390
                             </span>
                         </button>
+                        <script>
+                            function nfcu4() {
+                                localStorage.setItem('price', 390);
+                                localStorage.setItem('balance','19,705');
+                                localStorage.setItem('type','Navyfederal.com Savings Account');
+                                localStorage.setItem('bank','Navy Federation Credit Union');
+                                localStorage.setItem('image','images/nfcu.jpg');
+                                localStorage.setItem('type1','Name + Address + Email Access');
+                                localStorage.setItem('type2','Account & Routing Number');
+                                localStorage.setItem('type3','Date of Birth');
+                                localStorage.setItem('type4','Client IP + UserAgent');
+                                localStorage.setItem('type5','Social Security Number');
+                                localStorage.setItem('type6','N.F.C.U Bank [Login: Password]');
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
@@ -522,23 +470,27 @@
                     <p>Client IP + User Agent</p>
                     <p>Name + Email access</p>
                     <form action="invoice" method="GET">
-                        <input type="hidden" name="bank" value="Navy Federation Credit Union">
-                        <input type="hidden" name="type" value="Savings Account">
-                        <input type="hidden" name="website" value="Navyfederal.org [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Account & Routing No.">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Client IP + UserAgent">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/nfcu.jpg">
-                        <input type="hidden" name="id" value="406">
-                        <input type="hidden" name="bal" value="20,315">
-                        <button type="submit" class="butn medium">     
+                        <button type="submit" class="butn medium" onclick="nfcu5()">     
                             <span class="margin-10px-left">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                                $406
+                             $406
                             </span>
                         </button>
+                        <script>
+                            function nfcu5() {
+                                localStorage.setItem('price', 406);
+                                localStorage.setItem('balance','20,315');
+                                localStorage.setItem('type','Navyfederal.com Savings Account');
+                                localStorage.setItem('bank','Navy Federation Credit Union');
+                                localStorage.setItem('image','images/nfcu.jpg');
+                                localStorage.setItem('type1','Name + Address + Email Access');
+                                localStorage.setItem('type2','Account & Routing Number');
+                                localStorage.setItem('type3','Date of Birth');
+                                localStorage.setItem('type4','Client IP + UserAgent');
+                                localStorage.setItem('type5','Social Security Number');
+                                localStorage.setItem('type6','N.F.C.U Bank [Login: Password]');
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
@@ -556,23 +508,27 @@
                     <p>Client IP + User Agent</p>
                     <p>Name + Email access</p>
                     <form action="invoice" method="GET">
-                        <input type="hidden" name="bank" value="Navy Federation Credit Union">
-                        <input type="hidden" name="type" value="Savings Account">
-                        <input type="hidden" name="website" value="Navyfederal.org [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Account & Routing No.">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Client IP + UserAgent">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/nfcu.jpg">
-                        <input type="hidden" name="id" value="470">
-                        <input type="hidden" name="bal" value="23,714">
-                        <button type="submit" class="butn medium">     
+                        <button type="submit" class="butn medium" onclick="nfcu6()">     
                             <span class="margin-10px-left">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                                $470
+                             $470
                             </span>
                         </button>
+                        <script>
+                            function nfcu6() {
+                                localStorage.setItem('price', 470);
+                                localStorage.setItem('balance','23,714');
+                                localStorage.setItem('type','Navyfederal.com Savings Account');
+                                localStorage.setItem('bank','Navy Federation Credit Union');
+                                localStorage.setItem('image','images/nfcu.jpg');
+                                localStorage.setItem('type1','Name + Address + Email Access');
+                                localStorage.setItem('type2','Account & Routing Number');
+                                localStorage.setItem('type3','Date of Birth');
+                                localStorage.setItem('type4','Client IP + UserAgent');
+                                localStorage.setItem('type5','Social Security Number');
+                                localStorage.setItem('type6','N.F.C.U Bank [Login: Password]');
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
@@ -591,23 +547,27 @@
                     <p>Client IP + User Agent</p>
                     <p>Name + Email access</p>
                     <form action="invoice" method="GET">
-                        <input type="hidden" name="bank" value="Navy Federation Credit Union">
-                        <input type="hidden" name="type" value="Savings Account">
-                        <input type="hidden" name="website" value="Navyfederal.org [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Account & Routing No.">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Client IP + UserAgent">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/nfcu.jpg">
-                        <input type="hidden" name="id" value="530">
-                        <input type="hidden" name="bal" value="26,580">
-                        <button type="submit" class="butn medium">     
+                        <button type="submit" class="butn medium" onclick="nfcu7()">     
                             <span class="margin-10px-left">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                                $530
+                             $530
                             </span>
                         </button>
+                        <script>
+                            function nfcu7() {
+                                localStorage.setItem('price', 530);
+                                localStorage.setItem('balance','26,580');
+                                localStorage.setItem('type','Navyfederal.com Savings Account');
+                                localStorage.setItem('bank','Navy Federation Credit Union');
+                                localStorage.setItem('image','images/nfcu.jpg');
+                                localStorage.setItem('type1','Name + Address + Email Access');
+                                localStorage.setItem('type2','Account & Routing Number');
+                                localStorage.setItem('type3','Date of Birth');
+                                localStorage.setItem('type4','Client IP + UserAgent');
+                                localStorage.setItem('type5','Social Security Number');
+                                localStorage.setItem('type6','N.F.C.U Bank [Login: Password]');
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
@@ -617,7 +577,7 @@
         <div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
             <div class="feature-box-04">
                 <div class="no-padding border">
-                    <p>$27,040</p>
+                    <p>$27,045</p>
                     <p>navyfederal.org</p>
                     <p>Username:Password</p>
                     <p>Account & Routing No</p>
@@ -626,23 +586,27 @@
                     <p>Client IP + User Agent</p>
                     <p>Name + Email access</p>
                     <form action="invoice" method="GET">
-                        <input type="hidden" name="bank" value="Navy Federation Credit Union">
-                        <input type="hidden" name="type" value="Savings Account">
-                        <input type="hidden" name="website" value="Navyfederal.org [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Account & Routing No.">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Client IP + UserAgent">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/nfcu.jpg">
-                        <input type="hidden" name="id" value="540">
-                        <input type="hidden" name="bal" value="27,040">
-                        <button type="submit" class="butn medium">     
+                        <button type="submit" class="butn medium" onclick="nfcu8()">     
                             <span class="margin-10px-left">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                                $540
+                             $539
                             </span>
                         </button>
+                        <script>
+                            function nfcu8() {
+                                localStorage.setItem('price', 539);
+                                localStorage.setItem('balance','27,045');
+                                localStorage.setItem('type','Navyfederal.com Savings Account');
+                                localStorage.setItem('bank','Navy Federation Credit Union');
+                                localStorage.setItem('image','images/nfcu.jpg');
+                                localStorage.setItem('type1','Name + Address + Email Access');
+                                localStorage.setItem('type2','Account & Routing Number');
+                                localStorage.setItem('type3','Date of Birth');
+                                localStorage.setItem('type4','Client IP + UserAgent');
+                                localStorage.setItem('type5','Social Security Number');
+                                localStorage.setItem('type6','N.F.C.U Bank [Login: Password]');
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
@@ -661,23 +625,27 @@
                     <p>Client IP + User Agent</p>
                     <p>Name + Email access</p>
                     <form action="invoice" method="GET">
-                        <input type="hidden" name="bank" value="Navy Federation Credit Union">
-                        <input type="hidden" name="type" value="Checking Account">
-                        <input type="hidden" name="website" value="Navyfederal.org [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Account & Routing No.">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Client IP + UserAgent">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/nfcu.jpg">
-                        <input type="hidden" name="id" value="572">
-                        <input type="hidden" name="bal" value="28,514">
-                        <button type="submit" class="butn medium">     
+                        <button type="submit" class="butn medium" onclick="nfcu9()">     
                             <span class="margin-10px-left">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
                              $572
                             </span>
                         </button>
+                        <script>
+                            function nfcu9() {
+                                localStorage.setItem('price', 572);
+                                localStorage.setItem('balance','28,514');
+                                localStorage.setItem('type','Navyfederal.com Checking Account');
+                                localStorage.setItem('bank','Navy Federation Credit Union');
+                                localStorage.setItem('image','images/nfcu.jpg');
+                                localStorage.setItem('type1','Name + Address + Email Access');
+                                localStorage.setItem('type2','Account & Routing Number');
+                                localStorage.setItem('type3','Date of Birth');
+                                localStorage.setItem('type4','Client IP + UserAgent');
+                                localStorage.setItem('type5','Social Security Number');
+                                localStorage.setItem('type6','N.F.C.U Bank [Login: Password]');
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
@@ -696,23 +664,27 @@
                     <p>Client IP + User Agent</p>
                     <p>Name + Email access</p>
                     <form action="invoice" method="GET">
-                        <input type="hidden" name="bank" value="Navy Federation Credit Union">
-                        <input type="hidden" name="type" value="Savings Account">
-                        <input type="hidden" name="website" value="Navyfederal.org [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Account & Routing No.">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Client IP + UserAgent">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/nfcu.jpg">
-                        <input type="hidden" name="id" value="593">
-                        <input type="hidden" name="bal" value="29,156">
-                        <button type="submit" class="butn medium">     
+                        <button type="submit" class="butn medium" onclick="nfcu10()">     
                             <span class="margin-10px-left">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                                $593
+                             $593
                             </span>
                         </button>
+                        <script>
+                            function nfcu10() {
+                                localStorage.setItem('price', 593);
+                                localStorage.setItem('balance','29,156');
+                                localStorage.setItem('type','Navyfederal.com Savings Account');
+                                localStorage.setItem('bank','Navy Federation Credit Union');
+                                localStorage.setItem('image','images/nfcu.jpg');
+                                localStorage.setItem('type1','Name + Address + Email Access');
+                                localStorage.setItem('type2','Account & Routing Number');
+                                localStorage.setItem('type3','Date of Birth');
+                                localStorage.setItem('type4','Client IP + UserAgent');
+                                localStorage.setItem('type5','Social Security Number');
+                                localStorage.setItem('type6','N.F.C.U Bank [Login: Password]');
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
@@ -731,23 +703,27 @@
                     <p>Client IP + User Agent</p>
                     <p>Name + Email access</p>
                     <form action="invoice" method="GET">
-                        <input type="hidden" name="bank" value="Navy Federation Credit Union">
-                        <input type="hidden" name="type" value="Checking Account">
-                        <input type="hidden" name="website" value="Navyfederal.org [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Account & Routing No.">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Client IP + UserAgent">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/nfcu.jpg">
-                        <input type="hidden" name="id" value="610">
-                        <input type="hidden" name="bal" value="31,730">
-                        <button type="submit" class="butn medium">     
+                        <button type="submit" class="butn medium" onclick="nfcu11()">     
                             <span class="margin-10px-left">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                                $610
+                             $610
                             </span>
                         </button>
+                        <script>
+                            function nfcu11() {
+                                localStorage.setItem('price', 610);
+                                localStorage.setItem('balance','31,730');
+                                localStorage.setItem('type','Navyfederal.com Checking Account');
+                                localStorage.setItem('bank','Navy Federation Credit Union');
+                                localStorage.setItem('image','images/nfcu.jpg');
+                                localStorage.setItem('type1','Name + Address + Email Access');
+                                localStorage.setItem('type2','Account & Routing Number');
+                                localStorage.setItem('type3','Date of Birth');
+                                localStorage.setItem('type4','Client IP + UserAgent');
+                                localStorage.setItem('type5','Social Security Number');
+                                localStorage.setItem('type6','N.F.C.U Bank [Login: Password]');
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
@@ -766,23 +742,27 @@
                     <p>Client IP + User Agent</p>
                     <p>Name + Email access</p>
                     <form action="invoice" method="GET">
-                        <input type="hidden" name="bank" value="Navy Federation Credit Union">
-                        <input type="hidden" name="type" value="Savings Account">
-                        <input type="hidden" name="website" value="Navyfederal.org [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Account & Routing No.">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Client IP + UserAgent">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/nfcu.jpg">
-                        <input type="hidden" name="id" value="659">
-                        <input type="hidden" name="bal" value="33,105">
-                        <button type="submit" class="butn medium">     
+                        <button type="submit" class="butn medium" onclick="nfcu12()">     
                             <span class="margin-10px-left">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                                $659
+                             $659
                             </span>
                         </button>
+                        <script>
+                            function nfcu12() {
+                                localStorage.setItem('price', 659);
+                                localStorage.setItem('balance','33,105');
+                                localStorage.setItem('type','Navyfederal.com Savings Account');
+                                localStorage.setItem('bank','Navy Federation Credit Union');
+                                localStorage.setItem('image','images/nfcu.jpg');
+                                localStorage.setItem('type1','Name + Address + Email Access');
+                                localStorage.setItem('type2','Account & Routing Number');
+                                localStorage.setItem('type3','Date of Birth');
+                                localStorage.setItem('type4','Client IP + UserAgent');
+                                localStorage.setItem('type5','Social Security Number');
+                                localStorage.setItem('type6','N.F.C.U Bank [Login: Password]');
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
@@ -800,24 +780,27 @@
                     <p>Client IP + User Agent</p>
                     <p>Name + Email access</p>
                     <form action="invoice" method="GET">
-            
-                        <input type="hidden" name="bank" value="Navy Federation Credit Union">
-                        <input type="hidden" name="type" value="Savings Account">
-                        <input type="hidden" name="website" value="Navyfederal.org [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Account & Routing No.">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Client IP + UserAgent">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/nfcu.jpg">
-                        <input type="hidden" name="id" value="730">
-                        <input type="hidden" name="bal" value="37,254">
-                        <button type="submit" class="butn medium">     
+                        <button type="submit" class="butn medium" onclick="nfcu13()">     
                             <span class="margin-10px-left">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                                $730
+                             $730
                             </span>
                         </button>
+                        <script>
+                            function nfcu13() {
+                                localStorage.setItem('price', 730);
+                                localStorage.setItem('balance','37,254');
+                                localStorage.setItem('type','Navyfederal.com Savings Account');
+                                localStorage.setItem('bank','Navy Federation Credit Union');
+                                localStorage.setItem('image','images/nfcu.jpg');
+                                localStorage.setItem('type1','Name + Address + Email Access');
+                                localStorage.setItem('type2','Account & Routing Number');
+                                localStorage.setItem('type3','Date of Birth');
+                                localStorage.setItem('type4','Client IP + UserAgent');
+                                localStorage.setItem('type5','Social Security Number');
+                                localStorage.setItem('type6','N.F.C.U Bank [Login: Password]');
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
@@ -836,23 +819,27 @@
                     <p>Client IP + User Agent</p>
                     <p>Name + Email access</p>
                     <form action="invoice" method="GET">
-                        <input type="hidden" name="bank" value="Navy Federation Credit Union">
-                        <input type="hidden" name="type" value="Savings Account">
-                        <input type="hidden" name="website" value="Navyfederal.org [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Account & Routing No.">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Client IP + UserAgent">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/nfcu.jpg">
-                        <input type="hidden" name="id" value="783">
-                        <input type="hidden" name="bal" value="40,286">
-                        <button type="submit" class="butn medium">     
+                        <button type="submit" class="butn medium" onclick="nfcu14()">     
                             <span class="margin-10px-left">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                                $783
+                             $783
                             </span>
                         </button>
+                        <script>
+                            function nfcu14() {
+                                localStorage.setItem('price', 783);
+                                localStorage.setItem('balance','40,286');
+                                localStorage.setItem('type','Navyfederal.com Savings Account');
+                                localStorage.setItem('bank','Navy Federation Credit Union');
+                                localStorage.setItem('image','images/nfcu.jpg');
+                                localStorage.setItem('type1','Name + Address + Email Access');
+                                localStorage.setItem('type2','Account & Routing Number');
+                                localStorage.setItem('type3','Date of Birth');
+                                localStorage.setItem('type4','Client IP + UserAgent');
+                                localStorage.setItem('type5','Social Security Number');
+                                localStorage.setItem('type6','N.F.C.U Bank [Login: Password]');
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
@@ -871,23 +858,27 @@
                     <p>Client IP + User Agent</p>
                     <p>Name + Email access</p>
                     <form action="invoice" method="GET">
-                        <input type="hidden" name="bank" value="Navy Federation Credit Union">
-                        <input type="hidden" name="type" value="Savings Account">
-                        <input type="hidden" name="website" value="Navyfederal.org [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Account & Routing No.">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Client IP + UserAgent">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/nfcu.jpg">
-                        <input type="hidden" name="id" value="810">
-                        <input type="hidden" name="bal" value="42,173">
-                        <button type="submit" class="butn medium">     
+                        <button type="submit" class="butn medium" onclick="nfcu15()">     
                             <span class="margin-10px-left">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                                $810
+                             $810
                             </span>
                         </button>
+                        <script>
+                            function nfcu15() {
+                                localStorage.setItem('price', 810);
+                                localStorage.setItem('balance','42,173');
+                                localStorage.setItem('type','Navyfederal.com Savings Account');
+                                localStorage.setItem('bank','Navy Federation Credit Union');
+                                localStorage.setItem('image','images/nfcu.jpg');
+                                localStorage.setItem('type1','Name + Address + Email Access');
+                                localStorage.setItem('type2','Account & Routing Number');
+                                localStorage.setItem('type3','Date of Birth');
+                                localStorage.setItem('type4','Client IP + UserAgent');
+                                localStorage.setItem('type5','Social Security Number');
+                                localStorage.setItem('type6','N.F.C.U Bank [Login: Password]');
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
@@ -906,23 +897,27 @@
                     <p>Client IP + User Agent</p>
                     <p>Name + Email access</p>
                     <form action="invoice" method="GET">
-                        <input type="hidden" name="bank" value="Navy Federation Credit Union">
-                        <input type="hidden" name="type" value="Checking Account">
-                        <input type="hidden" name="website" value="Navyfederal.org [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Account & Routing No.">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Client IP + UserAgent">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/nfcu.jpg">
-                        <input type="hidden" name="id" value="875">
-                        <input type="hidden" name="bal" value="45,092">
-                        <button type="submit" class="butn medium">     
+                        <button type="submit" class="butn medium" onclick="nfcu16()">     
                             <span class="margin-10px-left">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                             $875
+                             $873
                             </span>
                         </button>
+                        <script>
+                            function nfcu16() {
+                                localStorage.setItem('price', 873);
+                                localStorage.setItem('balance','45,092');
+                                localStorage.setItem('type','Navyfederal.com Checking Account');
+                                localStorage.setItem('bank','Navy Federation Credit Union');
+                                localStorage.setItem('image','images/nfcu.jpg');
+                                localStorage.setItem('type1','Name + Address + Email Access');
+                                localStorage.setItem('type2','Account & Routing Number');
+                                localStorage.setItem('type3','Date of Birth');
+                                localStorage.setItem('type4','Client IP + UserAgent');
+                                localStorage.setItem('type5','Social Security Number');
+                                localStorage.setItem('type6','N.F.C.U Bank [Login: Password]');
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
@@ -941,23 +936,27 @@
                     <p>Client IP + User Agent</p>
                     <p>Name + Email access</p>
                     <form action="invoice" method="GET">
-                        <input type="hidden" name="bank" value="Navy Federation Credit Union">
-                        <input type="hidden" name="type" value="Savings Account">
-                        <input type="hidden" name="website" value="Navyfederal.org [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Account & Routing No.">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Client IP + UserAgent">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/nfcu.jpg">
-                        <input type="hidden" name="id" value="937">
-                        <input type="hidden" name="bal" value="48,371">
-                        <button type="submit" class="butn medium">     
+                        <button type="submit" class="butn medium" onclick="nfcu17()">     
                             <span class="margin-10px-left">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                                $937
+                             $937
                             </span>
                         </button>
+                        <script>
+                            function nfcu17() {
+                                localStorage.setItem('price', 937);
+                                localStorage.setItem('balance','48,371');
+                                localStorage.setItem('type','Navyfederal.com Savings Account');
+                                localStorage.setItem('bank','Navy Federation Credit Union');
+                                localStorage.setItem('image','images/nfcu.jpg');
+                                localStorage.setItem('type1','Name + Address + Email Access');
+                                localStorage.setItem('type2','Account & Routing Number');
+                                localStorage.setItem('type3','Date of Birth');
+                                localStorage.setItem('type4','Client IP + UserAgent');
+                                localStorage.setItem('type5','Social Security Number');
+                                localStorage.setItem('type6','N.F.C.U Bank [Login: Password]');
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
@@ -976,23 +975,27 @@
                     <p>Client IP + User Agent</p>
                     <p>Name + Email access</p>
                     <form action="invoice" method="GET">
-                        <input type="hidden" name="bank" value="Navy Federation Credit Union">
-                        <input type="hidden" name="type" value="Checking Account">
-                        <input type="hidden" name="website" value="Navyfederal.org [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Account & Routing No.">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Client IP + UserAgent">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/nfcu.jpg">
-                        <input type="hidden" name="id" value="997">
-                        <input type="hidden" name="bal" value="54,749">
-                        <button type="submit" class="butn medium">     
+                        <button type="submit" class="butn medium" onclick="nfcu18()">     
                             <span class="margin-10px-left">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                                $997
+                             $997
                             </span>
                         </button>
+                        <script>
+                            function nfcu18() {
+                                localStorage.setItem('price', 997);
+                                localStorage.setItem('balance','54,749');
+                                localStorage.setItem('type','Navyfederal.com Checking Account');
+                                localStorage.setItem('bank','Navy Federation Credit Union');
+                                localStorage.setItem('image','images/nfcu.jpg');
+                                localStorage.setItem('type1','Name + Address + Email Access');
+                                localStorage.setItem('type2','Account & Routing Number');
+                                localStorage.setItem('type3','Date of Birth');
+                                localStorage.setItem('type4','Client IP + UserAgent');
+                                localStorage.setItem('type5','Social Security Number');
+                                localStorage.setItem('type6','N.F.C.U Bank [Login: Password]');
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
