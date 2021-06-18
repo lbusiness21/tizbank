@@ -300,85 +300,7 @@
 
 <!-- End links -->
 <div class="gallery text-center width-100">
-    <!-- <div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-        <div class="price-table">
-            <div class="price-table-header">
-                <h4><sup>$</sup>12,037</h4>
-            </div>
-            <div class="price-table-content">
-                <ul>
-                    <li>Huntington.com</li>
-                    <li>Username:Password</li>
-                    <li>Name + Address</li>
-                    <li>Email access</li>
-                    <li>Social Security No.</li>
-                    <li>Account & Routing No</li>
-                    <li>Date of Birth</li>
-                </ul>
-                <div class="text-center">
-                    <form action="invoice" method="GET">
-                        <input type="hidden" name="bank" value="Huntington Bank">
-                        <input type="hidden" name="type" value="Savings Account">
-                        <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                        <input type="hidden" name="details" value="Name + Address">
-                        <input type="hidden" name="extra" value="Email Access">
-                        <input type="hidden" name="extra1" value="Social Security No.">
-                        <input type="hidden" name="extra2" value="Account & Routing Number">
-                        <input type="hidden" name="extra3" value="Date of Birth">
-                        <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                        <input type="hidden" name="id" value="225">
-                        <input type="hidden" name="bal" value="12,037">
-                        <button type="submit" class="butn medium">              
-                            <span class="margin-3px-left">
-                                <i class="fas fa-cart-plus margin-10px-right"></i>
-                                $225
-                            </span>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>13,954</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Savings Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="273">
-                    <input type="hidden" name="bal" value="13,954">
-                    <button type="submit" class="butn medium">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $273
-                        </span>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div> -->
 <div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
     <div class="price-table">
         <div class="price-table-header">  
@@ -396,23 +318,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="325">
-                    <input type="hidden" name="bal" value="15,913">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt1()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $325
+                            $307
                         </span>
                     </button>
+                    <script>
+                        function hunt1() {
+                            localStorage.setItem('price', 307);
+                            localStorage.setItem('balance','15,913');
+                            localStorage.setItem('type','huntington.com Checking Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -435,23 +361,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="346">
-                    <input type="hidden" name="bal" value="17,853">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt2()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
                             $346
                         </span>
                     </button>
+                    <script>
+                        function hunt2() {
+                            localStorage.setItem('price', 346);
+                            localStorage.setItem('balance','17,853');
+                            localStorage.setItem('type','huntington.com Checking Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -474,23 +404,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Savings Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="365">
-                    <input type="hidden" name="bal" value="18,271">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt3()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
                             $365
                         </span>
                     </button>
+                    <script>
+                        function hunt3() {
+                            localStorage.setItem('price', 365);
+                            localStorage.setItem('balance','18,271');
+                            localStorage.setItem('type','huntington.com Savings Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -513,23 +447,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Savings Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="383">
-                    <input type="hidden" name="bal" value="19,178">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt4()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $383
+                            $381
                         </span>
                     </button>
+                    <script>
+                        function hunt4() {
+                            localStorage.setItem('price', 381);
+                            localStorage.setItem('balance','19,178');
+                            localStorage.setItem('type','huntington.com Savings Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -553,23 +491,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="394">
-                    <input type="hidden" name="bal" value="19,715">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt5()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
                             $394
                         </span>
                     </button>
+                    <script>
+                        function hunt5() {
+                            localStorage.setItem('price', 394);
+                            localStorage.setItem('balance','19,715');
+                            localStorage.setItem('type','huntington.com Checking Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -593,23 +535,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="414">
-                    <input type="hidden" name="bal" value="20,650">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt6()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
                             $414
                         </span>
                     </button>
+                    <script>
+                        function hunt6() {
+                            localStorage.setItem('price', 414);
+                            localStorage.setItem('balance','20,650');
+                            localStorage.setItem('type','huntington.com Checking Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -633,23 +579,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Savings Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="425">
-                    <input type="hidden" name="bal" value="21,239">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt7()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
                             $425
                         </span>
                     </button>
+                    <script>
+                        function hunt7() {
+                            localStorage.setItem('price', 425);
+                            localStorage.setItem('balance','21,239');
+                            localStorage.setItem('type','huntington.com Savings Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -673,23 +623,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="490">
-                    <input type="hidden" name="bal" value="24,517">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt8()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
                             $490
                         </span>
                     </button>
+                    <script>
+                        function hunt8() {
+                            localStorage.setItem('price', 490);
+                            localStorage.setItem('balance','24,517');
+                            localStorage.setItem('type','huntington.com Checking Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -713,23 +667,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Savings Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="498">
-                    <input type="hidden" name="bal" value="24,916">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt9()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
                             $498
                         </span>
                     </button>
+                    <script>
+                        function hunt9() {
+                            localStorage.setItem('price', 498);
+                            localStorage.setItem('balance','24,916');
+                            localStorage.setItem('type','huntington.com Savings Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -753,23 +711,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Savings Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="507">
-                    <input type="hidden" name="bal" value="25,397">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt10()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
                             $507
                         </span>
                     </button>
+                    <script>
+                        function hunt10() {
+                            localStorage.setItem('price', 507);
+                            localStorage.setItem('balance','25,397');
+                            localStorage.setItem('type','huntington.com Savings Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -793,23 +755,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="571">
-                    <input type="hidden" name="bal" value="28,560">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt11()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
                             $571
                         </span>
                     </button>
+                    <script>
+                        function hunt11() {
+                            localStorage.setItem('price', 571);
+                            localStorage.setItem('balance','28,560');
+                            localStorage.setItem('type','huntington.com Checking Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -833,23 +799,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="580">
-                    <input type="hidden" name="bal" value="29,437">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt12()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
                             $580
                         </span>
                     </button>
+                    <script>
+                        function hunt12() {
+                            localStorage.setItem('price', 580);
+                            localStorage.setItem('balance','29,437');
+                            localStorage.setItem('type','huntington.com Checking Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -873,23 +843,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Savings Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="618">
-                    <input type="hidden" name="bal" value="30,381">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt13()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
                             $618
                         </span>
                     </button>
+                    <script>
+                        function hunt13() {
+                            localStorage.setItem('price', 618);
+                            localStorage.setItem('balance','30,381');
+                            localStorage.setItem('type','huntington.com Savings Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -913,23 +887,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="640">
-                    <input type="hidden" name="bal" value="32,485">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt14()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
                             $640
                         </span>
                     </button>
+                    <script>
+                        function hunt14() {
+                            localStorage.setItem('price', 640);
+                            localStorage.setItem('balance','32,485');
+                            localStorage.setItem('type','huntington.com Checking Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -957,23 +935,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="695">
-                    <input type="hidden" name="bal" value="34,795">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt15()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
                             $695
                         </span>
                     </button>
+                    <script>
+                        function hunt15() {
+                            localStorage.setItem('price', 695);
+                            localStorage.setItem('balance','34,795');
+                            localStorage.setItem('type','huntington.com Checking Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -997,23 +979,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Savings Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="720">
-                    <input type="hidden" name="bal" value="36,183">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt16()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
                             $720
                         </span>
                     </button>
+                    <script>
+                        function hunt16() {
+                            localStorage.setItem('price', 720);
+                            localStorage.setItem('balance','36,183');
+                            localStorage.setItem('type','huntington.com Savings Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -1037,23 +1023,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="768">
-                    <input type="hidden" name="bal" value="38,549">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt17()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
                             $768
                         </span>
                     </button>
+                    <script>
+                        function hunt17() {
+                            localStorage.setItem('price', 768);
+                            localStorage.setItem('balance','38,549');
+                            localStorage.setItem('type','huntington.com Checking Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -1077,23 +1067,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Savings Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="803">
-                    <input type="hidden" name="bal" value="40,260">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt18()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
                             $803
                         </span>
                     </button>
+                    <script>
+                        function hunt18() {
+                            localStorage.setItem('price', 803);
+                            localStorage.setItem('balance','40,260');
+                            localStorage.setItem('type','huntington.com Savings Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -1117,23 +1111,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Savings Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="830">
-                    <input type="hidden" name="bal" value="42,007">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt19()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $830
+                            $829
                         </span>
                     </button>
+                    <script>
+                        function hunt19() {
+                            localStorage.setItem('price', 829);
+                            localStorage.setItem('balance','42,007');
+                            localStorage.setItem('type','huntington.com Savings Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -1157,23 +1155,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="880">
-                    <input type="hidden" name="bal" value="44,130">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt20()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $880
+                            $873
                         </span>
                     </button>
+                    <script>
+                        function hunt20() {
+                            localStorage.setItem('price', 873);
+                            localStorage.setItem('balance','44,130');
+                            localStorage.setItem('type','huntington.com Checking Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -1197,23 +1199,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="921">
-                    <input type="hidden" name="bal" value="47,084">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt21()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
                             $921
                         </span>
                     </button>
+                    <script>
+                        function hunt21() {
+                            localStorage.setItem('price', 921);
+                            localStorage.setItem('balance','47,084');
+                            localStorage.setItem('type','huntington.com Checking Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -1237,23 +1243,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="Huntington Bank">
-                    <input type="hidden" name="type" value="Savings Account">
-                    <input type="hidden" name="website" value="Huntington.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/huntington.jpg">
-                    <input type="hidden" name="id" value="993">
-                    <input type="hidden" name="bal" value="50,397">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="hunt22()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
                             $993
                         </span>
                     </button>
+                    <script>
+                        function hunt22() {
+                            localStorage.setItem('price', 993);
+                            localStorage.setItem('balance','50,397');
+                            localStorage.setItem('type','huntington.com Savings Account');
+                            localStorage.setItem('bank','Huntington Bank');
+                            localStorage.setItem('image','images/huntington.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>

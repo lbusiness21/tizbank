@@ -341,88 +341,6 @@
 </div>
 <!-- End links -->
 <div class="gallery text-center width-100">
-<!-- <div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>13,782</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="275">
-                    <input type="hidden" name="bal" value="13,782">
-                    <button type="submit" class="butn medium">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            
-                            $275
-                        </span>
-                    </button>
-                </form>
-            </div>
-        
-        </div>
-    </div>
-</div>
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>14,515</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="Savings Account">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="290">
-                    <input type="hidden" name="bal" value="14,515">
-                    <button type="submit" class="butn medium">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                        
-                            $290
-                        </span>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div> -->
 <div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
     <div class="price-table">
         <div class="price-table-header">
@@ -440,24 +358,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="307">
-                    <input type="hidden" name="bal" value="15,350">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="pnc1()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                    
                             $307
                         </span>
                     </button>
+                    <script>
+                        function pnc1() {
+                            localStorage.setItem('price', 307);
+                            localStorage.setItem('balance','15,350');
+                            localStorage.setItem('type','pnc.com Checking Account');
+                            localStorage.setItem('bank','PNC Bank');
+                            localStorage.setItem('image','images/pnc.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','PNC Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -480,24 +401,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="346">
-                    <input type="hidden" name="bal" value="17,251">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="pnc2()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                            
                             $346
                         </span>
                     </button>
+                    <script>
+                        function pnc2() {
+                            localStorage.setItem('price', 346);
+                            localStorage.setItem('balance','17,251');
+                            localStorage.setItem('type','pnc.com Checking Account');
+                            localStorage.setItem('bank','PNC Bank');
+                            localStorage.setItem('image','images/pnc.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','PNC Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -520,24 +444,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="Savings Account">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="370">
-                    <input type="hidden" name="bal" value="18,416">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="pnc3()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                        
-                            $370
+                            $369
                         </span>
                     </button>
+                    <script>
+                        function pnc3() {
+                            localStorage.setItem('price', 369);
+                            localStorage.setItem('balance','18,416');
+                            localStorage.setItem('type','pnc.com Savings Account');
+                            localStorage.setItem('bank','PNC Bank');
+                            localStorage.setItem('image','images/pnc.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','PNC Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -560,24 +487,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="Savings Account">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="390">
-                    <input type="hidden" name="bal" value="19,218">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="pnc4()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                        
                             $390
                         </span>
                     </button>
+                    <script>
+                        function pnc4() {
+                            localStorage.setItem('price', 390);
+                            localStorage.setItem('balance','19,218');
+                            localStorage.setItem('type','pnc.com Savings Account');
+                            localStorage.setItem('bank','PNC Bank');
+                            localStorage.setItem('image','images/pnc.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','PNC Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -601,24 +531,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="403">
-                    <input type="hidden" name="bal" value="20,305">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="pnc5()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                            
                             $403
                         </span>
                     </button>
+                    <script>
+                        function pnc5() {
+                            localStorage.setItem('price', 403);
+                            localStorage.setItem('balance','20,305');
+                            localStorage.setItem('type','pnc.com Checking Account');
+                            localStorage.setItem('bank','PNC Bank');
+                            localStorage.setItem('image','images/pnc.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','PNC Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -642,24 +575,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="Savings Account">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="420">
-                    <input type="hidden" name="bal" value="21,946">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="pnc6()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                        
                             $420
                         </span>
                     </button>
+                    <script>
+                        function pnc6() {
+                            localStorage.setItem('price', 420);
+                            localStorage.setItem('balance','21,946');
+                            localStorage.setItem('type','pnc.com Savings Account');
+                            localStorage.setItem('bank','PNC Bank');
+                            localStorage.setItem('image','images/pnc.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','PNC Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -683,24 +619,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="480">
-                    <input type="hidden" name="bal" value="24,081">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="pnc7()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                        
-                            $480
+                            $479
                         </span>
                     </button>
+                    <script>
+                        function pnc7() {
+                            localStorage.setItem('price', 479);
+                            localStorage.setItem('balance','24,081');
+                            localStorage.setItem('type','pnc.com Checking Account');
+                            localStorage.setItem('bank','PNC Bank');
+                            localStorage.setItem('image','images/pnc.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','PNC Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -724,24 +663,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="492">
-                    <input type="hidden" name="bal" value="24,630">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="pnc8()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                        
                             $492
                         </span>
                     </button>
+                    <script>
+                        function pnc8() {
+                            localStorage.setItem('price', 492);
+                            localStorage.setItem('balance','24,630');
+                            localStorage.setItem('type','pnc.com Checking Account');
+                            localStorage.setItem('bank','PNC Bank');
+                            localStorage.setItem('image','images/pnc.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','PNC Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -765,24 +707,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="Savings Account">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="520">
-                    <input type="hidden" name="bal" value="26,019">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="pnc9()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                        
                             $520
                         </span>
                     </button>
+                    <script>
+                        function pnc9() {
+                            localStorage.setItem('price', 520);
+                            localStorage.setItem('balance','26,019');
+                            localStorage.setItem('type','pnc.com Savings Account');
+                            localStorage.setItem('bank','PNC Bank');
+                            localStorage.setItem('image','images/pnc.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','PNC Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -806,24 +751,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="570">
-                    <input type="hidden" name="bal" value="28,455">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="pnc10()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                    
-                            $570
+                            $568
                         </span>
                     </button>
+                    <script>
+                        function pnc10() {
+                            localStorage.setItem('price', 568);
+                            localStorage.setItem('balance','28,455');
+                            localStorage.setItem('type','pnc.com Checking Account');
+                            localStorage.setItem('bank','PNC Bank');
+                            localStorage.setItem('image','images/pnc.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','PNC Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -847,24 +795,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="582">
-                    <input type="hidden" name="bal" value="29,402">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="pnc11()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                        
                             $582
                         </span>
                     </button>
+                    <script>
+                        function pnc11() {
+                            localStorage.setItem('price', 582);
+                            localStorage.setItem('balance','29,402');
+                            localStorage.setItem('type','pnc.com Checking Account');
+                            localStorage.setItem('bank','PNC Bank');
+                            localStorage.setItem('image','images/pnc.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','PNC Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -874,7 +825,7 @@
 <div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
     <div class="price-table">
         <div class="price-table-header">
-            <h4><sup>$</sup>30,190</h4>
+            <h4><sup>$</sup>30,189</h4>
         </div>
         <div class="price-table-content">
             <ul>
@@ -888,24 +839,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="Savings Account">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="610">
-                    <input type="hidden" name="bal" value="30,190">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="pnc12()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                        
                             $610
                         </span>
                     </button>
+                    <script>
+                        function pnc12() {
+                            localStorage.setItem('price', 610);
+                            localStorage.setItem('balance','30,189');
+                            localStorage.setItem('type','pnc.com Savings Account');
+                            localStorage.setItem('bank','PNC Bank');
+                            localStorage.setItem('image','images/pnc.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','PNC Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -915,7 +869,7 @@
 <div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
     <div class="price-table">
         <div class="price-table-header">
-            <h4><sup>$</sup>31,705</h4>
+            <h4><sup>$</sup>31,704</h4>
         </div>
         <div class="price-table-content">
             <ul>
@@ -929,24 +883,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="SavingsAccount">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="625">
-                    <input type="hidden" name="bal" value="31,705">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="pnc13()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                        
                             $625
                         </span>
                     </button>
+                    <script>
+                        function pnc13() {
+                            localStorage.setItem('price', 625);
+                            localStorage.setItem('balance','31,704');
+                            localStorage.setItem('type','pnc.com Savings Account');
+                            localStorage.setItem('bank','PNC Bank');
+                            localStorage.setItem('image','images/pnc.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','PNC Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -957,7 +914,7 @@
 <div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
     <div class="price-table">
         <div class="price-table-header">
-            <h4><sup>$</sup>35,104</h4>
+            <h4><sup>$</sup>35,127</h4>
         </div>
         <div class="price-table-content">
             <ul>
@@ -971,24 +928,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="681">
-                    <input type="hidden" name="bal" value="35,104">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="pnc14()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                        
                             $681
                         </span>
                     </button>
+                    <script>
+                        function pnc14() {
+                            localStorage.setItem('price', 681);
+                            localStorage.setItem('balance','35,127');
+                            localStorage.setItem('type','pnc.com Checking Account');
+                            localStorage.setItem('bank','PNC Bank');
+                            localStorage.setItem('image','images/pnc.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','PNC Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -1012,24 +972,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="Savings Account">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="735">
-                    <input type="hidden" name="bal" value="37,238">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="pnc15()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                        
                             $735
                         </span>
                     </button>
+                    <script>
+                        function pnc15() {
+                            localStorage.setItem('price', 735);
+                            localStorage.setItem('balance','37,238');
+                            localStorage.setItem('type','pnc.com Savings Account');
+                            localStorage.setItem('bank','PNC Bank');
+                            localStorage.setItem('image','images/pnc.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','PNC Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -1039,7 +1002,7 @@
 <div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
     <div class="price-table">
         <div class="price-table-header">
-            <h4><sup>$</sup>40,046</h4>
+            <h4><sup>$</sup>40,246</h4>
         </div>
         <div class="price-table-content">
             <ul>
@@ -1053,24 +1016,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="783">
-                    <input type="hidden" name="bal" value="40,046">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="pnc16()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                    
                             $783
                         </span>
                     </button>
+                    <script>
+                        function pnc16() {
+                            localStorage.setItem('price', 783);
+                            localStorage.setItem('balance','40,246');
+                            localStorage.setItem('type','pnc.com Checking Account');
+                            localStorage.setItem('bank','PNC Bank');
+                            localStorage.setItem('image','images/pnc.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','PNC Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -1094,24 +1060,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="Checking Account">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="816">
-                    <input type="hidden" name="bal" value="42,947">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="pnc17()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                        
                             $816
                         </span>
                     </button>
+                    <script>
+                        function pnc17() {
+                            localStorage.setItem('price', 816);
+                            localStorage.setItem('balance','42,947');
+                            localStorage.setItem('type','pnc.com Checking Account');
+                            localStorage.setItem('bank','PNC Bank');
+                            localStorage.setItem('image','images/pnc.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','PNC Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -1121,7 +1090,7 @@
 <div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
     <div class="price-table">
         <div class="price-table-header">
-            <h4><sup>$</sup>45,380</h4>
+            <h4><sup>$</sup>45,381</h4>
         </div>
         <div class="price-table-content">
             <ul>
@@ -1135,24 +1104,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="Savings Account">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="885">
-                    <input type="hidden" name="bal" value="45,380">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="pnc18()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                        
                             $885
                         </span>
                     </button>
+                    <script>
+                        function pnc18() {
+                            localStorage.setItem('price', 885);
+                            localStorage.setItem('balance','45,381');
+                            localStorage.setItem('type','pnc.com Savings Account');
+                            localStorage.setItem('bank','PNC Bank');
+                            localStorage.setItem('image','images/pnc.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','PNC Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
@@ -1176,24 +1148,27 @@
             </ul>
             <div class="text-center">
                 <form action="invoice" method="GET">
-                    <input type="hidden" name="bank" value="PNC Bank">
-                    <input type="hidden" name="type" value="Savings Account">
-                    <input type="hidden" name="website" value="Pnc.com [Login:Password]">
-                    <input type="hidden" name="details" value="Name + Address">
-                    <input type="hidden" name="extra" value="Email Access">
-                    <input type="hidden" name="extra1" value="Social Security No.">
-                    <input type="hidden" name="extra2" value="Account & Routing Number">
-                    <input type="hidden" name="extra3" value="Date of Birth">
-                    <input type="hidden" name="image" value="img/partners/pnc.jpg">
-                    <input type="hidden" name="id" value="947">
-                    <input type="hidden" name="bal" value="49,628">
-                    <button type="submit" class="butn medium">              
+                    <button type="submit" class="butn medium" onclick="pnc19()">              
                         <span class="margin-3px-left">
                             <i class="fas fa-cart-plus margin-10px-right"></i>
-                        
                             $947
                         </span>
                     </button>
+                    <script>
+                        function pnc19() {
+                            localStorage.setItem('price', 947);
+                            localStorage.setItem('balance','49,628');
+                            localStorage.setItem('type','pnc.com Checking Account');
+                            localStorage.setItem('bank','PNC Bank');
+                            localStorage.setItem('image','images/pnc.jpg');
+                            localStorage.setItem('type1','Name + Address');
+                            localStorage.setItem('type2','Account & Routing Number');
+                            localStorage.setItem('type3','Date of Birth');
+                            localStorage.setItem('type4','Email Access');
+                            localStorage.setItem('type5','Social Security Number');
+                            localStorage.setItem('type6','PNC Bank [Login: Password]');
+                        }
+                    </script>
                 </form>
             </div>
         </div>

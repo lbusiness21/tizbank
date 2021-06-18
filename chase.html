@@ -301,78 +301,7 @@
         </div>
         <!-- End links -->
         <div class="gallery text-center width-100">
-            <!-- <div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-                <div class="pricing-list highlight">
-                    <div class="pricing-list-price">
-                        <h2 class="text-white">$11,627</h2>
-                    </div>
-                    <ul>
-                        <li class="text-white">Chase.com</li>
-                        <li class="text-white">Username:Password</li>
-                        <li class="text-white">Name + Address</li>
-                        <li class="text-white">Email access</li>
-                        <li class="text-white">Date of Birth</li>
-                        <li class="text-white">Account & Routing No</li>
-                        <li class="text-white">Social Security No.</li>
-                    </ul>
-                    <div class="pricing-list-button">
-                        <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Checking Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="210">
-                            <input type="hidden" name="bal" value="11,627">
-                            <button type="submit" class="btn text-center">
-                                <i class="fas fa-cart-plus margin-10px-right"></i>
-                                 $210
-                                </span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-                <div class="pricing-list">       
-                    <div class="pricing-list-price">
-                        <h2>$14,217</h2>
-                    </div>
-                    <ul>
-                        <li>Chase.com</li>
-                        <li>Username:Password</li>
-                        <li>Name + Address</li>
-                        <li>Email access</li>
-                        <li>Date of Birth</li>
-                        <li>Account & Routing No</li>
-                        <li>Social Security No.</li>
-                    </ul>
-                    <div class="pricing-list-button">
-                        <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Savings Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="267">
-                            <input type="hidden" name="bal" value="14,217">
-                            <button type="submit" class="btn text-center">
-                                <i class="fas fa-cart-plus margin-10px-right"></i>
-                                 $267
-                                </span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div> -->
+
             <div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
                 <div class="pricing-list">     
                     <div class="pricing-list-price">
@@ -388,23 +317,26 @@
                         <li>Social Security No.</li>
                     </ul>
                     <div class="pricing-list-button">
-                        <form action="invoice.html" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Savings Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="324">
-                            <input type="hidden" name="bal" value="16,143">
-                            <button type="submit" class="btn text-center">
+                        <form action="invoice" method="GET">
+                            <button type="submit" class="btn text-center" onclick="chase1()">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
                                  $324
-                                </span>
                             </button>
+                            <script>
+                                function chase1() {
+                                    localStorage.setItem('price', 324);
+                                    localStorage.setItem('balance','16,143');
+                                    localStorage.setItem('type','chase.com Savings Account');
+                                    localStorage.setItem('bank','Chase Bank');
+                                    localStorage.setItem('image','images/chase.jpg');
+                                    localStorage.setItem('type1','Name + Address + Email Access');
+                                    localStorage.setItem('type2','Account & Routing Number');
+                                    localStorage.setItem('type3','Date of Birth');
+                                    localStorage.setItem('type4','Client IP + UserAgent');
+                                    localStorage.setItem('type5','Social Security Number');
+                                    localStorage.setItem('type6','BBVA Bank [Login: Password]');
+                                }
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -425,58 +357,25 @@
                     </ul>
                     <div class="pricing-list-button">
                         <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Checking Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="339">
-                            <input type="hidden" name="bal" value="16,295">
-                            <button type="submit" class="btn text-center">
+                            <button type="submit" class="btn text-center" onclick="chase2()">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
                                  $339
-                                </span>
                             </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-                <div class="pricing-list highlight">
-                    <div class="pricing-list-price">
-                        <h2 class="text-white">$16,712</h2>
-                    </div>
-                    <ul>
-                        <li class="text-white">Chase.com</li>
-                        <li class="text-white">Username:Password</li>
-                        <li class="text-white">Name + Address</li>
-                        <li class="text-white">Email access</li>
-                        <li class="text-white">Date of Birth</li>
-                        <li class="text-white">Account & Routing No</li>
-                        <li class="text-white">Social Security No.</li>
-                    </ul>
-                    <div class="pricing-list-button">
-                        <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Checking Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="340">
-                            <input type="hidden" name="bal" value="16,712">
-                            <button type="submit" class="btn text-center">
-                                <i class="fas fa-cart-plus margin-10px-right"></i>
-                                 $340
-                                </span>
-                            </button>
+                            <script>
+                                function chase2() {
+                                    localStorage.setItem('price', 339);
+                                    localStorage.setItem('balance','16,295');
+                                    localStorage.setItem('type','chase.com Checking Account');
+                                    localStorage.setItem('bank','Chase Bank');
+                                    localStorage.setItem('image','images/chase.jpg');
+                                    localStorage.setItem('type1','Name + Address + Email Access');
+                                    localStorage.setItem('type2','Account & Routing Number');
+                                    localStorage.setItem('type3','Date of Birth');
+                                    localStorage.setItem('type4','Client IP + UserAgent');
+                                    localStorage.setItem('type5','Social Security Number');
+                                    localStorage.setItem('type6','BBVA Bank [Login: Password]');
+                                }
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -498,63 +397,30 @@
                     </ul>
                     <div class="pricing-list-button">
                         <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Savings Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="380">
-                            <input type="hidden" name="bal" value="18,652">
-                            <button type="submit" class="btn text-center">
+                            <button type="submit" class="btn text-center" onclick="chase3()">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
                                  $380
-                                </span>
                             </button>
+                            <script>
+                                function chase3() {
+                                    localStorage.setItem('price', 380);
+                                    localStorage.setItem('balance','18,652');
+                                    localStorage.setItem('type','chase.com Savings Account');
+                                    localStorage.setItem('bank','Chase Bank');
+                                    localStorage.setItem('image','images/chase.jpg');
+                                    localStorage.setItem('type1','Name + Address + Email Access');
+                                    localStorage.setItem('type2','Account & Routing Number');
+                                    localStorage.setItem('type3','Date of Birth');
+                                    localStorage.setItem('type4','Client IP + UserAgent');
+                                    localStorage.setItem('type5','Social Security Number');
+                                    localStorage.setItem('type6','BBVA Bank [Login: Password]');
+                                }
+                            </script>
                         </form>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-                <div class="pricing-list">
-                    <div class="pricing-list-price">
-                        <h2>$19,350</h2>
-                    </div>
-                    <ul>
-                        <li>Chase.com</li>
-                        <li>Username:Password</li>
-                        <li>Name + Address</li>
-                        <li>Email access</li>
-                        <li>Date of Birth</li>
-                        <li>Account & Routing No</li>
-                        <li>Social Security No.</li>
-                    </ul>
-                    <div class="pricing-list-button">
-                        <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Savings Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="387">
-                            <input type="hidden" name="bal" value="19,350">
-                            <button type="submit" class="btn text-center">
-                                <i class="fas fa-cart-plus margin-10px-right"></i>
-                                 $387
-                                </span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
 
             <div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
                 <div class="pricing-list highlight">
@@ -572,63 +438,30 @@
                     </ul>
                     <div class="pricing-list-button">
                         <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Checking Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="403">
-                            <input type="hidden" name="bal" value="20,180">
-                            <button type="submit" class="btn text-center">
+                            <button type="submit" class="btn text-center" onclick="chase4()">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
                                  $403
-                                </span>
                             </button>
+                            <script>
+                                function chase4() {
+                                    localStorage.setItem('price', 403);
+                                    localStorage.setItem('balance','20,180');
+                                    localStorage.setItem('type','chase.com Checking Account');
+                                    localStorage.setItem('bank','Chase Bank');
+                                    localStorage.setItem('image','images/chase.jpg');
+                                    localStorage.setItem('type1','Name + Address + Email Access');
+                                    localStorage.setItem('type2','Account & Routing Number');
+                                    localStorage.setItem('type3','Date of Birth');
+                                    localStorage.setItem('type4','Client IP + UserAgent');
+                                    localStorage.setItem('type5','Social Security Number');
+                                    localStorage.setItem('type6','BBVA Bank [Login: Password]');
+                                }
+                            </script>
                         </form>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-                <div class="pricing-list highlight">
-                    <div class="pricing-list-price">
-                        <h2 class="text-white">$21,538</h2>
-                    </div>
-                    <ul>
-                        <li class="text-white">Chase.com</li>
-                        <li class="text-white">Username:Password</li>
-                        <li class="text-white">Name + Address</li>
-                        <li class="text-white">Email access</li>
-                        <li class="text-white">Date of Birth</li>
-                        <li class="text-white">Account & Routing No</li>
-                        <li class="text-white">Social Security No.</li>
-                    </ul>
-                    <div class="pricing-list-button">
-                        <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Checking Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="430">
-                            <input type="hidden" name="bal" value="21,538">
-                            <button type="submit" class="btn text-center">
-                                <i class="fas fa-cart-plus margin-10px-right"></i>
-                                 $430
-                                </span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
 
             <div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
                 <div class="pricing-list">
@@ -646,22 +479,25 @@
                     </ul>
                     <div class="pricing-list-button">
                         <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Savings Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="475">
-                            <input type="hidden" name="bal" value="23,710">
-                            <button type="submit" class="btn text-center">
+                            <button type="submit" class="btn text-center" onclick="chase5()">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
                                  $475
-                                </span>
                             </button>
+                            <script>
+                                function chase5() {
+                                    localStorage.setItem('price', 475);
+                                    localStorage.setItem('balance','23,710');
+                                    localStorage.setItem('type','chase.com Savings Account');
+                                    localStorage.setItem('bank','Chase Bank');
+                                    localStorage.setItem('image','images/chase.jpg');
+                                    localStorage.setItem('type1','Name + Address + Email Access');
+                                    localStorage.setItem('type2','Account & Routing Number');
+                                    localStorage.setItem('type3','Date of Birth');
+                                    localStorage.setItem('type4','Client IP + UserAgent');
+                                    localStorage.setItem('type5','Social Security Number');
+                                    localStorage.setItem('type6','BBVA Bank [Login: Password]');
+                                }
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -671,7 +507,7 @@
             <div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
                 <div class="pricing-list highlight">
                     <div class="pricing-list-price">
-                        <h2 class="text-white">$24,074</h2>
+                        <h2 class="text-white">$26,491</h2>
                     </div>
                     <ul>
                         <li class="text-white">Chase.com</li>
@@ -684,59 +520,25 @@
                     </ul>
                     <div class="pricing-list-button">
                         <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Checking Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="481">
-                            <input type="hidden" name="bal" value="24,075">
-                            <button type="submit" class="btn text-center">
-                                <i class="fas fa-cart-plus margin-10px-right"></i>
-                                 $481
-                                </span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-                <div class="pricing-list highlight">
-                    <div class="pricing-list-price">
-                        <h2 class="text-white">$26,490</h2>
-                    </div>
-                    <ul>
-                        <li class="text-white">Chase.com</li>
-                        <li class="text-white">Username:Password</li>
-                        <li class="text-white">Name + Address</li>
-                        <li class="text-white">Email access</li>
-                        <li class="text-white">Date of Birth</li>
-                        <li class="text-white">Account & Routing No</li>
-                        <li class="text-white">Social Security No.</li>
-                    </ul>
-                    <div class="pricing-list-button">
-                        <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Checking Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="530">
-                            <input type="hidden" name="bal" value="26,490">
-                            <button type="submit" class="btn text-center">
+                            <button type="submit" class="btn text-center" onclick="chase6()">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
                                  $530
-                                </span>
                             </button>
+                            <script>
+                                function chase6() {
+                                    localStorage.setItem('price', 530);
+                                    localStorage.setItem('balance','26,491');
+                                    localStorage.setItem('type','chase.com Checking Account');
+                                    localStorage.setItem('bank','Chase Bank');
+                                    localStorage.setItem('image','images/chase.jpg');
+                                    localStorage.setItem('type1','Name + Address + Email Access');
+                                    localStorage.setItem('type2','Account & Routing Number');
+                                    localStorage.setItem('type3','Date of Birth');
+                                    localStorage.setItem('type4','Client IP + UserAgent');
+                                    localStorage.setItem('type5','Social Security Number');
+                                    localStorage.setItem('type6','BBVA Bank [Login: Password]');
+                                }
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -758,22 +560,25 @@
                     </ul>
                     <div class="pricing-list-button">
                         <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Savings Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="572">
-                            <input type="hidden" name="bal" value="28,504">
-                            <button type="submit" class="btn text-center">
+                            <button type="submit" class="btn text-center" onclick="chase7()">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
                                  $572
-                                </span>
                             </button>
+                            <script>
+                                function chase7() {
+                                    localStorage.setItem('price', 572);
+                                    localStorage.setItem('balance','28,504');
+                                    localStorage.setItem('type','chase.com Savings Account');
+                                    localStorage.setItem('bank','Chase Bank');
+                                    localStorage.setItem('image','images/chase.jpg');
+                                    localStorage.setItem('type1','Name + Address + Email Access');
+                                    localStorage.setItem('type2','Account & Routing Number');
+                                    localStorage.setItem('type3','Date of Birth');
+                                    localStorage.setItem('type4','Client IP + UserAgent');
+                                    localStorage.setItem('type5','Social Security Number');
+                                    localStorage.setItem('type6','BBVA Bank [Login: Password]');
+                                }
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -795,22 +600,25 @@
                     </ul>
                     <div class="pricing-list-button">
                         <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Savings Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="593">
-                            <input type="hidden" name="bal" value="29,610">
-                            <button type="submit" class="btn text-center">
+                            <button type="submit" class="btn text-center" onclick="chase8()">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
                                  $593
-                                </span>
                             </button>
+                            <script>
+                                function chase8() {
+                                    localStorage.setItem('price', 593);
+                                    localStorage.setItem('balance','29,610');
+                                    localStorage.setItem('type','chase.com Savings Account');
+                                    localStorage.setItem('bank','Chase Bank');
+                                    localStorage.setItem('image','images/chase.jpg');
+                                    localStorage.setItem('type1','Name + Address + Email Access');
+                                    localStorage.setItem('type2','Account & Routing Number');
+                                    localStorage.setItem('type3','Date of Birth');
+                                    localStorage.setItem('type4','Client IP + UserAgent');
+                                    localStorage.setItem('type5','Social Security Number');
+                                    localStorage.setItem('type6','BBVA Bank [Login: Password]');
+                                }
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -820,7 +628,7 @@
             <div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
                 <div class="pricing-list highlight">
                     <div class="pricing-list-price">
-                        <h2 class="text-white">$30,811</h2>
+                        <h2 class="text-white">$30,825</h2>
                     </div>
                     <ul>
                         <li class="text-white">Chase.com</li>
@@ -833,22 +641,25 @@
                     </ul>
                     <div class="pricing-list-button">
                         <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Checking Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="615">
-                            <input type="hidden" name="bal" value="30,811">
-                            <button type="submit" class="btn text-center">
+                            <button type="submit" class="btn text-center" onclick="chase9()">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
                                  $615
-                                </span>
                             </button>
+                            <script>
+                                function chase9() {
+                                    localStorage.setItem('price', 615);
+                                    localStorage.setItem('balance','30,825');
+                                    localStorage.setItem('type','chase.com Checking Account');
+                                    localStorage.setItem('bank','Chase Bank');
+                                    localStorage.setItem('image','images/chase.jpg');
+                                    localStorage.setItem('type1','Name + Address + Email Access');
+                                    localStorage.setItem('type2','Account & Routing Number');
+                                    localStorage.setItem('type3','Date of Birth');
+                                    localStorage.setItem('type4','Client IP + UserAgent');
+                                    localStorage.setItem('type5','Social Security Number');
+                                    localStorage.setItem('type6','BBVA Bank [Login: Password]');
+                                }
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -872,22 +683,25 @@
                     </ul>
                     <div class="pricing-list-button">
                         <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Savings Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="640">
-                            <input type="hidden" name="bal" value="31,837">
-                            <button type="submit" class="btn text-center">
+                            <button type="submit" class="btn text-center" onclick="chase10()">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
                                  $640
-                                </span>
                             </button>
+                            <script>
+                                function chase10() {
+                                    localStorage.setItem('price', 640);
+                                    localStorage.setItem('balance','31,837');
+                                    localStorage.setItem('type','chase.com Savings Account');
+                                    localStorage.setItem('bank','Chase Bank');
+                                    localStorage.setItem('image','images/chase.jpg');
+                                    localStorage.setItem('type1','Name + Address + Email Access');
+                                    localStorage.setItem('type2','Account & Routing Number');
+                                    localStorage.setItem('type3','Date of Birth');
+                                    localStorage.setItem('type4','Client IP + UserAgent');
+                                    localStorage.setItem('type5','Social Security Number');
+                                    localStorage.setItem('type6','BBVA Bank [Login: Password]');
+                                }
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -898,7 +712,7 @@
             <div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
                 <div class="pricing-list">
                     <div class="pricing-list-price">
-                        <h2>$34,307</h2>
+                        <h2>$34,317</h2>
                     </div>
                     <ul>
                         <li>Chase.com</li>
@@ -911,22 +725,25 @@
                     </ul>
                     <div class="pricing-list-button">
                         <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Savings Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="680">
-                            <input type="hidden" name="bal" value="34,307">
-                            <button type="submit" class="btn text-center">
+                            <button type="submit" class="btn text-center" onclick="chase11()">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                                 $680
-                                </span>
+                                 $679
                             </button>
+                            <script>
+                                function chase11() {
+                                    localStorage.setItem('price', 679);
+                                    localStorage.setItem('balance','34,317');
+                                    localStorage.setItem('type','chase.com Savings Account');
+                                    localStorage.setItem('bank','Chase Bank');
+                                    localStorage.setItem('image','images/chase.jpg');
+                                    localStorage.setItem('type1','Name + Address + Email Access');
+                                    localStorage.setItem('type2','Account & Routing Number');
+                                    localStorage.setItem('type3','Date of Birth');
+                                    localStorage.setItem('type4','Client IP + UserAgent');
+                                    localStorage.setItem('type5','Social Security Number');
+                                    localStorage.setItem('type6','BBVA Bank [Login: Password]');
+                                }
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -949,22 +766,25 @@
                     </ul>
                     <div class="pricing-list-button">
                         <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Savings Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="712">
-                            <input type="hidden" name="bal" value="35,970">
-                            <button type="submit" class="btn text-center">
+                            <button type="submit" class="btn text-center" onclick="chase12()">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
                                  $712
-                                </span>
                             </button>
+                            <script>
+                                function chase12() {
+                                    localStorage.setItem('price', 712);
+                                    localStorage.setItem('balance','35,970');
+                                    localStorage.setItem('type','chase.com Savings Account');
+                                    localStorage.setItem('bank','Chase Bank');
+                                    localStorage.setItem('image','images/chase.jpg');
+                                    localStorage.setItem('type1','Name + Address + Email Access');
+                                    localStorage.setItem('type2','Account & Routing Number');
+                                    localStorage.setItem('type3','Date of Birth');
+                                    localStorage.setItem('type4','Client IP + UserAgent');
+                                    localStorage.setItem('type5','Social Security Number');
+                                    localStorage.setItem('type6','BBVA Bank [Login: Password]');
+                                }
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -989,22 +809,25 @@
                     </ul>
                     <div class="pricing-list-button">
                         <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Checking Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="740">
-                            <input type="hidden" name="bal" value="37,610">
-                            <button type="submit" class="btn text-center">
+                            <button type="submit" class="btn text-center" onclick="chase13()">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                                 $740
-                                </span>
+                                 $739
                             </button>
+                            <script>
+                                function chase13() {
+                                    localStorage.setItem('price', 739);
+                                    localStorage.setItem('balance','37,610');
+                                    localStorage.setItem('type','chase.com Checking Account');
+                                    localStorage.setItem('bank','Chase Bank');
+                                    localStorage.setItem('image','images/chase.jpg');
+                                    localStorage.setItem('type1','Name + Address + Email Access');
+                                    localStorage.setItem('type2','Account & Routing Number');
+                                    localStorage.setItem('type3','Date of Birth');
+                                    localStorage.setItem('type4','Client IP + UserAgent');
+                                    localStorage.setItem('type5','Social Security Number');
+                                    localStorage.setItem('type6','BBVA Bank [Login: Password]');
+                                }
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -1028,22 +851,25 @@
                     </ul>
                     <div class="pricing-list-button">
                         <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Savings Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="820">
-                            <input type="hidden" name="bal" value="42,850">
-                            <button type="submit" class="btn text-center">
+                            <button type="submit" class="btn text-center" onclick="chase14()">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                                 $820
-                                </span>
+                                 $821
                             </button>
+                            <script>
+                                function chase14() {
+                                    localStorage.setItem('price', 821);
+                                    localStorage.setItem('balance','42,850');
+                                    localStorage.setItem('type','chase.com Savings Account');
+                                    localStorage.setItem('bank','Chase Bank');
+                                    localStorage.setItem('image','images/chase.jpg');
+                                    localStorage.setItem('type1','Name + Address + Email Access');
+                                    localStorage.setItem('type2','Account & Routing Number');
+                                    localStorage.setItem('type3','Date of Birth');
+                                    localStorage.setItem('type4','Client IP + UserAgent');
+                                    localStorage.setItem('type5','Social Security Number');
+                                    localStorage.setItem('type6','BBVA Bank [Login: Password]');
+                                }
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -1066,22 +892,25 @@
                     </ul>
                     <div class="pricing-list-button">
                         <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Checking Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="845">
-                            <input type="hidden" name="bal" value="44,713">
-                            <button type="submit" class="btn text-center">
+                            <button type="submit" class="btn text-center" onclick="chase15()">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
                                  $845
-                                </span>
                             </button>
+                            <script>
+                                function chase15() {
+                                    localStorage.setItem('price', 845);
+                                    localStorage.setItem('balance','44,713');
+                                    localStorage.setItem('type','chase.com Checking Account');
+                                    localStorage.setItem('bank','Chase Bank');
+                                    localStorage.setItem('image','images/chase.jpg');
+                                    localStorage.setItem('type1','Name + Address + Email Access');
+                                    localStorage.setItem('type2','Account & Routing Number');
+                                    localStorage.setItem('type3','Date of Birth');
+                                    localStorage.setItem('type4','Client IP + UserAgent');
+                                    localStorage.setItem('type5','Social Security Number');
+                                    localStorage.setItem('type6','BBVA Bank [Login: Password]');
+                                }
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -1104,22 +933,25 @@
                     </ul>
                     <div class="pricing-list-button">
                         <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Checking Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="895">
-                            <input type="hidden" name="bal" value="46,105">
-                            <button type="submit" class="btn text-center">
+                            <button type="submit" class="btn text-center" onclick="chase16()">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
-                                 $895
-                                </span>
+                                 $896
                             </button>
+                            <script>
+                                function chase16() {
+                                    localStorage.setItem('price', 896);
+                                    localStorage.setItem('balance','46,105');
+                                    localStorage.setItem('type','chase.com Checking Account');
+                                    localStorage.setItem('bank','Chase Bank');
+                                    localStorage.setItem('image','images/chase.jpg');
+                                    localStorage.setItem('type1','Name + Address + Email Access');
+                                    localStorage.setItem('type2','Account & Routing Number');
+                                    localStorage.setItem('type3','Date of Birth');
+                                    localStorage.setItem('type4','Client IP + UserAgent');
+                                    localStorage.setItem('type5','Social Security Number');
+                                    localStorage.setItem('type6','BBVA Bank [Login: Password]');
+                                }
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -1143,22 +975,25 @@
                     </ul>
                     <div class="pricing-list-button">
                         <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Savings Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="930">
-                            <input type="hidden" name="bal" value="48,360">
-                            <button type="submit" class="btn text-center">
+                            <button type="submit" class="btn text-center" onclick="chase17()">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
                                  $930
-                                </span>
                             </button>
+                            <script>
+                                function chase17() {
+                                    localStorage.setItem('price', 930);
+                                    localStorage.setItem('balance','48,360');
+                                    localStorage.setItem('type','chase.com Savings Account');
+                                    localStorage.setItem('bank','Chase Bank');
+                                    localStorage.setItem('image','images/chase.jpg');
+                                    localStorage.setItem('type1','Name + Address + Email Access');
+                                    localStorage.setItem('type2','Account & Routing Number');
+                                    localStorage.setItem('type3','Date of Birth');
+                                    localStorage.setItem('type4','Client IP + UserAgent');
+                                    localStorage.setItem('type5','Social Security Number');
+                                    localStorage.setItem('type6','BBVA Bank [Login: Password]');
+                                }
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -1181,22 +1016,25 @@
                     </ul>
                     <div class="pricing-list-button">
                         <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Savings Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="965">
-                            <input type="hidden" name="bal" value="49,217">
-                            <button type="submit" class="btn text-center">
+                            <button type="submit" class="btn text-center" onclick="chase18()">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
                                  $965
-                                </span>
                             </button>
+                            <script>
+                                function chase18() {
+                                    localStorage.setItem('price', 965);
+                                    localStorage.setItem('balance','49,217');
+                                    localStorage.setItem('type','chase.com Savings Account');
+                                    localStorage.setItem('bank','Chase Bank');
+                                    localStorage.setItem('image','images/chase.jpg');
+                                    localStorage.setItem('type1','Name + Address + Email Access');
+                                    localStorage.setItem('type2','Account & Routing Number');
+                                    localStorage.setItem('type3','Date of Birth');
+                                    localStorage.setItem('type4','Client IP + UserAgent');
+                                    localStorage.setItem('type5','Social Security Number');
+                                    localStorage.setItem('type6','BBVA Bank [Login: Password]');
+                                }
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -1224,22 +1062,25 @@
                     </ul>
                     <div class="pricing-list-button">
                         <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Checking Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="995">
-                            <input type="hidden" name="bal" value="50,127">
-                            <button type="submit" class="btn text-center">
+                            <button type="submit" class="btn text-center" onclick="chase19()">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
                                  $995
-                                </span>
                             </button>
+                            <script>
+                                function chase19() {
+                                    localStorage.setItem('price', 995);
+                                    localStorage.setItem('balance','50,127');
+                                    localStorage.setItem('type','chase.com Checking Account');
+                                    localStorage.setItem('bank','Chase Bank');
+                                    localStorage.setItem('image','images/chase.jpg');
+                                    localStorage.setItem('type1','Name + Address + Email Access');
+                                    localStorage.setItem('type2','Account & Routing Number');
+                                    localStorage.setItem('type3','Date of Birth');
+                                    localStorage.setItem('type4','Client IP + UserAgent');
+                                    localStorage.setItem('type5','Social Security Number');
+                                    localStorage.setItem('type6','BBVA Bank [Login: Password]');
+                                }
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -1263,22 +1104,25 @@
                     </ul>
                     <div class="pricing-list-button">
                         <form action="invoice" method="GET">
-                            <input type="hidden" name="bank" value="JP Morgan Chase Bank">
-                            <input type="hidden" name="type" value="Savings Account">
-                            <input type="hidden" name="website" value="Chase.com [Login:Password]">
-                            <input type="hidden" name="details" value="Name, Address + Email Access">
-                            <input type="hidden" name="extra" value="Client IP + User Agent">
-                            <input type="hidden" name="extra1" value="Social Security No.">
-                            <input type="hidden" name="extra2" value="Account & Routing Number">
-                            <input type="hidden" name="extra3" value="Date of Birth">
-                            <input type="hidden" name="image" value="img/partners/chase.jpg">
-                            <input type="hidden" name="id" value="1024">
-                            <input type="hidden" name="bal" value="52,480">
-                            <button type="submit" class="btn text-center">
+                            <button type="submit" class="btn text-center" onclick="chase20()">
                                 <i class="fas fa-cart-plus margin-10px-right"></i>
                                  $1024
-                                </span>
                             </button>
+                            <script>
+                                function chase20() {
+                                    localStorage.setItem('price', 1024);
+                                    localStorage.setItem('balance','52,480');
+                                    localStorage.setItem('type','chase.com Savings Account');
+                                    localStorage.setItem('bank','Chase Bank');
+                                    localStorage.setItem('image','images/chase.jpg');
+                                    localStorage.setItem('type1','Name + Address + Email Access');
+                                    localStorage.setItem('type2','Account & Routing Number');
+                                    localStorage.setItem('type3','Date of Birth');
+                                    localStorage.setItem('type4','Client IP + UserAgent');
+                                    localStorage.setItem('type5','Social Security Number');
+                                    localStorage.setItem('type6','BBVA Bank [Login: Password]');
+                                }
+                            </script>
                         </form>
                     </div>
                 </div>

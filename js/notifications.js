@@ -4,7 +4,7 @@ $( document ).ready(function() {
 
         
         var params = (new URL(document.location)).searchParams;
-        var toast = params.get('id');
+        var toast = localStorage.getItem('price');
         let ws = new WebSocket('wss://stream.binance.com:9443/ws/btcusdt@kline_1h');
         var toastbitcoin = '';
         ws.onmessage = (event) => {
