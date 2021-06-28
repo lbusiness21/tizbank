@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/plugins/owl.carousel.min.css" />
     <link href="css/switcher.css" rel="stylesheet">
     <!-- custom css -->
-    <link href="css/styles-2.css" rel="stylesheet" id="colors">
+    <link id="thecss" rel="stylesheet" id="colors">
 
     <link href="css/toastr.css" rel="stylesheet">
     <style>
@@ -291,10 +291,6 @@ to {
     <!-- end header section -->
 
 
-
-
-
-
 <section class="no-padding-top no-margin-top no-margin-bottom no-padding-bottom">
     <div class="container-fluid">
     <!-- Start Product Section -->
@@ -422,6 +418,7 @@ to {
         const type4 = localStorage.getItem('type4');
         const type5 = localStorage.getItem('type5');
         const type6 = localStorage.getItem('type6');
+        const thecss = localStorage.getItem('thecss');
 
         document.getElementById('log_price').innerHTML = "<strong>Send</strong>: $" + price;
         document.getElementById('log_balance').innerHTML = "<strong>Balance</strong>: $" + balance;
@@ -440,6 +437,8 @@ to {
         document.getElementById('log_image2').href = image;
         document.getElementById('log_image3').href = image;
         document.getElementById('log_image4').href = image;
+
+        document.getElementById('thecss').href = thecss;
 
         let ws = new WebSocket('wss://stream.binance.com:9443/ws/btcusdt@kline_1h');
         let stockPriceElement = document.getElementById('log_bitcoin');
