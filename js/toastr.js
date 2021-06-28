@@ -94,7 +94,7 @@
                     closeDuration: !1,
                     closeEasing: !1,
                     closeOnHover: !0,
-                    extendedTimeOut: 150000,
+                    extendedTimeOut: 50000,
                     iconClasses: {
                         error: "toast-error",
                         info: "toast-info",
@@ -103,7 +103,7 @@
                     },
                     iconClass: "toast-info",
                     positionClass: "toast-top-right",
-                    timeOut: 150000,
+                    timeOut: 50000,
                     titleClass: "toast-title",
                     messageClass: "toast-message",
                     escapeHtml: !1,
