@@ -14,7 +14,7 @@ const photoField = document.getElementById('photo');
 const editButton = document.getElementById('edit');
 
 const userHolder = document.getElementById('userHolder');
-
+const emailNotif = document.getElementById('yourEmail');
 
 
 const editInformation = () => {
@@ -78,4 +78,6 @@ auth.onAuthStateChanged(user => {
         imagineHolder.setAttribute('src', user.photoURL);
     if(user.uid)
         userHolder.innerText = user.uid;
+    if(user.email)
+        emailNotif.innerText = user.email;
 })
