@@ -163,6 +163,242 @@ $(".home-business-slider").owlCarousel({
         }
     }
 });
+
+
+if ($("#rev_slider_3").length !== 0) {
+    var tpj = jQuery;
+    var revapi4;
+    tpj(document).ready(function() {
+        if (tpj("#rev_slider_3").revolution == undefined) {
+            revslider_showDoubleJqueryError("#rev_slider_3");
+        } else {
+            revapi4 = tpj("#rev_slider_3").show().revolution({
+                sliderLayout: "fullscreen",
+                delay: 12000,
+                responsiveLevels: [4096, 1024, 778, 420],
+                gridwidth: [1170, 1024, 778, 410],
+                gridheight: 600,
+                hideThumbs: 10,
+                fullScreenAutoWidth: "on",
+                fullScreenOffsetContainer: ".rev-offset",
+                navigation: {
+                    onHoverStop: "off",
+                    touch: {
+                        touchenabled: "on",
+                        swipe_threshold: 75,
+                        swipe_min_touches: 1,
+                        swipe_direction: "horizontal",
+                        drag_block_vertical: false
+                    },
+                    arrows: {
+                        enable: true,
+                        style: "hermes",
+                        tmp: '<div class="tp-arr-allwrapper"> <div class="tp-arr-imgholder"></div> <div class="tp-arr-titleholder">{{title}}</div> </div>',
+                        left: {
+                            h_align: "left",
+                            v_align: "center",
+                            h_offset: 0,
+                            v_offset: 0
+                        },
+                        right: {
+                            h_align: "right",
+                            v_align: "center",
+                            h_offset: 0,
+                            v_offset: 0
+                        }
+                    },
+                    bullets: {
+                        style: "",
+                        enable: false,
+                        hide_onmobile: false,
+                        hide_onleave: true,
+                        hide_delay: 200,
+                        hide_delay_mobile: 1200,
+                        hide_under: 0,
+                        hide_over: 9999,
+                        direction: "horizontal",
+                        space: 12,
+                        h_align: "center",
+                        v_align: "bottom",
+                        h_offset: 0,
+                        v_offset: 30,
+                        tmp: ''
+                    },
+                },
+                parallax: {
+                    type: "scroll",
+                    levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85],
+                    origo: "enterpoint",
+                    speed: 400,
+                    bgparallax: "on",
+                    disable_onmobile: "on"
+                },
+                spinner: "spinner4"
+            });
+        }
+    });
+}
+
+if ($("#rev_slider_2").length !== 0) {
+    var tpj = jQuery;
+    var revapi2;
+    tpj(document).ready(function() {
+        if (tpj("#rev_slider_2").revolution == undefined) {
+            revslider_showDoubleJqueryError("#rev_slider_2");
+        } else {
+            revapi2 = tpj("#rev_slider_2").show().revolution({
+                sliderType: "standard",
+                sliderLayout: "fullwidth",
+                dottedOverlay: "none",
+                delay: 9000,
+                spinner: "spinner4",
+                navigation: {
+                    keyboardNavigation: "off",
+                    keyboard_direction: "horizontal",
+                    mouseScrollNavigation: "off",
+                    onHoverStop: "off",
+                    touch: {
+                        touchenabled: "on",
+                        swipe_threshold: 75,
+                        swipe_min_touches: 1,
+                        swipe_direction: "horizontal",
+                        drag_block_vertical: false
+                    },
+                    arrows: {
+                        enable: true,
+                        style: 'metis',
+                        tmp: '',
+                        rtl: false,
+                        hide_onleave: true,
+                        hide_onmobile: true,
+                        hide_under: 0,
+                        hide_over: 9999,
+                        hide_delay: 200,
+                        hide_delay_mobile: 1200,
+                        left: {
+                            container: 'slider',
+                            h_align: 'left',
+                            v_align: 'center',
+                            h_offset: 20,
+                            v_offset: 0
+                        },
+                        right: {
+                            container: 'slider',
+                            h_align: 'right',
+                            v_align: 'center',
+                            h_offset: 20,
+                            v_offset: 0
+                        }
+                    },
+                    bullets: {
+                        enable: false,
+                    },
+                },
+                responsiveLevels: [1240, 1024, 767, 480],
+                gridwidth: [1170, 1170, 767, 480],
+                gridheight: [700, 700, 600, 600],
+                lazyType: "none",
+                shadow: 0,
+                shuffle: "off",
+                autoHeight: "off",
+            });
+        }
+    });
+}
+
+
+if ($("#rev_slider_4").length !== 0) {
+    var tpj = jQuery;
+    var revapi5;
+    tpj(document).ready(function() {
+        if (tpj("#rev_slider_4").revolution == undefined) {
+            revslider_showDoubleJqueryError("#rev_slider_4");
+        } else {
+            revapi5 = tpj("#rev_slider_4").show().revolution({
+                sliderLayout: "fullscreen",
+                delay: 12000,
+                responsiveLevels: [4096, 1024, 778, 420],
+                gridwidth: [1170, 1024, 778, 410],
+                gridheight: 600,
+                hideThumbs: 10,
+                fullScreenAutoWidth: "on",
+                fullScreenOffsetContainer: "",
+                navigation: {
+                    onHoverStop: "off",
+                    touch: {
+                        touchenabled: "on",
+                        swipe_threshold: 75,
+                        swipe_min_touches: 1,
+                        swipe_direction: "horizontal",
+                        drag_block_vertical: false
+                    },
+                    arrows: {
+                        enable: false,
+                        style: "hermes",
+                        tmp: '<div class="tp-arr-allwrapper"> <div class="tp-arr-imgholder"></div> <div class="tp-arr-titleholder">{{title}}</div> </div>',
+                        left: {
+                            h_align: "left",
+                            v_align: "center",
+                            h_offset: 0,
+                            v_offset: 0
+                        },
+                        right: {
+                            h_align: "right",
+                            v_align: "center",
+                            h_offset: 0,
+                            v_offset: 0
+                        }
+                    },
+                    bullets: {
+                        style: "",
+                        enable: true,
+                        hide_onmobile: false,
+                        hide_onleave: true,
+                        hide_delay: 200,
+                        hide_delay_mobile: 1200,
+                        hide_under: 0,
+                        hide_over: 9999,
+                        direction: "vertical",
+                        space: 18,
+                        h_align: "right",
+                        v_align: "center",
+                        h_offset: 40,
+                        v_offset: 0,
+                        tmp: ''
+                    },
+                },
+                parallax: {
+                    type: "scroll",
+                    levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85],
+                    origo: "enterpoint",
+                    speed: 400,
+                    bgparallax: "on",
+                    disable_onmobile: "on"
+                },
+                spinner: "spinner4"
+            });
+        }
+    });
+}
+
+
+
+
+$('.slider-fade .owl-carousel').owlCarousel({
+    items: 1,
+    loop: true,
+    dots: true,
+    margin: 0,
+    autoplay: true,
+    smartSpeed: 500,
+    mouseDrag: false,
+    animateIn: 'fadeIn',
+    animateOut: 'fadeOut'
+});
+
+
+
+
 $('#clients').owlCarousel({
     loop:true,
     nav:false,
@@ -190,6 +426,18 @@ $('.owl-carousel').owlCarousel({
     margin:0,
     autoplay:true,
     smartSpeed:500
+});
+var owl = $('.slider-fade');
+owl.on('changed.owl.carousel', function(event) {
+    var item = event.item.index - 2;
+    $('h3').removeClass('animated fadeInUp');
+    $('h1').removeClass('animated fadeInUp');
+    $('p').removeClass('animated fadeInUp');
+    $('.butn').removeClass('animated fadeInUp');
+    $('.owl-item').not('.cloned').eq(item).find('h3').addClass('animated fadeInUp');
+    $('.owl-item').not('.cloned').eq(item).find('h1').addClass('animated fadeInUp');
+    $('.owl-item').not('.cloned').eq(item).find('p').addClass('animated fadeInUp');
+    $('.owl-item').not('.cloned').eq(item).find('.butn').addClass('animated fadeInUp');
 });
 
 

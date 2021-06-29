@@ -22,6 +22,11 @@ function myFunction() {
         document.getElementById('yourIp').innerHTML = `
             Your IP: <span style="color: red">${data.ip} </span>
             <i class="fas fa-map-marker-alt"></i>
-        `
+        `;
+        document.getElementById('yourIp2').innerHTML = `
+        <span style="color: red">${data.ip}
+    `;
+
+
     });
 }
