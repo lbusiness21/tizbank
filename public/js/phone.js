@@ -1,6 +1,8 @@
 const phoneNumberField = document.getElementById('phoneNumber');
 const signInWithPhoneButton = document.getElementById('signInWithPhone');
 const getCodeButton = document.getElementById('getCode');
+const codeField = document.getElementById('code');
+
 const auth = firebase.auth();
 
 window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
