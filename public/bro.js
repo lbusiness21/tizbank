@@ -23,7 +23,5 @@ function myFunction() {
             Your IP: <span style="color: red">${data.ip} </span>
             <i class="fas fa-map-marker-alt"></i>
         `;
-
-
     });
 }
