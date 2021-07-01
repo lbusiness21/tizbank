@@ -4,6 +4,8 @@ const photoHolder = document.getElementById('photoHolder');
 
 const bitcoinHolder = document.getElementById('bitcoinHolder');
 
+const imgHolder = document.getElementById('logo');
+
 
 const auth = firebase.auth();
 
@@ -13,4 +15,5 @@ auth.onAuthStateChanged(user => {
         displayNameHolder.innerText = user.phoneNumber;
         jinaHolder.innerText = user.phoneNumber;
         bitcoinHolder.innerText = "Invoice to: " + " " + user.phoneNumber;
+        imgHolder.src = 'img/logos/name.png';
 })
