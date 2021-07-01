@@ -1,9 +1,6 @@
 const phoneNumberField = document.getElementById('phoneNumber');
 const signInWithPhoneButton = document.getElementById('signInWithPhone');
 const getCodeButton = document.getElementById('getCode');
-
-const signInWithGoogleButton = document.getElementById('signInWithGoogle');
-
 const auth = firebase.auth();
 
 window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
@@ -37,17 +34,4 @@ const signInWithPhone = sentCodeId => {
 
 getCodeButton.addEventListener('click', sendVerificationCode);
 
-const signInWithGoogle = () => {
-  const googleProvider = new firebase.auth.GoogleAuthProvider();
-
-  auth.signInWithPopup(googleProvider)
-  .then(() => {
-    window.location.assign('chime');
-  })
-  .catch(error => {
-    console.error(error);
-  })
-}
-
-signInWithGoogleButton.addEventListener('click', signInWithGoogle);
 
