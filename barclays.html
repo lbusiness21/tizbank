@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<meta charset="utf-8">
+<title>Barclays Bank</title>
+<link rel="shortcut icon" href="img/partners/barclays.jpg">
+<link rel="apple-touch-icon" href="img/partners/barclays.jpg">
+<link rel="apple-touch-icon" sizes="72x72" href="img/partners/barclays.jpg">
+<link rel="apple-touch-icon" sizes="114x114" href="img/partners/barclays.jpg">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="csrf-token" content="3fea5dcc21de284ea151ccbaf3cddad4">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+<link href="assets/theme/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="assets/theme/js/jquery.min.js"></script>
+<link rel="stylesheet" href="assets/amaran/jquery.css">
+<script src="assets/amaran/jquery.js"></script>
+<style>
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700"); 
+  @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
+    .authentication-bg{
+      background-image: url(assets/img/bg-pattern-dark.png);
+      background-size: cover;
+      background-position: center;
+      background-color: rgb(52, 58, 64);
+      font-family: 'Montserrat',  sans-serif;
+    }
+  .kaimage{
+    border-radius: 3px;
+    width: 30px;
+  }
+  </style>
+</head>
+
+
+
+
+
+
+<body class="authentication-bg" oncontextmenu="return false">
+<div class="layout layout-nav-top">
+<div class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+  <a class="navbar-brand" >
+    <img src="img/logos/name.png" style="width: 60px;"/>
+    <span style="color: #fff; font-weight: 500;" id="jinaHolder">DARKNET</span>
+  </a>
+  <div class="d-flex align-items-center">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse justify-content-between" id="navbar-collapse">
+    <ul class="navbar-nav" style="font-size: 15px !important;">
+
+        <div style="margin: 5px 10px;" class="dropdown">
+          <button class="btn btn-danger btn-block dropdown-toggle" type="button" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="nav-dropdown-2">
+            USA BANKS
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="huntington">
+              <img src="assets/img/huntington.jpg" class="kaimage">
+              Huntington Bank                  
+            </a>
+            <a class="dropdown-item" href="chase">
+              <img src="assets/img/chase.jpg" class="kaimage">
+              Chase Bank                  
+            </a>
+            <a class="dropdown-item" href="citi">
+              <img src="assets/img/citi.jpg" class="kaimage">
+              Citi Bank
+            </a>
+            <a class="dropdown-item" href="pnc">
+              <img src="assets/img/pnc.jpg" class="kaimage">
+              PNC Bank
+            </a>
+            <a class="dropdown-item" href="woodforest">
+              <img src="assets/img/woodforest.jpg" class="kaimage">
+              Woodforest Bank
+            </a>
+            <a class="dropdown-item" href="nfcu">
+              <img src="assets/img/nfcu.jpg" class="kaimage">
+              NFCU Bank
+            </a>
+            <a class="dropdown-item" href="bbva">
+              <img src="assets/img/bbva.jpg" class="kaimage">
+              BBVA Bank
+            </a><a class="dropdown-item" href="bbt">
+              <img src="assets/img/bbt.jpg" class="kaimage">
+              BB&amp;T Bank
+            </a>
+            <a class="dropdown-item" href="suntrust">
+              <img src="assets/img/suntrust.jpg" class="kaimage">
+              Suntrust Bank
+            </a>
+          </div>
+        </div>
+      
+        <div style="margin: 5px 10px;" class="dropdown">
+          <button class="btn btn-danger btn-block dropdown-toggle" type="button" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="nav-dropdown-2">
+            CANADA BANKS
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="scotia">
+              <img src="assets/img/scotia.jpg" class="kaimage">
+              Scotia Bank
+            </a>
+            <a class="dropdown-item" href="rbc">
+              <img src="assets/img/rbc.jpg" class="kaimage">
+              RBC Bank
+            </a>
+            </div>
+        </div>
+
+        <div style="margin: 5px 10px;" class="dropdown">
+          <button class="btn btn-danger btn-block dropdown-toggle" type="button" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="nav-dropdown-2">
+            UK BANKS
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="barclays">
+              <img src="assets/img/barclays.jpg" class="kaimage">
+              Barclays Bank
+            </a>
+          </div>
+        </div>
+
+    </ul>
+
+    <div class="d-lg-flex align-items-center">
+      <div style="margin: 5px 10px;" class="dropdown mx-lg-2">
+        <button class="btn btn-info btn-block" type="button" id="logoutButton">
+        Logout
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main-container">
+<div class="container-fluid mt-5">
+
+<link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+<script src="datatables/js/jquery.dataTables.min.js"></script>
+
+<div class="row">
+<div class="col-md-12 card" style="padding-left: 0px;padding-right: 0px;">
+<div class="alert alert-dark" role="alert">
+<h4 class="alert-heading">Barclays Bank Log(full info) ✔️💸💰</h4>
+<span><p><b><i>Full bank info</i></b><br></p></span>
+</div>
+
+<div class="card-body">
+<div class="table-responsive">
+  <table id="barclays" class="display" style="width:100%">
+  <thead>
+  <tr>
+  <th>Balance</th>
+  <th>Info</th>
+  <th>Price</th>
+  <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>$8,130</td>
+  <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$115</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr> 
+  
+  <tr>
+  <td>$8,550</td>
+  <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$121</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr> 
+  
+  <tr>
+  <td>$9,281</td>
+  <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$132</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr> 
+  
+  <tr>
+  <td>$9,610</td>
+  <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$137</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr> 
+  
+  <tr>
+  <td>$10,067</td>
+  <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$143</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr> 
+  
+  <tr>
+  <td>$10,672</td>
+  <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$150</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr> 
+  
+  <tr>
+  <td>$10,970</td>
+  <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$156</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr> 
+  
+  
+  <tr>
+  <td>$11,580</td>
+  <td>Savings Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$165</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr> 
+  
+  
+  <tr>
+  <td>$12,158</td>
+  <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$173</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr> 
+  
+  <tr>
+  <td>$13,470</td>
+  <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$190</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr> 
+  
+  
+  <tr>
+  <td>$14,296</td>
+  <td>Current Account (PINsentry activated) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$204</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr> 
+  
+  
+  <tr>
+  <td>$14,910</td>
+  <td>Current Account (PINsentry activated) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$211</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr>
+  
+  
+  <tr>
+  <td>$15,357</td>
+  <td>Current Account (PINsentry activated) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$215</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr> 
+  
+  
+  <tr>
+  <td>$15,917</td>
+  <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$226</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr> 
+  
+  
+  <tr>
+  <td>$16,180</td>
+  <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$231</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr> 
+  
+  <tr>
+  <td>$16,470</td>
+  <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$235</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr> 
+  
+  <tr>
+  <td>$17,610</td>
+  <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$250</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr>
+  
+  
+  <tr>
+  <td>$18,030</td>
+  <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$257</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr> 
+  
+  
+  <tr>
+  <td>$18,450</td>
+  <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$263</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr> 
+  
+  <tr>
+  <td>$19,280</td>
+  <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$274</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr> 
+  
+  
+  <tr>
+  <td>$19,820</td>
+  <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$280</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr> 
+  
+  <tr>  
+  <td>$22,167</td>
+  <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+  <td>$310</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr>        
+  
+  </tbody>
+  </table>
+  <script>
+    (function() {
+      const cartBtn = document.querySelectorAll('.maybtn');
+      cartBtn.forEach(function(btn) {
+        btn.addEventListener('click', function(event) {
+            if(event.target.classList.contains('maybtn')) {
+                const item = {};
+                let price = event.target.parentElement.parentElement.previousElementSibling.textContent;
+                let balance = event.target.parentElement.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.textContent;
+                let info = event.target.parentElement.parentElement.previousElementSibling.previousElementSibling.textContent;
+    
+                item.price = price;
+                item.info = info
+                item.balance = balance;
+
+                localStorage.setItem('price', price);
+                localStorage.setItem('info', info);
+                localStorage.setItem('balance', balance);
+            }
+        });
+      });
+  })();
+  </script>
+  <script>
+    $(document).ready(function() {
+        $('#barclays').DataTable({
+            "aaSorting": [[ 0, "asc" ]],
+            "pageLength": 10,
+            "bLengthChange": false,
+            "language": {
+            "search": "Search (Balance: Price: title): ",
+            }
+        });
+    });   
+  </script>
+  <script src="bro.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyCOTy-csDIp1XI0mTlAo4mKqMPWNNVyuRE",
+      authDomain: "tizbank.firebaseapp.com",
+      projectId: "tizbank",
+      storageBucket: "tizbank.appspot.com",
+      messagingSenderId: "83693749331",
+      appId: "1:83693749331:web:e95f545a64b4370d03b2a6",
+      measurementId: "G-JDCP283CWV"
+    };
+  firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="js/profile.js"></script>
+</div>
+</div>
+</div>
+</div>
+
+  <script type="text/javascript" src="assets/theme/js/popper.min.js"></script>
+  <script type="text/javascript" src="assets/theme/js/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/theme/js/autosize.min.js"></script>
+  <script type="text/javascript" src="assets/theme/js/flatpickr.min.js"></script>
+  <script type="text/javascript" src="assets/theme/js/draggable.bundle.legacy.js"></script>
+  <script type="text/javascript" src="assets/theme/js/swap-animation.js"></script>
+  <script type="text/javascript" src="assets/theme/js/list.min.js"></script>
+
+</body>
+</html>
