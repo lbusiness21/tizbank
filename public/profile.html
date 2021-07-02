@@ -1,554 +1,443 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-
-    <head>
-
-    <!-- metas -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
     <meta charset="utf-8">
-    <meta name="author" content="Satoshi Nakamoto" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="keywords" content="Woodforest" />
-    <meta name="description" content="Woodforest" />
-
     <!-- title  -->
-    <title>Profile</title>
-		<!-- favicon -->
-		<link rel="shortcut icon" href="img/logos/favicon.png">
-		<link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-touch-icon-114x114.png">
-
-    <link rel="stylesheet" href="css/plugins/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/plugins/default.css" />
-    <link rel="stylesheet" href="css/plugins/fontawesome-all.min.css" />
-    <link rel="stylesheet" href="css/plugins/nav-menu.css" />
-    <link rel="stylesheet" href="css/plugins/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/plugins/et-line.css" />
-    <link rel="stylesheet" href="css/plugins/mailform.css" />
-    <link href="css/switcher.css" rel="stylesheet">
-    <link href="css/styles-4.css" rel="stylesheet" id="colors">
-
+    <title>Bank Logs</title>
+    <link rel="shortcut icon" href="img/logos/favicon.png">
+    <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-touch-icon-114x114.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="3fea5dcc21de284ea151ccbaf3cddad4">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+    <link href="assets/theme//css/theme.css" rel="stylesheet" type="text/css" media="all" />
+   <script type="text/javascript" src="assets/theme/js/jquery.min.js"></script>
+	 <link rel="stylesheet" href="assets/amaran/jquery.css">
+	 <script src="assets/amaran/jquery.js"></script>
+   <style>
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700"); 
+    @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
+      .authentication-bg{
+        background-image: url(assets/img/bg-pattern-dark.png);
+        background-size: cover;
+        background-position: center;
+        background-color: rgb(52, 58, 64);
+        font-family: 'Montserrat',  sans-serif;
+      }
+    .kaimage{
+      border-radius: 3px;
+      width: 30px;
+    }
+    </style>
 </head>
+<body class="authentication-bg" oncontextmenu="return false">
+    <div class="layout layout-nav-top">
+      <div class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+        <a class="navbar-brand" >
+          <img src="img/logos/name.png" style="width: 60px;"/>
+          <span style="color: #fff; font-weight: 500;" id="jinaHolder">DARKNET</span>
+        </a>
+        <div class="d-flex align-items-center">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-between" id="navbar-collapse">
+          <ul class="navbar-nav" style="font-size: 15px !important;">
 
-<body onload="myFunction()" oncontextmenu="return false">
 
-<!-- start page loading -->
-<div id="preloader">
-<div class="row loader">
-<div class="loader-icon"></div>
+
+            <li class="nav-item ">
+              <div style="margin: 5px 10px;" class="dropdown">
+                <button class="btn btn-danger btn-block dropdown-toggle" type="button" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="nav-dropdown-2">
+                  USA BANKS
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="huntington">
+                    <img src="assets/img/huntington.jpg" style="border-radius: 3px;" width="30px" >
+                    Huntington Bank                  
+                  </a>
+                  <a class="dropdown-item" href="chase">
+                    <img src="assets/img/chase.jpg" style="border-radius: 3px;" width="30px" >
+                    Chase Bank                  
+                  </a>
+                  <a class="dropdown-item" href="citi">
+                    <img src="assets/img/citi.jpg" style="border-radius: 3px;" width="30px" >
+                    Citi Bank
+                  </a>
+                  <a class="dropdown-item" href="pnc">
+                    <img src="assets/img/pnc.jpg" style="border-radius: 3px;" width="30px" >
+                    PNC Bank
+                  </a>
+                  <a class="dropdown-item" href="woodforest">
+                    <img src="assets/img/woodforest.jpg" style="border-radius: 3px;" width="30px" >
+                    Woodforest Bank
+                  </a>
+                  <a class="dropdown-item" href="nfcu">
+                    <img src="assets/img/nfcu.jpg" style="border-radius: 3px;" width="30px" >
+                    NFCU Bank
+                  </a>
+                  <a class="dropdown-item" href="bbva">
+                    <img src="assets/img/bbva.jpg" style="border-radius: 3px;" width="30px" >
+                    BBVA Bank
+                  </a><a class="dropdown-item" href="bbt">
+                    <img src="assets/img/bbt.jpg" style="border-radius: 3px;" width="30px" >
+                    BB&amp;T Bank
+                  </a>
+                  <a class="dropdown-item" href="suntrust">
+                    <img src="assets/img/suntrust.jpg" style="border-radius: 3px;" width="30px" >
+                    Suntrust Bank
+                  </a>
+                </div>
+              </div><li class="nav-item ">
+
+              <div style="margin: 5px 10px;" class="dropdown">
+                <button class="btn btn-danger btn-block dropdown-toggle" type="button" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="nav-dropdown-2">
+                  CANADA BANKS
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="scotia">
+                    <img src="assets/img/scotia.jpg" style="border-radius: 3px;" width="30px" >
+                    Scotia Bank
+                  </a>
+                  <a class="dropdown-item" href="rbc">
+                    <img src="assets/img/rbc.jpg" style="border-radius: 3px;" width="30px" >
+                    RBC Bank
+                  </a>
+                  </div>
+              </div><li class="nav-item ">
+
+              <div style="margin: 5px 10px;" class="dropdown">
+                <button class="btn btn-danger btn-block dropdown-toggle" type="button" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="nav-dropdown-2">
+                  UK BANKS
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="barclays">
+                    <img src="assets/img/barclays.jpg" style="border-radius: 3px;" width="30px" >
+                    Barclays Bank
+                  </a>
+                </div>
+              </div>
+
+          </ul>
+
+          <div class="d-lg-flex align-items-center">
+            <div style="margin: 5px 10px;" class="dropdown mx-lg-2">
+              <button class="btn btn-info btn-block" type="button" id="logoutButton">
+              Logout
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-container">
+      <div class="container-fluid mt-5">
+
+
+
+     <div class="row"> 
+
+
+
+
+
+
+
+<div class="col-xs-12 col-6 col-md-3" style="padding-left: 5px;padding-right: 5px;">
+<div class="kanban-col" tabindex="0">
+<div class="card-list">
+<div class="card-list-header">
+<h6 id="displayNameHolder">10% off ✔️💸💰</h6>
+
+</div>
+<div class="card-list-body" tabindex="0">
+
+
+<div class="card card-kanban" tabindex="0">
+  <div class="card-body">
+    <div class="card-title">
+        <h6>
+          <img src="assets/img/huntington.jpg"  width="30px" >
+          Huntington Bank</h6>
+        <p>Added 26 logs <a class="text-danger" href="huntington">
+          <br>Huntington.com [Login:Password]+Name+Address+[Email access]
+        </a></p>
+    </div>
+    <div class="card-meta d-flex justify-content-between">                     
+      <span class="text-small text-info text-right">7/1/2021</span>
+    </div>
+  </div>
+  </div>
+
+
+
+<div class="card card-kanban" tabindex="0">
+<div class="card-body">                  
+  <div class="card-title">            
+      <h6>
+        <img src="assets/img/woodforest.jpg"  width="30px" >
+        Woodforest Bank</h6>
+      <p>Added 27 logs <a class="text-danger" href="woodforest">
+        <br>
+        Woodforest.com [Login:Password]+ Name+Address+ [Email access]
+      </a></p>                      
+  </div>
+  <div class="card-meta d-flex justify-content-between">                     
+    <span class="text-small text-info text-right">7/2/2021</span>
+  </div>
 </div>
 </div>
-<!-- end page loading -->
 
-<!-- start main-wrapper section -->
-<div class="main-wrapper">
 
-<!-- start header ection -->
-<header class="header-style8"  id="home">
-    <div class="navbar-default">
-    <div class="container-fluid">
-    <div class="row align-items-center">
-    <div class="col-12 col-lg-12">
-    <div class="menu_area alt-font">
-    <nav class="navbar navbar-expand-lg navbar-light no-padding">
-    
-    <div class="navbar-header navbar-header-custom">
-     <!-- Start Logo -->
-     <a href="javascript:void(0);" class="navbar-brand logodefault">
-        <img id="logo" src="img/logos/name.png" alt="">
-        <span id="jinaHolder"></span>
-    </a>
-    <!-- End Logo -->
+
+<div class="card card-kanban" tabindex="0">
+  <div class="card-body">
+    <div class="card-title">
+        <h6>
+          <img src="assets/img/citi.jpg" style="border-radius: 3px;" width="30px" >
+          Citi Bank</h6>
+        <p>Added 21 logs <a class="text-danger" href="citi">
+          <br>Citi.com [Login:Password]+ Name+Address+ [Email access]
+        </a></p>
     </div>
-    
-    <div class="navbar-toggler"></div>
-   
-<!-- Menu -->
-<ul class="navbar-nav ml-auto" id="nav" style="display: none;">
-    <li class="sm-display-none">
-        <a href="huntington">
-            <img src="img/partners/huntington.jpg" class="kaimage">
-           Huntington
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="woodforest">
-            <img src="img/partners/woodforest.jpg" class="kaimage">
-            Woodforest
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="pnc">
-            <img src="img/partners/pnc.jpg" class="kaimage">
-            PNC 
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="chase">
-            <img src="img/partners/chase.jpg" class="kaimage">
-            Chase
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="nfcu">
-            <img src="img/partners/nfcu.jpg" class="kaimage">
-            NFCU
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="chime">
-            <img src="img/partners/chime.jpg" class="kaimage">
-            Chime
-        </a>
-    </li>                                                                                    
-    <li class="sm-display-none">
-        <a href="citi">
-            <img src="img/partners/citi.jpg" class="kaimage">
-            Citi
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="bbva">
-            <img src="img/partners/bbva.jpg" class="kaimage">
-            BBVA
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="bb&t">
-            <img src="img/partners/bbt.jpg" class="kaimage">
-            BB&T
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="suntrust">
-            <img src="img/partners/suntrust.jpg" class="kaimage">
-            Suntrust
-        </a>
-    </li> 
-    
-
-
-
-
-
-
-    
-
-
-    <li class="lg-display-none">
-        <a href="huntington">
-            <img src="img/partners/huntington.jpg" class="keimage">
-            Huntington Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="woodforest">
-            <img src="img/partners/woodforest.jpg" class="keimage">
-            Woodforest Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="pnc">
-            <img src="img/partners/pnc.jpg" class="keimage">
-            PNC Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="chase">
-            <img src="img/partners/chase.jpg" class="keimage">
-            Chase Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="nfcu">
-            <img src="img/partners/nfcu.jpg" class="keimage">
-            NFCU Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="chime">
-            <img src="img/partners/chime.jpg" class="keimage">
-            Chime Bank
-        </a>
-    </li>                                                                                    
-    <li class="lg-display-none">
-        <a href="citi">
-            <img src="img/partners/citi.jpg" class="keimage">
-            Citi Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="bbva">
-            <img src="img/partners/bbva.jpg" class="keimage">
-            BBVA Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="bb&t">
-            <img src="img/partners/bbt.jpg" class="keimage">
-            BB&T Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="suntrust">
-            <img src="img/partners/suntrust.jpg" class="keimage">
-            Suntrust Bank
-        </a>
-    </li> 
-
-</ul>
-<!-- End Me Are -->
-
-    <!-- Start Atribute Navigation -->
-    <div class="attr-nav xs-margin-55px-right">
-        <ul>
-            <li class="dropdown sm-no-margin">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <img id="photoHolder" 
-                    src="img/logos/name.png"
-                    class="cart-thumb" 
-                    alt="" />
-                    <span class="badge bg-theme">
-                        5
-                    </span>
-                </a>
-                <ul class="dropdown-menu cart-list">
-                    <li class="total bg-theme">
-                        <span class="pull-left font-weight-600 font-size14" id="displayNameHolder">
-                           
-                         </span>
-                         <a href="" class="butn small btn-cart white" id="logoutButton">
-                            <span class="font-weight-600 font-size14" style="color: red;">
-                                <i class="fas fa-sign-out"></i>
-                                Log Out
-                            </span>
-                        </a>
-                    </li>
-                    <li class="total bg-theme">
-                        <a href="profile" class="butn small btn-cart white">
-                           <span class="font-weight-600 font-size14">
-                              Profile
-                              <i class="fas fa-user-check"></i>
-                           </span>
-                       </a>
-                   </li>
-                    <li class="total bg-theme">
-                         <a href="paypal" class="butn small btn-cart white">
-                            <span class="font-weight-600 font-size14">
-                                Cashout Method
-                                <i class="icon-presentation" style="font-weight: 700; color: aqua;"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="total bg-theme">
-                        <a href="pdf/paypal.pdf" class="butn small btn-cart white">
-                           <span class="font-weight-600 font-size14">
-                               PayPal Pdf
-                               <i class="fas fa-file-pdf"></i>
-                           </span>
-                       </a>
-                   </li>
-
-                   <li class="total bg-theme">
-                    <a href="javascript(void:0)" class="butn small btn-cart white">
-                        <span class="font-weight-600 font-size14" id="yourIp">
-                        </span>
-                    </a>
-                </li>
-                   
-                </ul>
-            </li>
-        </ul>
+    <div class="card-meta d-flex justify-content-between">                     
+      <span class="text-small text-info text-right">7/2/2021</span>
     </div>
-    <!-- End Atribute Navigati -->
-
-
-    </nav>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    
-    </header>
-    <!-- end header section -->
-
-
-
-
-
-
-
-
-
-    <!-- start table section -->
-    <section class="box-hover">
-        <div class="container">
-            <div class="section-heading">
-                <h3>
-                    Purchased Bank Logs
-                </h3>
-            </div>
-            <div class="row position-relative">
-              <div class="col-12">
-                <div class="table-responsive">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>#</th>
-                        <th>Bank</th>
-                        <th>Date</th>
-                        <th>Balance</th>
-                        <th>Price</th>
-                        <th>View</th>
-                        <th>Refund</th>
-                      </tr>
-                    </thead>
-                  </table>
-                </div>
-            </div>
-
-    </section>
-    <!-- end table section -->
-
-
-
-
-
-
-<!-- start alerts section -->
-<section class="box-hover">
-    <div class="container-fluid"> 
-        <div class="section-heading">
-            <h4>Notifications</h4>
-        </div>
-        <div class="col-12">
-            <div class="alert alert-primary alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                Added 1 <strong>Suntrust Bank Log</strong>,  July 1
-            </div>
-            <div class="alert alert-primary alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                Added 1 <strong>Chime Bank Log</strong>,  June 29
-            </div>
-            <div class="alert alert-success alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                Sold <strong>Chime Bank Log</strong> Balance, $15,390, June 28
-            </div>
-            <div class="alert alert-success alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                Sold <strong>Chime Bank Log</strong> Balance, $23,185, June 28
-            </div>
-            <div class="alert alert-success alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                Sold <strong>Chime Bank Log</strong> Balance, $35,241, June 27
-            </div>
-        </div>
-    </div>
-</section>
-<!-- end alerts section -->
-
-
-<!-- start counter section -->
-<section class="parallax position-relative box-hover" data-overlay-dark="6" data-background="images/bg1.jpg">
-    <div class="container">
-        <div class="row">
-            <div class="col-6 col-lg-3 col-md-6 sm-margin-30px-bottom">
-                <div class="counter-box">
-                    <span class="icon margin-5px-bottom display-block text-white font-size36 xs-font-size30 xs-text-center">
-                        <i class="icon-profile-male"></i>
-                    </span>
-                    <h4 class="countup text-white display-block xs-text-center">
-                        500
-                    </h4>
-                    <div class="separator-line-horrizontal-medium-light3 bg-white margin-15px-tb xs-margin-10px-tb opacity5 center-col"></div>
-                    <p class="font-size24 sm-font-size20 xs-font-size18 font-weight-600 text-white no-margin text-center">
-                        Satisfied Visitors
-                    </p>
-                </div>
-            </div>
-            <div class="col-6 col-lg-3 col-md-6 sm-margin-30px-bottom">
-                <div class="counter-box">
-                    <span class="icon margin-5px-bottom display-block text-white font-size36 xs-font-size30 xs-text-center"><i class="icon-happy"></i></span>
-                    <h4 class="countup text-white display-block xs-text-center">
-                        175
-                    </h4>
-                    <div class="separator-line-horrizontal-medium-light3 bg-white margin-15px-tb xs-margin-10px-tb opacity5 center-col"></div>
-                    <p class="font-size24 sm-font-size20 xs-font-size18 font-weight-600 text-white no-margin text-center">
-                        Happy Clients
-                    </p>
-                </div>
-            </div>
-            <div class="col-6 col-lg-3 col-md-6">
-                <div class="counter-box">
-                    <span class="icon margin-5px-bottom display-block text-white font-size36 xs-font-size30 xs-text-center">
-                        <i class="icon-presentation"></i>
-                    </span>
-                    <h4 class="countup text-white display-block xs-text-center">
-                        190
-                    </h4>
-                    <div class="separator-line-horrizontal-medium-light3 bg-white margin-15px-tb xs-margin-10px-tb opacity5 center-col"></div>
-                    <p class="font-size24 sm-font-size20 xs-font-size18 font-weight-600 text-white no-margin text-center">
-                        Bank Logs
-                    </p>
-                </div>
-            </div>
-            <div class="col-6 col-lg-3 col-md-6">
-                <div class="counter-box">
-                    <span class="icon margin-5px-bottom display-block text-white font-size36 xs-font-size30 xs-text-center"><i class="icon-genius"></i></span>
-                    <h4 class="countup text-white display-block xs-text-center">
-                        +312,000
-                    </h4>
-                    <div class="separator-line-horrizontal-medium-light3 bg-white margin-15px-tb xs-margin-10px-tb opacity5 center-col"></div>
-                    <p class="font-size24 sm-font-size20 xs-font-size18 font-weight-600 text-white no-margin text-center">
-                        Net Sales
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- end counter section -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- start faq section -->
-<section>
-    <div class="container-fluid">
-        <div class="section-heading">
-            <h4>Frequently Asked Questions</h4>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-12 sm-margin-30px-bottom">
-                <div id="accordion" class="accordion-style">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            How can I purchase a bank log
-                        </button>
-                            </h5>
-                        </div>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body">
-                                Scan the bitcoin address on the payment page, and pay the exact amount listed on the bank log.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            How long does it take to get my bank log
-                        </button>
-                        </h5>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-                                Immediately after you pay, a confirmation text/sms is also sent to the phone number you used to sign in.
-                                Check for an sms from "Verify"
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            I paid half in the morning, then paid the other half later during the day.
-                        </button>
-                        </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                            <div class="card-body">
-                                This is not recommended, you need to pay the exact amount.
-                                Any half payments are sent back to the buyer.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-5 col-md-12 offset-lg-1">
-                <div class="feedback-box box-shadow-primary">
-                    <h5>Submit your info and we will contact </h5>
-                    <form method="post"  class="mailform off2">
-                        <input type="hidden" name="form-type" value="contact">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <input type="text" name="name" placeholder="Your Name:" data-constraints="@LettersOnly @NotEmpty">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" name="phone" placeholder="Telephone:" data-constraints="@Phone">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" name="email" placeholder="Email:" data-constraints="@Email @NotEmpty">
-                            </div>
-                            <div class="col-md-12">
-                                <textarea name="message" rows="3" placeholder="Message:" data-constraints="@NotEmpty"></textarea>
-                            </div>
-                            <div class="mfControls col-md-12">
-                                <button type="submit" class="butn">
-                                    Sumbit question
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- end faq section -->
-
-
-
-
-
-
-
-
-
+  </div>
+  </div>
 
 
 
 
 
 </div>
-<!-- end main-wrapper section -->
-<div id="style-switcher">
-<a href="javascript:void(0)" class="switcher-setting"><i class="fa fa-cog fa-spin"></i></a>
-<div class="choose-color">
-    <h2>Change Theme Color</h2>
-<ul class="colors" id="color1">
-    <li><a href="javascript:void(0)" class="style1"></a></li>
-    <li><a href="javascript:void(0)" class="style2"></a></li>
-    <li><a href="javascript:void(0)" class="style3"></a></li>
-    <li><a href="javascript:void(0)" class="style4"></a></li>
-    <li><a href="javascript:void(0)" class="style5"></a></li>
-    <li><a href="javascript:void(0)" class="style6"></a></li>
-    <li><a href="javascript:void(0)" class="style7"></a></li>
-    <li><a href="javascript:void(0)" class="style8"></a></li>
-</ul>
 </div>
 </div>
-<a href="javascript:void(0)" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
+</div>
 
+
+
+<div class="col-xs-12 col-6 col-md-3" style="padding-left: 5px;padding-right: 5px;">
+  <div class="kanban-col" tabindex="0">
+  <div class="card-list">
+  <div class="card-list-header">
+  <h6>10% off ✔️💸💰</h6>
+  
+  </div>
+  <div class="card-list-body" tabindex="0">
+  
+  
+  <div class="card card-kanban" tabindex="0">
+  <div class="card-body">                  
+    <div class="card-title">            
+        <h6>
+          <img src="assets/img/nfcu.jpg" style="border-radius: 3px;" width="30px" >
+          NFCU Bank</h6>
+        <p>Added 21 logs <a class="text-danger" href="nfcu">
+          <br>
+          Nfcu.com [Login:Password]+Name+AN/RN+[Email access]
+        </a></p>                      
+    </div>
+    <div class="card-meta d-flex justify-content-between">                     
+      <span class="text-small text-info text-right">7/2/2021</span>
+    </div>
+  </div>
+  </div>
+  
+  
+  <div class="card card-kanban" tabindex="0">
+  <div class="card-body">
+    <div class="card-title">
+        <h6>
+          <img src="assets/img/bbva.jpg" style="border-radius: 3px;" width="30px" >
+          BBVA Bank</h6>
+        <p>Added 12 logs <a class="text-danger" href="bbva">
+          <br>bbvausa.com[Login:Password]+Name+AN/RN+[Email access]
+        </a></p>
+    </div>
+    <div class="card-meta d-flex justify-content-between">                     
+      <span class="text-small text-info text-right">7/1/2021</span>
+    </div>
+  </div>
+  </div>
+  
+  <div class="card card-kanban" tabindex="0">
+    <div class="card-body">
+      <div class="card-title">
+          <h6>
+            <img src="assets/img/suntrust.jpg" style="border-radius: 3px;" width="30px" >
+            Suntrust Bank</h6>
+          <p>Added 20 logs <a class="text-danger" href="suntrust">
+            <br>Suntrust.com [Login:Password]+AN/RN+[Email attached ]
+          </a></p>
+      </div>
+      <div class="card-meta d-flex justify-content-between">                     
+        <span class="text-small text-info text-right">7/2/2021</span>
+      </div>
+    </div>
+    </div>
+  
+
+
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+<div class="col-xs-12 col-6 col-md-3" style="padding-left: 5px;padding-right: 5px;">
+<div class="kanban-col" tabindex="0">
+<div class="card-list">
+<div class="card-list-header">
+<h6>10% off ✔️💸💰</h6>
+
+</div>
+<div class="card-list-body" tabindex="0">
+
+
+<div class="card card-kanban" tabindex="0">
+<div class="card-body">                    
+  <div class="card-title">                     
+      <h6>
+        <img src="assets/img/bbt.jpg" style="border-radius: 3px;" width="30px" >
+        BB&T Bank</h6>
+      <p>Added 27 logs <a class="text-danger" href="bbt">
+        <br>
+        bbt.com[Login:Password]+Name+AN/RN+[Email access]
+      </a></p>                  
+  </div>
+  <div class="card-meta d-flex justify-content-between">                     
+    <span class="text-small text-info text-right">7/1/2021</span>
+  </div>
+</div>
+</div>
+
+<div class="card card-kanban" tabindex="0">
+<div class="card-body">                    
+  <div class="card-title">                     
+      <h6>
+        <img src="assets/img/chase.jpg" style="border-radius: 3px;" width="30px" >
+        Chase Bank</h6>
+      <p>Added 15 logs <a class="text-danger" href="chase">
+        <br>
+        Chase.com [Login:Password]+ Name+Address+ [Email access]
+      </a></p>                  
+  </div>
+  <div class="card-meta d-flex justify-content-between">                     
+    <span class="text-small text-info text-right">7/2/2021</span>
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="card card-kanban" tabindex="0">
+  <div class="card-body">
+    <div class="card-title">
+        <h6>
+          <img src="assets/img/pnc.jpg" style="border-radius: 3px;" width="30px" >
+          PNC Bank </h6>
+        <p>Added 22 logs <a class="text-danger" href="pnc">
+          <br>CHECKING ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]
+        </a></p>
+    </div>
+    <div class="card-meta d-flex justify-content-between">                     
+      <span class="text-small text-info text-right">7/2/2021</span>
+    </div>
+  </div>
+  </div>
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="col-xs-12 col-6 col-md-3" style="padding-left: 5px;padding-right: 5px;">
+<div class="kanban-col" tabindex="0">
+<div class="card-list">
+<div class="card-list-header">
+<h6>10% off ✔️💸💰</h6>
+</div>
+<div class="card-list-body" tabindex="0">
+
+<div class="card card-kanban" tabindex="0">
+  <div class="card-body">                        
+    <div class="card-title">                          
+        <h6>
+          <img src="assets/img/barclays.jpg" style="border-radius: 3px;" width="30px" >
+          Barclays Bank</h6>
+        <p>Added 27 logs <a class="text-danger" href="barclays">
+          <br>
+          Surname+[Sortcode:Passcode]+[Memorable Words]
+          </a></p>                            
+    </div>
+    <div class="card-meta d-flex justify-content-between">                     
+      <span class="text-small text-info text-right">7/1/2021</span>
+    </div>
+  </div>
+</div>     
+
+<div class="card card-kanban" tabindex="0">
+  <div class="card-body">
+    <div class="card-title">
+        <h6>
+          <img src="assets/img/rbc.jpg" style="border-radius: 3px;" width="30px" >
+          RBC Bank</h6>
+        <p>Added 27 logs <a class="text-danger" href="rbc">
+          <br>
+          rbcroyalbank.com[Login:Password]+Name+Q/A+[Email access]
+        </a></p>
+    </div>
+    <div class="card-meta d-flex justify-content-between">                     
+      <span class="text-small text-info text-right">7/2/2021</span>
+    </div>
+  </div>
+</div>
+
+<div class="card card-kanban" tabindex="0">  
+  <div class="card-body">                         
+    <div class="card-title">                          
+        <h6>
+          <img src="assets/img/scotia.jpg" style="border-radius: 3px;" width="30px" >
+          Scotia Bank</h6>
+        <p>Added 18 logs <a class="text-danger" href="scotia">
+          <br>
+          scotiabank.com[Login:Password]+Name+Q/A+[Email access]
+        </a></p>                      
+    </div>
+    <div class="card-meta d-flex justify-content-between">                     
+      <span class="text-small text-info text-right">7/2/2021</span>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>  
+</div>
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
 <script src="bro.js"></script>
-<script>
-</script>
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
 <script>
@@ -563,12 +452,43 @@
   };
 firebase.initializeApp(firebaseConfig);
 </script>
-<script src="js/modify.js"></script>
-<script src="js/core.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/profile.js"></script>
+<script type="text/javascript" src="assets/theme/js/popper.min.js"></script>
+<script type="text/javascript" src="assets/theme/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/theme/js/autosize.min.js"></script>
+<script type="text/javascript" src="assets/theme/js/flatpickr.min.js"></script>
+<script type="text/javascript" src="assets/theme/js/draggable.bundle.legacy.js"></script>
+<script type="text/javascript" src="assets/theme/js/swap-animation.js"></script>
+<script type="text/javascript" src="assets/theme/js/list.min.js"></script>
 
-<script src="js/mailform/jquery.form.min.js"></script>
-<script src="js/mailform/jquery.rd-mailform.min.c.js"></script>
+<style type="text/css">
+.layout-switcher{ position: fixed; bottom: 0; left: 50%; transform: translateX(-50%) translateY(73px); color: #fff; transition: all .35s ease; background: #343a40; border-radius: .25rem .25rem 0 0; padding: .75rem; z-index: 999; }
+.layout-switcher:not(:hover){ opacity: .95; }
+.layout-switcher:not(:focus){ cursor: pointer; }
+.layout-switcher-head{ font-size: .75rem; font-weight: 600; text-transform: uppercase; }
+.layout-switcher-head i{ font-size: 1.25rem; transition: all .35s ease; }
+.layout-switcher-body{ transition: all .55s ease; opacity: 0; padding-top: .75rem; transform: translateY(24px); text-align: center; }
+.layout-switcher:focus{ opacity: 1; outline: none; transform: translateX(-50%) translateY(0); }
+.layout-switcher:focus .layout-switcher-head i{ transform: rotateZ(180deg); opacity: 0; }
+.layout-switcher:focus .layout-switcher-body{ opacity: 1; transform: translateY(0); }
+.layout-switcher-option{ width: 72px; padding: .25rem; border: 2px solid rgba(255,255,255,0); display: inline-block; border-radius: 4px; transition: all .35s ease; }
+.layout-switcher-option.active{ border-color: #007bff; }
+.layout-switcher-icon{ width: 100%; border-radius: 4px; }
+.layout-switcher-body:hover .layout-switcher-option:not(:hover){ opacity: .5; transform: scale(0.9); }
+@media all and (max-width: 990px){ .layout-switcher{ min-width: 250px; } }
+@media all and (max-width: 767px){ .layout-switcher{ display: none; } }
+</style>
+<div class="layout-switcher" tabindex="1">
+<div class="layout-switcher-head d-flex justify-content-between">
+<span>Select Layout</span>
+<i class="material-icons">arrow_drop_up</i>
+</div>
+<div class="layout-switcher-body">
+
+</div>
+</div>
 
 </body>
+
+
 </html>

@@ -1,334 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-    <!-- metas -->
-    <meta charset="utf-8">
-    <meta name="author" content="Satoshi Nakamoto" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="keywords" content="PNC Bank" />
-    <meta name="description" content="PNC Bank" />
-
-    <!-- title  -->
-    <title>PNC Bank</title>
-    <link rel="shortcut icon" href="img/partners/pnc.jpg">
-    <link rel="apple-touch-icon" href="img/partners/pnc.jpg">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/partners/pnc.jpg">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/partners/pnc.jpg">
-    <link rel="stylesheet" href="css/plugins/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/plugins/default.css" />
-    <link rel="stylesheet" href="css/plugins/fontawesome-all.min.css" />
-    <link rel="stylesheet" href="css/plugins/nav-menu.css" />
-    <link rel="stylesheet" href="css/plugins/owl.carousel.min.css" />
-
-    <!-- revolution slider css -->
-    <link rel="stylesheet" href="css/rev_slider/settings.css">
-    <link rel="stylesheet" href="css/rev_slider/layers.css">
-    <link rel="stylesheet" href="css/rev_slider/navigation.css">
-
-
-    <link href="css/switcher.css" rel="stylesheet">
-    <link href="css/styles-7.css" rel="stylesheet" id="colors">
-
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<meta charset="utf-8">
+<title>P.N.C Bank</title>
+<link rel="shortcut icon" href="img/partners/pnc.jpg">
+<link rel="apple-touch-icon" href="img/partners/pnc.jpg">
+<link rel="apple-touch-icon" sizes="72x72" href="img/partners/pnc.jpg">
+<link rel="apple-touch-icon" sizes="114x114" href="img/partners/pnc.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="csrf-token" content="3fea5dcc21de284ea151ccbaf3cddad4">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+<link href="assets/theme/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="assets/theme/js/jquery.min.js"></script>
+<link rel="stylesheet" href="assets/amaran/jquery.css">
+<script src="assets/amaran/jquery.js"></script>
+<style>
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700"); 
+  @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
+    .authentication-bg{
+      background-image: url(assets/img/bg-pattern-dark.png);
+      background-size: cover;
+      background-position: center;
+      background-color: rgb(52, 58, 64);
+      font-family: 'Montserrat',  sans-serif;
+    }
+  .kaimage{
+    border-radius: 3px;
+    width: 30px;
+  }
+  </style>
 </head>
 
-<body onload="myFunction()" oncontextmenu="return false">
 
-<!-- start page loading -->
-<div id="preloader">
-<div class="row loader">
-<div class="loader-icon"></div>
-</div>
-</div>
-<!-- end page loading -->
 
-<!-- start main-wrapper section -->
-<div class="main-wrapper">
-
-<!-- start header ection -->
-<header class="header-style8"  id="home">
-    <div class="navbar-default">
-    <div class="container-fluid">
-    <div class="row align-items-center">
-    <div class="col-12 col-lg-12">
-    <div class="menu_area alt-font">
-    <nav class="navbar navbar-expand-lg navbar-light no-padding">
-    
-    <div class="navbar-header navbar-header-custom">
-     <!-- Start Logo -->
-     <a href="javascript:void(0);" class="navbar-brand logodefault">
-        <img id="logo" src="img/logos/name.png" alt="">
-        <span id="jinaHolder"></span>
+<body class="authentication-bg" oncontextmenu="return false">
+  <div class="layout layout-nav-top">
+  <div class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+    <a class="navbar-brand" >
+      <img src="img/logos/name.png" style="width: 60px;"/>
+      <span style="color: #fff; font-weight: 500;" id="jinaHolder">DARKNET</span>
     </a>
-    <!-- End Logo -->
+    <div class="d-flex align-items-center">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
-    
-    <div class="navbar-toggler"></div>
-   
-<!-- Menu -->
-<ul class="navbar-nav ml-auto" id="nav" style="display: none;">
-    <li class="sm-display-none">
-        <a href="huntington">
-            <img src="img/partners/huntington.jpg" class="kaimage">
-           Huntington
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="woodforest">
-            <img src="img/partners/woodforest.jpg" class="kaimage">
-            Woodforest
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="pnc">
-            <img src="img/partners/pnc.jpg" class="kaimage">
-            PNC 
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="chase">
-            <img src="img/partners/chase.jpg" class="kaimage">
-            Chase
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="nfcu">
-            <img src="img/partners/nfcu.jpg" class="kaimage">
-            NFCU
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="chime">
-            <img src="img/partners/chime.jpg" class="kaimage">
-            Chime
-        </a>
-    </li>                                                                                    
-    <li class="sm-display-none">
-        <a href="citi">
-            <img src="img/partners/citi.jpg" class="kaimage">
-            Citi
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="bbva">
-            <img src="img/partners/bbva.jpg" class="kaimage">
-            BBVA
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="bb&t">
-            <img src="img/partners/bbt.jpg" class="kaimage">
-            BB&T
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="suntrust">
-            <img src="img/partners/suntrust.jpg" class="kaimage">
-            Suntrust
-        </a>
-    </li> 
-    
-
-
-
-
-
-
-    
-
-
-    <li class="lg-display-none">
-        <a href="huntington">
-            <img src="img/partners/huntington.jpg" class="keimage">
-            Huntington Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="woodforest">
-            <img src="img/partners/woodforest.jpg" class="keimage">
-            Woodforest Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="pnc">
-            <img src="img/partners/pnc.jpg" class="keimage">
-            PNC Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="chase">
-            <img src="img/partners/chase.jpg" class="keimage">
-            Chase Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="nfcu">
-            <img src="img/partners/nfcu.jpg" class="keimage">
-            NFCU Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="chime">
-            <img src="img/partners/chime.jpg" class="keimage">
-            Chime Bank
-        </a>
-    </li>                                                                                    
-    <li class="lg-display-none">
-        <a href="citi">
-            <img src="img/partners/citi.jpg" class="keimage">
-            Citi Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="bbva">
-            <img src="img/partners/bbva.jpg" class="keimage">
-            BBVA Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="bb&t">
-            <img src="img/partners/bbt.jpg" class="keimage">
-            BB&T Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="suntrust">
-            <img src="img/partners/suntrust.jpg" class="keimage">
-            Suntrust Bank
-        </a>
-    </li> 
-
-</ul>
-<!-- End Me Are -->
-
-    <!-- Start Atribute Navigation -->
-    <div class="attr-nav xs-margin-55px-right">
-        <ul>
-            <li class="dropdown sm-no-margin">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <img id="photoHolder" 
-                    src="img/logos/name.png"
-                    class="cart-thumb" 
-                    alt="" />
-                    <span class="badge bg-theme">
-                        5
-                    </span>
-                </a>
-                <ul class="dropdown-menu cart-list">
-                    <li class="total bg-theme">
-                        <span class="pull-left font-weight-600 font-size14" id="displayNameHolder">
-                           
-                         </span>
-                         <a href="" class="butn small btn-cart white" id="logoutButton">
-                            <span class="font-weight-600 font-size14" style="color: red;">
-                                <i class="fas fa-sign-out"></i>
-                                Log Out
-                            </span>
-                        </a>
-                    </li>
-                    <li class="total bg-theme">
-                        <a href="profile" class="butn small btn-cart white">
-                           <span class="font-weight-600 font-size14">
-                              Profile
-                              <i class="fas fa-user-check"></i>
-                           </span>
-                       </a>
-                   </li>
-                    <li class="total bg-theme">
-                         <a href="paypal" class="butn small btn-cart white">
-                            <span class="font-weight-600 font-size14">
-                                Cashout Method
-                                <i class="icon-presentation" style="font-weight: 700; color: aqua;"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="total bg-theme">
-                        <a href="pdf/paypal.pdf" class="butn small btn-cart white">
-                           <span class="font-weight-600 font-size14">
-                               PayPal Pdf
-                               <i class="fas fa-file-pdf"></i>
-                           </span>
-                       </a>
-                   </li>
-
-                   <li class="total bg-theme">
-                    <a href="javascript(void:0)" class="butn small btn-cart white">
-                        <span class="font-weight-600 font-size14" id="yourIp">
-                        </span>
-                    </a>
-                </li>
-                   
-                </ul>
-            </li>
-        </ul>
+    <div class="collapse navbar-collapse justify-content-between" id="navbar-collapse">
+      <ul class="navbar-nav" style="font-size: 15px !important;">
+  
+          <div style="margin: 5px 10px;" class="dropdown">
+            <button class="btn btn-danger btn-block dropdown-toggle" type="button" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="nav-dropdown-2">
+              USA BANKS
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="huntington">
+                <img src="assets/img/huntington.jpg" class="kaimage">
+                Huntington Bank                  
+              </a>
+              <a class="dropdown-item" href="chase">
+                <img src="assets/img/chase.jpg" class="kaimage">
+                Chase Bank                  
+              </a>
+              <a class="dropdown-item" href="citi">
+                <img src="assets/img/citi.jpg" class="kaimage">
+                Citi Bank
+              </a>
+              <a class="dropdown-item" href="pnc">
+                <img src="assets/img/pnc.jpg" class="kaimage">
+                PNC Bank
+              </a>
+              <a class="dropdown-item" href="woodforest">
+                <img src="assets/img/woodforest.jpg" class="kaimage">
+                Woodforest Bank
+              </a>
+              <a class="dropdown-item" href="nfcu">
+                <img src="assets/img/nfcu.jpg" class="kaimage">
+                NFCU Bank
+              </a>
+              <a class="dropdown-item" href="bbva">
+                <img src="assets/img/bbva.jpg" class="kaimage">
+                BBVA Bank
+              </a><a class="dropdown-item" href="bbt">
+                <img src="assets/img/bbt.jpg" class="kaimage">
+                BB&amp;T Bank
+              </a>
+              <a class="dropdown-item" href="suntrust">
+                <img src="assets/img/suntrust.jpg" class="kaimage">
+                Suntrust Bank
+              </a>
+            </div>
+          </div>
+        
+          <div style="margin: 5px 10px;" class="dropdown">
+            <button class="btn btn-danger btn-block dropdown-toggle" type="button" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="nav-dropdown-2">
+              CANADA BANKS
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="scotia">
+                <img src="assets/img/scotia.jpg" class="kaimage">
+                Scotia Bank
+              </a>
+              <a class="dropdown-item" href="rbc">
+                <img src="assets/img/rbc.jpg" class="kaimage">
+                RBC Bank
+              </a>
+              </div>
+          </div>
+  
+          <div style="margin: 5px 10px;" class="dropdown">
+            <button class="btn btn-danger btn-block dropdown-toggle" type="button" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="nav-dropdown-2">
+              UK BANKS
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="barclays">
+                <img src="assets/img/barclays.jpg" class="kaimage">
+                Barclays Bank
+              </a>
+            </div>
+          </div>
+  
+      </ul>
+  
+      <div class="d-lg-flex align-items-center">
+        <div style="margin: 5px 10px;" class="dropdown mx-lg-2">
+          <button class="btn btn-info btn-block" type="button" id="logoutButton">
+          Logout
+          </button>
+        </div>
+      </div>
     </div>
-    <!-- End Atribute Navigati -->
-
-
-    </nav>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    
-    </header>
-    <!-- end header section -->
-
-
-
-<!-- start revolution slideshow-->
-<div class="rev_slider_wrapper">
-    <div class="rev_slider" id="rev_slider_3" data-version="5.4.5">
-        <ul>
-            <li data-fstransition="fade" data-transition="fade" data-easein="default" data-easeout="default" data-slotamount="1" data-masterspeed="1200" data-delay="8000" 
-                    data-title="Checking Accounts">
-                <div class="opacity-medium bg-extra-dark-gray z-index-1"></div>
-                <img src="wall/pnc.jpg" data-bgrepeat="no-repeat" data-bgfit="cover" data-bgparallax="7" class="rev-slidebg">
-                <div class="tp-caption hero-text alt-font font-weight-600 text-theme-color" data-x="30" data-y="center" data-voffset="[-84,-63,-68,-108]" data-fontsize="[72,62,52,46]" data-lineheight="[72,62,52,46]" data-width="[none, none, none, 300]" data-whitespace="[nowrap, nowrap, nowrap, normal]" data-frames='[{"delay":1000,"speed":900,"frame":"0", "from":"y:150px;opacity:0;","ease":"Power3.easeOut","to":"o:1;"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power3.easeOut"}]' data-splitout="none">
-                    Checking Accounts
-                </div>
-
-                <div class="tp-caption small-text text-white slider-text" data-x="30" data-y="center" data-voffset="[10,40,36,56]" data-fontsize="[21,21,21,21]" data-lineheight="34" data-width="[600, 500, 400, 300]" data-whitespace="[nowrap, nowrap, nowrap, normal]" data-frames='[{"delay":1100,"speed":900,"frame":"0","from":"y:150px;opacity:0;","ease":"Power3.easeOut","to":"o:1;"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power3.easeOut"}]'>
-                    <p class="white-space">
-                        10 Accouts Available
-                    </p>
-                </div>
-                <div class="tp-caption" data-x="30" data-y="center" data-voffset="[102,145,150,204]" data-lineheight="55"  data-hoffset="0" data-frames='[{"delay":1200,"speed":900, "frame":"0","from":"y:150px;opacity:0;","ease":"Power3.easeOut","to":"o:1;"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power3.easeOut"}]'>
-                    <a href='#banklogs' class='butn theme'>
-                        <span>
-                            View Accounts
-                        </span>
-                    </a>
-                </div>
-            </li>
-
-
-
-            <li data-fstransition="fade" data-transition="fade" data-easein="default" data-easeout="default" data-slotamount="1" data-masterspeed="1200" data-delay="8000" 
-            data-title="Savings Accounts">
-                <div class="opacity-medium bg-extra-dark-gray z-index-1"></div>
-                <img src="wall/pnc2.jpg" data-bgrepeat="no-repeat" data-bgfit="cover" data-bgparallax="7" class="rev-slidebg">
-                <div class="tp-caption hero-text alt-font font-weight-600 text-theme-color" data-x="30" data-y="center"  data-voffset="[-84,-63,-68,-108]"  data-fontsize="[72,62,52,46]" data-lineheight="[72,62,52,46]" data-width="[none, none, none, 300]" data-whitespace="[nowrap, nowrap, nowrap, normal]" data-frames='[{"delay":1000,"speed":900,"frame":"0","from":"y:150px;opacity:0;","ease":"Power3.easeOut","to":"o:1;"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power3.easeOut"}]' data-splitout="none">
-                    Savings Accounts
-                </div>
-                <div class="tp-caption small-text text-white slider-text"  data-x="30" data-y="center" data-voffset="[10,40,36,56]" data-fontsize="[21,21,21,21]" data-lineheight="34" data-width="[600, 500, 400, 300]" data-whitespace="[nowrap, nowrap, nowrap, normal]" data-frames='[{"delay":1100,"speed":900,"frame":"0", "from":"y:150px;opacity:0;","ease":"Power3.easeOut","to":"o:1;"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power3.easeOut"}]'>
-                    <p class="white-space">
-                        9 Accounts Available
-                    </p>
-                </div>
-                <div class="tp-caption" data-x="30" data-y="center"  data-voffset="[102,145,150,204]" data-lineheight="55" data-hoffset="0" data-frames='[{ "delay":1200,"speed":900,"frame":"0","from":"y:150px;opacity:0;","ease":"Power3.easeOut","to":"o:1;"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power3.easeOut"}]'>
-                    <a href='#banklogs' class='butn theme'>
-                        <span>
-                            View Accounts
-                        </span>
-                    </a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</div>
-<!-- end revolution slideshow-->
+  </div>
+  <div class="main-container">
+  <div class="container-fluid mt-5">
+  
+  <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+  <script src="datatables/js/jquery.dataTables.min.js"></script>
+  
 
 
 
@@ -336,1100 +145,387 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- start project section -->
-<section id="banklogs" style="padding: 0;">
-    <div class="container-fluid">
-    <div class="section-heading">
-        <h3>
-        </h3>
-    </div>
-    
 <div class="row">
-<!-- Start links -->
-<div class="filtering col-sm-12 text-center">
-    <span data-filter='*' class="active">
-        ALL
-        </span>
-        <span data-filter='.checking'>
-        CHECKING
-        </span>
-        <span data-filter='.savings'>
-        SAVINGS
-        </span>
-</div>
-<!-- End links -->
-<div class="gallery text-center width-100">
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>15,350</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="pnc1()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $307
-                        </span>
-                    </button>
-                    <script>
-                        function pnc1() {
-                            localStorage.setItem('price', 307);
-                            localStorage.setItem('balance','15,350');
-                            localStorage.setItem('type','pnc.com Checking Account');
-                            localStorage.setItem('bank','PNC Bank');
-                            localStorage.setItem('image','images/pnc.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','PNC Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles-7.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>17,251</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="pnc2()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $346
-                        </span>
-                    </button>
-                    <script>
-                        function pnc2() {
-                            localStorage.setItem('price', 346);
-                            localStorage.setItem('balance','17,251');
-                            localStorage.setItem('type','pnc.com Checking Account');
-                            localStorage.setItem('bank','PNC Bank');
-                            localStorage.setItem('image','images/pnc.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','PNC Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles-7.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>18,416</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="pnc3()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $369
-                        </span>
-                    </button>
-                    <script>
-                        function pnc3() {
-                            localStorage.setItem('price', 369);
-                            localStorage.setItem('balance','18,416');
-                            localStorage.setItem('type','pnc.com Savings Account');
-                            localStorage.setItem('bank','PNC Bank');
-                            localStorage.setItem('image','images/pnc.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','PNC Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles-7.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>19,218</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="pnc4()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $390
-                        </span>
-                    </button>
-                    <script>
-                        function pnc4() {
-                            localStorage.setItem('price', 390);
-                            localStorage.setItem('balance','19,218');
-                            localStorage.setItem('type','pnc.com Savings Account');
-                            localStorage.setItem('bank','PNC Bank');
-                            localStorage.setItem('image','images/pnc.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','PNC Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles-7.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
+<div class="col-md-12 card" style="padding-left: 0px;padding-right: 0px;">
+<div class="alert alert-dark" role="alert">
+<h4 class="alert-heading">PNC Bank Log(full info) ✔️💸💰</h4>
+<span><p><b><i>Full bank info</i></b><br></p></span>
 </div>
 
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>20,305</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="pnc5()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $403
-                        </span>
-                    </button>
-                    <script>
-                        function pnc5() {
-                            localStorage.setItem('price', 403);
-                            localStorage.setItem('balance','20,305');
-                            localStorage.setItem('type','pnc.com Checking Account');
-                            localStorage.setItem('bank','PNC Bank');
-                            localStorage.setItem('image','images/pnc.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','PNC Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles-7.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>21,946</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="pnc6()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $420
-                        </span>
-                    </button>
-                    <script>
-                        function pnc6() {
-                            localStorage.setItem('price', 420);
-                            localStorage.setItem('balance','21,946');
-                            localStorage.setItem('type','pnc.com Savings Account');
-                            localStorage.setItem('bank','PNC Bank');
-                            localStorage.setItem('image','images/pnc.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','PNC Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles-7.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>24,081</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="pnc7()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $479
-                        </span>
-                    </button>
-                    <script>
-                        function pnc7() {
-                            localStorage.setItem('price', 479);
-                            localStorage.setItem('balance','24,081');
-                            localStorage.setItem('type','pnc.com Checking Account');
-                            localStorage.setItem('bank','PNC Bank');
-                            localStorage.setItem('image','images/pnc.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','PNC Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles-7.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>24,630</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="pnc8()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $492
-                        </span>
-                    </button>
-                    <script>
-                        function pnc8() {
-                            localStorage.setItem('price', 492);
-                            localStorage.setItem('balance','24,630');
-                            localStorage.setItem('type','pnc.com Checking Account');
-                            localStorage.setItem('bank','PNC Bank');
-                            localStorage.setItem('image','images/pnc.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','PNC Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles-7.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>26,019</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="pnc9()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $520
-                        </span>
-                    </button>
-                    <script>
-                        function pnc9() {
-                            localStorage.setItem('price', 520);
-                            localStorage.setItem('balance','26,019');
-                            localStorage.setItem('type','pnc.com Savings Account');
-                            localStorage.setItem('bank','PNC Bank');
-                            localStorage.setItem('image','images/pnc.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','PNC Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles-7.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>28,455</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="pnc10()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $568
-                        </span>
-                    </button>
-                    <script>
-                        function pnc10() {
-                            localStorage.setItem('price', 568);
-                            localStorage.setItem('balance','28,455');
-                            localStorage.setItem('type','pnc.com Checking Account');
-                            localStorage.setItem('bank','PNC Bank');
-                            localStorage.setItem('image','images/pnc.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','PNC Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles-7.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>29,402</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="pnc11()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $582
-                        </span>
-                    </button>
-                    <script>
-                        function pnc11() {
-                            localStorage.setItem('price', 582);
-                            localStorage.setItem('balance','29,402');
-                            localStorage.setItem('type','pnc.com Checking Account');
-                            localStorage.setItem('bank','PNC Bank');
-                            localStorage.setItem('image','images/pnc.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','PNC Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles-7.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>30,189</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="pnc12()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $610
-                        </span>
-                    </button>
-                    <script>
-                        function pnc12() {
-                            localStorage.setItem('price', 610);
-                            localStorage.setItem('balance','30,189');
-                            localStorage.setItem('type','pnc.com Savings Account');
-                            localStorage.setItem('bank','PNC Bank');
-                            localStorage.setItem('image','images/pnc.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','PNC Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles-7.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>31,704</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="pnc13()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $625
-                        </span>
-                    </button>
-                    <script>
-                        function pnc13() {
-                            localStorage.setItem('price', 625);
-                            localStorage.setItem('balance','31,704');
-                            localStorage.setItem('type','pnc.com Savings Account');
-                            localStorage.setItem('bank','PNC Bank');
-                            localStorage.setItem('image','images/pnc.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','PNC Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles-7.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>35,127</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="pnc14()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $681
-                        </span>
-                    </button>
-                    <script>
-                        function pnc14() {
-                            localStorage.setItem('price', 681);
-                            localStorage.setItem('balance','35,127');
-                            localStorage.setItem('type','pnc.com Checking Account');
-                            localStorage.setItem('bank','PNC Bank');
-                            localStorage.setItem('image','images/pnc.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','PNC Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles-7.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>37,238</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="pnc15()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $735
-                        </span>
-                    </button>
-                    <script>
-                        function pnc15() {
-                            localStorage.setItem('price', 735);
-                            localStorage.setItem('balance','37,238');
-                            localStorage.setItem('type','pnc.com Savings Account');
-                            localStorage.setItem('bank','PNC Bank');
-                            localStorage.setItem('image','images/pnc.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','PNC Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles-7.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>40,246</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="pnc16()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $783
-                        </span>
-                    </button>
-                    <script>
-                        function pnc16() {
-                            localStorage.setItem('price', 783);
-                            localStorage.setItem('balance','40,246');
-                            localStorage.setItem('type','pnc.com Checking Account');
-                            localStorage.setItem('bank','PNC Bank');
-                            localStorage.setItem('image','images/pnc.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','PNC Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles-7.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>42,947</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="pnc17()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $816
-                        </span>
-                    </button>
-                    <script>
-                        function pnc17() {
-                            localStorage.setItem('price', 816);
-                            localStorage.setItem('balance','42,947');
-                            localStorage.setItem('type','pnc.com Checking Account');
-                            localStorage.setItem('bank','PNC Bank');
-                            localStorage.setItem('image','images/pnc.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','PNC Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles-7.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>45,381</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="pnc18()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $885
-                        </span>
-                    </button>
-                    <script>
-                        function pnc18() {
-                            localStorage.setItem('price', 885);
-                            localStorage.setItem('balance','45,381');
-                            localStorage.setItem('type','pnc.com Savings Account');
-                            localStorage.setItem('bank','PNC Bank');
-                            localStorage.setItem('image','images/pnc.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','PNC Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles-7.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>49,628</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Pnc.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="pnc19()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $947
-                        </span>
-                    </button>
-                    <script>
-                        function pnc19() {
-                            localStorage.setItem('price', 947);
-                            localStorage.setItem('balance','49,628');
-                            localStorage.setItem('type','pnc.com Checking Account');
-                            localStorage.setItem('bank','PNC Bank');
-                            localStorage.setItem('image','images/pnc.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','PNC Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles-7.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-</div>
-</div>
-</div>
-</section>
-<!-- end project section -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- start clients section -->
-<div class="section-clients bg-light-gray">
-    <div class="container-fluid">
-    <div class="owl-carousel owl-theme clients" id="clients">
-        <div class="item"><img alt="partner-image" src="img/partners/bbt.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/bbva.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/chase.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/citi.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/huntington.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/nfcu.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/pnc.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/suntrust.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/woodforest.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/chime.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/boa.jpg"></div>
-    </div>
-    </div>
-    </div>
-    <!-- end clients section-->
-
-
-    <!-- start footer section -->
-    <footer class="bg-img background-size-contain" data-overlay-dark="9" data-background="img/bg/bg17.jpg">
-        <div class="footer-bar">
-            <div class="container">
-                <p>Bank Logs &copy; 2020-2021. All Rights Reserved</p>
-            </div>
-        </div>
-    </footer>
-    <!-- end footer section -->
+<div class="card-body">
+<div class="table-responsive">
+  <table id="pnc" class="display" style="width:100%">
+  <thead>
+  <tr>
+  <th>Balance</th>
+  <th>Info</th>
+  <th>Price</th>
+  <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>$8,157</td>    
+  <td>CHECKING ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+  <td>$116</td>
+  <td>
+    <form action="bitcoin" method="GET">
+      <button type="submit" class="btn maybtn btn-danger btn-sm">
+        buy
+      </button>
+    </form>
+  </td>
+  </tr> 
+  
+  <tr>
+    <td>$8,280</td> 
+    <td>CHECKING ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$118</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr> 
+  
+  <tr>
+    <td>$8,695</td>
+    <td>SAVINGS ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$124</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr> 
+  
+  <tr>
+    <td>$9,153</td>   
+    <td>CHECKING ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$130</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr> 
+  
+  
+  <tr>
+    <td>$9,610</td>
+    <td>CHECKING ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$136</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr> 
+  
+  <tr>
+    <td>$10,036</td>       
+    <td>CHECKING ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$143</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr> 
+  
+  <tr>
+    <td>$10,390</td>   
+    <td>CHECKING ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$148</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>$10,997</td>
+    <td>SAVINGS ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$156</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr> 
+  
+  
+  <tr>
+    <td>$11,284</td>
+    <td>CHECKING ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$161</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr> 
+  
+  
+  <tr>
+    <td>$11,810</td>   
+    <td>SAVINGS ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$166</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr> 
+  
+  
+  <tr>
+    <td>$12,283</td> 
+    <td>CHECKING ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$175</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr> 
+  
+  
+  <tr>
+    <td>$13,034</td>
+    <td>CHECKING ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$180</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr> 
+  
+  
+  <tr>
+    <td>$13,077</td>   
+    <td>SAVINGS ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$186</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr> 
+  
+  
+  <tr>
+    <td>$13,370</td>
+    <td>CHECKING ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$191</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr> 
+  
+  
+  <tr>
+    <td>$14,163</td>
+    <td>CHECKING ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$200</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>$14,460</td>
+    <td>SAVINGS ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$205</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr> 
+  
+  <tr>
+    <td>$15,360</td>
+    <td>CHECKING ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$218</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr> 
+  
+  <tr>
+    <td>$14,480</td>
+    <td>CHECKING ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$221</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr> 
+  
+  
+  <tr>
+    <td>$16,350</td> 
+    <td>CHECKING ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$230</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>$17,186</td>
+    <td>CHECKING ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$244</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr> 
+  
+  
+  <tr>
+    <td>$17,653</td>
+    <td>CHECKING ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$250</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr> 
+  
+  <tr>
+    <td>$20,650</td>  
+    <td>CHECKING ACCOUNT Pnc.com [Login:Password]+ Name+Address+ [Email access]</td>
+    <td>$289</td>
+    <td>
+      <form action="bitcoin" method="GET">
+        <button type="submit" class="btn maybtn btn-danger btn-sm">
+          buy
+        </button>
+      </form>
+    </td>
+  </tr>    
+  
+  </tbody>
+  </table>
+  
+  <script>
+    (function() {
+      const cartBtn = document.querySelectorAll('.maybtn');
+      cartBtn.forEach(function(btn) {
+        btn.addEventListener('click', function(event) {
+            if(event.target.classList.contains('maybtn')) {
+                const item = {};
+                let price = event.target.parentElement.parentElement.previousElementSibling.textContent;
+                let balance = event.target.parentElement.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.textContent;
+                let info = event.target.parentElement.parentElement.previousElementSibling.previousElementSibling.textContent;
     
-    </div>
-    <!-- end main-wrapper section -->
-    <div id="style-switcher">
-    <a href="javascript:void(0)" class="switcher-setting"><i class="fa fa-cog fa-spin"></i></a>
-    <div class="choose-color">
-        <h2>Change Theme Color</h2>
-    <ul class="colors" id="color1">
-        <li><a href="javascript:void(0)" class="style1"></a></li>
-        <li><a href="javascript:void(0)" class="style2"></a></li>
-        <li><a href="javascript:void(0)" class="style3"></a></li>
-        <li><a href="javascript:void(0)" class="style4"></a></li>
-        <li><a href="javascript:void(0)" class="style5"></a></li>
-        <li><a href="javascript:void(0)" class="style6"></a></li>
-        <li><a href="javascript:void(0)" class="style7"></a></li>
-        <li><a href="javascript:void(0)" class="style8"></a></li>
-    </ul>
-    </div>
-    </div>
-    <a href="javascript:void(0)" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
-    
-    <script src="bro.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
-    <script>
-  var firebaseConfig = {
-    apiKey: "AIzaSyCOTy-csDIp1XI0mTlAo4mKqMPWNNVyuRE",
-    authDomain: "tizbank.firebaseapp.com",
-    projectId: "tizbank",
-    storageBucket: "tizbank.appspot.com",
-    messagingSenderId: "83693749331",
-    appId: "1:83693749331:web:e95f545a64b4370d03b2a6",
-    measurementId: "G-JDCP283CWV"
-  };
-    firebase.initializeApp(firebaseConfig);
-    </script>
-    <script src="js/profile.js"></script>
-    <script src="js/core.min.js"></script>
-    <script src="js/rev_slider/jquery.themepunch.tools.min.js"></script>
-    <script src="js/rev_slider/jquery.themepunch.revolution.min.js"></script>
-    <script src="js/rev_slider/extensions/revolution.extension.actions.min.js"></script>
-    <script src="js/rev_slider/extensions/revolution.extension.carousel.min.js"></script>
-    <script src="js/rev_slider/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="js/rev_slider/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="js/rev_slider/extensions/revolution.extension.migration.min.js"></script>
-    <script src="js/rev_slider/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="js/rev_slider/extensions/revolution.extension.parallax.min.js"></script>
-    <script src="js/rev_slider/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="js/rev_slider/extensions/revolution.extension.video.min.js"></script>
-    <script src="js/main.js"></script>
+                item.price = price;
+                item.info = info
+                item.balance = balance;
+  
+                localStorage.setItem('price', price);
+                localStorage.setItem('info', info);
+                localStorage.setItem('balance', balance);
+            }
+        });
+      });
+  })();
+  </script>
+  <script>
+    $(document).ready(function() {
+        $('#pnc').DataTable({
+            "aaSorting": [[ 0, "asc" ]],
+            "pageLength": 10,
+            "bLengthChange": false,
+            "language": {
+            "search": "Search (Balance: Price: title): ",
+            }
+        });
+    });   
+  </script>
+  <script src="bro.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyCOTy-csDIp1XI0mTlAo4mKqMPWNNVyuRE",
+      authDomain: "tizbank.firebaseapp.com",
+      projectId: "tizbank",
+      storageBucket: "tizbank.appspot.com",
+      messagingSenderId: "83693749331",
+      appId: "1:83693749331:web:e95f545a64b4370d03b2a6",
+      measurementId: "G-JDCP283CWV"
+    };
+  firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="js/profile.js"></script>
+</div>
+</div>
+</div>
+</div>
 
-</body>
+    <script type="text/javascript" src="assets/theme/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/theme/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/theme/js/autosize.min.js"></script>
+    <script type="text/javascript" src="assets/theme/js/flatpickr.min.js"></script>
+    <script type="text/javascript" src="assets/theme/js/draggable.bundle.legacy.js"></script>
+    <script type="text/javascript" src="assets/theme/js/swap-animation.js"></script>
+    <script type="text/javascript" src="assets/theme/js/list.min.js"></script>
 
+  </body>
 </html>

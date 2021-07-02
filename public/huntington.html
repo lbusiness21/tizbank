@@ -1,336 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-    <head>
-    <!-- metas -->
-    <meta charset="utf-8">
-    <meta name="author" content="Satoshi Nakamoto" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="keywords" content="Huntington" />
-    <meta name="description" content="Huntington" />
-
-    <!-- title  -->
-    <title>Huntington</title>
-
-    <link rel="shortcut icon" href="img/partners/huntington.jpg">
-    <link rel="apple-touch-icon" href="img/partners/huntington.jpg">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/partners/huntington.jpg">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/partners/huntington.jpg">
-
-    <link rel="stylesheet" href="css/plugins/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/plugins/default.css" />
-    <link rel="stylesheet" href="css/plugins/fontawesome-all.min.css" />
-
-    <!-- revolution slider css -->
-    <link rel="stylesheet" href="css/rev_slider/settings.css">
-    <link rel="stylesheet" href="css/rev_slider/layers.css">
-    <link rel="stylesheet" href="css/rev_slider/navigation.css">
-
-    <link rel="stylesheet" href="css/plugins/nav-menu.css" />
-    <link rel="stylesheet" href="css/plugins/owl.carousel.min.css" />
-    <link href="css/switcher.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet" id="colors">
-
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<meta charset="utf-8">
+<title>Huntington Bank</title>
+<link rel="shortcut icon" href="img/partners/huntington.jpg">
+<link rel="apple-touch-icon" href="img/partners/huntington.jpg">
+<link rel="apple-touch-icon" sizes="72x72" href="img/partners/huntington.jpg">
+<link rel="apple-touch-icon" sizes="114x114" href="img/partners/huntington.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="csrf-token" content="3fea5dcc21de284ea151ccbaf3cddad4">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+<link href="assets/theme/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="assets/theme/js/jquery.min.js"></script>
+<link rel="stylesheet" href="assets/amaran/jquery.css">
+<script src="assets/amaran/jquery.js"></script>
+<style>
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700"); 
+  @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
+    .authentication-bg{
+      background-image: url(assets/img/bg-pattern-dark.png);
+      background-size: cover;
+      background-position: center;
+      background-color: rgb(52, 58, 64);
+      font-family: 'Montserrat',  sans-serif;
+    }
+  .kaimage{
+    border-radius: 3px;
+    width: 30px;
+  }
+  </style>
 </head>
 
-<body onload="myFunction()" oncontextmenu="return false">
-
-<!-- start page loading -->
-<div id="preloader">
-<div class="row loader">
-<div class="loader-icon"></div>
-</div>
-</div>
-<!-- end page loading -->
-
-<!-- start main-wrapper section -->
-<div class="main-wrapper">
 
 
-<!-- start header ection -->
-<header class="header-style8"  id="home">
-    <div class="navbar-default">
-    <div class="container-fluid">
-    <div class="row align-items-center">
-    <div class="col-12 col-lg-12">
-    <div class="menu_area alt-font">
-    <nav class="navbar navbar-expand-lg navbar-light no-padding">
-    
-    <div class="navbar-header navbar-header-custom">
-     <!-- Start Logo -->
-     <a href="javascript:void(0);" class="navbar-brand logodefault">
-        <img id="logo" src="img/logos/name.png" alt="">
-        <span id="jinaHolder"></span>
+
+
+<body class="authentication-bg" oncontextmenu="return false">
+  <div class="layout layout-nav-top">
+  <div class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+    <a class="navbar-brand" >
+      <img src="img/logos/name.png" style="width: 60px;"/>
+      <span style="color: #fff; font-weight: 500;" id="jinaHolder">DARKNET</span>
     </a>
-    <!-- End Logo -->
+    <div class="d-flex align-items-center">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
-    
-    <div class="navbar-toggler"></div>
-   
-<!-- Menu -->
-<ul class="navbar-nav ml-auto" id="nav" style="display: none;">
-    <li class="sm-display-none">
-        <a href="huntington">
-            <img src="img/partners/huntington.jpg" class="kaimage">
-           Huntington
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="woodforest">
-            <img src="img/partners/woodforest.jpg" class="kaimage">
-            Woodforest
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="pnc">
-            <img src="img/partners/pnc.jpg" class="kaimage">
-            PNC 
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="chase">
-            <img src="img/partners/chase.jpg" class="kaimage">
-            Chase
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="nfcu">
-            <img src="img/partners/nfcu.jpg" class="kaimage">
-            NFCU
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="chime">
-            <img src="img/partners/chime.jpg" class="kaimage">
-            Chime
-        </a>
-    </li>                                                                                    
-    <li class="sm-display-none">
-        <a href="citi">
-            <img src="img/partners/citi.jpg" class="kaimage">
-            Citi
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="bbva">
-            <img src="img/partners/bbva.jpg" class="kaimage">
-            BBVA
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="bb&t">
-            <img src="img/partners/bbt.jpg" class="kaimage">
-            BB&T
-        </a>
-    </li>
-    <li class="sm-display-none">
-        <a href="suntrust">
-            <img src="img/partners/suntrust.jpg" class="kaimage">
-            Suntrust
-        </a>
-    </li> 
-    
-
-
-
-
-
-
-    
-
-
-    <li class="lg-display-none">
-        <a href="huntington">
-            <img src="img/partners/huntington.jpg" class="keimage">
-            Huntington Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="woodforest">
-            <img src="img/partners/woodforest.jpg" class="keimage">
-            Woodforest Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="pnc">
-            <img src="img/partners/pnc.jpg" class="keimage">
-            PNC Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="chase">
-            <img src="img/partners/chase.jpg" class="keimage">
-            Chase Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="nfcu">
-            <img src="img/partners/nfcu.jpg" class="keimage">
-            NFCU Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="chime">
-            <img src="img/partners/chime.jpg" class="keimage">
-            Chime Bank
-        </a>
-    </li>                                                                                    
-    <li class="lg-display-none">
-        <a href="citi">
-            <img src="img/partners/citi.jpg" class="keimage">
-            Citi Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="bbva">
-            <img src="img/partners/bbva.jpg" class="keimage">
-            BBVA Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="bb&t">
-            <img src="img/partners/bbt.jpg" class="keimage">
-            BB&T Bank
-        </a>
-    </li>
-    <li class="lg-display-none">
-        <a href="suntrust">
-            <img src="img/partners/suntrust.jpg" class="keimage">
-            Suntrust Bank
-        </a>
-    </li> 
-
-</ul>
-<!-- End Me Are -->
-
-    <!-- Start Atribute Navigation -->
-    <div class="attr-nav xs-margin-55px-right">
-        <ul>
-            <li class="dropdown sm-no-margin">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <img id="photoHolder" 
-                    src="img/logos/name.png"
-                    class="cart-thumb" 
-                    alt="" />
-                    <span class="badge bg-theme">
-                        5
-                    </span>
-                </a>
-                <ul class="dropdown-menu cart-list">
-                    <li class="total bg-theme">
-                        <span class="pull-left font-weight-600 font-size14" id="displayNameHolder">
-                           
-                         </span>
-                         <a href="" class="butn small btn-cart white" id="logoutButton">
-                            <span class="font-weight-600 font-size14" style="color: red;">
-                                <i class="fas fa-sign-out"></i>
-                                Log Out
-                            </span>
-                        </a>
-                    </li>
-                    <li class="total bg-theme">
-                        <a href="profile" class="butn small btn-cart white">
-                           <span class="font-weight-600 font-size14">
-                              Profile
-                              <i class="fas fa-user-check"></i>
-                           </span>
-                       </a>
-                   </li>
-                    <li class="total bg-theme">
-                         <a href="paypal" class="butn small btn-cart white">
-                            <span class="font-weight-600 font-size14">
-                                Cashout Method
-                                <i class="icon-presentation" style="font-weight: 700; color: aqua;"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="total bg-theme">
-                        <a href="pdf/paypal.pdf" class="butn small btn-cart white">
-                           <span class="font-weight-600 font-size14">
-                               PayPal Pdf
-                               <i class="fas fa-file-pdf"></i>
-                           </span>
-                       </a>
-                   </li>
-
-                   <li class="total bg-theme">
-                    <a href="javascript(void:0)" class="butn small btn-cart white">
-                        <span class="font-weight-600 font-size14" id="yourIp">
-                        </span>
-                    </a>
-                </li>
-                   
-                </ul>
-            </li>
-        </ul>
+    <div class="collapse navbar-collapse justify-content-between" id="navbar-collapse">
+      <ul class="navbar-nav" style="font-size: 15px !important;">
+  
+          <div style="margin: 5px 10px;" class="dropdown">
+            <button class="btn btn-danger btn-block dropdown-toggle" type="button" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="nav-dropdown-2">
+              USA BANKS
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="huntington">
+                <img src="assets/img/huntington.jpg" class="kaimage">
+                Huntington Bank                  
+              </a>
+              <a class="dropdown-item" href="chase">
+                <img src="assets/img/chase.jpg" class="kaimage">
+                Chase Bank                  
+              </a>
+              <a class="dropdown-item" href="citi">
+                <img src="assets/img/citi.jpg" class="kaimage">
+                Citi Bank
+              </a>
+              <a class="dropdown-item" href="pnc">
+                <img src="assets/img/pnc.jpg" class="kaimage">
+                PNC Bank
+              </a>
+              <a class="dropdown-item" href="woodforest">
+                <img src="assets/img/woodforest.jpg" class="kaimage">
+                Woodforest Bank
+              </a>
+              <a class="dropdown-item" href="nfcu">
+                <img src="assets/img/nfcu.jpg" class="kaimage">
+                NFCU Bank
+              </a>
+              <a class="dropdown-item" href="bbva">
+                <img src="assets/img/bbva.jpg" class="kaimage">
+                BBVA Bank
+              </a><a class="dropdown-item" href="bbt">
+                <img src="assets/img/bbt.jpg" class="kaimage">
+                BB&amp;T Bank
+              </a>
+              <a class="dropdown-item" href="suntrust">
+                <img src="assets/img/suntrust.jpg" class="kaimage">
+                Suntrust Bank
+              </a>
+            </div>
+          </div>
+        
+          <div style="margin: 5px 10px;" class="dropdown">
+            <button class="btn btn-danger btn-block dropdown-toggle" type="button" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="nav-dropdown-2">
+              CANADA BANKS
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="scotia">
+                <img src="assets/img/scotia.jpg" class="kaimage">
+                Scotia Bank
+              </a>
+              <a class="dropdown-item" href="rbc">
+                <img src="assets/img/rbc.jpg" class="kaimage">
+                RBC Bank
+              </a>
+              </div>
+          </div>
+  
+          <div style="margin: 5px 10px;" class="dropdown">
+            <button class="btn btn-danger btn-block dropdown-toggle" type="button" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="nav-dropdown-2">
+              UK BANKS
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="barclays">
+                <img src="assets/img/barclays.jpg" class="kaimage">
+                Barclays Bank
+              </a>
+            </div>
+          </div>
+  
+      </ul>
+  
+      <div class="d-lg-flex align-items-center">
+        <div style="margin: 5px 10px;" class="dropdown mx-lg-2">
+          <button class="btn btn-info btn-block" type="button" id="logoutButton">
+          Logout
+          </button>
+        </div>
+      </div>
     </div>
-    <!-- End Atribute Navigati -->
-
-
-    </nav>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    
-    </header>
-    <!-- end header section -->
-
-
-<!-- start revolution slideshow-->
-<div class="rev_slider_wrapper">
-    <div class="rev_slider" id="rev_slider_3" data-version="5.4.5">
-        <ul>
-            <li data-fstransition="fade" data-transition="fade" data-easein="default" data-easeout="default" data-slotamount="1" data-masterspeed="1200" data-delay="8000" 
-                    data-title="Checking Accounts">
-                <div class="opacity-medium bg-extra-dark-gray z-index-1"></div>
-                <img src="wall/huntingtonbank.jpg" data-bgrepeat="no-repeat" data-bgfit="cover" data-bgparallax="7" class="rev-slidebg">
-                <div class="tp-caption hero-text alt-font font-weight-600 text-theme-color" data-x="30" data-y="center" data-voffset="[-84,-63,-68,-108]" data-fontsize="[72,62,52,46]" data-lineheight="[72,62,52,46]" data-width="[none, none, none, 300]" data-whitespace="[nowrap, nowrap, nowrap, normal]" data-frames='[{"delay":1000,"speed":900,"frame":"0", "from":"y:150px;opacity:0;","ease":"Power3.easeOut","to":"o:1;"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power3.easeOut"}]' data-splitout="none">
-                    Checking Accounts
-                </div>
-
-                <div class="tp-caption small-text text-white slider-text" data-x="30" data-y="center" data-voffset="[10,40,36,56]" data-fontsize="[21,21,21,21]" data-lineheight="34" data-width="[600, 500, 400, 300]" data-whitespace="[nowrap, nowrap, nowrap, normal]" data-frames='[{"delay":1100,"speed":900,"frame":"0","from":"y:150px;opacity:0;","ease":"Power3.easeOut","to":"o:1;"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power3.easeOut"}]'>
-                    <p class="white-space">
-                        12 Accouts Available
-                    </p>
-                </div>
-                <div class="tp-caption" data-x="30" data-y="center" data-voffset="[102,145,150,204]" data-lineheight="55"  data-hoffset="0" data-frames='[{"delay":1200,"speed":900, "frame":"0","from":"y:150px;opacity:0;","ease":"Power3.easeOut","to":"o:1;"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power3.easeOut"}]'>
-                    <a href='#banklogs' class='butn theme'>
-                        <span>
-                            View Accounts
-                        </span>
-                    </a>
-                </div>
-            </li>
-
-
-
-            <li data-fstransition="fade" data-transition="fade" data-easein="default" data-easeout="default" data-slotamount="1" data-masterspeed="1200" data-delay="8000" 
-            data-title="Savings Accounts">
-                <div class="opacity-medium bg-extra-dark-gray z-index-1"></div>
-                <img src="wall/huntington.jpg" data-bgrepeat="no-repeat" data-bgfit="cover" data-bgparallax="7" class="rev-slidebg">
-                <div class="tp-caption hero-text alt-font font-weight-600 text-theme-color" data-x="30" data-y="center"  data-voffset="[-84,-63,-68,-108]"  data-fontsize="[72,62,52,46]" data-lineheight="[72,62,52,46]" data-width="[none, none, none, 300]" data-whitespace="[nowrap, nowrap, nowrap, normal]" data-frames='[{"delay":1000,"speed":900,"frame":"0","from":"y:150px;opacity:0;","ease":"Power3.easeOut","to":"o:1;"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power3.easeOut"}]' data-splitout="none">
-                    Savings Accounts
-                </div>
-                <div class="tp-caption small-text text-white slider-text"  data-x="30" data-y="center" data-voffset="[10,40,36,56]" data-fontsize="[21,21,21,21]" data-lineheight="34" data-width="[600, 500, 400, 300]" data-whitespace="[nowrap, nowrap, nowrap, normal]" data-frames='[{"delay":1100,"speed":900,"frame":"0", "from":"y:150px;opacity:0;","ease":"Power3.easeOut","to":"o:1;"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power3.easeOut"}]'>
-                    <p class="white-space">
-                        10 Accounts Available
-                    </p>
-                </div>
-                <div class="tp-caption" data-x="30" data-y="center"  data-voffset="[102,145,150,204]" data-lineheight="55" data-hoffset="0" data-frames='[{ "delay":1200,"speed":900,"frame":"0","from":"y:150px;opacity:0;","ease":"Power3.easeOut","to":"o:1;"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power3.easeOut"}]'>
-                    <a href='#banklogs' class='butn theme'>
-                        <span>
-                            View Accounts
-                        </span>
-                    </a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</div>
-<!-- end revolution slideshow-->
+  </div>
+  <div class="main-container">
+  <div class="container-fluid mt-5">
+  
+  <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+  <script src="datatables/js/jquery.dataTables.min.js"></script>
+  
 
 
 
@@ -341,1100 +150,334 @@
 
 
 
-
-
-
-
-<!-- start project section -->
-<section id="banklogs" style="padding: 0;">
-    <div class="container-fluid">
-    <div class="section-heading">
-        <h3>
-        </h3>
-    </div>
-    
 <div class="row">
-<!-- Start links -->
-<div class="filtering col-sm-12 text-center">
-    <span data-filter='*' class="active">
-        ALL
-        </span>
-        <span data-filter='.checking'>
-        CHECKING
-        </span>
-        <span data-filter='.savings'>
-        SAVINGS
-        </span>
+<div class="col-md-12 card" style="padding-left: 0px;padding-right: 0px;">
+<div class="alert alert-dark" role="alert">
+<h4 class="alert-heading">Huntington Bank Log(full info) ✔️💸💰</h4>
+<span><p><b><i>Full bank info</i></b><br></p></span>
 </div>
 
-<!-- End links -->
-<div class="gallery text-center width-100">
+<div class="card-body">
+<div class="table-responsive">
 
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">  
-            <h4><sup>$</sup>15,913</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt1()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $307
-                        </span>
-                    </button>
-                    <script>
-                        function hunt1() {
-                            localStorage.setItem('price', 307);
-                            localStorage.setItem('balance','15,913');
-                            localStorage.setItem('type','huntington.com Checking Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
+  <table id="huntington" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Balance</th>
+            <th>Info</th>
+            <th>Price</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>$11,686</td>
+            <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
+            <td>$168</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$7,890</td>
+        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
+            <td>$112</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$12,476</td>
+        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
+            <td>$178</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$8,020</td>
+        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
+            <td>$114</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$9,102</td>
+        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
+            <td>$126</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$12,953</td>
+        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
+            <td>$183</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$9,460</td>
+        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
+            <td>$134</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$11,620</td>
+        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
+            <td>$165</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$7,652</td>
+        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
+            <td>$110</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$8,850</td>
+        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
+            <td>$125</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$13,357</td>
+        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
+            <td>$186</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$13,605</td>
+        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
+            <td>$190</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$12,352</td>
+        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
+            <td>$175</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$10,300</td>
+        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
+            <td>$146</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr>  <tr>
+        <td>$9,441</td>
+        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
+            <td>$129</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$10,820</td>
+        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email Access]</td>
+            <td>$154</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$18,120</td>
+        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [email access]</td>
+            <td>$258</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$11,700</td>
+        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [email access]</td>
+            <td>$165</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$12,110</td>
+        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [email access]</td>
+            <td>$171</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$22,820</td>
+        <td>SAVINGS ACCOUNT Woodforest.com [Login:Password] Name+Address [email access]</td>
+            <td>$265</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$16,982</td>
+        <td>CHECKING ACCOUNT Woodforest.com [Login:Password] Name+Address [email access]</td>
+            <td>$240</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$9,350</td>
+        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email Access]</td>
+            <td>$133</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> <tr>
+        <td>$12,977</td>
+        <td>CHECKING ACCOUNT Woodforest.com [Login:Password] Name+Address [email access]</td>
+            <td>$185</td>
+            <td>
+              <form action="bitcoin" method="GET">
+                <button type="submit" class="btn maybtn btn-danger btn-sm">
+                  buy
+                </button>
+              </form>
+            </td>
+        </tr> 
+        <tr>
+          <td>$15,103</td>
+          <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
+              <td>$207</td>
+              <td>
+                <form action="bitcoin" method="GET">
+                  <button type="submit" class="btn maybtn btn-danger btn-sm">
+                    buy
+                  </button>
                 </form>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>17,853</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt2()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $346
-                        </span>
-                    </button>
-                    <script>
-                        function hunt2() {
-                            localStorage.setItem('price', 346);
-                            localStorage.setItem('balance','17,853');
-                            localStorage.setItem('type','huntington.com Checking Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>18,271</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt3()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $365
-                        </span>
-                    </button>
-                    <script>
-                        function hunt3() {
-                            localStorage.setItem('price', 365);
-                            localStorage.setItem('balance','18,271');
-                            localStorage.setItem('type','huntington.com Savings Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>19,178</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt4()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $381
-                        </span>
-                    </button>
-                    <script>
-                        function hunt4() {
-                            localStorage.setItem('price', 381);
-                            localStorage.setItem('balance','19,178');
-                            localStorage.setItem('type','huntington.com Savings Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+              </td>
+          </tr>
+      </tbody>
+  
+</table>
+<script>
+  (function() {
+    const cartBtn = document.querySelectorAll('.maybtn');
+    cartBtn.forEach(function(btn) {
+      btn.addEventListener('click', function(event) {
+          if(event.target.classList.contains('maybtn')) {
+              const item = {};
+              let price = event.target.parentElement.parentElement.previousElementSibling.textContent;
+              let balance = event.target.parentElement.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.textContent;
+              let info = event.target.parentElement.parentElement.previousElementSibling.previousElementSibling.textContent;
+  
+              item.price = price;
+              item.info = info
+              item.balance = balance;
 
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>19,715</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt5()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $394
-                        </span>
-                    </button>
-                    <script>
-                        function hunt5() {
-                            localStorage.setItem('price', 394);
-                            localStorage.setItem('balance','19,715');
-                            localStorage.setItem('type','huntington.com Checking Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>20,650</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt6()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $414
-                        </span>
-                    </button>
-                    <script>
-                        function hunt6() {
-                            localStorage.setItem('price', 414);
-                            localStorage.setItem('balance','20,650');
-                            localStorage.setItem('type','huntington.com Checking Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>21,239</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt7()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $425
-                        </span>
-                    </button>
-                    <script>
-                        function hunt7() {
-                            localStorage.setItem('price', 425);
-                            localStorage.setItem('balance','21,239');
-                            localStorage.setItem('type','huntington.com Savings Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>24,517</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt8()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $490
-                        </span>
-                    </button>
-                    <script>
-                        function hunt8() {
-                            localStorage.setItem('price', 490);
-                            localStorage.setItem('balance','24,517');
-                            localStorage.setItem('type','huntington.com Checking Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>24,916</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt9()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $498
-                        </span>
-                    </button>
-                    <script>
-                        function hunt9() {
-                            localStorage.setItem('price', 498);
-                            localStorage.setItem('balance','24,916');
-                            localStorage.setItem('type','huntington.com Savings Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>25,397</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt10()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $507
-                        </span>
-                    </button>
-                    <script>
-                        function hunt10() {
-                            localStorage.setItem('price', 507);
-                            localStorage.setItem('balance','25,397');
-                            localStorage.setItem('type','huntington.com Savings Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>28,560</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt11()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $571
-                        </span>
-                    </button>
-                    <script>
-                        function hunt11() {
-                            localStorage.setItem('price', 571);
-                            localStorage.setItem('balance','28,560');
-                            localStorage.setItem('type','huntington.com Checking Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>29,437</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt12()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $580
-                        </span>
-                    </button>
-                    <script>
-                        function hunt12() {
-                            localStorage.setItem('price', 580);
-                            localStorage.setItem('balance','29,437');
-                            localStorage.setItem('type','huntington.com Checking Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>30,381</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt13()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $618
-                        </span>
-                    </button>
-                    <script>
-                        function hunt13() {
-                            localStorage.setItem('price', 618);
-                            localStorage.setItem('balance','30,381');
-                            localStorage.setItem('type','huntington.com Savings Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>32,485</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt14()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $640
-                        </span>
-                    </button>
-                    <script>
-                        function hunt14() {
-                            localStorage.setItem('price', 640);
-                            localStorage.setItem('balance','32,485');
-                            localStorage.setItem('type','huntington.com Checking Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>34,795</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt15()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $695
-                        </span>
-                    </button>
-                    <script>
-                        function hunt15() {
-                            localStorage.setItem('price', 695);
-                            localStorage.setItem('balance','34,795');
-                            localStorage.setItem('type','huntington.com Checking Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>36,183</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt16()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $720
-                        </span>
-                    </button>
-                    <script>
-                        function hunt16() {
-                            localStorage.setItem('price', 720);
-                            localStorage.setItem('balance','36,183');
-                            localStorage.setItem('type','huntington.com Savings Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>38,549</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt17()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $768
-                        </span>
-                    </button>
-                    <script>
-                        function hunt17() {
-                            localStorage.setItem('price', 768);
-                            localStorage.setItem('balance','38,549');
-                            localStorage.setItem('type','huntington.com Checking Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>40,260</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt18()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $803
-                        </span>
-                    </button>
-                    <script>
-                        function hunt18() {
-                            localStorage.setItem('price', 803);
-                            localStorage.setItem('balance','40,260');
-                            localStorage.setItem('type','huntington.com Savings Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>42,007</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt19()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $829
-                        </span>
-                    </button>
-                    <script>
-                        function hunt19() {
-                            localStorage.setItem('price', 829);
-                            localStorage.setItem('balance','42,007');
-                            localStorage.setItem('type','huntington.com Savings Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>44,130</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt20()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $873
-                        </span>
-                    </button>
-                    <script>
-                        function hunt20() {
-                            localStorage.setItem('price', 873);
-                            localStorage.setItem('balance','44,130');
-                            localStorage.setItem('type','huntington.com Checking Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items checking">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>47,084</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt21()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $921
-                        </span>
-                    </button>
-                    <script>
-                        function hunt21() {
-                            localStorage.setItem('price', 921);
-                            localStorage.setItem('balance','47,084');
-                            localStorage.setItem('type','huntington.com Checking Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-xl-2 col-md-4 col-6 items savings">
-    <div class="price-table">
-        <div class="price-table-header">
-            <h4><sup>$</sup>50,397</h4>
-        </div>
-        <div class="price-table-content">
-            <ul>
-                <li>Huntington.com</li>
-                <li>Username:Password</li>
-                <li>Name + Address</li>
-                <li>Email access</li>
-                <li>Social Security No.</li>
-                <li>Account & Routing No</li>
-                <li>Date of Birth</li>
-            </ul>
-            <div class="text-center">
-                <form action="invoice" method="GET">
-                    <button type="submit" class="butn medium" onclick="hunt22()">              
-                        <span class="margin-3px-left">
-                            <i class="fas fa-cart-plus margin-10px-right"></i>
-                            $993
-                        </span>
-                    </button>
-                    <script>
-                        function hunt22() {
-                            localStorage.setItem('price', 993);
-                            localStorage.setItem('balance','50,397');
-                            localStorage.setItem('type','huntington.com Savings Account');
-                            localStorage.setItem('bank','Huntington Bank');
-                            localStorage.setItem('image','images/huntington.jpg');
-                            localStorage.setItem('type1','Name + Address');
-                            localStorage.setItem('type2','Account & Routing Number');
-                            localStorage.setItem('type3','Date of Birth');
-                            localStorage.setItem('type4','Email Access');
-                            localStorage.setItem('type5','Social Security Number');
-                            localStorage.setItem('type6','Huntington Bank [Login: Password]');
-                            localStorage.setItem('thecss', 'css/styles.css');
-                        }
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-</div>
-</div>
-</div>
-</section>
-<!-- end project section -->
-
-
-
-
-
-
-
-
-
-
-<!-- start clients section -->
-<div class="section-clients bg-light-gray">
-    <div class="container-fluid">
-    <div class="owl-carousel owl-theme clients" id="clients">
-        <div class="item"><img alt="partner-image" src="img/partners/bbt.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/bbva.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/chase.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/citi.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/huntington.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/nfcu.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/pnc.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/suntrust.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/woodforest.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/chime.jpg"></div>
-        <div class="item"><img alt="partner-image" src="img/partners/boa.jpg"></div>
-    </div>
-    </div>
-    </div>
-    <!-- end clients section-->
-
-
-    <!-- start footer section -->
-    <footer class="bg-img background-size-contain" data-overlay-dark="9" data-background="img/bg/bg17.jpg">
-        <div class="footer-bar">
-            <div class="container">
-                <p>Bank Logs &copy; 2020-2021. All Rights Reserved</p>
-            </div>
-        </div>
-    </footer>
-    <!-- end footer section -->
-    
-
-
-    </div>
-    <!-- end main-wrapper section -->
-    <div id="style-switcher">
-    <a href="javascript:void(0)" class="switcher-setting"><i class="fa fa-cog fa-spin"></i></a>
-    <div class="choose-color">
-        <h2>Change Theme Color</h2>
-    <ul class="colors" id="color1">
-        <li><a href="javascript:void(0)" class="style1"></a></li>
-        <li><a href="javascript:void(0)" class="style2"></a></li>
-        <li><a href="javascript:void(0)" class="style3"></a></li>
-        <li><a href="javascript:void(0)" class="style4"></a></li>
-        <li><a href="javascript:void(0)" class="style5"></a></li>
-        <li><a href="javascript:void(0)" class="style6"></a></li>
-        <li><a href="javascript:void(0)" class="style7"></a></li>
-        <li><a href="javascript:void(0)" class="style8"></a></li>
-    </ul>
-    </div>
-    </div>
-    <a href="javascript:void(0)" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
-    
-
+              localStorage.setItem('price', price);
+              localStorage.setItem('info', info);
+              localStorage.setItem('balance', balance);
+          }
+      });
+    });
+})();
+</script>
+<script>
+  $(document).ready(function() {
+      $('#huntington').DataTable({
+          "aaSorting": [[ 0, "asc" ]],
+          "pageLength": 10,
+          "bLengthChange": false,
+          "language": {
+          "search": "Search (Balance: Price: title): ",
+          }
+      });
+  });   
+</script>
 <script src="bro.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
-    <script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+<script>
   var firebaseConfig = {
     apiKey: "AIzaSyCOTy-csDIp1XI0mTlAo4mKqMPWNNVyuRE",
     authDomain: "tizbank.firebaseapp.com",
@@ -1444,26 +487,21 @@
     appId: "1:83693749331:web:e95f545a64b4370d03b2a6",
     measurementId: "G-JDCP283CWV"
   };
-    firebase.initializeApp(firebaseConfig);
-    </script>
-    <script src="js/profile.js"></script>
-    <script src="js/core.min.js"></script>
-    <script src="js/rev_slider/jquery.themepunch.tools.min.js"></script>
-    <script src="js/rev_slider/jquery.themepunch.revolution.min.js"></script>
-    <script src="js/rev_slider/extensions/revolution.extension.actions.min.js"></script>
-    <script src="js/rev_slider/extensions/revolution.extension.carousel.min.js"></script>
-    <script src="js/rev_slider/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="js/rev_slider/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="js/rev_slider/extensions/revolution.extension.migration.min.js"></script>
-    <script src="js/rev_slider/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="js/rev_slider/extensions/revolution.extension.parallax.min.js"></script>
-    <script src="js/rev_slider/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="js/rev_slider/extensions/revolution.extension.video.min.js"></script>
-    <script src="js/main.js"></script>
+firebase.initializeApp(firebaseConfig);
+</script>
+<script src="js/profile.js"></script>
+</div>
+</div>
+</div>
+</div>
 
-
-
+  <script type="text/javascript" src="assets/theme/js/popper.min.js"></script>
+  <script type="text/javascript" src="assets/theme/js/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/theme/js/autosize.min.js"></script>
+  <script type="text/javascript" src="assets/theme/js/flatpickr.min.js"></script>
+  <script type="text/javascript" src="assets/theme/js/draggable.bundle.legacy.js"></script>
+  <script type="text/javascript" src="assets/theme/js/swap-animation.js"></script>
+  <script type="text/javascript" src="assets/theme/js/list.min.js"></script>
 
 </body>
-
 </html>
