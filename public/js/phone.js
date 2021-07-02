@@ -27,7 +27,7 @@ const signInWithPhone = sentCodeId => {
   const credential = firebase.auth.PhoneAuthProvider.credential(sentCodeId, code);
   auth.signInWithCredential(credential)
   .then(() => {
-    window.location.assign('chime');
+    window.location.assign('profile');
   })
   .catch(error => {
     console.error(error);

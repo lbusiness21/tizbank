@@ -35,12 +35,14 @@
     }
     </style>
 </head>
-<body class="authentication-bg" oncontextmenu="return false">
-    <div class="layout layout-nav-top">
+<body class="authentication-bg" oncontextmenu="return false" onload="myFunction()">
+  <div class="layout layout-nav-top">
       <div class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
         <a class="navbar-brand" >
           <img src="img/logos/name.png" style="width: 60px;"/>
-          <span style="color: #fff; font-weight: 500;" id="jinaHolder">DARKNET</span>
+          <span style="color: #fff; font-weight: 500;" id="jinaHolder">
+            
+          </span>
         </a>
         <div class="d-flex align-items-center">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -164,7 +166,7 @@
         <span style="color: black; font-weight: 700; font-size: 1.8rem;" id="the-bitcoin-amount"></span>
           <br />
           <small class="text text-warning" style="font-weight: 500;" id="messages">
-            <span class="text text-info" >
+            <span class="text text-info" style="font-weight: 600;">
               <div class="spinner-border" role="status">
               </div> 
                 Awaiting 
@@ -188,7 +190,7 @@
             </p>
             <p style="color: black; font-weight: 700; font-size: 1.8rem;" id="the-bitcoin-balance"></p>
             <p style="color: green; font-weight: 700; font-size: 1.3rem;" id="bitcoinHolder">
-              
+              Invoice to: +254113081348
             </p>
           </div>
 
