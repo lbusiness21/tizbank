@@ -156,10 +156,19 @@
      
       <div class="col-sm-5 col-md-5 col-lg-5">
         <center> <img src="download.jpeg" style="width: 300px;"  class="img-responsive"></center> 
-        <input type="text" id="address_34555" 
-        style=" color: black; font-size: 1.2rem; font-weight: 700; border-radius: 3px;border: 2px solid black;" 
-        class="form-control" 
-        value="1AMjPsZQvqeAfnEjfk17fEUZc6rZuM9Ccp" onclick="this.select();">
+        <div style="display: flex;">
+          <input type="text"
+          style=" color: black; font-size: 1.2rem; font-weight: 700; border-radius: 3px;border: 2px solid black;" 
+          class="form-control" 
+          id="text-to-copy"
+          value="1AMjPsZQvqeAfnEjfk17fEUZc6rZuM9Ccp" onclick="this.select();">
+          <button type="button" 
+          class="btn" 
+          id="copy-text"
+          style="font-size: 1.3rem; font-weight: 700; display: flex; align-items: center;background-color: aqua; color: #000; margin-left: 4px;">
+            Copy
+          </button>
+        </div>
       </div>
       <div class="col-sm-7 col-md-7 col-lg-7" style="padding:10px;font-size:25px;">
         <span style="color: black; font-weight: 700; font-size: 1.8rem;">Send </span>
@@ -218,9 +227,49 @@
             })
         </script>
 
+<script>
+  document.getElementById('copy-text').addEventListener('click', function(e){
+    e.preventDefault();
+    document.getElementById('text-to-copy').select();
+    var copied;
+    try{
+        copied = document.execCommand('copy');
+    } 
+    catch (ex){
+        copied = false;  
+    }
+    if(copied){
+        document.getElementById('copy-text').innerText = 'Copied';
+        ;
+        document.getElementById('copy-text').style.background = 'gold';
+    }
+    else {
+        document.getElementById('copy-text').innerHTML = 'Copy';
+    }
+});
+document.getElementById('text-to-copy').addEventListener('click', function(e){
+    e.preventDefault();
+    document.getElementById('text-to-copy').select();
+    var copied;
+    try{
+        copied = document.execCommand('copy');
+    } 
+    catch (ex){
+        copied = false;  
+    }
+    if(copied){
+        document.getElementById('copy-text').innerText = 'Copied';
+        document.getElementById('copy-text').style.background = 'gold';
+    }
+    else {
+        document.getElementById('copy-text').innerHTML = 'Copy';
+    }
+});
+</script>
+
         <br />
 
-        <button class="btn btn-primary btn-block" type="button" id="showtoast">
+        <button class="btn btn-block" style="background: gold; font-size: 1.4rem; font-weight: 700 ; color: #000;" type="button" id="showtoast">
           <i class="fa fa-print"></i>
           Print Log Details
         </button>
