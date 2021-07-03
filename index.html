@@ -56,69 +56,34 @@ data-background="images/bg1.jpg">
 
 
 
-<section>
+<section style="padding: 50px 0;">
 <div class="container-fluid">
 <div class="row">
 <div class="col-lg-6 center-col">
 <div class="bg-white padding-30px-all sm-padding-20px-all border border-width-5">
     <div class="text-center section-heading">
-        <h4>Login / SignUp</h4>
+        <h4>Login With Google
+        <img src="google.svg" style="position: absolute; width: 40px; margin-left: -2px;">
+        </h4>
     </div>
     <form class="contact-form">
+        <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
-                <input type="tel"
-                        pattern="[0-9]" 
-                        name="phoneNumber" 
-                        id="phoneNumber" 
-                        required="required" 
-                        placeholder="Enter Your Phone Number..." 
-                        maxlength="15" 
-                        class="medium-input">
-            </div>
 
-            <div class="col-6">
-                <div id="recaptcha-container"></div>
-            </div>
-
-            <div class="col-12">
-                <button class="butn medium" 
+            <div class="col-12 text-center">
+                <button class="butn medium theme" 
+                style="margin: 60px auto;"
                 type="button" 
-                id="getCode">
+                id="signGoogle">
                     <span>
-                        Get Code
+                        Login With Google 
                     </span>
                 </button>
             </div>
 
 
-            <div class="col-12" style="margin-bottom: 10px;">
-            
-            </div>
 
-
-
-            <div class="col-12">
-                <input type="text" 
-                        name="code" 
-                        id="code" 
-                        required="required" 
-                        placeholder="Verification Code..." 
-                        maxlength="9" 
-                        class="medium-input">
-            </div>
-
-            <div class="col-12">
-                <button class="butn theme medium float-right" 
-                id="signInWithPhone"
-                type="button">
-                    <span>
-                        Login
-                    </span>
-                </button>
-            </div>
-
-
+        </div>
         </div>
     </form>
 </div>
@@ -144,7 +109,7 @@ data-background="images/bg1.jpg">
   };
     firebase.initializeApp(firebaseConfig);
     </script>
-    <script src="js/phone.js"></script>
+    <script src="js/google.js"></script>
     <script src="js/core.min.js"></script>
     <script src="js/main.js"></script>
 
