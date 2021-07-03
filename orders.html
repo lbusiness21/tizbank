@@ -3,11 +3,11 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
 <meta charset="utf-8">
-<title>BBVA Bank</title>
-<link rel="shortcut icon" href="img/partners/bbva.jpg">
-<link rel="apple-touch-icon" href="img/partners/bbva.jpg">
-<link rel="apple-touch-icon" sizes="72x72" href="img/partners/bbva.jpg">
-<link rel="apple-touch-icon" sizes="114x114" href="img/partners/bbva.jpg">
+<title>Orders</title>
+<link rel="shortcut icon" href="images/purchased.jpg">
+<link rel="apple-touch-icon" href="images/purchased.jpg">
+<link rel="apple-touch-icon" sizes="72x72" href="images/purchased.jpg">
+<link rel="apple-touch-icon" sizes="114x114" href="images/purchased.jpg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="csrf-token" content="3fea5dcc21de284ea151ccbaf3cddad4">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,21 +17,22 @@
 <link rel="stylesheet" href="assets/amaran/jquery.css">
 <script src="assets/amaran/jquery.js"></script>
 <style>
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700"); 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
-  .authentication-bg{
-    background-image: url(assets/img/bg-pattern-dark.png);
-    background-size: cover;
-    background-position: center;
-    background-color: rgb(52, 58, 64);
-    font-family: 'Montserrat',  sans-serif;
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700"); 
+  @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
+    .authentication-bg{
+      background-image: url(assets/img/bg-pattern-dark.png);
+      background-size: cover;
+      background-position: center;
+      background-color: rgb(52, 58, 64);
+      font-family: 'Montserrat',  sans-serif;
+    }
+  .kaimage{
+    border-radius: 3px;
+    width: 30px;
   }
-.kaimage{
-  border-radius: 3px;
-  width: 30px;
-}
-</style>
+  </style>
 </head>
+
 <body class="authentication-bg" oncontextmenu="return false" onload="myFunction()">
   <div class="layout layout-nav-top">
   <div class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
@@ -146,228 +147,74 @@
 
 
 
-
-
-<div class="row">
-<div class="col-md-12 card" style="padding-left: 0px;padding-right: 0px;">
-<div class="alert alert-dark" role="alert">
-<h4 class="alert-heading">BBVA Bank Log(full info) ✔️💸💰</h4>
-<span><p><b><i>Full bank info</i></b><br></p></span>
+  <div class="row">
+    <div class="col-12 col-lg-12">
+      <div class="card card-table">
+        <div class="card-header">
+          <div class="title">Orders</div>
+        </div>
+        <div class="card-body table-responsive">
+          <table class="table table-borderless">
+            <thead>
+              <tr>
+               <th>#</th>
+                  <th>Date of payment</th>
+                  <th>Title</th>
+                  <th>Sum</th>
+                  <th>Refund</th>
+              </tr>
+              <tbody>
+                <tr>
+                    <th>1</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+              </tbody>
+            </thead>
+            <tbody class="no-border-x">
+            
+            </tbody>
+          </table>
+            <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center mt-4">
+            <li class="page-item disabled">
+                <a class="page-link" href="?page=0">
+                <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li> 
+            <li class="page-item ">
+                <a class="page-link" href="?page=2">
+                <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+            </ul>                        
+            </nav>
+        </div>
+        </div>
+    </div>
 </div>
 
-<div class="card-body">
-<div class="table-responsive">
-  <table id="bbva" class="display" style="width:100%">
-  <thead>
-  <tr>
-  <th>Balance</th>
-  <th>Info</th>
-  <th>Price</th>
-  <th></th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td>$8,157</td>
-  <td>MONEYMARKET ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
-  <td>$115</td>
-  <td>
-    <form action="bitcoin" method="GET">
-      <button type="submit" class="btn maybtn btn-danger btn-sm">
-        buy
-      </button>
-    </form>
-  </td>
-  </tr> 
-  
-  <tr>
-  <td>$7,590</td>
-  <td>SAVINGS ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
-  <td>$108</td>
-  <td>
-    <form action="bitcoin" method="GET">
-      <button type="submit" class="btn maybtn btn-danger btn-sm">
-        buy
-      </button>
-    </form>
-  </td>
-  </tr> 
-  
-  <tr>
-  <td>$8,210</td>
-  <td>CHECKING ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
-  <td>$117</td>
-  <td>
-    <form action="bitcoin" method="GET">
-      <button type="submit" class="btn maybtn btn-danger btn-sm">
-        buy
-      </button>
-    </form>
-  </td>
-  </tr>
-  
-  <tr>
-  <td>$8,470</td>
-  <td>MONEYMARKET ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
-  <td>$121</td>
-  <td>
-    <form action="bitcoin" method="GET">
-      <button type="submit" class="btn maybtn btn-danger btn-sm">
-        buy
-      </button>
-    </form>
-  </td>
-  </tr> 
 
-  <tr>
-  <td>$8,850</td>
-  <td>CHECKING ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
-  <td>$126</td>
-  <td>
-    <form action="bitcoin" method="GET">
-      <button type="submit" class="btn maybtn btn-danger btn-sm">
-        buy
-      </button>
-    </form>
-  </td>
-  </tr> 
-  
-  <tr>
-  <td>$9,180</td>
-  <td>SAVINGS ACCOUNT bbvausa.com [Login:Password]+ Name+ AN/RN+ [NO email attached]</td>
-  <td>$131</td>
-  <td>
-    <form action="bitcoin" method="GET">
-      <button type="submit" class="btn maybtn btn-danger btn-sm">
-        buy
-      </button>
-    </form>
-  </td>
-  </tr>
-  
-  
-  <tr>
-  <td>$9,480</td>
-  <td>CHECKING ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
-  <td>$135</td>
-  <td>
-    <form action="bitcoin" method="GET">
-      <button type="submit" class="btn maybtn btn-danger btn-sm">
-        buy
-      </button>
-    </form>
-  </td>
-  </tr> 
-  
-  <tr>
-  <td>$10,290</td>
-  <td>MONEYMARKET ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
-  <td>$147</td>
-  <td>
-    <form action="bitcoin" method="GET">
-      <button type="submit" class="btn maybtn btn-danger btn-sm">
-        buy
-      </button>
-    </form>
-  </td>
-  </tr> 
-  
-  <tr>
-  <td>$10,810</td>
-  <td>SAVINGS ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
-  <td>$154</td>
-  <td>
-    <form action="bitcoin" method="GET">
-      <button type="submit" class="btn maybtn btn-danger btn-sm">
-        buy
-      </button>
-    </form>
-  </td>
-  </tr>
-  
-  <tr>
-  <td>$11,510</td>
-  <td>CHECKING ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
-  <td>$163</td>
-  <td>
-    <form action="bitcoin" method="GET">
-      <button type="submit" class="btn maybtn btn-danger btn-sm">
-        buy
-      </button>
-    </form>
-  </td>
-  </tr> 
-  
-  
-  <tr>
-  <td>$12,050</td>
-  <td>CHECKING ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
-  <td>$170</td>
-  <td>
-    <form action="bitcoin" method="GET">
-      <button type="submit" class="btn maybtn btn-danger btn-sm">
-        buy
-      </button>
-    </form>
-  </td>
-  </tr> 
-  
-  
-  <tr>
-  <td>$13,810</td>
-  <td>CHECKING ACCOUNT bbvausa.com [Login:Password]+ Name+AN/RN+ [Email access]</td>
-  <td>$195</td>
-  <td>
-    <form action="bitcoin" method="GET">
-      <button type="submit" class="btn maybtn btn-danger btn-sm">
-        buy
-      </button>
-    </form>
-  </td>
-  </tr>     
-  
-  </tbody>
-  </table>
-  <script>
-    (function() {
-      const cartBtn = document.querySelectorAll('.maybtn');
-      cartBtn.forEach(function(btn) {
-        btn.addEventListener('click', function(event) {
-            if(event.target.classList.contains('maybtn')) {
-                const item = {};
-                let price = event.target.parentElement.parentElement.previousElementSibling.textContent;
-                let balance = event.target.parentElement.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.textContent;
-                let info = event.target.parentElement.parentElement.previousElementSibling.previousElementSibling.textContent;
-    
-                item.price = price;
-                item.info = info
-                item.balance = balance;
 
-                localStorage.setItem('price', price);
-                localStorage.setItem('info', info);
-                localStorage.setItem('balance', balance);
-            }
-        });
-      });
-  })();
-  </script>
-  <script>
-    $(document).ready(function() {
-        $('#bbva').DataTable({
-            "aaSorting": [[ 0, "asc" ]],
-            "pageLength": 10,
-            "bLengthChange": false,
-            "language": {
-            "search": "Search (Balance: Price: title): ",
-            }
-        });
-    });   
-  </script>
 
-</div>
-</div>
-</div>
-</div>
+
+
 
     <script type="text/javascript" src="assets/theme/js/popper.min.js"></script>
     <script type="text/javascript" src="assets/theme/js/bootstrap.js"></script>
@@ -393,6 +240,5 @@
     firebase.initializeApp(firebaseConfig);
     </script>
     <script src="js/profile.js"></script>
-
   </body>
 </html>
