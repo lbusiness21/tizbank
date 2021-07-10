@@ -24,13 +24,13 @@ function myFunction() {
 
     document.getElementById("demo").innerHTML = m + 'th ' +  n+  ' '  + y;
 
-    document.getElementById("demo4").innerHTML = "Added 1 Chime Bank Log, July 7";
+    document.getElementById("demo4").innerHTML = "Added 2 Scotia Bank Logs, July 10";
     
     
-    document.getElementById("demo5").innerHTML = "Sold Huntington Bank Log Balance, $17,238, July 6";
-    document.getElementById("demo6").innerHTML =  "Sold Chase Bank Log Balance, $23,145, July 5";
-    document.getElementById("demo7").innerHTML = "Sold Woodforest Bank Log Balance, $31,529, July 5";
-    document.getElementById("demo8").innerHTML = "Sold Suntrust Bank Log Balance, $18,347, July 4";
+    document.getElementById("demo5").innerHTML = "Sold Scotia Bank Log Balance, $19,241, July 10";
+    document.getElementById("demo6").innerHTML =  "Sold Citi Bank Log Balance, $18,694, July 9";
+    document.getElementById("demo7").innerHTML = "Sold Barclays Bank Log Balance, $21,485, July 9";
+    document.getElementById("demo8").innerHTML = "Sold Navy Federal Bank Log Balance, $43,107, July 8";
 
     
     const auth = firebase.auth();
