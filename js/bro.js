@@ -1,4 +1,4 @@
-
+function myFunction() {
     fetch('https://api.ipify.org/?format=json')
     .then(results => results.json())
     .then(data => {
@@ -8,3 +8,4 @@
             <i class="fas fa-map-marker-alt"></i>
         `;
     });
+}
