@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="keywords" content="Bank Logs" />
     <meta name="description" content="Dark Net" />
-    <title>DarkNet</title>
+    <title>Dark Net</title>
     <link rel="shortcut icon" href="img/logos/favicon.png">
     <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-touch-icon-72x72.png">
@@ -71,7 +71,7 @@
     </style>
 </head>
 
-<body oncontextmenu="return false">
+<body onload="myFunction()" oncontextmenu="return false">
 
 <div id="preloader">
     <div class="row loader">
@@ -88,7 +88,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="margin-40px-bottom sm-margin-30px-bottom">
-                    <img src="img/logo-white.png" />
+                    <img src="img/logo-white.png" alt="" class="width-200px" />
                 </div>
             </div>
             <div class="col-12 margin-40px-bottom sm-margin-30px-bottom">
@@ -100,17 +100,11 @@
                 <div class="alt-font font-size80 line-height-normal sm-font-size60 xs-font-size40 text-center font-weight-700 text-uppercase display-block text-theme-color margin-15px-bottom">
                 <h1 class="banner-headline clip no-margin text-theme-color">
                     <span class="banner-words-wrapper">
-                        <b class="is-visible">Huntington..</b>
-                        <b>Citi Bank.</b>
-                        <b>Suntrust.</b>
-                        <b>Chase Bank.</b>
-                        <b>Chime Bank.</b>
-                        <b>N.F.C.U Bank.</b>
-                        <b>B.B.V.A Bank.</b>
-                        <b>BB&T Bank.</b>
-                        <b>Wells Fargo</b>
-                        <b>Woodforest.</b>
-                        <b>P.N.C Bank.</b>
+                        <b class="is-visible">404.</b>
+                        <b>Error</b>
+                        <b>Page</b>
+                        <b>Not</b>
+                        <b>Found</b>
                     </span>
                 </h1>
                 <div class="separator-line-horrizontal-medium-light2 bg-white center-col margin-30px-bottom sm-margin-20px-bottom opacity6"></div>
@@ -120,9 +114,9 @@
                 </p> 
 
                 <p class="font-size20 sm-font-size20 letter-spacing-2 text-white text-center text-uppercase alt-font center-col margin-40px-bottom sm-margin-30px-bottom">
-                    <a id="signGoogle" class="butn text-center theme large">
+                    <a href="index" class="butn text-center theme large">
                         <span style="font-size: 20px;">
-                            Login with Google
+                            Home Page
                             <img style="height: 25px;" src="google.svg">
                         </span>
                     </a>
@@ -155,13 +149,12 @@
     </div>
 </div>
 
-<script src="js/core.min.js"></script>
-<script src="js/main3.js"></script>
+<script src="bro.js"></script>
 
-
-<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
-<script>
+    
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+    <script>
   var firebaseConfig = {
     apiKey: "AIzaSyCOTy-csDIp1XI0mTlAo4mKqMPWNNVyuRE",
     authDomain: "tizbank.firebaseapp.com",
@@ -171,9 +164,10 @@
     appId: "1:83693749331:web:e95f545a64b4370d03b2a6",
     measurementId: "G-JDCP283CWV"
   };
-firebase.initializeApp(firebaseConfig);
-</script>
-<script src="js/google.js"></script>
+    firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="js/core.min.js"></script>
+    <script src="js/main3.js"></script>
 
 </body>
 </html>
